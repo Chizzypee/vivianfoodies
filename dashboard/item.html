@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../foodStock/item-style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <nav class="staticNav"> 
+                <div class="nav-menu">
+                    <div class="menuLine" id="menuLine" onclick="openMenu()">
+                        <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                    </div>
+                    <div class="side-nav" id="mySidenav">
+                        <ul>
+                            <div class="menu-con" id="menuContainer">
+                            <div class="menu">
+                                <h1>Menu</h1>
+                                <a href="javascript:void(o)" class="closeBtn" onclick="closeMenu()">&times;</a>
+                            </div>
+                            <div class="menu-nav" id="menuNav" onclick="navOpen()">
+                                <li>SALE</li>
+                                <img src="../icon/download.png" class="nav-img">
+                            </div>
+                                <div class="side-link" id="sideLink">
+                                    <ul>
+                                        <div class="menuBack" onclick="menuBack()">
+                                            <img src="../icon/download.png" class="navBackimg">
+                                            <p>Back</p>
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Sale</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                    </ul>
+                                </div>
+
+                            <div class="menu-nav" id="menuNav" onclick="navOpen1()">
+                                <li>Fresh Food</li>
+                                <img src="../icon/download.png" class="nav-img">
+                            </div>
+                            <div class="side-link" id="sideLink1">
+                                <ul>
+                                    <div class="menuBack" onclick="menuBack1()">
+                                        <img src="../icon/download.png" class="navBackimg">
+                                        <p>Back</p>
+                                    </div>
+                                    <div class="menu-nav">
+                                        <li><a href="">Fruit</a></li>
+                                        <img src="../icon/download.png" class="nav-img">
+                                    </div>
+                                    <div class="menu-nav">
+                                        <li><a href="">vergetable</a></li>
+                                        <img src="../icon/download.png" class="nav-img">
+                                    </div>
+                                    <div class="menu-nav">
+                                        <li><a href="">Meat & Poultry</a></li>
+                                        <img src="../icon/download.png" class="nav-img">
+                                    </div>
+                                    <div class="menu-nav">
+                                        <li><a href="">sea Food</a></li>
+                                        <img src="../icon/download.png" class="nav-img">
+                                    </div>
+                                    <div class="menu-nav">
+                                        <li><a href="">Bread</a></li>
+                                        <img src="../icon/download.png" class="nav-img">
+                                    </div>
+                                    <div class="menu-nav">
+                                        <li><a href="">Eggs</a></li>
+                                        <img src="../icon/download.png" class="nav-img">
+                                    </div>
+                                    <div class="menu-nav">
+                                        <li><a href="">Cheese</a></li>
+                                        <img src="../icon/download.png" class="nav-img">
+                                    </div>
+                                </ul>
+                            </div>
+
+                            <div class="menu-nav"  id="menuNav" onclick="navOpen2()">
+                                <li>Naija Food</li>
+                                <img src="../icon/download.png" class="nav-img">
+                            </div>
+                                <div class="side-link" id="sideLink2">
+                                    <ul>
+                                        <div class="menuBack" onclick="menuBack2()">
+                                            <img src="../icon/download.png" class="navBackimg">
+                                            <p>Back</p>
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Naija Ingredients</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Naija Meat</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Poultry & Sea Food</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Naija Snacks</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        
+                                    </ul>
+                            </div>
+
+                            <div class="menu-nav" id="menuNav" onclick="navOpen3()">
+                                <li>Food Cupboard</li>
+                                <img src="../icon/download.png" class="nav-img">
+                            </div>
+                                <div class="side-link" id="sideLink3">
+                                    <ul>
+                                        <div class="menuBack" onclick="menuBack3()">
+                                            <img src="../icon/download.png" class="navBackimg">
+                                            <p>Back</p>
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Breakfast Cereals</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Rice, Pasta & Noodles</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Swallow</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Salt & spices</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Soup</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Cake, Bake, Pancake</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">beans, Seed, Grains</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Canned Fish & Meat</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Canned Fruit & vergetable</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                    </ul>
+                                </div>
+
+                            <div class="menu-nav" id="menuNav" onclick="navOpen4()">
+                                <li>Oil & sauces</li>
+                                <img src="../icon/download.png" class="nav-img">
+                            </div>
+                                <div class="side-link" id="sideLink4">
+                                    <ul>
+                                        <div class="menuBack" onclick="menuBack4()">
+                                            <img src="../icon/download.png" class="navBackimg">
+                                            <p>Back</p>
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Groundnut & vergetable Oil</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Olive Oil</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Palm Oil</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Soya & Sunflower Oil</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Tinned & Tomatoes Paste</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Cooking sauces</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Vinegar</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Salad Dressing</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                    </ul>
+                                </div>
+
+
+                            <div class="menu-nav" id="menuNav" onclick="navOpen5()">
+                                <li>Snacks</li>
+                                <img src="../icon/download.png" class="nav-img">
+                            </div>
+                                <div class="side-link" id="sideLink5">
+                                    <ul>
+                                        <div class="menuBack" onclick="menuBack5()">
+                                            <img src="../icon/download.png" class="navBackimg">
+                                            <p>Back</p>
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Biscuits</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">chocolates</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Potato & Plantain Chips</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Cocktail Snacks</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Popcorn</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                    </ul>
+                                </div>
+
+                            <div class="menu-nav" id="menuNav" onclick="navOpen6()">
+                                <li>Drinks</li>
+                                <img src="../icon/download.png" class="nav-img">
+                            </div>
+                                <div class="side-link" id="sideLink6">
+                                    <ul>
+                                        <div class="menuBack" onclick="menuBack6()">
+                                            <img src="../icon/download.png" class="navBackimg">
+                                            <p>Back</p>
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Soft Drinks</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Water</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Milk & Yoghurt Drinks</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Tea & Coffee</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Energy Drink</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                    </ul>
+                                </div>
+
+                            <div class="menu-nav" id="menuNav" onclick="navOpen7()">
+                                <li>Alcohol</li>
+                                <img src="../icon/download.png" class="nav-img">
+                            </div>
+                                <div class="side-link" id="sideLink7">
+                                    <ul>
+                                        <div class="menuBack" onclick="menuBack7()">
+                                            <img src="../icon/download.png" class="navBackimg">
+                                            <p>Back</p>
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Red & Rose Wine</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Sparkling & White Wine</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Champagne</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Gin & Vodka</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Whisky, Tequila, Cognac</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                    </ul>
+                                </div>
+
+                            <div class="menu-nav" id="menuNav" onclick="navOpen8()">
+                                <li>Frozen</a></li>
+                                <img src="../icon/download.png" class="nav-img">
+                            </div>
+                                <div class="side-link" id="sideLink8">
+                                    <ul>
+                                        <div class="menuBack" onclick="menuBack8()">
+                                            <img src="../icon/download.png" class="navBackimg">
+                                            <p>Back</p>
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Butter & Margarine</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Chips</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Asorted vergetable</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Ice Cream</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                        <div class="menu-nav">
+                                            <li><a href="">Ready Meal</a></li>
+                                            <img src="../icon/download.png" class="nav-img">
+                                        </div>
+                                    </ul>
+                                </div>
+
+                            <div class="menu-nav">
+                                <li>Market</a></li>
+                                <img src="../icon/download.png" class="nav-img">
+                            </div>
+                            <div class="side-link" id="sideLink8">
+                                <ul>
+                                    <div class="menuBack" onclick="menuBack8()">
+                                        <img src="../icon/download.png" class="navBackimg">
+                                        <p>Back</p>
+                                    </div>
+                                    <div class="menu-nav">
+                                        <li><a href="">Buy In Bulk</a></li>
+                                        <img src="../icon/download.png" class="nav-img">
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="menu-nav">
+                                <li>Contact us</a></li>
+                            </div>
+                            <div class="menu-nav">
+                                <li><a href="">Log Out</a></li>
+                            </div>
+                        </div>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="sitename">
+                    <img src="../icon/download.png" class="siteimg">
+                    <h1>Vivilious-Food.ng</h1>
+                </div>
+                <div class="nav-search">
+                    <div class="navSearch">
+                        <input type="text" class="search" placeholder="Search over 10,000 product">
+                        <div class="s-img">
+                            <img src="../icon/search.png" class="searchimg">
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-call">
+                    <div class="navCall">
+                        <a href="../pages/login.html">
+                            <img src="../icon/profile.png" class="profile">
+                        </a>
+                        <img src="../icon/heart.png" class="profile">
+                        
+                        <img src="../icon/download.png" class="profile" onclick="openCart()">
+                        <div class="cartsignal" id="cartsignal">
+                            <label for="text" class="signalcount" onclick="openCart()">0</label>
+                        </div>
+                    </div>
+                    <div class="side-cart" id="sideCart">
+                        <div class="side-con">
+                            <div class="cart-back" onclick="backCart()">
+                                <p><</p>
+                                <p>Continue shopping</p>
+                            </div>
+                            <div class="cart-main">
+                                <div class="cart-main-con">
+                                    <div class="order-view">
+                                        <label for="text" class="yourOrder">Your Order</label>
+                                        <a href="../dashboard/cart.html">view cart</a>
+                                    </div>
+                                    <div class="order-view">
+                                        <label for="text" class="subtotal">Subtotal:</label>
+                                        <label for="text" class="cartamount">$0.00</label>
+                                    </div>
+                                    
+                                    <div class="cartnote">
+                                        <p>Add a note to your order</p>
+                                        <input type="text" class="cart-note">
+                                    </div>
+                                    <div class="checkout-btn">
+                                        <button class="checkoutbtn">Checkout</button>
+                                    </div>
+                                </div>
+                                <div class="cart-product">
+                                    <div class="product-con">
+                                        <div class="pro-head" id="prohead" onclick="closeprohead()">
+                                            <div class="showtotalitem">
+                                                <p class="p">Product</p>
+                                                <p class="totalcartitem">(0 item)</p>
+                                            </div>
+                                        </div>
+                                        <div class="pro-topup">
+                                            <div class="pro-wallattopup">
+                                                <!-- cart selected -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-option">
+                    <div class="opt-con">
+                        <div class="option-right">
+                            <img src="../icon/download.png" class="optImg">
+                        </div>
+                        <div class="option-left">
+                            <img src="../icon/download.png" class="optImg">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav class="nav">
+                <div class="side-nav1" id="mySidenav1">
+                    <div class="navBox">
+                        <div class="navItem" id="navItem"  onclick="dropOpen2()">
+                            <label for="text" class="nav-text" id="navtext" >Food Cupboard</label>
+                            <img src="../icon/download.png" class="dropdown">
+                        </div>
+                        <div class="drop-Down2" id="dropDown2">
+                            <ul>
+                                <a href="javascript:void(o)" class="closeBtn1" onclick="dropExit2()">&times;</a>
+                                <li><a href="#">Fruits</a></li>
+                                <li><a href="#">vergetable</a></li>
+                                <li><a href="#">Meat & Poultry</a></li>
+                                <li><a href="#">Bread</a></li>
+                                <li><a href="#">Eggs</a></li>
+                                <li><a href="#">Fresh Snacks</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="navBox">
+                        <div class="navItem" id="navItem"  onclick="dropOpen3()">
+                            <label for="text" class="nav-text">Oil & sauces</label>
+                            <img src="../icon/download.png" class="dropdown">
+                        </div>
+                        <div class="drop-Down3" id="dropDown3">
+                            <ul>
+                                <a href="javascript:void(o)" class="closeBtn1" onclick="dropExit3()">&times;</a>
+                                <li><a href="#">Groundnut & vergetable Oil</a></li>
+                                <li><a href="#">Olive Oil</a></li>
+                                <li><a href="#">Palm Oil</a></li>
+                                <li><a href="#">Soya & Sunflower Oil</a></li>
+                                <li><a href="#">Tinned & Tomatoes Paste</a></li>
+                                <li><a href="#">Cooking sauces</a></li>
+                                <li><a href="#">Vinegar</a></li>
+                                <li><a href="#">Salad Dressing</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="navBox">
+                        <div class="navItem" id="navItem"  onclick="dropOpen4()">
+                            <label for="text" class="nav-text">Snacks</label>
+                            <img src="../icon/download.png" class="dropdown">
+                        </div>
+                        <div class="drop-Down4" id="dropDown4">
+                            <ul>
+                                <a href="javascript:void(o)" class="closeBtn1" onclick="dropExit4()">&times;</a>
+                                <li><a href="#">Biscuits</a></li>
+                                <li><a href="#">Chocolates</a></li>
+                                <li><a href="#">Potato & Plantain Chips</a></li>
+                                <li><a href="#">Cocktail Snacks</a></li>
+                                <li><a href="#">Popcorn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="navBox">
+                        <div class="navItem" id="navItem"  onclick="dropOpen5()">
+                            <label for="text" class="nav-text">Drinks</label>
+                            <img src="../icon/download.png" class="dropdown">
+                        </div>
+                        <div class="drop-Down5" id="dropDown5">
+                            <ul>
+                                <a href="javascript:void(o)" class="closeBtn1" onclick="dropExit5()">&times;</a>
+                                <li><a href="#">Soft Drinks</a></li>
+                                <li><a href="#">Water</a></li>
+                                <li><a href="#">Milk & Yoghurt Drinks</a></li>
+                                <li><a href="#">Tea & Coffee</a></li>
+                                <li><a href="#">Energy Drink</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="navBox">
+                        <div class="navItem" id="navItem"  onclick="dropOpen6()">
+                            <label for="text" class="nav-text">Alcohol</label>
+                            <img src="../icon/download.png" class="dropdown">
+                        </div>
+                        <div class="drop-Down6" id="dropDown6">
+                            <ul>
+                                <a href="javascript:void(o)" class="closeBtn1" onclick="dropExit6()">&times;</a>
+                                <li><a href="#">Red & Rose Wine</a></li>
+                                <li><a href="#">Sparkling & White Wine</a></li>
+                                <li><a href="#">Champagne</a></li>
+                                <li><a href="#">Gin & Vodka</a></li>
+                                <li><a href="#">Whisky, Tequila, Cognac</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="carthead cartdetailshead">
+                <p>Shopping cart</p>
+                <a href="../index.html">Contiune shopping</a>
+            </div>
+            <div class="details-container">
+                <div class="details-con" id="detailsCon">
+                    <!-- <div class="details-right">
+                    </div> -->
+                </div>
+            </div>
+            <!-- <div class="similier-pro">
+                <h3>You may also like</h3>
+                <div class="foodItem">
+                    <div class="food-slid">
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-head">
+                        <a href="#">
+                            <p>Back to the top</p>
+                            <img src="../icon/download.png" class="backtop">
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <img src="../icon/download.png" class="f-img">
+                        <img src="../icon/download.png" class="f-img">
+                        <img src="../icon/download.png" class="f-img">
+                    </div>
+                    <div class="footer-link">
+                        <div class="title">
+                            <img src="../icon/download.png" class="f-img1">
+                            <h1>Vivilious-Food</h1>
+                        </div>
+                        
+                        <ul>
+                            <li><a href="../dashboard/cart.html">Home</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">eWallet</a></li>
+                            <li><a href="#">Job</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Cookie</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Corporate Order</a></li>
+                        </ul>
+                    </div>
+                    <div class="title1">
+                        <div class="title1Coon">
+                            <div class="title1con">
+                                <p>Romania's Largest Online Supermarket</p>
+                            </div>
+                            <div class="title1con">
+                                <img src="../icon/download.png" class="t-img">
+                                <img src="../icon/download.png" class="t-img">
+                                <img src="../icon/download.png" class="t-img">
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>Copyright &copy; 2024 Vivilious-Food. All right reserve</p>
+                    </div>
+                    <div class="footer-copyrightmMKT">
+                        <div class="copyhead">
+                            <p> &copy; Vivilious-Food</p>
+                        </div>
+                        <div class="copyrightMKT-link">
+                            <ul>
+                                <li><a href="../dashboard/cart.html">Home</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../utility/item.js"></script>
+    <script src="../utility/script.js"></script>
+</body>
+</html>

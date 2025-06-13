@@ -1,0 +1,91 @@
+[
+    {
+        "id": 0,
+        "name": "Mango",
+        "price": 5.99,
+        "instock": 20,
+        "customfee": 3,
+        "deliveryfee": 2,
+        "description": "Delicious cajun butter fried chicken",
+        "imgSrc": "../food/delicious-cajun-butter-fried-chicken-isolated-transparent-background_812337-6686.avif",
+        "desc": "Lorem ficiis laborum assumenda minus ad repudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
+    },
+    {
+        "id": 1,
+        "name": "Fresh Plum",
+        "price": 15.99,
+        "instock": 32,
+        "customfee": 3,
+        "deliveryfee": 2,
+        "description": "Delicious cajun butter fried chicken",
+        "imgSrc": "../food/delicious-chicken-enchiladas-isolated-white-background_1036977-1769.jpg",
+        "desc": "Lorem ipsum dolor sit amet consectto vel, hic, sequi quas nemo deserunt nisi neque reprehenderit corporis! Alias ad quasi nesciunt fugit nostrum optio laboriosam minus consequatur ipsa enim tenetur, sint porro, fugiat animi, quod ex. Saepe exercitationem aliquam incidunt quae explicabo commodi ducimus quod, officiis laborum assumenda minus ad repudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
+    },
+    {
+        "id": 2,
+        "name": "Halve Plum",
+        "price": 23.99,
+        "instock": 44,
+        "customfee": 3,
+        "deliveryfee": 2,
+        "description": "Delicious cajun butter fried chicken",
+        "imgSrc": "../food/fresh-beef-burger-isolated-transparent-background_191095-9018.avif",
+        "desc": "enda quaerat? Provident asperiores distinctio repellendus laudantium ab praesentium, libero soluta in. Dignissimos esse deleniti iusto vel, hic, sequi quas nemo deserunt nisi neque reprehenderit corporis! Alias ad quasi nesciunt fugit nostrum optio laboriosam minus consequatur ipsa enim tenetur, sint porro, fugiat animi, quod ex. Saepe exercitationem aliquam incidunt quae explicabo commodi ducimus quod, officiis laborum assumenda minus ad repudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
+    },
+    {
+        "id": 3,
+        "name": "banana",
+        "price": 13.99,
+        "instock": 24,
+        "customfee": 3,
+        "deliveryfee": 2,
+        "description": "Delicious cajun butter fried chicken",
+        "imgSrc": "../food/grilled-chicken-roasted-bbq-with-spices-tomato-transparent-background_84443-1368.jpg",
+        "desc": "lorum eum maxime sit quibusdam omnis cum blanditiis minus nam fugit nobis explicabo ipsa veniam, tenetur, neque assumenda quaerat? Provident asperiores distinctio repellendus laudantium ab praesentium, libero soluta in. Dignissimos esse deleniti iusto vel, hic, sequi quas nemo deserunt nisi neque reprehenderit corporis! Alias ad quasi nesciunt fugit nostrum optio laboriosam minus consequatur ipsa enim tenetur, sint porro, fugiat animi, quod ex. Saepe exercitationem aliquam incidunt quae explicabo commodi ducimus quod, officiis laborum assumenda minus ad repudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
+    },
+    {
+        "id": 4,
+        "name": "Plantain",
+        "price": 44.99,
+        "instock": 16,
+        "customfee": 2,
+        "deliveryfee": 3,
+        "description": "Delicious cajun butter fried chicken",
+        "imgSrc": "../food/jollof-isolated-transparent-background_191095-40232.jpg",
+        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nemo! Quasi perspiciatis similique voluptatum ipsum pariatur eligendi animi quae sapiente accusantium excepturi nihil impedit, oforro tempore, officia qui?"
+    },
+    {
+        "id": 5,
+        "name": "Rice",
+        "price": 22.99,
+        "instock": 12,
+        "customfee": 3,
+        "deliveryfee": 2,
+        "description": "folores earum numquam asas fkak",
+        "imgSrc": "../food/fresh-beef-burger-isolated-transparent-background_191095-9018.avif",
+        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nemo! Quasi perspiciatis similique voluptatum ipsum pariatur eligendi animi quae sapiente accusantium excepturi nihil impedit, officia laudantium voluptatem dolor odio dignissimos fuga exercitationem hic quisquam illum aut modi! Facere esse iste accusamus doloremque culpa adipisci rerum dolorum eum maxime sit quibusdam omnis cum blanditiis minus nam fugit nobis explicabo ipsa veniam, tenetur, neque assumenda quaerat? Provident asperiores distinctio repellendus laudantium ab praesentium, libero soluta in. Dignissimos esse deleniti iusto vel, hic, sequi quas nemo deserunt nisi neque reprehenderit corporis! Alias ad quasi nesciunt fugit nostrum optio laboa qui?"
+    },
+    {
+        "id": 6,
+        "name": "Cassava",
+        "price": 12.99,
+        "instock": 12,
+        "customfee": 2,
+        "deliveryfee": 3,
+        "description": "Culpa possimus earum numquam",
+        "imgSrc": "../food/grilled-chicken-roasted-bbq-with-spices-tomato-transparent-background_84443-1368.jpg",
+        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nemo! Quasi perspiciatis similique voluptatum ipsum pariatur eligendi animi quae sapiente accusantium excepturi nihil impedit, officia laudantium voluptatem dolor odio dignissimos fuga exercitationem hic quisquam illum aut modi! Facere esse iste accusamus doloremque culpa adipisci rerum dolorum eum maxime sit quibusdam omnis cum blanditiis minus nam fugit nobis explicabo ipsa veniam, tenetur, neque assumenda quaerat? Provident bero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
+    },
+    {
+        "id": 7,
+        "name": "Beans",
+        "price": 2.99,
+        "instock": 12,
+        "customfee": 3,
+        "deliveryfee": 2,
+        "description": "Lorem numquam",
+        "imgSrc": "../food/delicious-cajun-butter-fried-chicken-isolated-transparent-background_812337-6686.avif",
+        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
+    }
+    
+]

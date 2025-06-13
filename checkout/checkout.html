@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+    <div class="checkcontainer">
+        <div class="check-head">
+            <div class="check-split">
+                <img src="../icon/heart.png" class="checkheadIMg">
+                <p>Vivilious-Food</p>
+            </div>
+            <div class="check-split">
+                <img src="../icon/download.png" class="checkcartImg">
+            </div>
+        </div>
+        <div class="odersummary" onclick="openOrderedItem()">
+            <div class="ordermain">
+                <div class="ordersplit">
+                    <p>Order Summary</p>
+                    <img src="../icon/download.png" class="checkcartImg1">
+                </div>
+                <div class="ordersplit">
+                    <label for="text" class="cartamount">$0.00</label>
+                </div>
+            </div>
+        </div>
+        <div class="orderdetails" >
+            <div class="orderdetails-con">
+                <div class="ordered-content" id="orderdContent">
+                    <div class="orderedcon">
+                        <!-- <div class="orderIMG-text">
+                            <img src="../image/baked-quails-pan-dark-surface_2829-5596.jpg" class="imgorder">
+                            <div class="orderedInfo">
+                                <label for="text" class="orderedText">Meat Pie</label>
+                                <label for="text" class="orderedText1">(Lorem ipsum dolor sit amet)</label>
+                            </div>
+                        </div>
+                        <div class="orderIMG-text">
+                            <label for="text" class="cartamount">$0.00</label>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- render cart item here -->
+                <div class="discount">
+                    <div class="discountsplit">
+                        <input type="text" class="discountinput" placeholder="Discount code or gift card">
+                    </div>
+                    <div class="discountsplit">
+                        <button class="apply">Apply</button>
+                    </div>
+                </div>
+                <div class="odertotalsum">
+                    <div class="odertotalsum-split1">
+                        <p class="totalcartitem1">Subtotal (4) item</p>
+                        <p>Delivery fees</p>
+                        <p>Custom fee</p>
+                        <p>Total</p>
+                    </div>
+                    <div class="odertotalsum-split">
+                        <label for="text" class="cartamount1">$0.00</label>
+                        <label for="text" class="deliveryfee">$0.00</label>
+                        <label for="text" class="Customfee">$0.00</label>
+                        <label for="text" class="totalfee">$0.00</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkcontent">
+            <div class="contact-login">
+                <h2>Contact</h2>
+                <a href="#">Login</a>
+            </div>
+            <div class="emailside">
+                <input type="text" class="discountinput" placeholder="Email">
+                <div class="checbokk">
+                    <input type="checkbox">
+                    <p>Email me with news and offers</p>
+                </div>
+            </div>
+            <div class="deliivery">
+                <select class="discountinput">
+                    <option value="Terminal">Nigeria</option>
+                    <option value="Terminal">South Africa</option>
+                    <option value="Terminal">Ghana</option>
+                    <option value="Terminal">Amarica</option>
+                    <option value="Terminal">United kingdom</option>
+                </select>
+                <div class="deliverysplit">
+                    <input type="text" class="discountinput" placeholder="First Name">
+                    <input type="text" class="discountinput" placeholder="Last Name">
+                </div>
+                <div class="deliverysplit">
+                    <input type="number" class="discountinput" placeholder="Phone Number">
+                </div>
+                <div class="deliverysplit">
+                    <input type="text" class="discountinput" placeholder="address">
+                </div>
+                <div class="deliverysplit">
+                    <input type="text" class="discountinput1" placeholder="City">
+                    <select class="discountinput1">
+                        <option value="Terminal">Rivers State</option>
+                        <option value="Terminal">Abuja</option>
+                        <option value="Terminal">Lagos</option>
+                        <option value="Terminal">Imo State</option>
+                        <option value="Terminal">Benin</option>
+                    </select>
+                    <input type="text" class="discountinput1" placeholder="Postal code(optional)">
+                </div>
+                <div class="checbokk">
+                    <input type="checkbox">
+                    <p>Save this information for next time</p>
+                </div>
+            </div>
+            <div class="shippingMethod">
+                <div class="shippingcon">
+                    <h2>Shipping Method</h2>
+                </div>
+                <div class="shippngDetails">
+
+                </div>
+                <div class="shippingWarning">
+                    <div class="shipwarns">
+                        <img src="../icon/download.png" class="checkcartImg2">
+                        <div class="shipwardDetails">
+                            <p class="shipP">Shipping not available</p>
+                            <p>Your order cant not be shipped to the selected address. Review your address to ensure it's correct and try again, or select a diffrent address</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="paymentMethod">
+                <div class="paymentcon">
+                    <div class="paymenthead">
+                        <p>PAYMENT METHOD</p>
+                    </div>
+                    <div class="paymentheading">
+                        <p>All transaction are secured and encrypted</p>
+                    </div>
+                    <div class="paymentinfo">
+                        <div class="paymentdetails">
+                            <div class="radiocon">
+                                <input type="radio" class="radio">
+                            </div>
+                            <div class="paytext">
+                                <p class="ptext">Pay with Cards, Bank Transfer or USSD</p>
+                                <p>You will be redirected to our secured checkout page</p>
+                            </div>
+                        </div>
+                        <div class="paymentdetails">
+                            <div class="radiocon">
+                                <input type="radio" class="radio">
+                            </div>
+                            <div class="paytext">
+                                <p class="ptext">PalmPay</p>
+                                <p>To use this option you must be registered with PalmPay</p>
+                            </div>
+                        </div>
+                        <div class="paymentdetails">
+                            <div class="radiocon">
+                                <input type="radio" class="radio">
+                            </div>
+                            <div class="paytext">
+                                <p class="ptext">Opay</p>
+                                <p>To use this option you must be registered with Opay</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paymentbtn">
+                        <button class="confirmpayment">Comfirm Payment</button>
+                    </div>
+                    <div class="backshopping">
+                        <div class="backshopCon">
+                            <a href="../dashboard/dashboard.html">
+                                <img src="../icon/download.png" class="shopbsckImg">
+                                <label for="text" class="backshop">Go back & Continue shopping</label>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../utility/checkout.js"></script>
+    <script src="../utility/script.js"></script>
+</body>
+</html>

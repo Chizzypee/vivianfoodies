@@ -1,0 +1,387 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    height: 5vh;
+    width: 100%;
+    margin-top: 10px;
+}
+.section-con{
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    width: 100%;
+    gap: 5px;
+}
+.section-con a{
+    color: black;
+}
+.section-con .p{
+    margin-left: 0px;
+    font-weight: 600;
+}
+.section-con p{
+    margin-left: 70px;
+}
+.itemHead{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 17vh;
+}
+.itemhead-con{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 17vh;
+    justify-content: center;
+    align-items: center;
+}
+.itemhead-con p{
+    font-weight: 600;
+    font-size: 25px;
+}
+.quicksearch{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 12vh;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+}
+.tag{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.tag-con{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+}
+.tag-con1{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 19%;
+}
+.tag-con1 p{
+    width: 100%;
+}
+.all{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.tagImg{
+    width: 30%;
+}
+.tagImg1{
+    width: 20%;
+}
+.food-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 460vh;
+    justify-content: center;
+    align-items: center;
+}
+.food-content{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    height: inherit;
+    align-items: center;
+}
+.food-flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 90%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+.food-item1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    border: 1px solid gray;
+}
+#footslide{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    border: 1px solid gray;
+}
+.pages{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    /* background-color: salmon; */
+}
+.count{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.block{
+    font-weight: 700;
+    font-size: 20px;
+}
+#select{
+    color: green;
+}
+.information1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+}
+.infomate1{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: inherit;
+    gap: 20px;
+}
+.infor-head1{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+}
+.infor-head1 p{
+    margin-left: 60px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.infor-text{
+    margin-left: 60px;
+}
+
+/* profile */
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.profile-content{
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    height: inherit;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.account-logout{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;    
+}
+.account-logout p{
+    font-weight: 600;
+    font-size: 25px;
+}
+.account-logout a{
+    font-size: 15px;
+    color: gray;
+    text-decoration: underline;
+}
+.pro-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 50px;
+    /* background-color: red; */
+}
+.pro-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* background-color: darkblue; */
+    justify-content: center;
+    align-items: center;
+}
+.pro-right p{
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.address-txt{
+    font-weight: 400;
+}
+.city-country{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.btn-address{
+    margin-top: 20px;
+}
+.viewAddress{
+    width: 100%;
+    height: 6vh;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Address */
+.address-back{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    gap: 15px;
+}
+.address-back p{
+    font-size: 25px;
+    font-weight: 500
+}
+.addressback{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+.addressback a{
+    color: gray;
+    text-decoration: underline;
+}
+.addressback p{
+    font-size: 15px;
+}
+.default{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+.default .address-txt{
+    font-weight: 500;
+}
+.edit{
+    width: 15%;
+    background-color: green;
+    height: 6vh;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+.delete{
+    width: 20%;
+    background-color: green;
+    height: 6vh;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+.address-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.btn-newAddress{
+    width: 100%;
+}
+.newAddress{
+    margin-top: 10px;
+    width: 40%;
+    background-color: green;
+    height: 6vh;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+.new-address{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: darkblue; */
+    height: auto;
+    margin-top: 20px;
+}
+.new-address p{
+    font-weight: 400;
+    font-size: 18px;
+}
+.address-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.address-txt1{
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.address-field{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: inherit;
+}
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding-top: 15px;
+
+}
+.checkbox p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.btn-add{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10vh;
+    gap: 5px;
+    width: 100%;
+}
+.btn-add a{
+    width: 25%;
+    color: gray;
+    text-decoration: underline;
+}
+.addAddress{
+    background-color: green;
+    border: none;
+    color: white;
+    width: 100%;
+    height: 6vh;
+}
