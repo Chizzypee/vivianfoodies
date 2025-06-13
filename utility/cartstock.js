@@ -1,5 +1,4 @@
 const foodStore = document.querySelector(".food-flex")
-// const cartItemElement = document.querySelector(".pro-wallattopup");
 const cartOrder = document.querySelector(".cartorder");
 const subtotal = document.querySelector(".cartamount"); 
 const partotal = document.querySelector(".cart-priceee");
@@ -11,6 +10,7 @@ const totalCartDashboard = document.querySelector(".signalcount");
 //cart array
 let cart = JSON.parse(localStorage.getItem("CART")) || [];
 updateCart()
+
 
 //add to cart
 function addToCart(id) {
@@ -50,20 +50,20 @@ function renderSubTotal(){
     console.log('total cart',cart);
     
     cart.forEach((item) => {
-        totalPrice  += item.price * item.numberOfUnits
-        totalSub += item.price * item.numberOfUnits
+        totalPrice  += item.price * item.numberOfUnits;
+        totalSub += item.price * item.numberOfUnits;
         totalItem  += item.numberOfUnits;
 
     });
     
     console.log({
         totalPrice:totalPrice,
-totalSub:totalSub,
-totalItem:totalItem,
+        totalSub:totalSub,
+        totalItem:totalItem,
     });
-    subtotal.innerHTML = `$${totalPrice.toFixed(2)}` 
-    partotal.innerHTML = `$ ${totalSub.toFixed(2)} `
-    totalCartDashboard.innerHTML =  `${totalItem}`
+    subtotal.innerHTML = `$${totalPrice.toFixed(2)}` ;
+    partotal.innerHTML = `$ ${totalSub.toFixed(2)} `;
+    totalCartDashboard.innerHTML =  `${totalItem}`;
 }
 
 
@@ -103,25 +103,6 @@ function renderCartItem(){
             </div>
         </div>
     `;
-})
-
-orderedITem.innerHTML = "";
-cart.forEach((item) =>{
-    orderedITem.innerHTML += `
-    <div class="orderedcon">
-        <div class="orderIMG-text">
-            <img src="${item.imgSrc}" class="imgorder">
-            <div class="orderedInfo">
-                <label for="text" class="orderedText">${item.name}</label>
-                <label for="text" class="orderedText1">(${item.desc})</label>
-            </div>
-        </div>
-        <div class="orderIMG-text">
-            <label for="text" class="cartamount"></label>
-        </div>
-    </div>
-    
-    `
 })
    
 }

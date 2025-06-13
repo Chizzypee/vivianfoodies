@@ -2089,6 +2089,12 @@ nav{
 
 /* MEDIA QUARY */
 @media screen and (max-width: 600px){
+    .circle{
+        margin: 0px;
+        height: 45vh;
+        justify-content: end;
+        align-items: end;
+    }
     .staticNav{
         gap: 10px;
     }
@@ -2111,6 +2117,9 @@ nav{
         width: 90%;
     }
     .side-nav{
+        width: 100%;
+    }
+    .side-link{
         width: 100%;
     }
     .sitename h1{
@@ -2177,13 +2186,13 @@ nav{
         height: auto;
     }
     .itemtext{
-        font-size: 23px;
+        font-size: 20px;
     }
     .price{
-        font-size: 23px;
+        font-size: 20px;
     }
     .price1{
-        font-size: 23px;
+        font-size: 15px;
     }
     .cart{
         font-size: 20px;
@@ -2214,6 +2223,9 @@ nav{
         width: 100%;
         justify-content: start;
         flex-direction: row;
+    }
+    .title h1{
+        font-size: 20px;
     }
     .title1con p{
         font-size: 18px;
@@ -2248,13 +2260,24 @@ nav{
         margin-left: 20px;
     }
     .details-con{
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 98%;
+        width: 100%;
         gap: 10px;
     }
+    .details-right{
+        height: 40vh;
+    }
+    .details-left{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-bottom: 10px;
+    }
     .itemImgbig1{
-        height: 20vh;
+        height: auto;
     }
     .Amount{
         margin: 0px;
@@ -2289,27 +2312,31 @@ nav{
         margin: 0px;
     }
     .description-img{
-        width: 15%;
+        width: 10%;
+    }
+    .desc-box{
+        border: none;
     }
 
     /* CART */
-
     .cartContent{
         width: 95%;
     }
     .cartorder-con{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
         width: 100%;
         height: auto;
+        gap: 10px;
     }
     .cartorder1{
-        width: 100%;
-        flex-direction: column;
+        width: 90%;
     }
     .insdeorder{
         gap: 0px;
+    }
+    .insdeorder1{
+        margin: 0px;
     }
     .cartbtn{
         width: 100%;
@@ -2320,22 +2347,29 @@ nav{
         margin-right: 17px;
     }
     .cartorder2{
-        flex-direction: column;
-        width: 160%;
-        justify-content: end;
-        align-items: end;
-        gap: 10px;
-    }
-    .cart-count{
         flex-direction: row;
         width: 100%;
-        justify-content: end;
-        align-items: end;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .cart-count{
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .cartbtn{
+        margin: 0px;
+        justify-content: center;
+        width: 80%;
+    }
+    .cartremove{
+        justify-content: center;
     }
     .cart-priceee{
         display: flex;
-        justify-content: center;
-        width: 100%;
+        align-items: center;
+        margin: 0px;
+        width: 37%;
         font-size: 20px;
     }
     .cartlist{
@@ -2351,9 +2385,8 @@ nav{
     }
     .cartdetails{
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        height: 50vh;
+        height: 60vh;
         border: 1px solid rgb(212, 212, 212);
         margin-bottom: 10px;
     }
@@ -2361,6 +2394,7 @@ nav{
         width: 90%;
         justify-content: start;
         align-items: start;
+        height: 20vh;
     }
     .cartnote1 .p{
         font-weight: 700;
@@ -2383,6 +2417,9 @@ nav{
         gap: 100px;
         margin-left: 20px;
         font-size: 23px;
+    }
+    .cartamount{
+        font-size: 20px;
     }
     .argreement{
         margin: 0px;
