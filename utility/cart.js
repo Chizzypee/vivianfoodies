@@ -31,7 +31,7 @@ fetch('../product.json')
 
 // find the product
 function showProduct(){
-products.forEach((product) => {
+products.forEach((product, item) => {
     let productDiv = document.createElement("div")
     productDiv.classList.add("product")
     productLink = `<a href="../dashboard/item.html?id=${product.id}" class="product-link">`;
@@ -53,8 +53,13 @@ products.forEach((product) => {
                     <label for="text" class="price">$${product.price}</label>
                     <label for="text" class="price1">instock ${product.instock}</label>
                 </div>
-                <div class="btn">
+                <div class="btn" onclick="addToCart()">
                     <button class="cart" id="cart" onclick="addToCart(${product.id})">Add to cart</button>
+                    <div class="product-count" id="product-count">
+                        <button class="product-cartcount" onclick="changeNumberOfUnite('minus',${item.id})">-</button>
+                        <label for="text" class="product-counttxt">${item.numberOfUnits}</label>
+                        <button class="product-cartcount" onclick="changeNumberOfUnite('plus',${item.id})">+</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -175,6 +180,9 @@ function addToCart(id) {
         })
     }
     updateCart();
+
+    document.getElementById("cart").style.display = "none"
+    document.getElementById("product-count").style.display = "flex"
 }
 showProduct()
 

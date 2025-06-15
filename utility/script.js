@@ -19,19 +19,7 @@ dropExitElm.forEach((dropExitElm) => {
         navlinkElm.classList.add('drop-Down')
     })
 })
-
-// function dropOpen(){
-//     document.getElementById("dropDown").style.display = "flex";
-// }      
-// function dropExit(){
-//     document.getElementById("dropDown").style.display = "none";
-// }    
-// function dropOpen1(){
-//     document.getElementById("dropDown1").style.display = "flex";
-// }      
-// function dropExit1(){
-//     document.getElementById("dropDown1").style.display = "none";
-// }    
+    
 function dropOpen2(){
     document.getElementById("dropDown2").style.display = "flex";
 }      
@@ -202,3 +190,10 @@ function closeDescription(){
 function openOrderedItem(){
     document.getElementById("orderdContent").style.display = "flex"
 }
+// function openCartBtn(){   
+// document.getElementById("cart").style.display = "none"
+// document.getElementById("product-count").style.display = "flex"
+// }
+// function closeCartBtn(){
+//     document.getElementById("orderdContent").style.display = "flex"
+// }
