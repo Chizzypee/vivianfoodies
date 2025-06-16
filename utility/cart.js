@@ -10,6 +10,7 @@ const subtotal = document.querySelector(".cartamount");
 const totalcartitem = document.querySelector(".totalcartitem");
 const totalCartDashboard = document.querySelector(".signalcount");
 const addCartBTn = document.querySelector(".addBTn");
+const productCounttxt = document.querySelector(".product-counttxt");
 
 
 if(!productContainer) productContainer =  document.querySelector(".food-flex");
@@ -31,7 +32,7 @@ fetch('../product.json')
 
 // find the product
 function showProduct(){
-products.forEach((product, item) => {
+products.forEach((product) => {
     let productDiv = document.createElement("div")
     productDiv.classList.add("product")
     productLink = `<a href="../dashboard/item.html?id=${product.id}" class="product-link">`;
@@ -53,13 +54,8 @@ products.forEach((product, item) => {
                     <label for="text" class="price">$${product.price}</label>
                     <label for="text" class="price1">instock ${product.instock}</label>
                 </div>
-                <div class="btn" onclick="addToCart()">
+                <div class="btn" id="btnContainer-${product.id}">
                     <button class="cart" id="cart" onclick="addToCart(${product.id})">Add to cart</button>
-                    <div class="product-count" id="product-count">
-                        <button class="product-cartcount" onclick="changeNumberOfUnite('minus',${item.id})">-</button>
-                        <label for="text" class="product-counttxt">${item.numberOfUnits}</label>
-                        <button class="product-cartcount" onclick="changeNumberOfUnite('plus',${item.id})">+</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -166,23 +162,34 @@ products.forEach((product) => {
 }
 
 
-//add to cart
 
+//add to cart
 function addToCart(id) {
     //check product already exist in cart
     if(cart.some((item) => item.id === id)){
         changeNumberOfUnite("plus", id)
     }else{
         const item = products.find((product) => product.id === id)
+        const product = products.find((product) => product.id === id)
         cart.push({
             ...item,
+            ...product,
             numberOfUnits: 1,
         })
+        const btnContainer = document.getElementById(`btnContainer-${product.id}`)
+        btnContainer.innerHTML = `
+            <div class="product-count" id="product-count">
+                <button class="product-cartcount" onclick="changeNumberOfUnite('minus',${id})">-</button>
+                <label for="text" class="product-counttxt" id="proCountBtn-${id}">1</label>
+                <button class="product-cartcount" onclick="changeNumberOfUnite('plus',${id})">+</button>
+            </div>
+        `;
+
     }
+
     updateCart();
 
-    document.getElementById("cart").style.display = "none"
-    document.getElementById("product-count").style.display = "flex"
+
 }
 showProduct()
 
@@ -236,7 +243,7 @@ function renderCartItem(){
                     <button class="pro-cartcount" onclick="changeNumberOfUnite('plus',${item.id})">+</button>
                 </div>
                 <div class="pro-counting">
-                    <button class="remove" onclick="removeCartItem(${item.id})">Remove</button>
+                    <i class="fa-solid fa-trash-can remove" onclick="removeCartItem(${item.id})"></i>
                 </div>
             </div>
         </div>
@@ -255,11 +262,11 @@ function removeCartItem(id){
 function changeNumberOfUnite(action, id){
 
     cart = cart.map((item) => {
-        let numberOfUnits = item.numberOfUnits 
+        let numberOfUnits = item.numberOfUnits;
         if(item.id === id){
-            if(action === "minus" && numberOfUnits > 1){
-                numberOfUnits-- 
-            }else if(action === "plus" && numberOfUnits <= item.instock){
+            if(action === "minus"){
+                numberOfUnits--
+            }else if(action === "plus" && numberOfUnits < item.instock){
                 numberOfUnits++
             }
         }
@@ -268,8 +275,23 @@ function changeNumberOfUnite(action, id){
             ...item,
             numberOfUnits
         }
+        return item;
     });
+    cart = cart.filter((item) => item.numberOfUnits > 0);
+    const item = cart.find((p) => p.id === id)
+    const btnContainer = document.getElementById(`btnContainer-${id}`)
+    const quantityBNT = document.getElementById(`proCountBtn-${id}`)
+
+    if(item){
+        quantityBNT.innerText = item.numberOfUnits;
+    }else{
+        btnContainer.innerHTML = `
+            <button class="cart" id="cart" onclick="addToCart(${id})">Add to cart</button>
+        `
+    }
+
     updateCart()
+
     
 }
 

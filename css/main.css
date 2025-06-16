@@ -469,12 +469,11 @@ nav{
     /* background-color: gold; */
 }
 .pro-counting .remove{
-    background-color: red;
-    border: none;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
-    height: 3vh;
-    font-size: 11px;
+    height: 5vh;
 }
 .pro-counting{
     display: flex;
@@ -495,7 +494,7 @@ nav{
     /* background-color: red; */
 }
 .product-count{
-    display: none;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -533,7 +532,7 @@ nav{
     align-items: center;
     justify-content: center;
     width: 40%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: 7vh;
     color: white;
     font-size: 14px;
@@ -2178,7 +2177,7 @@ nav{
         gap: 15px;
     }
     .profile{
-        width: 50%;
+        width: 40%;
     }
     .nav{
         display: none;

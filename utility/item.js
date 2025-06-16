@@ -76,13 +76,6 @@ function updateCart() {
         </div>
             `
         })
-        // details.querySelector(".itemImgbig").src = itemProduct.imgSrc
-        // details.querySelector(".cart-item-title").innerText = itemProduct.name
-        // details.querySelector(".cart-price").innerText = `$` + itemProduct.price
-        // details.querySelector(".itemtext").innerText = itemProduct.description
-        // details.querySelector(".desc").innerText = itemProduct.desc
-
-        // details.querySelector(".cart").addEventListener('click', addCartItem).itemProduct
 
     }
     showItemDetails()
