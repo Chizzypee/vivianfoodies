@@ -22,17 +22,17 @@ console.log(cart);
 updateCart()
 
 let products = null;
-fetch('../product.json')
+fetch('product.json')
 .then(response => response.json())
 .then(data => {
     products = data;
-    showProduct();
-    showItemDetails();
+    reduceInstock(products)
+    showProduct()
 })
 
 // find the product
 function showProduct(){
-products.forEach((product) => {
+products.slice(0, 8).forEach((product) => {
     let productDiv = document.createElement("div")
     productDiv.classList.add("product")
     productLink = `<a href="../dashboard/item.html?id=${product.id}" class="product-link">`;
@@ -41,18 +41,18 @@ products.forEach((product) => {
         <div class="itemborder">
             <div class="item-imgBig">
                 <div class="item-img">
-                    ${productLink}<img src="${product.imgSrc}" class="itemImgbig" ></a>
+                    ${productLink}<img src="${product.imgSrc}" class="itemImgbig"></a>
                 </div>
                 <div class="itemrapper">
                     <img src="../icon/heart.png" class="itemImg">
-                    ${productLink}<label for="text" class="itemtext">${product.name}</label></a>
+                    ${productLink}<label for="text" class="itemtext">${product.name}-Soup</label></a>
                     ${productLink}<label for="text" class="itemtextdesc">${product.description}</label></a>
                 </div>
             </div>
             <div class="price-btn">
                 <div class="prices">
                     <label for="text" class="price">$${product.price}</label>
-                    <label for="text" class="price1">instock ${product.instock}</label>
+                    <label for="text" class="price1" id="stock-${product.id}">In stock: ${product.instock}</label>
                 </div>
                 <div class="btn" id="btnContainer-${product.id}">
                     <button class="cart" id="cart" onclick="addToCart(${product.id})">Add to cart</button>
@@ -65,7 +65,7 @@ products.forEach((product) => {
 
    
 })
-products.forEach((product) => {
+products.slice(0, 8).forEach((product) => {
     let productDiv = document.createElement("div")
     productDiv.classList.add("product")
     productLink = `<a href="../dashboard/item.html?id=${product.id}" class="product-link">`;
@@ -87,7 +87,7 @@ products.forEach((product) => {
                     <label for="text" class="price">$${product.price}</label>
                     <label for="text" class="price1">instock ${product.instock}</label>
                 </div>
-                <div class="btn">
+                <div class="btn"  id="btnContainer-${product.id}">
                     <button class="cart" id="cart" onclick="addToCart(${product.id})">Add to cart</button>
                 </div>
             </div>
@@ -96,7 +96,7 @@ products.forEach((product) => {
     `;
     alcoholContainer.appendChild(productDiv)
 })
-products.forEach((product) => {
+products.slice(0, 8).forEach((product) => {
     let productDiv = document.createElement("div")
     productDiv.classList.add("product")
     productLink = `<a href="../dashboard/item.html?id=${product.id}" class="product-link">`;
@@ -118,7 +118,7 @@ products.forEach((product) => {
                     <label for="text" class="price">$${product.price}</label>
                     <label for="text" class="price1">instock ${product.instock}</label>
                 </div>
-                <div class="btn">
+                <div class="btn"  id="btnContainer-${product.id}">
                     <button class="cart" id="cart" onclick="addToCart(${product.id})">Add to cart</button>
                 </div>
             </div>
@@ -127,7 +127,7 @@ products.forEach((product) => {
     `;
     drinkContainer.appendChild(productDiv)
 })
-products.forEach((product) => {
+products.slice(0, 8).forEach((product) => {
     let productDiv = document.createElement("div")
     productDiv.classList.add("product")
     productLink = `<a href="../dashboard/item.html?id=${product.id}" class="product-link">`;
@@ -149,7 +149,7 @@ products.forEach((product) => {
                     <label for="text" class="price">$${product.price}</label>
                     <label for="text" class="price1">instock ${product.instock}</label>
                 </div>
-                <div class="btn">
+                <div class="btn"  id="btnContainer-${product.id}">
                     <button class="cart" id="cart" onclick="addToCart(${product.id})">Add to cart</button>
                 </div>
             </div>
@@ -168,23 +168,23 @@ function addToCart(id) {
     //check product already exist in cart
     if(cart.some((item) => item.id === id)){
         changeNumberOfUnite("plus", id)
+
     }else{
         const item = products.find((product) => product.id === id)
         const product = products.find((product) => product.id === id)
         cart.push({
             ...item,
             ...product,
-            numberOfUnits: 1,
+            numberOfUnits: 1
         })
         const btnContainer = document.getElementById(`btnContainer-${product.id}`)
         btnContainer.innerHTML = `
             <div class="product-count" id="product-count">
                 <button class="product-cartcount" onclick="changeNumberOfUnite('minus',${id})">-</button>
                 <label for="text" class="product-counttxt" id="proCountBtn-${id}">1</label>
-                <button class="product-cartcount" onclick="changeNumberOfUnite('plus',${id})">+</button>
+                <button class="product-cartcount" id="productBotton-${id}" onclick="changeNumberOfUnite('plus',${id}); reduceInstock(${id})">+</button>
             </div>
         `;
-
     }
 
     updateCart();
@@ -192,6 +192,7 @@ function addToCart(id) {
 
 }
 showProduct()
+
 
 //update cart
 function updateCart() {
@@ -217,7 +218,6 @@ function renderSubTotal(){
     totalcartitem.innerHTML =  `(${totalItem} item)`
     totalCartDashboard.innerHTML =  `${totalItem}`
 }
-
 // render cart item
 function renderCartItem(){
     cartItemElement.innerHTML = ""; 
@@ -275,7 +275,7 @@ function changeNumberOfUnite(action, id){
             ...item,
             numberOfUnits
         }
-        return item;
+        
     });
     cart = cart.filter((item) => item.numberOfUnits > 0);
     const item = cart.find((p) => p.id === id)
@@ -295,3 +295,23 @@ function changeNumberOfUnite(action, id){
     
 }
 
+function reduceInstock(id){
+    const product = products.find(p => p.id === id);
+    if(product && product.instock > 0){
+        product.instock -= 1;
+
+        //update the Dom
+        const stockElm = document.getElementById(`stock-${id}`)
+        stockElm.textContent = `in stock: ${product.instock}`;
+
+        // disable btn if out of stock
+        if(product.instock === 0){
+            const button = document.getElementById(`productBotton-${id}`)
+            button.disableed = true;
+            button.textContent = "Out of stock";
+        }else {
+            alert("product is out of stock")
+        }
+    }
+}
+updateCart()

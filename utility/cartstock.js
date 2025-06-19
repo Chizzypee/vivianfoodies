@@ -96,7 +96,7 @@ function renderCartItem(){
                         <button class="pro-cartcount" onclick="changeNumberOfUnite('plus',${item.id})">+</button>
                     </div>
                     <div class="cartremove">
-                        <button class="remove" onclick="removeCartItem(${item.id})">Remove</button>
+                        <i class="fa-solid fa-trash-can remove" onclick="removeCartItem(${item.id})"></i>
                     </div>
                 </div>
             <label for="text" class="cart-priceee" id="totalsub">$${item.price * item.numberOfUnits}</label>

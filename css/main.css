@@ -204,7 +204,7 @@ nav{
     flex-direction: column;
     gap: 5px;
     /* background-color: darkgreen; */
-    width: 50%;
+    width: 35%;
     height: 20vh;
     justify-content: center;
     align-items: start;
@@ -446,7 +446,6 @@ nav{
     align-items: center;
     justify-content: center;
 }
-
 .pro-btn-show{
     display: flex;
     flex-direction: row;
@@ -474,11 +473,12 @@ nav{
     align-items: center;
     width: 50%;
     height: 5vh;
+    /* background-color: red; */
 }
 .pro-counting{
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 20%;
     height: 20vh;
     /* background-color: hotpink; */
     align-items: center;
@@ -489,7 +489,7 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 40%;
     height: 20vh;
     /* background-color: red; */
 }
@@ -503,36 +503,36 @@ nav{
     /* background-color: red; */
 }
 .product-cartcount{
-    border: 1px solid green;
     background-color: green;
     width: 30%;
-    height: 7vh;
+    height: 8vh;
     border: none;
     color: white;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 25px;
     cursor: pointer;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-radius: 3px;
 }
 .pro-cartcount{
     border: 1px solid green;
     background-color: green;
-    width: 20%;
+    width: 25%;
     height: 5vh;
     border: none;
     color: white;
     font-weight: 600;
     font-size: 17px;
     cursor: pointer;
+    border-radius: 3px;
 }
 .product-counttxt{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40%;
-    /* border: 1px solid green; */
     height: 7vh;
     color: white;
     font-size: 14px;
@@ -545,8 +545,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
-    border: 1px solid green;
+    width: 30%;
     height: 5vh;
     color: white;
     font-size: 14px;
@@ -608,7 +607,7 @@ nav{
     border-top: none;
     border-left: none;
     border-right: none;
-    padding: 10px;
+    padding: 15px;
     font-weight: 500;
 }
 .menu-nav:hover{
@@ -634,6 +633,7 @@ nav{
     align-items: center;
     justify-content: flex-end;
     width: 200%;
+    margin-right: 15px;
 }
 .nav-logo{
     display: flex;
@@ -1022,12 +1022,6 @@ nav{
     justify-content: flex-end;
     align-items: center;
 }
-.navCall a{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
 .profile{
     width: 10%;
 }
@@ -1219,7 +1213,7 @@ nav{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 50vh;
+    height: 25vh;
 }
 .itemImg{
     width: 10%;
@@ -1247,7 +1241,7 @@ nav{
 .itemrapper{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     gap: 10px;
 }
 .itemtext{
@@ -1296,6 +1290,7 @@ nav{
     border: none;
     color: white;
     font-size: 14px;
+    border-radius: 3px;
 }
 .carty{
     display: flex;
@@ -1405,6 +1400,9 @@ nav{
 }
 .infomate p{
     text-align: center;
+}
+.infomate span{
+    font-weight: 500;
 }
 .infor-head{
     display: flex;
@@ -1551,10 +1549,8 @@ nav{
     width: 50%;
 }
 .cartremove .remove{
-    background-color: red;
     border: none;
     padding: 5px;
-    color: white;
 }
 /* ITEM */
 .similier-pro{
@@ -1676,7 +1672,7 @@ nav{
     display: flex;
     flex-direction: column;
     background-color: #ddd;
-    height: 40vh;
+    height: 60vh;
     width: 100%;
 }
 .footer-content{
@@ -1696,6 +1692,7 @@ nav{
     margin-top: 15px;
     color: black;
     font-weight: 600;
+    gap: 10px;
 }
 .backtop{
     width: 2%;
@@ -1725,6 +1722,9 @@ nav{
     width: 25%;
     align-items: center;
     justify-content: center;
+}
+.title h1{
+    color: green;
 }
 .footer-link ul{
     gap: 50px;
@@ -2083,7 +2083,7 @@ nav{
     font-size: 13px;
 }
 .title1{
-    display: none;
+    display: flex;
     flex-direction: column;
     height: 10vh;
     gap: 20px;
@@ -2207,16 +2207,16 @@ nav{
         font-size: 20px;
     }
     .food-slid{
-        width: 500%;
+        width: 530%;
     }
     .food-slid1{
-        width: 500%;
+        width: 530%;
     }
     .food-slid2{
-        width: 500%;
+        width: 530%;
     }
     .food-slid3{
-        width: 500%;
+        width: 530%;
     }
     .item-imgBig{
         height: 39vh;
@@ -2239,6 +2239,12 @@ nav{
     .cart{
         font-size: 20px;
     }
+    .product-cartcount{
+        height: 6vh;
+    }
+    .product-counttxt{
+        height: 6vh;
+    }
     .infomate{
         margin: 0px;
         padding-bottom: 30px;
@@ -2249,10 +2255,10 @@ nav{
     .footer-container{
         justify-content: center;
         align-items: center;
+        height: 50vh;
     }
     .footer-content{
         gap: 20px;
-        height: 70vh;
     }
     .footer-link{
         flex-direction: column;
@@ -2292,14 +2298,10 @@ nav{
     /* CART DETAILS */
 
     .carthead {
-        margin: 0px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px;
         margin-top: 80px;
-    }
-    .carthead p{
-        margin-left: 20px;
-    }
-    .carthead a{
-        margin-left: 20px;
     }
     .details-con{
         flex-direction: column;
@@ -2485,7 +2487,7 @@ nav{
         font-size: 20px;
     }
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 700px){
     .circle{
         display: none;
     }
@@ -2590,6 +2592,13 @@ nav{
     }
     .cart{
         font-size: 20px;
+        height: 6vh;
+    }
+    .product-cartcount{
+        height: 6vh;
+    }
+    .product-counttxt{
+        height: 6vh;
     }
     .infomate{
         margin: 0px;
@@ -2601,14 +2610,15 @@ nav{
     .footer-container{
         justify-content: center;
         align-items: center;
+        height: 40vh;
     }
     .footer-content{
         gap: 20px;
-        height: 70vh;
     }
     .footer-link{
         flex-direction: column;
         margin: 0px;
+        
     }
     .footer-link ul{
         display: none;
@@ -2635,6 +2645,7 @@ nav{
     }
     .copyhead{
         margin-left: 20px;
+        
     }
     
 
@@ -2645,11 +2656,11 @@ nav{
         margin-top: 100px;
     }
     .carthead p{
-        margin-left: 20px;
+        margin-left: 50px;
         font-size: 20px;
     }
     .carthead a{
-        margin-left: 20px;
+        margin-left: 50px;
         font-size: 20px;
     }
     .details-con{
@@ -2711,7 +2722,10 @@ nav{
         margin: 0px;
     }
     .description-img{
-        width: 10%;
+        width: 5%;
+    }
+    .desc-box{
+        border: none;
     }
     .section{
         font-size: 23px;
@@ -2798,7 +2812,7 @@ nav{
         font-size: 25px;
     }
     .cart-note1{
-        width: 90%;
+        width: 100%;
         height: 15vh;
     }
     .cartsubtotal{
@@ -2829,21 +2843,21 @@ nav{
         width: 100%;
     }
     .checkoutbtn{
-        width: 80%;
+        width: 90%;
         margin-left: 40px;
         height: 5vh;
         font-size: 20px;
     }
     .checkoutbtn1{
         width: 100%;
-        height: 5vh;
+        height: 6vh;
         font-size: 20px;
         background-color: green;
         border: none;
         color: white;
     }
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: px){
     .circle{
         display: flex;
     }
@@ -2851,7 +2865,7 @@ nav{
         gap: 10px;
     }
     .side-cart{
-        width: 40%;
+        width: 35%;
     }
     .side-con{
         width: 100%;
@@ -2872,7 +2886,7 @@ nav{
         width: 40%;
     }
     .side-link{
-        width: 100%;
+        width: 40%;
     }
     .sitename h1{
         display: flex;
@@ -2887,28 +2901,26 @@ nav{
         gap: 15px;
     }
     .profile{
-        width: 10%;
+        width: 20%;
     }
     .nav{
         display: flex;
-        height: 10vh;
     }
     .nav1{
         display: flex;
-        height: 15vh;
     }
     .hero-content{
-        height: 80vh;
+        height: 100vh;
     }
     .round{
-        height: 3vh;
-        padding: 2px;
+        height: 1vh;
+        padding: 4px;
     }
     .foodie{
         height: 100vh;
     }
     .item{
-        height: 100vh;
+        height: 80vh;
     }
     .foodie-head{
         justify-content: space-between;
@@ -2919,37 +2931,44 @@ nav{
         font-size: 20px;
     }
     .food-slid{
-        width: 250%;
+        width: 200%;
     }
     .food-slid1{
-        width: 250%;
+        width: 200%;
     }
     .food-slid2{
-        width: 250%;
+        width: 200%;
     }
     .food-slid3{
-        width: 250%;
+        width: 200%;
     }
     .item-imgBig{
-        height: 50vh;
+        height: 39vh;
     }
     .itemImgbig{
-        height: 30vh;
+        height: 20vh;
     }
     .information{
         height: auto;
     }
     .itemtext{
-        font-size: 23px;
+        font-size: 20px;
     }
     .price{
-        font-size: 23px;
+        font-size: 20px;
     }
     .price1{
-        font-size: 23px;
+        font-size: 20px;
     }
     .cart{
         font-size: 20px;
+        height: 6vh;
+    }
+    .product-cartcount{
+        height: 6vh;
+    }
+    .product-counttxt{
+        height: 6vh;
     }
     .infomate{
         margin: 0px;
@@ -2961,19 +2980,18 @@ nav{
     .footer-container{
         justify-content: center;
         align-items: center;
-        height: 50vh;
+        height: 40vh;
     }
     .footer-content{
         gap: 20px;
-        background-color: #eeeeee;
     }
     .footer-link{
         flex-direction: column;
         margin: 0px;
+        
     }
-
     .footer-link ul{
-        display: flex;
+        display: none;
     }
     .title{
         width: 100%;
@@ -2983,21 +3001,21 @@ nav{
     .title1con p{
         font-size: 18px;
     }
-    .f-img1{
+    .t-img{
         width: 10%;
     }
     .footer-social{
-        display: flex;
+        display: none;
     }
     .footer-copyright{
-       display: flex;
+       display: none;
     }
     .footer-copyrightmMKT{
         gap: 20px;
-        display: none;
     }
     .copyhead{
         margin-left: 20px;
+        
     }
     
 
@@ -3008,11 +3026,11 @@ nav{
         margin-top: 100px;
     }
     .carthead p{
-        margin-left: 20px;
+        margin-left: 50px;
         font-size: 20px;
     }
     .carthead a{
-        margin-left: 20px;
+        margin-left: 50px;
         font-size: 20px;
     }
     .details-con{
@@ -3074,7 +3092,10 @@ nav{
         margin: 0px;
     }
     .description-img{
-        width: 10%;
+        width: 5%;
+    }
+    .desc-box{
+        border: none;
     }
     .section{
         font-size: 23px;
@@ -3161,7 +3182,7 @@ nav{
         font-size: 25px;
     }
     .cart-note1{
-        width: 90%;
+        width: 100%;
         height: 15vh;
     }
     .cartsubtotal{
@@ -3192,14 +3213,14 @@ nav{
         width: 100%;
     }
     .checkoutbtn{
-        width: 80%;
+        width: 90%;
         margin-left: 40px;
         height: 5vh;
         font-size: 20px;
     }
     .checkoutbtn1{
         width: 100%;
-        height: 5vh;
+        height: 6vh;
         font-size: 20px;
         background-color: green;
         border: none;

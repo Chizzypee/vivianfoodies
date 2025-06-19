@@ -50,7 +50,7 @@ function updateCart() {
                     <label for="text" class="itemtextdesc">${itemProduct.description}</label>
                 </div>
                 <div class="d2">
-                    <div class="btn">
+                    <div class="btn" id="btnContainer-${itemProduct.id}">
                         <button class="cart" id="addcart" onclick="addToCart(${itemProduct.id})">Add to cart</button>
                     </div>
                     <div class="btn">
@@ -86,13 +86,24 @@ function updateCart() {
         changeNumberOfUnite("plus", id)
     }else{
         const item = products.find((product) => product.id === id)
+        const itemProduct = products.find((product) => product.id === id)
         cart.push({
             ...item,
-            numberOfUnits: 1,
+            itemProduct,
+            numberOfUnits: 1
         })
+
+         const btnContainer = document.getElementById(`btnContainer-${itemProduct.id}`)
+            btnContainer.innerHTML = `
+                <div class="product-count" id="product-count">
+                    <button class="product-cartcount" onclick="changeNumberOfUnite('minus',${id})">-</button>
+                    <label for="text" class="product-counttxt" id="proCountBtn-${id}">1</label>
+                    <button class="product-cartcount" id="productBotton-${id}" onclick="changeNumberOfUnite('plus',${id})">+</button>
+                </div>
+            `;
     }
         updateCart();
-    }
+}
 
 
 
@@ -117,7 +128,7 @@ function renderSubTotal(){
 function renderCartItem(){
     cartItemElement.innerHTML = ""; 
     cart.forEach((item) => {
-        cartItemElement.innerHTML += `
+    cartItemElement.innerHTML += `
     <div class="pro-wallattopup">
         <div class="wallat-con">
             <div class="pro-btn-show">
@@ -134,7 +145,7 @@ function renderCartItem(){
                     <button class="pro-cartcount" onclick="changeNumberOfUnite('plus',${item.id})">+</button>
                 </div>
                 <div class="pro-counting">
-                    <button class="remove" onclick="removeCartItem(${item.id})">Remove</button>
+                    <i class="fa-solid fa-trash-can remove" onclick="removeCartItem(${item.id})"></i>
                 </div>
             </div>
         </div>
@@ -155,7 +166,7 @@ function changeNumberOfUnite(action, id){
     cart = cart.map((item) => {
         let numberOfUnits = item.numberOfUnits 
         if(item.id === id){
-            if(action === "minus" && numberOfUnits > 1){
+            if(action === "minus"){
                 numberOfUnits-- 
             }else if(action === "plus" && numberOfUnits <= item.instock){
                 numberOfUnits++
@@ -167,6 +178,18 @@ function changeNumberOfUnite(action, id){
             numberOfUnits
         }
     });
+    cart = cart.filter((item) => item.numberOfUnits > 0);
+    const item = cart.find((p) => p.id === id)
+    const btnContainer = document.getElementById(`btnContainer-${id}`)
+    const quantityBNT = document.getElementById(`proCountBtn-${id}`)
+
+    if(item){
+        quantityBNT.innerText = item.numberOfUnits;
+    }else{
+        btnContainer.innerHTML = `
+            <button class="cart" id="cart" onclick="addToCart(${id})">Add to cart</button>
+        `
+    }
     updateCart()
     
 }

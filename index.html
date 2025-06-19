@@ -6,8 +6,6 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    
-
 </head>
 <body>
     <div class="container">
@@ -39,7 +37,6 @@
                                         <div class="menu-nav">
                                             <li><a href="">Sale</a></li>
                                             <i class="fa-solid fa-chevron-right"></i>
-                                            <!-- <i class="fa-solid fa-chevron-right"></i> -->
                                         </div>
                                     </ul>
                                 </div>
@@ -190,7 +187,6 @@
                                         </div>
                                     </ul>
                                 </div>
-
                             <div class="menu-nav" id="menuNav" onclick="navOpen7()">
                                 <li>Alcohol</li>
                                 <i class="fa-solid fa-angles-right"></i>
@@ -247,14 +243,11 @@
                 </div>
                 <div class="nav-call">
                     <div class="navCall">
-                        <img src="./icon/search.png" class="profile" onclick="openWishlist()">
-                        
-                        <img src="./icon/profile.png" class="profile">
-                       
-                         <i class="fa-solid fa-cart-plus profile" onclick="openCart()"></i>
-            
-                        <div class="cartsignal" id="cartsignal">
-                            <label for="text" class="signalcount" onclick="openCart()">0</label>
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-cart-plus profile" onclick="openCart()"></i>
+                        <div class="cartsignal" id="cartsignal" onclick="openCart()">
+                            <label for="text" class="signalcount">0</label>
                         </div>
                     </div>
                     <div class="side-cart" id="sideCart">
@@ -298,16 +291,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="show-option">
-                    <div class="opt-con">
-                        <div class="option-right">
-                            <img src="../icon/download.png" class="optImg">
-                        </div>
-                        <div class="option-left">
-                            <img src="../icon/download.png" class="optImg">
                         </div>
                     </div>
                 </div>
@@ -452,7 +435,7 @@
                     <div class="foodie">
                         <img src="../icon/download.png" class="move" id="movebtn">
                         <div class="foodItem">
-                            <div class="food-slid">
+                            <div class="food-slid" id="foodSlid">
                                 <!-- <div class="foodcon">
                                 </div> -->
                             </div>
@@ -522,11 +505,105 @@
                         <div class="infor-head">
                             <p>Vivilious-Food: Online Grocery Store in Romania and Online Supermarket</p>
                         </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas ut harum ex architecto inventore recusandae nam odit ducimus quia iusto nulla reprehenderit commodi quisquam sed qui ea atque expedita, animi maxime fugiat excepturi doloribus facere consectetur eum! Modi et explicabo repellat unde ab ipsum quia debitis, commodi fugiat vel quasi deserunt officiis a molestias sequi ratione dolores corporis labore at. Odit impedit maxime sint earum voluptate itaque doloribus magnam officia, rem doloremque! Tempore, distinctio nemo. At dolorum aspernatur alias recusandae enim mollitia ad accusamus sed cupiditate iste. Facere blanditiis illo deserunt laboriosam quod. Nostrum quasi magnam iusto quod temporibus a?</p>
+                        <p>Why <span>Vivilious-Food</span> is the Best Online Grocery Supermarket in Romania
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi numquam veniam ducimus expedita, incidunt enim facilis odio corrupti a delectus recusandae, debitis consectetur eum architecto, necessitatibus natus libero. Voluptatem officiis labore incidunt pariatur possimus, nesciunt iste illum libero expedita, commodi corrupti ea quos aliquid sunt temporibus nihil harum! Odio voluptate eveniet perferendis itaque consequatur? Qui eligendi minima sit commodi odit deleniti cumque incidunt dignissimos. Sit minima molestiae magnam consectetur, dolore delectus repellendus, voluptatibus quia consequuntur harum doloremque sint soluta iure sequi illo explicabo nam fugit libero laudantium. Sint officiis iusto aliquid maiores minus ex, recusandae officia eius mollitia soluta, voluptatem at repellat nihil? Quidem sit voluptate veritatis molestias laborum nisi fuga eum, ad distinctio! Voluptas sapiente, dignissimos repudiandae voluptate debitis quibusdam dicta commodi blanditiis, dolor culpa animi architecto consequuntur placeat necessitatibus soluta explicabo veniam esse. Quisquam impedit dolor doloribus, soluta, quis cumque reprehenderit ullam molestias delectus cupiditate a. Adipisci, modi! Et, autem omnis. Unde, magnam. Porro dicta vel soluta nihil accusantium maxime nam recusandae laborum saepe deleniti modi, necessitatibus, illo alias? Rerum harum expedita, quis et quaerat deserunt mollitia quas quibusdam dicta repellendus sapiente in, iure tempore. Voluptates ad molestias nisi tempore, inventore, rem doloremque cupiditate quos vel voluptatem cum!</p>
+                    In a rapidly evolving digital landscape where convenience meets necessity, Vivilious Food has positioned itself as a standout leader in Romania’s online grocery market. Unlike traditional supermarkets struggling to adapt to online demand, Vivilious Food was born digital—built from the ground up with customer-centric values, technology-first thinking, and a deep respect for quality, local partnerships, and innovation. Here's why it stands out as the best:</p>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi numquam veniam ducimus expedita, incidunt enim facilis odio corrupti a delectus recusandae, debitis consectetur eum architecto, necessitatibus natus libero. Voluptatem officiis labore incidunt pariatur possimus, nesciunt iste illum libero expedita, commodi corrupti ea quos aliquid sunt temporibus nihil harum! Odio voluptate eveniet perferendis itaque consequatur? Qui eligendi minima sit commodi odit deleniti cumque incidunt dignissimos. Sit minima molestiae magnam consectetur, dolore delectus repellendus, voluptatibus quia consequuntur harum doloremque sint soluta iure sequi illo explicabo nam fugit libero laudantium. Sint officiis iusto aliquid maiores minus ex, recusandae officia eius mollitia soluta, voluptatem at repellat nihil? Quidem sit voluptate veritatis molestias laborum nisi fuga eum, ad distinctio! Voluptas sapiente, dignissimos repudiandae voluptate debitis quibusdam dicta commodi blanditiis, dolor culpa animi architecto consequuntur placeat necessitatibus soluta explicabo veniam esse. Quisquam impedit dolor doloribus, soluta, quis cumque reprehenderit ullam molestias delectus cupiditate a. Adipisci, modi! Et, autem omnis. Unde, magnam. Porro dicta vel soluta nihil accusantium maxime nam recusandae laborum saepe deleniti modi, necessitatibus, illo alias? Rerum harum expedita, quis et quaerat deserunt mollitia quas quibusdam dicta repellendus sapiente in, iure tempore. Voluptates ad molestias nisi tempore, inventore, rem doloremque cupiditate quos vel voluptatem cum!</p>
+                    <p>1. <span> Product Quality: Handpicked, Fresh, and Local</span>
+
+                    Vivilious Food distinguishes itself with an uncompromising approach to quality. While many grocery platforms focus on quantity and variety, Vivilious emphasizes the caliber of the items it delivers:
+
+                    Freshness guaranteed: All produce and perishables are sourced daily and inspected before delivery.
+
+                    Locally sourced: Vivilious partners with Romanian farmers, artisans, and small-scale producers to support local economies while providing customers with farm-fresh ingredients and traditional goods.
+
+                    International imports: The store also includes a carefully curated selection of premium international products not easily available in standard Romanian supermarkets—offering a unique, high-end assortment.
+
+
+                    This blend of local authenticity and global variety sets Vivilious apart from traditional retailers and general e-commerce platforms.</p>
+
+                    <p> 2. <span> User Experience: Smart, Fast, and Simple</span>
+
+                    One of the core reasons customers prefer Vivilious is the intuitive digital shopping experience:
+
+                    Clean interface: The website and app are fast, modern, and extremely user-friendly—even for those not very tech-savvy.
+
+                    AI-based recommendations: Intelligent systems suggest products based on dietary needs, preferences, and previous orders.
+
+                    Customized shopping lists: Regular shoppers can save and reorder their favorite items in just a few clicks.
+
+                    Real-time inventory: Shoppers never have to worry about out-of-stock surprises at checkout.
+
+                    This focus on usability demonstrates Vivilious’s understanding that online grocery shopping should save time, not add stress.</p>
+
+                    <p>3. <span> and Reliable Delivery: On-Time, Every Time</span>
+
+                    Delivery is where many online grocery services fall short—but not Vivilious. Their logistics system is:
+
+                    Incredibly reliable: Delivery windows are honored with near-perfect accuracy.
+
+                    Eco-friendly: Orders are delivered in sustainable, recyclable packaging, and electric vehicles are increasingly used to reduce environmental impact.
+
+                    Cold chain integrity: Frozen and chilled goods are transported in temperature-controlled packaging to preserve freshness.
+
+                    Whether you're ordering from Bucharest, Cluj, Timișoara, or smaller towns, Vivilious ensures professional, punctual delivery you can count on.</p>
+
+                   <p>4.,<span> Customer-Centric Philosophy: Support That Cares</span>
+
+                    What truly elevates Vivilious above competitors is their exceptional customer service:
+
+                    Responsive support: Chat and phone support are available with knowledgeable agents who actually solve problems—not read scripts.
+
+                    Easy returns and refunds: If something goes wrong, replacements or refunds are processed promptly with minimal hassle.
+
+                    Listening to feedback: Customer suggestions are taken seriously and often lead to tangible improvements in service and selection.
+
+
+                    This consistent, human-focused service builds trust and turns first-time users into loyal customers.</p>
+
+                    <p>5. <span>Categories for Every Diet & Lifestyle</span>
+
+                    Vivilious understands that modern consumers have diverse needs, so they offer specialized sections like:
+
+                    Organic & bio-certified products
+
+                    Gluten-free, vegan, and keto selections
+
+                    Artisan Romanian specialties from independent producers
+
+                    Pet food, eco-cleaning supplies, and household items
+
+
+                    This wide-ranging catalog means you can do your entire weekly shop—from apples to eco-laundry detergent—without leaving the platform.</p>
+
+                    <p>6. <span>Pricing & Loyalty Perks</span>
+
+                    No surprise fees: Prices are always clear, and delivery charges are upfront.
+
+                    Loyalty points and rewards: Frequent shoppers earn discounts, special offers, and early access to promotions.
+
+                    Seasonal campaigns: Romanian holidays, Orthodox Easter, Christmas, or harvest season come with thematic bundles and deals.
+
+
+                    Rather than racing to the bottom on pricing (as many competitors do), Vivilious focuses on value for money, combining premium products with fair prices and perks.</p>
+
+                    <p>7. <span> Vision for the Future:</span> Innovation and Community
+
+                    Vivilious isn’t just a store—it’s a movement toward a smarter, more sustainable food ecosystem in Romania:
+
+                    Educational content: Their blog and social media educate consumers on food waste reduction, healthy eating, and Romanian food heritage.
+
+                    Zero-waste goals: The company is working toward a circular supply model and partners with charities to donate surplus food.
+
+                    Tech-forward development: With plans to incorporate AI-driven meal planning, voice shopping, and even smart fridge compatibility, Vivilious is already ahead of the curve.
+
+                    Conclusion: More Than Just a Grocery Store
+
+                    Vivilious Food is not merely an online supermarket. It’s a trusted food partner, a supporter of Romanian producers, an innovator in digital commerce, and a customer-first brand that respects time, health, and sustainability. In a market crowded with options, Vivilious stands out because it delivers more than groceries—it delivers trust, quality, and peace of mind.
+
+                    For Romanians seeking an elevated shopping experience without the chaos of crowded supermarkets or the uncertainty of mass retailers, Vivilious Food is hands down the best choice.</p>
+
+                        
                     </div>
                 </div>
             </div>
@@ -539,7 +616,6 @@
                     <a href="#">
                         <p>Back to the top</p>
                         <i class="fa-solid fa-chevron-down backtop"></i>
-                        <!-- <img src="../icon/download.png" class="backtop"> -->
                     </a>
                 </div>
                 <div class="footer-social">
