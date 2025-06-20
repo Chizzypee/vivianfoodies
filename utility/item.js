@@ -38,40 +38,45 @@ function updateCart() {
         products.forEach(() =>{
             let details = document.querySelector(".details-con")
             details.innerHTML = `
-            <div class="details-con" id="detailsCon">
-            <div class="details-right">
-                <img src="${itemProduct.imgSrc}" class="itemImgbig1">
+        <div class="details-con" id="detailsCon">
+            <div class="details-sep">
+                <div class="details-right">
+                    <img src="${itemProduct.imgSrc}" class="itemImgbig1">
+                </div>
+                <div class="details-left">
+                    <div class="d1">
+                        <label for="text" class="section">Dashboard / item</label>
+                        <label for="text" class="cart-item-title cart-item-title1">${itemProduct.name}</label>
+                        <label for="text" class="cart-price cart-price1">${itemProduct.price}</label>
+                        <label for="text" class="itemtextdesc">${itemProduct.description}</label>
+                    </div>
+                    <div class="d2">
+                        <div class="btn" id="btnContainer-${itemProduct.id}">
+                            <button class="cart" id="addcart" onclick="addToCart(${itemProduct.id})">Add to cart</button>
+                        </div>
+                        <div class="btn">
+                            <button class="checkout-itemBtn" id="checkout-btn">Check out</button>
+                        </div>
+                    </div>
+                    <div class="d2">
+                        <img src="../icon/heart.png" class="wishlist">
+                            <label for="text" class="details-wishlist" >Add to wishlist</label>
+                    </div>
+                    <div class="description-con" onclick="openDescription()">
+                        <p>Description</p>
+                        <img src="../icon/search.png" class="description-img">
+                    </div>
+                    
+                    <div class="d1">
+                        <p>Share</p>
+                    </div>
+                </div>
             </div>
-            <div class="details-left">
-                <div class="d1">
-                    <label for="text" class="section">Dashboard / item</label>
-                    <label for="text" class="cart-item-title cart-item-title1">${itemProduct.name}</label>
-                    <label for="text" class="cart-price cart-price1">${itemProduct.price}</label>
-                    <label for="text" class="itemtextdesc">${itemProduct.description}</label>
-                </div>
-                <div class="d2">
-                    <div class="btn" id="btnContainer-${itemProduct.id}">
-                        <button class="cart" id="addcart" onclick="addToCart(${itemProduct.id})">Add to cart</button>
-                    </div>
-                    <div class="btn">
-                        <button class="checkout-itemBtn" id="checkout-btn">Check out</button>
-                    </div>
-                </div>
-                <div class="d2">
-                    <img src="../icon/heart.png" class="wishlist">
-                        <label for="text" class="details-wishlist" >Add to wishlist</label>
-                </div>
-                <div class="description-con" onclick="openDescription()">
-                    <p>Description</p>
-                    <img src="../icon/search.png" class="description-img">
-                </div>
+            <div class="details-sep">
                 <div class="desc-box" id="descBox">
-                    <button class="desc-x" onclick="closeDescription()">x</button>
+                        <button class="desc-x" onclick="closeDescription()">x</button>
                         <label for="text" class="desc">${itemProduct.desc}</label>
-                </div>
-                <div class="d1">
-                    <p>Share</p>
-                </div>
+                    </div>
             </div>
         </div>
             `

@@ -2289,6 +2289,16 @@ nav{
     }
     .footer-copyrightmMKT{
         gap: 20px;
+        width: 100%;
+    }
+    .footer-copyrightmMKT ul{
+        gap: 10px;
+        width: 0%;
+        margin: 0px;
+    }
+    .footer-copyrightmMKT ul li{
+        background-color: red;
+        width: 50%;
     }
     .copyhead{
         margin-left: 20px;
@@ -2309,6 +2319,12 @@ nav{
         align-items: center;
         width: 100%;
         gap: 10px;
+    }
+    .details-sep{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .details-right{
         height: 40vh;
@@ -2487,7 +2503,7 @@ nav{
         font-size: 20px;
     }
 }
-@media screen and (min-width: 700px){
+@media screen and (min-width: 600px){
     .circle{
         display: none;
     }
@@ -2519,10 +2535,10 @@ nav{
         width: 100%;
     }
     .sitename h1{
-        display: none;
+        display: flex;
     }
     .siteimg{
-        width: 15%;
+        width: 10%;
     }
     .navSearch{
         display: none;
@@ -2540,7 +2556,7 @@ nav{
         display: none;
     }
     .hero-content{
-        height: 50vh;
+        height: 70vh;
     }
     .round{
         height: 1vh;
@@ -2550,7 +2566,7 @@ nav{
         height: 100vh;
     }
     .item{
-        height: 70vh;
+        height: 80vh;
     }
     .foodie-head{
         justify-content: space-between;
@@ -2561,44 +2577,44 @@ nav{
         font-size: 20px;
     }
     .food-slid{
-        width: 400%;
+        width: 380%;
     }
     .food-slid1{
-        width: 400%;
+        width: 380%;
     }
     .food-slid2{
-        width: 400%;
+        width: 380%;
     }
     .food-slid3{
-        width: 400%;
+        width: 380%;
     }
     .item-imgBig{
-        height: 39vh;
+        height: 43vh;
     }
     .itemImgbig{
-        height: 20vh;
+        height: 25vh;
     }
     .information{
         height: auto;
     }
     .itemtext{
-        font-size: 23px;
+        font-size: 20px;
     }
     .price{
-        font-size: 23px;
+        font-size: 18px;
     }
     .price1{
-        font-size: 23px;
+        font-size: 15px;
     }
     .cart{
-        font-size: 20px;
-        height: 6vh;
+        font-size: 15px;
+        height: 7vh;
     }
     .product-cartcount{
-        height: 6vh;
+        height: 7vh;
     }
     .product-counttxt{
-        height: 6vh;
+        height: 7vh;
     }
     .infomate{
         margin: 0px;
@@ -2610,7 +2626,7 @@ nav{
     .footer-container{
         justify-content: center;
         align-items: center;
-        height: 40vh;
+        height: 60vh;
     }
     .footer-content{
         gap: 20px;
@@ -2670,6 +2686,10 @@ nav{
         width: 98%;
         gap: 10px;
     }
+    .details-sep{
+        display: flex;
+        flex-direction: row;
+    }
     .details-right{
         height: 50vh;
     }
@@ -2678,7 +2698,7 @@ nav{
         width: 90%;
     }
     .itemImgbig1{
-        height: 40vh;
+        height: 30vh;
     }
     .pro-wallattopup{
         width: 99%;
@@ -2701,7 +2721,7 @@ nav{
         font-size: 23px;
     }
     .itemtextdesc{
-        font-size: 20px;
+        font-size: 15px;
     }
     .d2{
         flex-direction: column;
@@ -2857,7 +2877,7 @@ nav{
         color: white;
     }
 }
-@media screen and (min-width: px){
+@media screen and (min-width: 1024px){
     .circle{
         display: flex;
     }
@@ -2898,7 +2918,7 @@ nav{
         display: flex;
     }
     .navCall{
-        gap: 15px;
+        /* gap: 15px; */
     }
     .profile{
         width: 20%;
@@ -2910,7 +2930,7 @@ nav{
         display: flex;
     }
     .hero-content{
-        height: 100vh;
+        height: 70vh;
     }
     .round{
         height: 1vh;
@@ -2943,10 +2963,11 @@ nav{
         width: 200%;
     }
     .item-imgBig{
-        height: 39vh;
+        height: 45vh;
+        gap: 30px;
     }
     .itemImgbig{
-        height: 20vh;
+        height: 28vh;
     }
     .information{
         height: auto;
@@ -2955,20 +2976,20 @@ nav{
         font-size: 20px;
     }
     .price{
-        font-size: 20px;
+        font-size: 16px;
     }
     .price1{
-        font-size: 20px;
+        font-size: 16px;
     }
     .cart{
-        font-size: 20px;
-        height: 6vh;
+        font-size: 18px;
+        height: 7vh;
     }
     .product-cartcount{
-        height: 6vh;
+        height: 7vh;
     }
     .product-counttxt{
-        height: 6vh;
+        height: 7vh;
     }
     .infomate{
         margin: 0px;
@@ -2980,7 +3001,7 @@ nav{
     .footer-container{
         justify-content: center;
         align-items: center;
-        height: 40vh;
+        height: 70vh;
     }
     .footer-content{
         gap: 20px;
@@ -2991,7 +3012,13 @@ nav{
         
     }
     .footer-link ul{
-        display: none;
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+        width: 100%;
+    }
+    .footer-link ul li{
+        margin-left: 30px;
     }
     .title{
         width: 100%;
@@ -2999,19 +3026,20 @@ nav{
         flex-direction: row;
     }
     .title1con p{
-        font-size: 18px;
+        font-size: 20px;
     }
     .t-img{
-        width: 10%;
+        width: 5%;
     }
     .footer-social{
         display: none;
     }
     .footer-copyright{
-       display: none;
+       display: flex;
     }
     .footer-copyrightmMKT{
         gap: 20px;
+        display: none;
     }
     .copyhead{
         margin-left: 20px;
@@ -3064,14 +3092,15 @@ nav{
         gap: 10px;
     }
     .cart-item-title{
-        font-size: 24px;
+        font-size: 16px;
         margin: 0px;
     }
     .cart-price{
-        font-size: 23px;
+        font-size: 16px;
+        margin: 0px;
     }
     .itemtextdesc{
-        font-size: 20px;
+        font-size: 16px;
     }
     .d2{
         flex-direction: column;
@@ -3098,26 +3127,26 @@ nav{
         border: none;
     }
     .section{
-        font-size: 23px;
+        font-size: 17px;
     }
     .yourOrder{
-        font-size: 23px;
+        font-size: 17px;
     }
     .order-view a{
-        font-size: 23px;
+        font-size: 17px;
     }
     .subtotal{
-        font-size: 23px;
+        font-size: 19px;
     }
     .cartamount{
-        font-size: 23px;
+        font-size: 18px;
         /* margin-right: 40px; */
     }
     .cartnote{
         gap: 10px;
     }
     .cartnote p{
-        font-size: 20px;
+        font-size: 18px;
     }
     .cart-note{
         height: 12vh;
@@ -3216,12 +3245,12 @@ nav{
         width: 90%;
         margin-left: 40px;
         height: 5vh;
-        font-size: 20px;
+        font-size: 18px;
     }
     .checkoutbtn1{
         width: 100%;
         height: 6vh;
-        font-size: 20px;
+        font-size: 17px;
         background-color: green;
         border: none;
         color: white;
