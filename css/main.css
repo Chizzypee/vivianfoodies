@@ -2219,10 +2219,10 @@ nav{
         width: 530%;
     }
     .item-imgBig{
-        height: 39vh;
+        height: 40vh;
     }
     .itemImgbig{
-        height: 20vh;
+        height: 23vh;
     }
     .information{
         height: auto;
@@ -2240,10 +2240,10 @@ nav{
         font-size: 20px;
     }
     .product-cartcount{
-        height: 6vh;
+        height: 8vh;
     }
     .product-counttxt{
-        height: 6vh;
+        height: 8vh;
     }
     .infomate{
         margin: 0px;
@@ -2566,7 +2566,7 @@ nav{
         height: 100vh;
     }
     .item{
-        height: 80vh;
+        height: 70vh;
     }
     .foodie-head{
         justify-content: space-between;
@@ -2589,7 +2589,7 @@ nav{
         width: 380%;
     }
     .item-imgBig{
-        height: 43vh;
+        height: 35vh;
     }
     .itemImgbig{
         height: 25vh;

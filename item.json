@@ -1,0 +1,34 @@
+
+{
+    "Drinks":[
+        {
+             "id": 1,
+        "name": "vodka",
+        "imgSrc": "food/wine/vodka.jpeg"
+        },
+        {
+             "id": 2,
+        "name": "cock"
+        }
+    ],
+    "meat":[
+       {
+             "id": 1,
+        "name": "vodka"
+        },
+        {
+             "id": 2,
+        "name": "cock"
+        }
+    ],
+    "fruit":[
+       {
+             "id": 1,
+        "name": "vodka"
+        },
+        {
+             "id": 2,
+        "name": "cock"
+        }
+    ]
+}
