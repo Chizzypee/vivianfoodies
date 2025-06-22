@@ -2196,7 +2196,7 @@ nav{
         height: 100vh;
     }
     .item{
-        height: 75vh;
+        height: 85vh;
     }
     .foodie-head{
         justify-content: space-between;
@@ -2219,10 +2219,11 @@ nav{
         width: 530%;
     }
     .item-imgBig{
-        height: 40vh;
+        height: 53vh;
+        justify-content: space-between;
     }
     .itemImgbig{
-        height: 23vh;
+        height: 35vh;
     }
     .information{
         height: auto;
@@ -2566,7 +2567,7 @@ nav{
         height: 100vh;
     }
     .item{
-        height: 70vh;
+        height: 90vh;
     }
     .foodie-head{
         justify-content: space-between;
@@ -2577,22 +2578,23 @@ nav{
         font-size: 20px;
     }
     .food-slid{
-        width: 380%;
+        width: 350%;
     }
     .food-slid1{
-        width: 380%;
+        width: 350%;
     }
     .food-slid2{
-        width: 380%;
+        width: 350%;
     }
     .food-slid3{
-        width: 380%;
+        width: 350%;
     }
     .item-imgBig{
-        height: 35vh;
+        height: 55vh;
+        justify-content: space-between;
     }
     .itemImgbig{
-        height: 25vh;
+        height: 40vh;
     }
     .information{
         height: auto;
@@ -2933,14 +2935,18 @@ nav{
         height: 70vh;
     }
     .round{
-        height: 1vh;
+        height: 3vh;
         padding: 4px;
     }
     .foodie{
         height: 100vh;
     }
     .item{
-        height: 80vh;
+        height: 100vh;
+    }
+    .foodItem{
+        height: auto;
+        height: 100vh;
     }
     .foodie-head{
         justify-content: space-between;
@@ -2951,7 +2957,7 @@ nav{
         font-size: 20px;
     }
     .food-slid{
-        width: 200%;
+        width: 210%;
     }
     .food-slid1{
         width: 200%;
@@ -2963,11 +2969,11 @@ nav{
         width: 200%;
     }
     .item-imgBig{
-        height: 45vh;
+        height: 65vh;
         gap: 30px;
     }
     .itemImgbig{
-        height: 28vh;
+        height: 45vh;
     }
     .information{
         height: auto;
@@ -3251,6 +3257,383 @@ nav{
         width: 100%;
         height: 6vh;
         font-size: 17px;
+        background-color: green;
+        border: none;
+        color: white;
+    }
+}
+
+
+@media screen and (min-height: 1000px){
+    .circle{
+        display: none;
+    }
+    .staticNav{
+        gap: 10px;
+    }
+    .side-cart{
+        width: 60%;
+    }
+    .side-con{
+        width: 100%;
+    }
+    .product-con{
+        margin: 0px;
+    }
+    .pro-wallattopup{
+        margin-left: 5px;
+    }
+    .showtotalitem .p{
+        margin-left: 20px;
+    }
+    .cart-main-con{
+        width: 90%;
+    }
+    .side-nav{
+        width: 50%;
+    }
+    .side-link{
+        width: 100%;
+    }
+    .sitename h1{
+        display: flex;
+    }
+    .siteimg{
+        width: 10%;
+    }
+    .navSearch{
+        display: none;
+    }
+    .navCall{
+        gap: 15px;
+    }
+    .profile{
+        width: 20%;
+    }
+    .nav{
+        display: none;
+    }
+    .nav1{
+        display: none;
+    }
+    .hero-content{
+        height: 50vh;
+    }
+    .round{
+        height: 1vh;
+        padding: 4px;
+    }
+    .foodie{
+        height: 100vh;
+    }
+    .item{
+        height: 55vh;
+    }
+    .foodie-head{
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+    }
+    .foodie-head h2{
+        font-size: 20px;
+    }
+    .food-slid{
+        width: 250%;
+    }
+    .food-slid1{
+        width: 250%;
+    }
+    .food-slid2{
+        width: 250%;
+    }
+    .food-slid3{
+        width: 250%;
+    }
+    .item-imgBig{
+        height: 32vh;
+        justify-content: space-between;
+    }
+    .itemImgbig{
+        height: 20vh;
+    }
+    .information{
+        height: auto;
+    }
+    .itemtext{
+        font-size: 20px;
+    }
+    .price{
+        font-size: 18px;
+    }
+    .price1{
+        font-size: 15px;
+    }
+    .cart{
+        font-size: 15px;
+        height: 5vh;
+    }
+    .product-cartcount{
+        height: 5vh;
+    }
+    .product-counttxt{
+        height: 5vh;
+    }
+    .infomate{
+        margin: 0px;
+        padding-bottom: 30px;
+    }
+    .infor-head p{
+        font-size: 23px;
+    } 
+    .footer-container{
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    }
+    .footer-content{
+        gap: 20px;
+    }
+    .footer-link{
+        flex-direction: column;
+        margin: 0px;
+        
+    }
+    .footer-link ul{
+        display: none;
+    }
+    .title{
+        width: 100%;
+        justify-content: start;
+        flex-direction: row;
+    }
+    .title1con p{
+        font-size: 18px;
+    }
+    .t-img{
+        width: 10%;
+    }
+    .footer-social{
+        display: none;
+    }
+    .footer-copyright{
+       display: none;
+    }
+    .footer-copyrightmMKT{
+        gap: 20px;
+    }
+    .copyhead{
+        margin-left: 20px;
+        
+    }
+    
+
+    /* CART DETAILS */
+
+    .carthead {
+        margin: 0px;
+        margin-top: 100px;
+    }
+    .carthead p{
+        margin-left: 50px;
+        font-size: 20px;
+    }
+    .carthead a{
+        margin-left: 50px;
+        font-size: 20px;
+    }
+    .details-con{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 98%;
+        gap: 10px;
+    }
+    .details-sep{
+        display: flex;
+        flex-direction: row;
+    }
+    .details-right{
+        height: 50vh;
+    }
+    .details-left{
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    .itemImgbig1{
+        height: 30vh;
+    }
+    .pro-wallattopup{
+        width: 99%;
+    }
+    .Amount{
+        margin: 0px;
+        margin-left: 5px;
+    }
+    .Amount a{
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .cart-item-title{
+        font-size: 24px;
+        margin: 0px;
+    }
+    .cart-price{
+        font-size: 23px;
+    }
+    .itemtextdesc{
+        font-size: 15px;
+    }
+    .d2{
+        flex-direction: column;
+    }
+    .d1 p{
+        font-size: 22px;
+    }
+    .btn{
+        align-items: start;
+    }
+    .checkout-itemBtn{
+        width: 90%;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+    .description-con{
+        font-size: 20px;
+        margin: 0px;
+    }
+    .description-img{
+        width: 5%;
+    }
+    .desc-box{
+        border: none;
+    }
+    .section{
+        font-size: 23px;
+    }
+    .yourOrder{
+        font-size: 23px;
+    }
+    .order-view a{
+        font-size: 23px;
+    }
+    .subtotal{
+        font-size: 23px;
+    }
+    .cartamount{
+        font-size: 23px;
+        /* margin-right: 40px; */
+    }
+    .cartnote{
+        gap: 10px;
+    }
+    .cartnote p{
+        font-size: 20px;
+    }
+    .cart-note{
+        height: 12vh;
+    }
+
+    /* CART */
+
+    .cartContent{
+        width: 95%;
+    }
+    .cartorder-con{
+        gap: 0px;
+    }
+    .insdeorder1{
+        gap: 0px;
+        justify-content: center;
+    }
+    .cartbtn{
+        width: 100%;
+    }
+    .cartorder2{
+        flex-direction: row;
+        width: 40%;
+        justify-content: space-between;
+    }
+    .cart-count{
+        width: 100%;
+    }
+    .cart-priceee{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 20px;
+    }
+    .cartlist{
+        display: none;
+    }
+    .cartlisthead{
+        display: flex;
+        border-bottom: 1px solid grey;
+    }
+    .cartlisthead p{
+        font-size: 23px;
+        font-weight: 600;
+    }
+    .cartdetails{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        gap: 30px;
+        border: 1px solid rgb(212, 212, 212);
+        margin-bottom: 10px;
+    }
+    .cartnote1{
+        width: 90%;
+        justify-content: start;
+        align-items: start;
+    }
+    .cartnote1 .p{
+        font-weight: 700;
+        font-size: 25px;
+    }
+    .cart-note1{
+        width: 100%;
+        height: 15vh;
+    }
+    .cartsubtotal{
+        width: 100%;
+        justify-content: start;
+        align-items: start;
+    }
+    .subtotal1{
+        flex-direction: row;
+        margin: 0px;
+        justify-content: space-between;
+        width: 90%;
+        font-size: 23px;
+        margin-left: 40px;
+    }
+    .argreement{
+        margin: 0px;
+        justify-content: stretch;
+    }
+    .argreement p{
+        font-size: 17px;
+    }
+    .checkagreement{
+        margin-left: 40px;
+        width: 5%;
+    }
+    .subtotal-checkout{
+        width: 100%;
+    }
+    .checkoutbtn{
+        width: 90%;
+        margin-left: 40px;
+        height: 5vh;
+        font-size: 20px;
+    }
+    .checkoutbtn1{
+        width: 100%;
+        height: 6vh;
+        font-size: 20px;
         background-color: green;
         border: none;
         color: white;
