@@ -2219,11 +2219,11 @@ nav{
         width: 530%;
     }
     .item-imgBig{
-        height: 53vh;
+        height: 46vh;
         justify-content: space-between;
     }
     .itemImgbig{
-        height: 35vh;
+        height: 30vh;
     }
     .information{
         height: auto;
@@ -3270,6 +3270,13 @@ nav{
     }
     .staticNav{
         gap: 10px;
+        height: 5vh;
+    }
+    .cart-back{
+        height: 5vh;
+    }
+    .cart-main-con{
+        height: 40vh;
     }
     .side-cart{
         width: 60%;
@@ -3317,7 +3324,7 @@ nav{
         display: none;
     }
     .hero-content{
-        height: 50vh;
+        height: 40vh;
     }
     .round{
         height: 1vh;
@@ -3327,7 +3334,7 @@ nav{
         height: 100vh;
     }
     .item{
-        height: 55vh;
+        height: 43vh;
     }
     .foodie-head{
         justify-content: space-between;
@@ -3350,11 +3357,11 @@ nav{
         width: 250%;
     }
     .item-imgBig{
-        height: 32vh;
+        height: 23vh;
         justify-content: space-between;
     }
     .itemImgbig{
-        height: 20vh;
+        height: 15vh;
     }
     .information{
         height: auto;
@@ -3370,13 +3377,13 @@ nav{
     }
     .cart{
         font-size: 15px;
-        height: 5vh;
+        height: 4vh;
     }
     .product-cartcount{
-        height: 5vh;
+        height: 4vh;
     }
     .product-counttxt{
-        height: 5vh;
+        height: 4vh;
     }
     .infomate{
         margin: 0px;
@@ -3627,12 +3634,12 @@ nav{
     .checkoutbtn{
         width: 90%;
         margin-left: 40px;
-        height: 5vh;
+        height: 4vh;
         font-size: 20px;
     }
     .checkoutbtn1{
         width: 100%;
-        height: 6vh;
+        height: 4vh;
         font-size: 20px;
         background-color: green;
         border: none;
