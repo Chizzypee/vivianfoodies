@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+     <script src="./utility/fetch.js"></script>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
@@ -247,7 +248,7 @@
                         <i class="fa-solid fa-user"></i>
                         <i class="fa-solid fa-cart-plus profile" onclick="openCart()"></i>
                         <div class="cartsignal" id="cartsignal" onclick="openCart()">
-                            <label for="text" class="signalcount">0</label>
+                            <label for="text" class="signalcount" id="singalcount">0</label>
                         </div>
                     </div>
                     <div class="side-cart" id="sideCart">
@@ -674,7 +675,9 @@
             </div>
         </div>
     </footer>
-    <script src="./utility/cart.js" async></script>
+
+   
+    <script src="./utility/cart.js"></script>
     <script src="./utility/script.js"></script>
 </body>
 </html>

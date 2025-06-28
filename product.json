@@ -1,6 +1,4 @@
-{
-    "Soup":[
-
+[
         {
             "id": 0,
             "name": "Water leaf",
@@ -8,6 +6,7 @@
             "instock": 20,
             "customfee": 3,
             "deliveryfee": 2,
+            "category": "soup",
             "description": "Delicious cajun butter fried chicken",
             "imgSrc": "../food/soup/water leaf soup.jpg",
             "desc": "Lorem ficiis laborum assumenda minus ad repudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
@@ -19,6 +18,7 @@
             "instock": 32,
             "customfee": 3,
             "deliveryfee": 2,
+            "category": "soup",
             "description": "Delicious cajun butter fried chicken",
             "imgSrc": "../food/soup/banga soup.jpg",
             "desc": "Lorem ipsum dolor sit amet consectto vel, hic, sequi quas nemo deserunt nisi neque reprehenderit corporis! Alias ad quasi nesciunt fugit nostrum optio laboriosam minus consequatur ipsa enim tenetur, sint porro, fugiat animi, quod ex. Saepe exercitationem aliquam incidunt quae explicabo commodi ducimus quod, officiis laborum assumenda minus ad repudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
@@ -30,6 +30,7 @@
             "instock": 44,
             "customfee": 3,
             "deliveryfee": 2,
+            "category": "soup",
             "description": "Delicious cajun butter fried chicken",
             "imgSrc": "../food/soup/bitter leaf soup.jpg",
             "desc": "enda quaerat? Provident asperiores distinctio repellendus laudantium ab praesentium, libero soluta in. Dignissimos esse deleniti iusto vel, hic, sequi quas nemo deserunt nisi neque reprehenderit corporis! Alias ad quasi nesciunt fugit nostrum optio laboriosam minus consequatur ipsa enim tenetur, sint porro, fugiat animi, quod ex. Saepe exercitationem aliquam incidunt quae explicabo commodi ducimus quod, officiis laborum assumenda minus ad repudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
@@ -41,6 +42,7 @@
             "instock": 24,
             "customfee": 3,
             "deliveryfee": 2,
+            "category": "soup",
             "description": "Delicious cajun butter fried chicken",
             "imgSrc": "../food/soup/edikaikong-soup.jpg",
             "desc": "lorum eum maxime sit quibusdam omnis cum blanditiis minus nam fugit nobis explicabo ipsa veniam, tenetur, neque assumenda quaerat? Provident asperiores distinctio repellendus laudantium ab praesentium, libero soluta in. Dignissimos esse deleniti iusto vel, hic, sequi quas nemo deserunt nisi neque reprehenderit corporis! Alias ad quasi nesciunt fugit nostrum optio laboriosam minus consequatur ipsa enim tenetur, sint porro, fugiat animi, quod ex. Saepe exercitationem aliquam incidunt quae explicabo commodi ducimus quod, officiis laborum assumenda minus ad repudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
@@ -52,6 +54,7 @@
             "instock": 16,
             "customfee": 2,
             "deliveryfee": 3,
+            "category": "soup",
             "description": "Delicious cajun butter fried chicken",
             "imgSrc": "../food/soup/egusi soup.jpg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nemo! Quasi perspiciatis similique voluptatum ipsum pariatur eligendi animi quae sapiente accusantium excepturi nihil impedit, oforro tempore, officia qui?"
@@ -63,6 +66,7 @@
             "instock": 5,
             "customfee": 3,
             "deliveryfee": 2,
+            "category": "soup",
             "description": "folores earum numquam asas fkak",
             "imgSrc": "../food/soup/oha soup.jpg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nemo! Quasi perspiciatis similique voluptatum ipsum pariatur eligendi animi quae sapiente accusantium excepturi nihil impedit, officia laudantium voluptatem dolor odio dignissimos fuga exercitationem hic quisquam illum aut modi! Facere esse iste accusamus doloremque culpa adipisci rerum dolorum eum maxime sit quibusdam omnis cum blanditiis minus nam fugit nobis explicabo ipsa veniam, tenetur, neque assumenda quaerat? Provident asperiores distinctio repellendus laudantium ab praesentium, libero soluta in. Dignissimos esse deleniti iusto vel, hic, sequi quas nemo deserunt nisi neque reprehenderit corporis! Alias ad quasi nesciunt fugit nostrum optio laboa qui?"
@@ -74,6 +78,7 @@
             "instock": 11,
             "customfee": 2,
             "deliveryfee": 3,
+            "category": "soup",
             "description": "Culpa possimus earum numquam",
             "imgSrc": "../food/soup/okro.jpg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nemo! Quasi perspiciatis similique voluptatum ipsum pariatur eligendi animi quae sapiente accusantium excepturi nihil impedit, officia laudantium voluptatem dolor odio dignissimos fuga exercitationem hic quisquam illum aut modi! Facere esse iste accusamus doloremque culpa adipisci rerum dolorum eum maxime sit quibusdam omnis cum blanditiis minus nam fugit nobis explicabo ipsa veniam, tenetur, neque assumenda quaerat? Provident bero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
@@ -85,6 +90,7 @@
             "instock": 7,
             "customfee": 3,
             "deliveryfee": 2,
+            "category": "soup",
             "description": "Lorem numquam",
             "imgSrc": "../food/soup/vegitable soup.jpg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
@@ -97,13 +103,10 @@
             "customfee": 3,
             "deliveryfee": 2,
             "description": "Lorem numquam",
-            "category": "wine",
+            "category": "soup",
             "imgSrc": "../food/soup/water leaf soup.jpg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
-        }
-    ],
-
-    "Drink":[
+        },
         {
             "id": 9,
             "name": "heaven",
@@ -195,13 +198,11 @@
             "instock": 10,
             "customfee": 3,
             "deliveryfee": 2,
+            "category": "wine",
             "description": "Lorem numquam",
             "imgSrc": "../food/wine/cono sur.jpeg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
-        }
-    ],
-
-    "Fruit":[
+        },
         {
             "id": 17,
             "name": "Apple",
@@ -210,7 +211,7 @@
             "customfee": 3,
             "deliveryfee": 2,
             "description": "Lorem numquam",
-            "category": "wine",
+            "category": "fruit",
             "imgSrc": "../food/fruit/apple.jpeg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
         },
@@ -222,7 +223,7 @@
             "customfee": 3,
             "deliveryfee": 2,
             "description": "Lorem numquam",
-            "category": "wine",
+            "category": "fruit",
             "imgSrc": "../food/fruit/banana.jpeg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
         },
@@ -234,7 +235,7 @@
             "customfee": 3,
             "deliveryfee": 2,
             "description": "Lorem numquam",
-            "category": "wine",
+            "category": "fruit",
             "imgSrc": "../food/fruit/Orange.jpeg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
         },
@@ -246,7 +247,7 @@
             "customfee": 3,
             "deliveryfee": 2,
             "description": "Lorem numquam",
-            "category": "wine",
+            "category": "fruit",
             "imgSrc": "../food/fruit/Pear.jpeg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
         },
@@ -258,7 +259,7 @@
             "customfee": 3,
             "deliveryfee": 2,
             "description": "Lorem numquam",
-            "category": "wine",
+            "category": "fruit",
             "imgSrc": "../food/fruit/pineapple.jpeg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
         },
@@ -270,7 +271,7 @@
             "customfee": 3,
             "deliveryfee": 2,
             "description": "Lorem numquam",
-            "category": "wine",
+            "category": "fruit",
             "imgSrc": "../food/fruit/Strawberry.jpeg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
         },
@@ -282,7 +283,7 @@
             "customfee": 3,
             "deliveryfee": 2,
             "description": "Lorem numquam",
-            "category": "wine",
+            "category": "fruit",
             "imgSrc": "../food/fruit/tangerine.jpeg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
         },
@@ -294,12 +295,10 @@
             "customfee": 3,
             "deliveryfee": 2,
             "description": "Lorem numquam",
+            "category": "fruit",
             "imgSrc": "../food/fruit/watermelon.jpeg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
-        }
-    ],
-
-    "Snack":[
+        },
         {
             "id": 25,
             "name": "Cheesy Goldfish",
@@ -308,7 +307,7 @@
             "customfee": 3,
             "deliveryfee": 2,
             "description": "Lorem numquam",
-            "category": "wine",
+            "category": "snacks",
             "imgSrc": "../food/snacks/cheesy goldfish.jpeg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
         },
@@ -320,7 +319,7 @@
             "customfee": 3,
             "deliveryfee": 2,
             "description": "Lorem numquam",
-            "category": "wine",
+            "category": "snacks",
             "imgSrc": "../food/snacks/corns snacks.jpeg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
         },
@@ -332,7 +331,7 @@
             "customfee": 3,
             "deliveryfee": 2,
             "description": "Lorem numquam",
-            "category": "wine",
+            "category": "snacks",
             "imgSrc": "../food/snacks/cosori air fryers.jpeg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
         },
@@ -344,7 +343,7 @@
             "customfee": 3,
             "deliveryfee": 2,
             "description": "Lorem numquam",
-            "category": "wine",
+            "category": "snacks",
             "imgSrc": "../food/snacks/low Gi snacks.jpeg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
         },
@@ -356,7 +355,7 @@
             "customfee": 3,
             "deliveryfee": 2,
             "description": "Lorem numquam",
-            "category": "wine",
+            "category": "snacks",
             "imgSrc": "../food/snacks/potato chips.jpeg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
         },
@@ -368,7 +367,7 @@
             "customfee": 3,
             "deliveryfee": 2,
             "description": "Lorem numquam",
-            "category": "wine",
+            "category": "snacks",
             "imgSrc": "../food/snacks/soya chakli.jpeg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
         },
@@ -380,7 +379,7 @@
             "customfee": 3,
             "deliveryfee": 2,
             "description": "Lorem numquam",
-            "category": "wine",
+            "category": "snacks",
             "imgSrc": "../food/snacks/Tortilla chips.jpg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
         },
@@ -392,8 +391,8 @@
             "customfee": 3,
             "deliveryfee": 2,
             "description": "Lorem numquam",
+            "category": "snacks",
             "imgSrc": "../food/snacks/sun chip.jpeg",
             "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus labore rem sequi sit quaerat aut eligendi deserunt, temporibus architecto aspernatur quia quis officiis laboriosam molestias alias blanditiis iste sapiente, perspiciatis, debitis atque quidem nepudiandae voluptate mollitia sequi quidem dolorem magnam perspiciatis numquam. Tempore quos sequi debitis ipsam dolorem corrupti voluptatem odio minima porro. Praesentium excepturi dolorum pariatur porro dolorem et, nesciunt perspiciatis nobis. Aliquam repellat maiores libero dolores eveniet ratione et commodi adipisci aspernatur aut. Quis eligendi vel et minima consequatur molestiae rem porro tempore, officia qui?"
         }
-    ]
-} 
+]
