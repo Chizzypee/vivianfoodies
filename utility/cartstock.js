@@ -1,16 +1,9 @@
-
-const cartOrder = document.querySelector(".cartorder"); 
-const cartStock = JSON.parse(localStorage.getItem("CART"))
-// if(cartStock && cartStock.length>0){
-    
-//    renderCartStock(cartStock)
-// }
+const cartOrder = document.querySelector(".cartorder");
 
 // render cart item
 function renderCartStock(){
-    const readCart = JSON.parse(localStorage.getItem("CART"))
-    console.log(readCart);
-    cartOrder.innerHTML = ""; 
+    const readCart = JSON.parse(localStorage.getItem("CART")) || [];
+    cartOrder.innerHTML = "";
     if(localStorage && localStorage.length > 0){
         readCart.forEach((item) => {
             cartOrder.innerHTML += `
@@ -38,15 +31,41 @@ function renderCartStock(){
                             <button class="pro-cartcount" onclick="changeNumberOfUnite('plus',${item.id})">+</button>
                         </div>
                         <div class="cartremove">
-                            <i class="fa-solid fa-trash-can remove" onclick="removeCartItem(${item.id})"></i>
+                            <i class="fa-solid fa-trash-can remove" onclick="removeCartFromStock(${item.id})"></i>
                         </div>
                     </div>
                 <label for="text" class="cart-priceee" id="totalsub">$${item.price * item.quantity}</label>
                 </div>
             </div>
-        `;
-    })
-    
-}
+            `;
+        })
+    }
 }
 renderCartStock()
+
+function updateCart(product) {
+    let cart =  JSON.parse( localStorage.getItem("CART"));
+    if(cart === null){
+        if(product){
+            localStorage.setItem("CART", JSON.stringify([product])) 
+        }
+    } else{
+        const exist = cart.find(item => item.id === product.id);
+        if(!exist && product.hasOwnProperty("id")){
+            cart.push(product);
+            localStorage.setItem("CART", JSON.stringify(cart))
+        }
+    }
+    renderCartStock()
+}
+
+function removeCartFromStock(id){
+    const readCart = JSON.parse(localStorage.getItem("CART"))
+    console.log("delete", readCart);
+    const cartItem = readCart.filter((cart) => cart.id !== id)
+    localStorage.removeItem("CART");
+    if(cartItem && cartItem.length > 0){
+        localStorage.setItem("CART",JSON.stringify([...cartItem]))
+    }
+    renderCartStock()
+}

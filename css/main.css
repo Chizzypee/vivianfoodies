@@ -275,7 +275,7 @@ nav{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 10vh;
+    height: 5vh;
     justify-content: space-between;
     align-items: center;
 }
@@ -313,9 +313,18 @@ nav{
 .cartnote1{
     display: flex;
     flex-direction: column;
-    height: 20vh;
-    width: 50%;
-    gap: 10px;
+    height: 40vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.cartnote1con{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 30vh;
+    justify-content: space-around;
+    align-items: start;
 }
 .cartnote p{
     font-weight: 700;
@@ -334,22 +343,34 @@ nav{
 .cartsubtotal {
     display: flex;
     flex-direction: column;
-    align-items: end;
-    width: 50%;
+    width: 100%;
     gap: 20px;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+.cartsubtotalcon{
+    width: 90%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
 }
 .subtotal1{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
 }
 .subtotal-checkout{
     display: flex;
     flex-direction: column;
     height: 15h;
-    width: 60%;
-    margin-top: 10px;
-    padding-bottom: 15px;
+    width: 100%;
+    /* margin-top: 10px; */
+    /* padding-bottom: 15px; */
 }
 .checkout-btn{
     display: flex;
@@ -390,7 +411,7 @@ nav{
     flex-direction: row;
     width: 100%;
     gap: 10px;
-    justify-content: end;
+    /* justify-content: space-between; */
 
 }
 .argreement a{
@@ -1441,6 +1462,7 @@ nav{
     flex-direction: column;
     gap: 20px;
     margin-left: 70px;
+    
 }
 .carthead p{
     font-size: 25x;
@@ -1499,6 +1521,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     width: 60%;
 }
 .cartorder2{
@@ -1511,11 +1534,13 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 30vh;
+    align-items: center;
+    height: 40vh;
 }
 .insdeorder{
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100%;
     gap: 20px;
 }
@@ -1528,7 +1553,7 @@ nav{
 }
 .topupImg1{
     width: 90%;
-    height: 10vh;
+    height: 5vh;
 }
 .cart-count{
     display: flex;
@@ -2139,6 +2164,7 @@ nav{
     }
     .staticNav{
         gap: 10px;
+        height: 6vh;
     }
     .side-cart{
         width: 100%;
@@ -2186,7 +2212,7 @@ nav{
        display: none;
     }
     .hero-content{
-        height: 50vh;
+        height: 40vh;
     }
     .round{
         height: 1vh;
@@ -2196,7 +2222,7 @@ nav{
         height: 100vh;
     }
     .item{
-        height: 85vh;
+        height: 65vh;
     }
     .foodie-head{
         justify-content: space-between;
@@ -2219,11 +2245,11 @@ nav{
         width: 530%;
     }
     .item-imgBig{
-        height: 46vh;
+        height: 40vh;
         justify-content: space-between;
     }
     .itemImgbig{
-        height: 30vh;
+        height: 25vh;
     }
     .information{
         height: auto;
@@ -2238,13 +2264,14 @@ nav{
         font-size: 15px;
     }
     .cart{
-        font-size: 20px;
+        font-size: 18px;
+        height: 5vh;
     }
     .product-cartcount{
-        height: 8vh;
+        height: 5vh;
     }
     .product-counttxt{
-        height: 8vh;
+        height: 5vh;
     }
     .infomate{
         margin: 0px;
@@ -2256,7 +2283,7 @@ nav{
     .footer-container{
         justify-content: center;
         align-items: center;
-        height: 50vh;
+        height: auto;
     }
     .footer-content{
         gap: 20px;
@@ -2328,17 +2355,18 @@ nav{
         align-items: center;
     }
     .details-right{
-        height: 40vh;
+        height: 25vh;
     }
     .details-left{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center; */
+        /* align-items: center; */
         width: 90%;
         margin-bottom: 10px;
     }
     .itemImgbig1{
-        height: 35vh;
+        height: 20vh;
+        width: 50%;
     }
     .Amount{
         margin: 0px;
@@ -2447,59 +2475,37 @@ nav{
     }
     .cartdetails{
         flex-direction: column;
-        align-items: center;
-        height: 60vh;
+        height: auto;
         border: 1px solid rgb(212, 212, 212);
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .cartsubtotal{
+        height: 20vh;
     }
     .cartnote1{
-        width: 90%;
-        justify-content: start;
-        align-items: start;
-        height: 20vh;
+       height: 20vh;
+    }
+    .pro-cartcount{
+        height: 4vh;
     }
     .cartnote1 .p{
         font-weight: 700;
         font-size: 25px;
     }
     .cart-note1{
-        width: 90%;
+        width: 100%;
         height: 10vh;
-    }
-    .cartsubtotal{
-        width: 100%;
-        justify-content: start;
-        align-items: start;
-    }
-    .subtotal1{
-        flex-direction: row;
-        margin: 0px;
-        align-items: start;
-        width: 100%;
-        gap: 100px;
-        margin-left: 20px;
-        font-size: 23px;
     }
     .cartamount{
         font-size: 20px;
     }
-    .argreement{
-        margin: 0px;
-        justify-content: stretch;
-    }
     .argreement p{
         font-size: 17px;
-    }
-    .checkagreement{
-        margin-left: 20px;
-        width: 5%;
     }
     .subtotal-checkout{
         width: 100%;
     }
     .checkoutbtn{
-        width: 80%;
-        margin-left: 20px;
         height: 5vh;
         font-size: 20px;
     }
@@ -2816,18 +2822,10 @@ nav{
         font-weight: 600;
     }
     .cartdetails{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 50vh;
-        gap: 30px;
+        flex-direction: row;
+        height: auto;
         border: 1px solid rgb(212, 212, 212);
         margin-bottom: 10px;
-    }
-    .cartnote1{
-        width: 90%;
-        justify-content: start;
-        align-items: start;
     }
     .cartnote1 .p{
         font-weight: 700;
@@ -2837,36 +2835,13 @@ nav{
         width: 100%;
         height: 15vh;
     }
-    .cartsubtotal{
-        width: 100%;
-        justify-content: start;
-        align-items: start;
-    }
-    .subtotal1{
-        flex-direction: row;
-        margin: 0px;
-        justify-content: space-between;
-        width: 90%;
-        font-size: 23px;
-        margin-left: 40px;
-    }
-    .argreement{
-        margin: 0px;
-        justify-content: stretch;
-    }
     .argreement p{
         font-size: 17px;
-    }
-    .checkagreement{
-        margin-left: 40px;
-        width: 5%;
     }
     .subtotal-checkout{
         width: 100%;
     }
     .checkoutbtn{
-        width: 90%;
-        margin-left: 40px;
         height: 5vh;
         font-size: 20px;
     }
@@ -3202,18 +3177,10 @@ nav{
         font-weight: 600;
     }
     .cartdetails{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 50vh;
-        gap: 30px;
+        flex-direction: row;
+        height: auto;
         border: 1px solid rgb(212, 212, 212);
         margin-bottom: 10px;
-    }
-    .cartnote1{
-        width: 90%;
-        justify-content: start;
-        align-items: start;
     }
     .cartnote1 .p{
         font-weight: 700;
@@ -3223,36 +3190,13 @@ nav{
         width: 100%;
         height: 15vh;
     }
-    .cartsubtotal{
-        width: 100%;
-        justify-content: start;
-        align-items: start;
-    }
-    .subtotal1{
-        flex-direction: row;
-        margin: 0px;
-        justify-content: space-between;
-        width: 90%;
-        font-size: 23px;
-        margin-left: 40px;
-    }
-    .argreement{
-        margin: 0px;
-        justify-content: stretch;
-    }
     .argreement p{
         font-size: 17px;
-    }
-    .checkagreement{
-        margin-left: 40px;
-        width: 5%;
     }
     .subtotal-checkout{
         width: 100%;
     }
     .checkoutbtn{
-        width: 90%;
-        margin-left: 40px;
         height: 5vh;
         font-size: 18px;
     }
@@ -3298,6 +3242,19 @@ nav{
     }
     .cart-main-con{
         width: 90%;
+        height: auto;
+    }
+    .pro-head{
+        height: 5vh;
+    }
+    .pro-cartcount{
+        height: 2vh;
+    }
+    .cart-price{
+        margin: 0px;
+    }
+    .pro-counttxt{
+        height: 2vh;
     }
     .side-nav{
         width: 50%;
@@ -3327,7 +3284,7 @@ nav{
         display: none;
     }
     .hero-content{
-        height: 40vh;
+        height: 30vh;
     }
     .round{
         height: 1vh;
@@ -3337,7 +3294,7 @@ nav{
         height: 100vh;
     }
     .item{
-        height: 43vh;
+        height: 30vh;
     }
     .foodie-head{
         justify-content: space-between;
@@ -3360,11 +3317,11 @@ nav{
         width: 250%;
     }
     .item-imgBig{
-        height: 23vh;
+        height: 16vh;
         justify-content: space-between;
     }
     .itemImgbig{
-        height: 15vh;
+        height: 10vh;
     }
     .information{
         height: auto;
@@ -3379,8 +3336,8 @@ nav{
         font-size: 15px;
     }
     .cart{
-        font-size: 15px;
-        height: 4vh;
+        font-size: 17px;
+        height: 3vh;
     }
     .product-cartcount{
         height: 4vh;
@@ -3394,11 +3351,11 @@ nav{
     }
     .infor-head p{
         font-size: 23px;
-    } 
+    }
     .footer-container{
         justify-content: center;
         align-items: center;
-        height: 60vh;
+        height: auto;
     }
     .footer-content{
         gap: 20px;
@@ -3463,14 +3420,15 @@ nav{
         flex-direction: row;
     }
     .details-right{
-        height: 50vh;
+        height: auto;
     }
     .details-left{
         margin-bottom: 20px;
         width: 90%;
     }
     .itemImgbig1{
-        height: 30vh;
+        height: 17vh;
+        width: 80%;
     }
     .pro-wallattopup{
         width: 99%;
@@ -3478,6 +3436,13 @@ nav{
     .Amount{
         margin: 0px;
         margin-left: 5px;
+        height:auto ;
+    }
+    .pro-count{
+        height: auto;
+    }
+    .pro-counting{
+        height: auto;
     }
     .Amount a{
         margin-left: 10px;
@@ -3485,8 +3450,15 @@ nav{
         flex-direction: column;
         gap: 10px;
     }
+    .pro-wallatimg{
+        height: 6vh
+    }
+    .topupImg{
+        height: 5vh;
+    }
     .cart-item-title{
         font-size: 24px;
+        width: 100%;
         margin: 0px;
     }
     .cart-price{
@@ -3552,6 +3524,7 @@ nav{
     }
     .cartorder-con{
         gap: 0px;
+        height: auto;
     }
     .insdeorder1{
         gap: 0px;
@@ -3586,18 +3559,19 @@ nav{
         font-weight: 600;
     }
     .cartdetails{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 50vh;
-        gap: 30px;
+        flex-direction: row;
+        height: 30vh;
         border: 1px solid rgb(212, 212, 212);
         margin-bottom: 10px;
     }
+    .cartnote{
+        height: auto;
+    }
     .cartnote1{
-        width: 90%;
-        justify-content: start;
-        align-items: start;
+        height: 15vh;
+    }
+    .cartsubtotalcon{
+        height: 15vh;
     }
     .cartnote1 .p{
         font-weight: 700;
@@ -3605,20 +3579,7 @@ nav{
     }
     .cart-note1{
         width: 100%;
-        height: 15vh;
-    }
-    .cartsubtotal{
-        width: 100%;
-        justify-content: start;
-        align-items: start;
-    }
-    .subtotal1{
-        flex-direction: row;
-        margin: 0px;
-        justify-content: space-between;
-        width: 90%;
-        font-size: 23px;
-        margin-left: 40px;
+        height: 7vh;
     }
     .argreement{
         margin: 0px;
@@ -3627,16 +3588,10 @@ nav{
     .argreement p{
         font-size: 17px;
     }
-    .checkagreement{
-        margin-left: 40px;
-        width: 5%;
-    }
     .subtotal-checkout{
         width: 100%;
     }
     .checkoutbtn{
-        width: 90%;
-        margin-left: 40px;
         height: 4vh;
         font-size: 20px;
     }

@@ -18,11 +18,11 @@ const products = JSON.parse( localStorage.getItem("products"));
 let cart = JSON.parse(localStorage.getItem("CART"))
 
 
-if(cart && cart.length>0){
+if(cart && cart.length > 0){
     renderCartItem()
     updateCart(cart) 
+    
 }
-
 
 // find the product
 function showProduct(){
@@ -210,7 +210,6 @@ function addToCart(id) {
 }
 showProduct()
 
-
 //update cart
 function updateCart(product) {
     // console.log(product)
@@ -233,7 +232,6 @@ function updateCart(product) {
     renderSubTotal()
 }
 
-
 // calculate subtotal
 function renderSubTotal(){
 const cart = JSON.parse(localStorage.getItem("CART"));
@@ -253,7 +251,6 @@ const cart = JSON.parse(localStorage.getItem("CART"));
 // render cart item
 function renderCartItem(){
     let redlocalStorage = JSON.parse(localStorage.getItem("CART")) //read the coming frm cart
-    // console.log(redlocalStorage);
     cartItemElement.innerHTML = "";
     if(localStorage && localStorage.length > 0){
         redlocalStorage.forEach((item) => {
@@ -293,12 +290,13 @@ function removeCartItem(id){
     let readCart = JSON.parse(localStorage.getItem("CART"))
     const cartItem = readCart.filter((cart) => cart.id !== id)
     localStorage.removeItem("CART");
-    if(cartItem && cartItem.length > 0){
+    if(cartItem && cartItem.length >= 0){
         localStorage.setItem("CART",JSON.stringify([...cartItem]))
     }
-     const btnContainer = document.getElementById("singalcount")
-            btnContainer.innerHTML = `${cartItem.length}`;
+    const btnContainer = document.getElementById("singalcount")
+    btnContainer.innerHTML = `${cartItem.length}`;
     renderCartItem()
+    renderSubTotal()
 }
 
 // change number of unite
@@ -306,8 +304,9 @@ function changeNumberOfUnite(action, id){
    let readCart = JSON.parse(localStorage.getItem("CART"))
    const itemToIncrease = readCart.find(item => item.id === id);
     if(action === "plus"){
-         const productAvaliable = products.find(item => item.id === id && item.instock >= (itemToIncrease.quantity + 1 ));
-    if(productAvaliable){
+        const productAvaliable = products.find(item => item.id === id
+             && item.instock >=  (itemToIncrease?.quantity + 1 || 1 ));
+    if(productAvaliable && itemToIncrease){
         const cartItem = readCart.find(item => item.id === id)
         const updatedItem = {...cartItem};
         updatedItem.quantity ++;
@@ -315,6 +314,16 @@ function changeNumberOfUnite(action, id){
        readCart[readCart.indexOf(cartItem)] = updatedItem
         localStorage.removeItem("CART");
         localStorage.setItem("CART", JSON.stringify(readCart))
+    }else if(productAvaliable && !itemToIncrease){
+       const newItem = {
+        id: productAvaliable.id,
+        name: productAvaliable.name,
+        price: productAvaliable.price,
+        quantity: 1,
+        imgSrc: productAvaliable.imgSrc
+       };
+       readCart.push(newItem)
+       localStorage.setItem("CART",JSON.stringify(readCart))
     }
 
     } else if (action === "minus"){

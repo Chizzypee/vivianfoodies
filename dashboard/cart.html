@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
-    <!-- <script src="../utility/fetch.js"></script> -->
+    <script src="../utility/fetch.js"></script>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../foodStock/item-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -370,22 +370,25 @@
                             <div class="ordersum">
                             </div>
                             <div class="cartnote1">
-                                <P class="p">Order Summary</P>
-                                <p>Add a note to your order</p>
-                                <textarea class="cart-note1"></textarea>
-                                <!-- <input type="text" class="cart-note1"> -->
+                                <div class="cartnote1con">
+                                    <P class="p">Order Summary</P>
+                                    <p>Add a note to your order</p>
+                                    <textarea class="cart-note1"></textarea>
+                                </div>
                             </div>
                             <div class="cartsubtotal">
-                                <div class="subtotal1">
-                                    <label for="text" class="subtotal">Subtotal:</label>
-                                    <label for="text" class="cartamount">$0.00</label>
-                                </div>
-                                <div class="argreement">
-                                    <input type="checkbox" class="checkagreement">
-                                    <p>I agree to the <a href="#">terms and refund policy</a></p>
-                                </div>
-                                <div class="subtotal-checkout">
-                                    <button class="checkoutbtn">Checkout</button>
+                                <div class="cartsubtotalcon">
+                                    <div class="subtotal1">
+                                        <label for="text" class="subtotal">Subtotal:</label>
+                                        <label for="text" class="cartamount" id="cartAmount">$0</label>
+                                    </div>
+                                    <div class="argreement">
+                                        <input type="checkbox" class="checkagreement">
+                                        <p>I agree to the <a href="#">terms and refund policy</a></p>
+                                    </div>
+                                    <div class="subtotal-checkout">
+                                        <button class="checkoutbtn">Checkout</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

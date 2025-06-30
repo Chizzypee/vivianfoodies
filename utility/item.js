@@ -5,7 +5,7 @@ function showDetailsProduct(){
     let  params = new URLSearchParams(window.location.search).get("id")
     const products = JSON.parse(localStorage.getItem("products")) || [];
     const findProduct = products.filter((value) => value.id.toString() == Number(params))[0]
-    console.log("am here", findProduct);
+    // console.log("am here", findProduct);
 
     if(!findProduct){
          window.location.href = "../index.html";
@@ -21,7 +21,6 @@ function showDetailsProduct(){
                 <div class="details-left">
                     <div class="d1">
                         <label for="text" class="section">Dashboard / item</label>
-                        <label for="text" class="cart-item-title cart-item-title1"></label>
                         <label for="text" class="cart-price cart-price1">$${findProduct.price}</label>
                         <label for="text" class="itemtextdesc">${findProduct.description}</label>
                     </div>
@@ -29,11 +28,6 @@ function showDetailsProduct(){
                         <div class="btn" id="btnContainer-${findProduct.id}">
                             <button class="cart" id="addcart" onclick="addToCart(${findProduct.id})">Add to cart</button>
                         </div>
-                        
-                    </div>
-                    <div class="d2">
-                        <img src="../icon/heart.png" class="wishlist">
-                            <label for="text" class="details-wishlist" >Add to wishlist</label>
                     </div>
                     <div class="description-con" onclick="openDescription()">
                         <p>Description</p>
