@@ -65,16 +65,6 @@ nav{
     font-weight: 600;
     color: black;
 }
-.navCallCart{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.navCalllinking{
-    display: none;
-}
 .navBackimg{
     width: 5%;
 }
@@ -2302,9 +2292,6 @@ nav{
     .navCall{
         gap: 15px;
     }
-    .navCallCart{
-        display: none;
-    }
     .navCalllink{
         display: flex;
     }
@@ -2662,12 +2649,6 @@ nav{
     .navCall{
         gap: 15px;
     }
-    .navCallCart{
-        display: flex;
-    }
-    .navCalllink{
-        display: none;
-    }
     .nav{
         display: none;
     }
@@ -3005,12 +2986,6 @@ nav{
     .navSearch{
         display: flex;
     }
-    .navCallCart{
-        display: flex;
-    }
-    .navCalllink{
-        display: none;
-    }
     .nav{
         display: flex;
     }
@@ -3330,7 +3305,7 @@ nav{
         height: 5vh;
     }
     .cart-back{
-        height: 5vh;
+        height: 4vh;
     }
     .cart-main-con{
         height: 40vh;
@@ -3384,17 +3359,22 @@ nav{
     .navCall{
         gap: 15px;
     }
-    .navCallCart{
-        display: flex;
-    }
-    .navCalllink{
-        display: none;
-    }
     .nav{
-        display: none;
+        display: flex;
+        height: auto;
+    }
+    .navBox{
+        height: 3vh;
+    }
+    .navinfoimg{
+        width: 10%;
+    }
+    .navItem{
+        width: 100%;
     }
     .nav1{
-        display: none;
+        display: flex;
+        height: auto;
     }
     .hero-content{
         height: 30vh;
@@ -3407,7 +3387,7 @@ nav{
         height: 100vh;
     }
     .item{
-        height: 38vh;
+        height: 33vh;
     }
     .foodie-head{
         justify-content: space-between;
@@ -3453,10 +3433,10 @@ nav{
         height: 3vh;
     }
     .product-cartcount{
-        height: 4vh;
+        height: 3vh;
     }
     .product-counttxt{
-        height: 4vh;
+        height: 3vh;
     }
     .infomate{
         margin: 0px;
@@ -3511,7 +3491,7 @@ nav{
 
     .carthead {
         /* margin: 0px; */
-        margin-top: 80px;
+        margin-top: 95px;
         margin-bottom: 20px;
     }
     .carthead p{
@@ -3546,6 +3526,10 @@ nav{
     }
     .pro-wallattopup{
         width: 99%;
+
+    }
+    .pro-btn-show{
+        height: 0vh;
     }
     .Amount{
         margin: 0px;
@@ -3572,7 +3556,7 @@ nav{
     }
     .topupImg1{
         width: 100%;
-        height: 7vh;
+        height: 6vh;
     }
     .cart-item-title{
         font-size: 24px;
@@ -3709,12 +3693,13 @@ nav{
         width: 100%;
     }
     .checkoutbtn{
-        height: 4vh;
-        font-size: 20px;
+        height: 3vh;
+        font-size: 18px;
+        border-radius: 4px;
     }
     .checkoutbtn1{
         width: 100%;
-        height: 4vh;
+        height: 3vh;
         font-size: 20px;
         border: none;
         color: white;
