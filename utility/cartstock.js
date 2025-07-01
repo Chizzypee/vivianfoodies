@@ -1,5 +1,8 @@
 const cartOrder = document.querySelector(".cartorder");
 
+if(cart && cart.length > 0){
+    renderSubTotals()
+}
 // render cart item
 function renderCartStock(){
     const readCart = JSON.parse(localStorage.getItem("CART")) || [];
@@ -55,6 +58,17 @@ function updateCart(product) {
         }
     }
     renderCartStock()
+    renderSubTotals()
+}
+
+function renderSubTotals(){
+const cart = JSON.parse(localStorage.getItem("CART"));
+    let grandTotal = 0;
+
+    cart.forEach((item) => {
+        grandTotal += item.price * item.quantity
+    });
+    document.querySelector(".cartAmount").innerHTML = `$${grandTotal.toFixed(2)}`
 }
 
 function removeCartFromStock(id){
@@ -66,4 +80,5 @@ function removeCartFromStock(id){
         localStorage.setItem("CART",JSON.stringify([...cartItem]))
     }
     renderCartStock()
+    renderSubTotals()
 }

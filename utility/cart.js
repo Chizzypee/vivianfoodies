@@ -11,6 +11,7 @@ const totalcartitem = document.querySelector(".totalcartitem");
 const totalCartDashboard = document.querySelector(".signalcount");
 const addCartBTn = document.querySelector(".addBTn");
 const productCounttxt = document.querySelector(".product-counttxt");
+// const grandTotalPRice = document.getElementById("cartAmount")
  
  
 // cart array
@@ -242,7 +243,6 @@ const cart = JSON.parse(localStorage.getItem("CART"));
         totalPrice  += item.price * item.quantity
         totalItem  += item.quantity;
     });
-
     subtotal.innerHTML = `$${totalPrice.toFixed(2)} `
     totalcartitem.innerHTML =  `(${totalItem} item)`
     totalCartDashboard.innerHTML =  `${totalItem}`

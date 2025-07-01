@@ -65,6 +65,16 @@ nav{
     font-weight: 600;
     color: black;
 }
+.navCallCart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.navCalllinking{
+    display: none;
+}
 .navBackimg{
     width: 5%;
 }
@@ -232,7 +242,7 @@ nav{
     font-weight: 700;
     font-size: 18px;
     margin-left: 0px;
-    color: green;
+    color: orange;
 }
 .Gifttopup1{
     font-weight: 400;
@@ -661,8 +671,7 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    width: 200%;
-    margin-right: 15px;
+    width: 100%;
 }
 .nav-logo{
     display: flex;
@@ -1047,8 +1056,15 @@ nav{
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: end;
     align-items: center;
+}
+.navCall a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 .profile{
     width: 10%;
@@ -1414,21 +1430,30 @@ nav{
     font-size: 17px;
     cursor: pointer;
 }
-.cartsignal{
+/* .cartsignal{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    background-color: rgb(255, 204, 0);
+    background-color: rgb(255, 255, 0);
     height: 20px;
     border-radius: 100px;
     width: 20px;
     position: absolute;
     margin-bottom: 20px;
-}
+} */
 .signalcount{
-    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: orange;
+    height: 20px;
+    border-radius: 100px;
+    width: 20px;
+    font-weight: 700;
     font-size: 14px;
-    color: white;
+    color: #2a1b15;
+    margin-bottom: 20px;
+    /* margin-left: 10px; */
 }
 .cart:hover{
     background-color: red;
@@ -2277,8 +2302,11 @@ nav{
     .navCall{
         gap: 15px;
     }
-    .profile{
-        width: 40%;
+    .navCallCart{
+        display: none;
+    }
+    .navCalllink{
+        display: flex;
     }
     .nav{
         display: none;
@@ -2297,7 +2325,7 @@ nav{
         height: 100vh;
     }
     .item{
-        height: 65vh;
+        height: 72vh;
     }
     .foodie-head{
         justify-content: space-between;
@@ -2413,9 +2441,10 @@ nav{
     .carthead {
         flex-direction: row;
         justify-content: space-between;
-        /* margin: 20px; */
+        margin: 20px;
         margin-top: 80px;
     }
+
     .details-con{
         flex-direction: column;
         justify-content: center;
@@ -2586,8 +2615,8 @@ nav{
         width: 100%;
     }
     .checkoutbtn{
-        height: 5vh;
-        font-size: 20px;
+        height: 4vh;
+        font-size: 16px;
     }
 }
 @media screen and (min-width: 600px){
@@ -2633,8 +2662,11 @@ nav{
     .navCall{
         gap: 15px;
     }
-    .profile{
-        width: 20%;
+    .navCallCart{
+        display: flex;
+    }
+    .navCalllink{
+        display: none;
     }
     .nav{
         display: none;
@@ -2973,11 +3005,11 @@ nav{
     .navSearch{
         display: flex;
     }
-    .navCall{
-        /* gap: 15px; */
+    .navCallCart{
+        display: flex;
     }
-    .profile{
-        width: 20%;
+    .navCalllink{
+        display: none;
     }
     .nav{
         display: flex;
@@ -2996,7 +3028,7 @@ nav{
         height: 100vh;
     }
     .item{
-        height: 100vh;
+        height: 110vh;
     }
     .foodItem{
         height: auto;
@@ -3118,11 +3150,11 @@ nav{
         margin-bottom: 20px;
     }
     .carthead p{
-        margin-left: 5px;
+        margin-left: 50px;
         font-size: 20px;
     }
     .carthead a{
-        margin-left: 5px;
+        margin-left: 50px;
         font-size: 20px;
     }
     .details-con{
@@ -3352,8 +3384,11 @@ nav{
     .navCall{
         gap: 15px;
     }
-    .profile{
-        width: 20%;
+    .navCallCart{
+        display: flex;
+    }
+    .navCalllink{
+        display: none;
     }
     .nav{
         display: none;
@@ -3372,7 +3407,7 @@ nav{
         height: 100vh;
     }
     .item{
-        height: 30vh;
+        height: 38vh;
     }
     .foodie-head{
         justify-content: space-between;
@@ -3475,16 +3510,16 @@ nav{
     /* CART DETAILS */
 
     .carthead {
-        margin: 0px;
+        /* margin: 0px; */
         margin-top: 80px;
         margin-bottom: 20px;
     }
     .carthead p{
-        margin-left: 5px;
+        margin-left: 50px;
         font-size: 20px;
     }
     .carthead a{
-        margin-left: 5px;
+        margin-left: 50px;
         font-size: 20px;
     }
     .details-con{

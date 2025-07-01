@@ -1,7 +1,7 @@
 [
         {
             "id": 0,
-            "name": "Water leaf",
+            "name": "Waterleaf",
             "price": 5.99,
             "instock": 20,
             "customfee": 3,
@@ -25,7 +25,7 @@
         },
         {
             "id": 2,
-            "name": "Bitter leaf",
+            "name": "Bitterleaf",
             "price": 23.99,
             "instock": 44,
             "customfee": 3,
@@ -97,7 +97,7 @@
         },
         {
             "id": 8,
-            "name": "Water leaf",
+            "name": "Native",
             "price": 8.99,
             "instock": 5,
             "customfee": 3,
