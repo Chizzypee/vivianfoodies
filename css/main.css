@@ -8,7 +8,7 @@
 }
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: whitesmoke;
+    background-color: saddlebrown;
 }
 .container{
     display: flex;
@@ -30,12 +30,12 @@ nav{
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    /* gap: 20px;  */
+    background-color: wheat;
 }
 .staticNav{
     position: fixed;
     z-index: 1;
-    background-color: whitesmoke;
+    background-color: wheat;
 }
 .side-nav::-webkit-scrollbar{
     width: 5%;
@@ -43,7 +43,7 @@ nav{
 }
 .side-link{
     display: none;
-    background-color: white;
+    background-color: saddlebrown;
     height: 100vh;
     width: 30%;
     position: fixed;
@@ -75,15 +75,9 @@ nav{
     width: 100%;
     position: fixed;
     top: 0;
-    /* right: 0; */
-    /* transition: 0.5s; */
-    /* overflow-x: hidden; */
     z-index: 5;
-    /* overflow-y: auto; */
     justify-content: center;
     align-items: center;
-    /* opacity: 0.9; */
-    /* background-color: black; */
 }
 .opt-con{
     display: flex;
@@ -93,20 +87,15 @@ nav{
     height: 80vh;
     justify-content: center;
     align-items: center;
-    /* opacity: -2; */
 }
 .option-right{
     display: flex;
     flex-direction: column;
-    /* background-color: blue; */
-    /* width: 30%; */
     height: 80vh;
 }
 .option-left{
     display: flex;
     flex-direction: column;
-    /* background-color: red; */
-    /* width: 30%; */
     height: 80vh;
 }
 .optImg{
@@ -118,7 +107,7 @@ nav{
 .side-cart{
     display: none;
     flex-direction: column;
-    background-color: white;
+    background-color: saddlebrown;
     height: 100vh;
     width: 30%;
     position: fixed;
@@ -146,17 +135,18 @@ nav{
     width: 100%;
     height: 6vh;
     align-items: center;
-    background-color: gray;
+    background-color: #2a1b15;
 }
 .cart-back p{
     margin-left: 20px;
+    color: white;
 }
-.cart-warning{
+/* .cart-warning{
     display: flex;
     flex-direction: column;
     height: 20vh;
     width: 100%;
-    border: 1px solid gainsboro;
+    border: 1px solid deeppink;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -171,10 +161,11 @@ nav{
     gap: 10px;
     justify-content: center;
     align-items: center;
-}
+} */
 .yourOrder{
     font-weight: 500;
     font-size: 16px;
+    color: orange;
 }
 .NoItem{
     font-weight: 500;
@@ -193,12 +184,12 @@ nav{
 .topupImg{
     width: 100%;
     height: 10vh;
-    background-color: blue;
+    /* background-color: blue; */
 }
-.wallattopup{
+/* .wallattopup{
     display: flex;
     flex-direction: column;
-}
+} */
 .Amount{
     display: flex;
     flex-direction: column;
@@ -213,24 +204,29 @@ nav{
     font-weight: 700;
     font-size: 14px;
     margin-left: 10px;
-    color: green;
+    color: orange;
 }
 .cart-price1{
     font-weight: 700;
     font-size: 17px;
     margin-left: 0px;
-    color: green;
+    color: orange;
 }
 .cart-priceee{
     font-weight: 700;
     font-size: 13px;
-    margin-left: 10px;
+    margin-right: 10px;
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
 }
 .cart-item-title{
     font-weight: 700;
     font-size: 15px;
     margin-left: 10px;
-    color: green;
+    color: orange;
 }
 .cart-item-title1{
     font-weight: 700;
@@ -280,16 +276,17 @@ nav{
     align-items: center;
 }
 .order-view a{
-    color: rgb(71, 71, 71);
+    color: white;
     text-decoration: underline;
 }
 .subtotal{
     font-weight: 500;
-    color: rgb(71, 71, 71);
+    color: orange;
 }
 .cartamount{
     font-weight: 700;
     font-size: 17px;
+    color: white;
 }
 .cartparamount{
     font-weight: 700;
@@ -303,6 +300,7 @@ nav{
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    color: orange;
 }
 .cartnote{
     display: flex;
@@ -326,9 +324,12 @@ nav{
     justify-content: space-around;
     align-items: start;
 }
+.cartnote1con p{
+    color: orange;
+}
 .cartnote p{
     font-weight: 700;
-    color: black;
+    color: orange;
     font-size: 15px;
     margin-bottom: 5px;
 }
@@ -389,21 +390,21 @@ nav{
     padding-bottom: 15px;
 }
 .checkoutbtn{
-    background-color: green;
+    background-color: #2a1b15;
     width: 100%;
     height: 7vh;
     border: none;
     border-radius: 3px;
-    color: white;
+    color: orange;
     font-weight: 600;
 }
 .checkoutbtn1{
-    background-color: green;
+    background-color: #2a1b15;
     width: 100%;
-    height: 7vh;
+    height: 5vh;
     border: none;
     border-radius: 3px;
-    color: white;
+    color: orange;
     font-weight: 600;
 }
 .argreement{
@@ -411,12 +412,13 @@ nav{
     flex-direction: row;
     width: 100%;
     gap: 10px;
-    /* justify-content: space-between; */
-
+}
+.argreement p{
+    color: orange;
 }
 .argreement a{
     text-decoration: underline;
-    color: gray;
+    color: white;
 }
 .cart-product{
     display: flex;
@@ -486,7 +488,9 @@ nav{
     flex-direction: row;
     width: 100%;
     height: 12vh;
-    /* background-color: gold; */
+    background-color: #2a1b15;
+    justify-content: center;
+    align-items: center;
 }
 .pro-counting .remove{
     display: flex;
@@ -512,7 +516,6 @@ nav{
     align-items: center;
     width: 40%;
     height: 20vh;
-    /* background-color: red; */
 }
 .product-count{
     display: flex;
@@ -520,34 +523,33 @@ nav{
     justify-content: center;
     align-items: center;
     width: 90%;
-    /* height: 20vh; */
-    /* background-color: red; */
 }
 .product-cartcount{
-    background-color: green;
+    background-color: orange;
     width: 30%;
     height: 8vh;
     border: none;
-    color: white;
+    color: #2a1b15;
     font-weight: 600;
     font-size: 25px;
     cursor: pointer;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 .pro-cartcount{
     border: 1px solid green;
-    background-color: green;
+    background-color: orange;
     width: 25%;
     height: 5vh;
     border: none;
-    color: white;
+    color: #2a1b15;
     font-weight: 600;
     font-size: 17px;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 .product-counttxt{
     display: flex;
@@ -557,10 +559,11 @@ nav{
     height: 7vh;
     color: white;
     font-size: 14px;
-    color: green;
+    color: orange;
     font-weight: 600;
     font-size: 17px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 .pro-counttxt{
     display: flex;
@@ -570,14 +573,14 @@ nav{
     height: 5vh;
     color: white;
     font-size: 14px;
-    color: green;
+    color: orange;
     font-weight: 600;
     font-size: 17px;
     cursor: pointer;
 }
 .side-nav{
     display: none;
-    background-color: white;
+    background-color: saddlebrown;
     height: 100vh;
     width: 30%;
     position: fixed;
@@ -613,26 +616,31 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid gray;
+    border: 1px solid sandybrown;
     border-top: none;
     border-left: none;
     border-right: none;
     padding: 10px;
+    color: orange;
 }
 .menu-nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid rgb(212, 210, 210);
+    border: 1px solid sandybrown;
     border-top: none;
     border-left: none;
     border-right: none;
     padding: 15px;
     font-weight: 500;
+    color: orange;
+}
+.menu-nav a{
+    color: orange;
 }
 .menu-nav:hover{
-    background-color: green;
+    background-color: #2a1b15;
     color: white;
 }
 .nav-img{
@@ -721,15 +729,15 @@ nav{
     color: white;
 }
 .navBox{
-    background-color: green;
+    background-color: sienna;
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 6vh;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid wheat;
+    color: orange;
 }
 .navItem{
     display: flex;
@@ -964,7 +972,6 @@ nav{
 }
 .nav-search{
     background-color: rgb(231, 228, 228);
-    /* width: 150%; */
     height: 7vh;
 }
 .sitename{
@@ -976,7 +983,7 @@ nav{
     width: 15%;
 }
 .sitename h1{
-    color: green;
+    color: #2a1b15;
     font-weight: 700;
 }
 .navSearch{
@@ -998,7 +1005,7 @@ nav{
     justify-content: center;
     align-items: center;
     margin-left: 110px;
-    background-color: rgb(255, 172, 6);
+    background-color: sienna;
     width: 10%;
     height: 7vh;
 }
@@ -1168,6 +1175,11 @@ nav{
 .foodItem::-webkit-scrollbar{
     width: 0%;
 }
+.food-item{
+    background-color: #2a1b15;
+    border-radius: 20px;
+    border: 2px solid sandybrown;
+}
 .food-slid{
     /* background-color: blue; */
     gap: 20px;
@@ -1214,7 +1226,8 @@ nav{
     height: 10vh;
 }
 .foodie-head h2{
-    margin-left: 20px
+    margin-left: 20px;
+    color: orange;
 }
 .foodie-head a{
     margin-right: 20px;
@@ -1224,8 +1237,9 @@ nav{
     height: 72vh;
 }
 .viewMore{
+    color: white;
     background-color: transparent;
-    border: 1px solid gray;
+    border: 1px solid sandybrown;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -1253,65 +1267,93 @@ nav{
     width: 100%;
     height: 30vh;
     display: flex;
+    border-radius: 20px;
 }
 .itemImgbig1{
     width: 90%;
     height: 60vh;
     display: flex;
+    border-radius: 15px;
 }
 .itemrapper{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 .itemtext{
     text-align: start;
     font-weight: 700;
-    color: green;
+    color: orange;
     font-size: 17px;
     /* background-color: red; */
 }
 .itemtextdesc{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: wheat;
+    font-weight: 500;
+}
+.itemtextdesc1{
+    display: flex;
+    flex-direction: column;
     text-align: start;
-    color: black;
+    color: wheat;
     font-weight: 500;
 }
 .price-btn{
-    /* background-color: forestgreen; */
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    /* justify-content: center; */
+    align-items: center;
     margin-top: 10px;
     gap: 20px;
     width: 100%;
 }
 .price{
     font-weight: 700;
-    color: green;
+    color: orange;
 }
 .price1{
-    font-weight: 600;
-    color: red;
+    font-weight: 700;
+    color: rgb(253, 85, 85);
 }
 .prices{
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
     gap: 10px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 .cart{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: green;
-    width: 90%;
-    padding: 15px;
+    background-color: sienna;
+    width: 80%;
     border: none;
-    color: white;
+    color: wheat;
     font-size: 14px;
-    border-radius: 3px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.cart1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: sienna;
+    width: 90%;
+    border: none;
+    color: wheat;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 40px;
 }
 .carty{
     display: flex;
@@ -1392,11 +1434,11 @@ nav{
     background-color: red;
 }
 .btn{
-    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .cartbtn{
     width: 100%;
@@ -1421,6 +1463,7 @@ nav{
 }
 .infomate p{
     text-align: center;
+    color: orange;
 }
 .infomate span{
     font-weight: 500;
@@ -1464,13 +1507,14 @@ nav{
     margin-left: 70px;
     
 }
-.carthead p{
+.carthead a{
     font-size: 25x;
     font-weight: 500;
-}
-.carthead a{
     text-decoration: underline;
-    color: gray;
+    color: white;
+}
+.carthead p{
+    color: orange;
 }
 .cartitem{
     display: flex;
@@ -1505,30 +1549,30 @@ nav{
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 30px;
-    
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 .cartorder-con{
-    border-bottom: 1px solid  rgb(215, 215, 215);
+    border-bottom: 2px solid  sandybrown;
+    background-color: #2a1b15; 
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 15vh;
-    justify-content: space-between;
-    align-items: center;
+    border-radius: 5px;
 }
 .cartorder1{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
     width: 60%;
 }
 .cartorder2{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 35%;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
 }
 .cartdetails{
     display: flex;
@@ -1536,42 +1580,56 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 40vh;
+    border: 1px solid sandybrown;
+
 }
 .insdeorder{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
-    gap: 20px;
+    /* gap: 20px; */
+}
+.insdeorder a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
 }
 .insdeorder1{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
     gap: 20px;
-    justify-content: end;
+    /* justify-content: end; */
+    justify-content: center;
+    align-items: center;
 }
 .topupImg1{
-    width: 90%;
-    height: 5vh;
+    width: 70%;
+    height: 12vh;
+    border-radius: 10px;
 }
 .cart-count{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 50%;
-    gap: 10px;
+    /* gap: 10px; */
 }
 .cartbtn{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    
 }
 .cartremove{
     display: flex;
     flex-direction: row;
     width: 50%;
+    justify-content: end;
 }
 .cartremove .remove{
     border: none;
@@ -1592,6 +1650,7 @@ nav{
     height: auto;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .details-con{
     display: flex;
@@ -1610,6 +1669,12 @@ nav{
     height: 70vh;
     /* background-color: rgb(51, 255, 0); */
 }
+.details-sep{
+    border: 2px solid orange;
+    width: 95%;
+    background-color: #2a1b15;
+    border-radius: 10px;
+}
 .itemImgbigg{
     width: 70%;
 }
@@ -1626,15 +1691,18 @@ nav{
 .description-con{
     display: flex;
     flex-direction: row;
-    /* background-color: darksalmon; */
     width: 100%;
-    height: 8vh;
+    height: 6vh;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     margin: 20px;
     font-weight: 600;
+}
+.description-con p{
+    font-size: 16px;
+    color: orange;
 }
 .d1{
     display: flex;
@@ -1645,6 +1713,7 @@ nav{
 }
 .d1 p{
     font-weight: 500;
+    color: orange;
 }
 .d2{
     display: flex;
@@ -1688,7 +1757,9 @@ nav{
     display: flex;
     flex-direction: column;
     width: 90%;
-    text-align: justify;
+    text-align: center;
+    color: orange;
+    font-weight: 600;
 }
 
 /* FOOTER */
@@ -1696,7 +1767,7 @@ nav{
 .footer-container{
     display: flex;
     flex-direction: column;
-    background-color: #ddd;
+    background-color: #2a1b15;
     height: 60vh;
     width: 100%;
 }
@@ -1715,7 +1786,7 @@ nav{
     align-items: center;
     justify-content: center;
     margin-top: 15px;
-    color: black;
+    color: wheat;
     font-weight: 600;
     gap: 10px;
 }
@@ -1749,7 +1820,7 @@ nav{
     justify-content: center;
 }
 .title h1{
-    color: green;
+    color: orange;
 }
 .footer-link ul{
     gap: 50px;
@@ -1759,17 +1830,17 @@ nav{
     align-items: center;
 }
 .footer-link a{
-    color: black;
+    color: orange;
     font-weight: 600;
 }
 .footer-copyright{
     display: flex;
     flex-direction: column;
     margin-left: 60px;
-    background-color: #ddd;
 }
 .footer-copyright p{
     font-weight: 600;
+    color: white;
 }
 
 /* checkout */
@@ -2123,6 +2194,9 @@ nav{
     gap: 20px;
     /* margin-left: 20px; */
 }
+.title1con{
+    color: orange;
+}
 .title1Coon{
     width: 90%;
     gap: 20px;
@@ -2154,6 +2228,7 @@ nav{
 }
 .cartlisthead{
     display: none;
+    color: orange;
 }
 
 
@@ -2338,7 +2413,7 @@ nav{
     .carthead {
         flex-direction: row;
         justify-content: space-between;
-        margin: 20px;
+        /* margin: 20px; */
         margin-top: 80px;
     }
     .details-con{
@@ -2401,7 +2476,7 @@ nav{
         margin: 0px;
     }
     .description-img{
-        width: 10%;
+        width: 8%;
     }
     .desc-box{
         border: none;
@@ -2419,13 +2494,19 @@ nav{
         gap: 10px;
     }
     .cartorder1{
-        width: 90%;
+        width: 100%;
     }
-    .insdeorder{
-        gap: 0px;
+    .topupImg1{
+        width: 100%;
+        height: 9vh;
     }
     .insdeorder1{
         margin: 0px;
+    }
+    .cartremove{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .cartbtn{
         width: 100%;
@@ -2476,7 +2557,6 @@ nav{
     .cartdetails{
         flex-direction: column;
         height: auto;
-        border: 1px solid rgb(212, 212, 212);
         margin-bottom: 20px;
     }
     .cartsubtotal{
@@ -2678,13 +2758,14 @@ nav{
     .carthead {
         margin: 0px;
         margin-top: 100px;
+        margin-bottom: 20px;
     }
     .carthead p{
-        margin-left: 50px;
+        /* margin-left: 50px; */
         font-size: 20px;
     }
     .carthead a{
-        margin-left: 50px;
+        /* margin-left: 50px; */
         font-size: 20px;
     }
     .details-con{
@@ -2824,7 +2905,6 @@ nav{
     .cartdetails{
         flex-direction: row;
         height: auto;
-        border: 1px solid rgb(212, 212, 212);
         margin-bottom: 10px;
     }
     .cartnote1 .p{
@@ -2849,7 +2929,6 @@ nav{
         width: 100%;
         height: 6vh;
         font-size: 20px;
-        background-color: green;
         border: none;
         color: white;
     }
@@ -3035,14 +3114,15 @@ nav{
 
     .carthead {
         margin: 0px;
-        margin-top: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .carthead p{
-        margin-left: 50px;
+        margin-left: 5px;
         font-size: 20px;
     }
     .carthead a{
-        margin-left: 50px;
+        margin-left: 5px;
         font-size: 20px;
     }
     .details-con{
@@ -3179,7 +3259,6 @@ nav{
     .cartdetails{
         flex-direction: row;
         height: auto;
-        border: 1px solid rgb(212, 212, 212);
         margin-bottom: 10px;
     }
     .cartnote1 .p{
@@ -3204,7 +3283,6 @@ nav{
         width: 100%;
         height: 6vh;
         font-size: 17px;
-        background-color: green;
         border: none;
         color: white;
     }
@@ -3260,7 +3338,7 @@ nav{
         width: 50%;
     }
     .side-link{
-        width: 100%;
+        width: 50%;
     }
     .sitename h1{
         display: flex;
@@ -3398,14 +3476,15 @@ nav{
 
     .carthead {
         margin: 0px;
-        margin-top: 100px;
+        margin-top: 80px;
+        margin-bottom: 20px;
     }
     .carthead p{
-        margin-left: 50px;
+        margin-left: 5px;
         font-size: 20px;
     }
     .carthead a{
-        margin-left: 50px;
+        margin-left: 5px;
         font-size: 20px;
     }
     .details-con{
@@ -3455,6 +3534,10 @@ nav{
     }
     .topupImg{
         height: 5vh;
+    }
+    .topupImg1{
+        width: 100%;
+        height: 7vh;
     }
     .cart-item-title{
         font-size: 24px;
@@ -3524,7 +3607,7 @@ nav{
     }
     .cartorder-con{
         gap: 0px;
-        height: auto;
+        height: 7vh;
     }
     .insdeorder1{
         gap: 0px;
@@ -3561,7 +3644,6 @@ nav{
     .cartdetails{
         flex-direction: row;
         height: 30vh;
-        border: 1px solid rgb(212, 212, 212);
         margin-bottom: 10px;
     }
     .cartnote{
@@ -3599,7 +3681,6 @@ nav{
         width: 100%;
         height: 4vh;
         font-size: 20px;
-        background-color: green;
         border: none;
         color: white;
     }

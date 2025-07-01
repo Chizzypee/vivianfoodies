@@ -21,12 +21,13 @@ function showDetailsProduct(){
                 <div class="details-left">
                     <div class="d1">
                         <label for="text" class="section">Dashboard / item</label>
+                        <label for="text" class="cart-price cart-price1">${findProduct.name}</label>
                         <label for="text" class="cart-price cart-price1">$${findProduct.price}</label>
-                        <label for="text" class="itemtextdesc">${findProduct.description}</label>
+                        <label for="text" class="itemtextdesc itemtextdesc1">${findProduct.description}</label>
                     </div>
                     <div class="d2">
                         <div class="btn" id="btnContainer-${findProduct.id}">
-                            <button class="cart" id="addcart" onclick="addToCart(${findProduct.id})">Add to cart</button>
+                            <button class="cart cart1" id="addcart" onclick="addToCart(${findProduct.id})">Add to cart</button>
                         </div>
                     </div>
                     <div class="description-con" onclick="openDescription()">

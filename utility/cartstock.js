@@ -16,12 +16,10 @@ function renderCartStock(){
                         <a href="../dashboard/item.html?id=${item.id}">
                             <label for="text" class="cart-item-title">${item.name}</label>
                         </a>
+                        <a href="../dashboard/item.html?id=${item.id}">
+                            <label for="text" class="cart-price">$${item.price}</label>
+                        </a>
                     </div>
-                <div class="insdeorder1">
-                    <a href="../dashboard/item.html?id=${item.id}">
-                        <label for="text" class="cart-price">$${item.price}</label>
-                    </a>
-                </div>
                 </div>
                 <div class="cartorder2">
                     <div class="cart-count">
