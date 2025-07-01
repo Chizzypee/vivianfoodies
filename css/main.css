@@ -2281,7 +2281,8 @@ nav{
         width: 100%;
     }
     .sitename h1{
-        display: none;
+        display: flex;
+        font-size: 17px;
     }
     .siteimg{
         width: 15%;
@@ -2312,7 +2313,7 @@ nav{
         height: 100vh;
     }
     .item{
-        height: 72vh;
+        height: 71vh;
     }
     .foodie-head{
         justify-content: space-between;
@@ -2383,7 +2384,12 @@ nav{
         margin: 0px;
     }
     .footer-link ul{
-        display: none;
+        display: grid;
+        grid-template-columns:2fr 2fr 2fr;
+        gap: 5px;
+    }
+    .footer-link ul li{
+        margin-left: 5px;
     }
     .title{
         width: 100%;
@@ -2397,13 +2403,22 @@ nav{
         font-size: 18px;
     }
     .t-img{
-        width: 10%;
+        width: 6%;
+        border-radius: 50px;
     }
     .footer-social{
-        display: none;
+        display: flex;
+        gap: 10px;
     }
     .footer-copyright{
-       display: none;
+       display: flex;
+       margin: 0px;
+       margin-bottom: 10px;
+       margin-left: 20px;
+    }
+    .footer-copyright p{
+        font-size: 12px;
+
     }
     .footer-copyrightmMKT{
         gap: 20px;
@@ -2415,10 +2430,10 @@ nav{
         margin: 0px;
     }
     .footer-copyrightmMKT ul li{
-        background-color: red;
         width: 50%;
     }
     .copyhead{
+        display: none;
         margin-left: 20px;
     }
     
@@ -2749,7 +2764,8 @@ nav{
         font-size: 18px;
     }
     .t-img{
-        width: 10%;
+        width: 6%;
+        border-radius: 50px;
     }
     .footer-social{
         display: none;
@@ -3100,6 +3116,7 @@ nav{
     }
     .t-img{
         width: 5%;
+        border-radius: 50px;
     }
     .footer-social{
         display: none;
@@ -3459,7 +3476,13 @@ nav{
         
     }
     .footer-link ul{
-        display: none;
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        gap: 10px;
+    }
+    .footer-link ul li{
+        margin-left: 20px;
     }
     .title{
         width: 100%;
@@ -3470,13 +3493,14 @@ nav{
         font-size: 18px;
     }
     .t-img{
-        width: 10%;
+        width: 5%;
     }
     .footer-social{
-        display: none;
+        display: flex;
+        gap: 10px;
     }
     .footer-copyright{
-       display: none;
+       display: flex;
     }
     .footer-copyrightmMKT{
         gap: 20px;
