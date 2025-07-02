@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>checkout</title>
-    <link rel="stylesheet" href="../main.css">
+    <script src="../utility/fetch.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 <body>
     <div class="checkcontainer">
         <div class="check-head">
             <div class="check-split">
-                <img src="../icon/heart.png" class="checkheadIMg">
+                <img src="../icon/logo.png" class="checkheadIMg">
                 <p>Vivilious-Food</p>
             </div>
             <div class="check-split">
-                <img src="../icon/download.png" class="checkcartImg">
+                <img src="../icon/shopify-brands-solid.svg" class="checkcartImg">
             </div>
         </div>
         <div class="odersummary" onclick="openOrderedItem()">
             <div class="ordermain">
                 <div class="ordersplit">
                     <p>Order Summary</p>
-                    <img src="../icon/download.png" class="checkcartImg1">
+                    <i class="fa-solid fa-chevron-down backtop"></i>
                 </div>
                 <div class="ordersplit">
-                    <label for="text" class="cartamount">$0.00</label>
+                    <label for="text" class="cartamount cartamountcheck" id="cartAmount">$0.00</label>
                 </div>
             </div>
         </div>
-        <div class="orderdetails" >
+        <div class="orderdetails" id="orderdContent">
             <div class="orderdetails-con">
-                <div class="ordered-content" id="orderdContent">
-                    <div class="orderedcon">
+                <div class="ordered-content">
+                    <div class="orderedcon" >
                         <!-- <div class="orderIMG-text">
                             <img src="../image/baked-quails-pan-dark-surface_2829-5596.jpg" class="imgorder">
                             <div class="orderedInfo">
@@ -49,7 +52,7 @@
                     <div class="discountsplit">
                         <input type="text" class="discountinput" placeholder="Discount code or gift card">
                     </div>
-                    <div class="discountsplit">
+                    <div class="discountsplit1">
                         <button class="apply">Apply</button>
                     </div>
                 </div>
@@ -58,7 +61,7 @@
                         <p class="totalcartitem1">Subtotal (4) item</p>
                         <p>Delivery fees</p>
                         <p>Custom fee</p>
-                        <p>Total</p>
+                        <h1 class="chekp">Total</h1>
                     </div>
                     <div class="odertotalsum-split">
                         <label for="text" class="cartamount1">$0.00</label>
@@ -90,8 +93,8 @@
                     <option value="Terminal">United kingdom</option>
                 </select>
                 <div class="deliverysplit">
-                    <input type="text" class="discountinput" placeholder="First Name">
-                    <input type="text" class="discountinput" placeholder="Last Name">
+                    <input type="text" class="discountinput1" placeholder="First Name">
+                    <input type="text" class="discountinput1" placeholder="Last Name">
                 </div>
                 <div class="deliverysplit">
                     <input type="number" class="discountinput" placeholder="Phone Number">
@@ -124,7 +127,7 @@
                 </div>
                 <div class="shippingWarning">
                     <div class="shipwarns">
-                        <img src="../icon/download.png" class="checkcartImg2">
+                        <i class="fa-solid fa-chevron-down backtop"></i>
                         <div class="shipwardDetails">
                             <p class="shipP">Shipping not available</p>
                             <p>Your order cant not be shipped to the selected address. Review your address to ensure it's correct and try again, or select a diffrent address</p>
@@ -172,14 +175,73 @@
                     <div class="paymentbtn">
                         <button class="confirmpayment">Comfirm Payment</button>
                     </div>
-                    <div class="backshopping">
+                    
+                </div>
+            </div>
+            <div class="odersummary1">
+               <div class="ordermain1">
+                   <div class="ordersplit">
+                       <p>Order Summary</p>
+                   </div>
+                   <div class="ordersplit"  onclick="openOrderedItem1()">
+                       <label for="text" class="cartamountcheck2">Show</label>
+                       <i class="fa-solid fa-chevron-down backtop"></i>
+                   </div>
+               </div>
+           </div>
+           <div class="orderdetails1" >
+               <div class="orderdetails-con1">
+                   <div class="ordered-content1" id="ordered-content1">
+                       <div class="orderedcon1">
+                           <!-- <div class="orderIMG-text">
+                           </div> -->
+                       </div>
+                   </div>
+                   <!-- render cart item here -->
+                   <div class="discount">
+                       <div class="discountsplit">
+                           <input type="text" class="discountinput" placeholder="Discount code or gift card">
+                       </div>
+                       <div class="discountsplit discountsplit1">
+                           <button class="apply">Apply</button>
+                       </div>
+                   </div>
+                   <div class="odertotalsum">
+                       <div class="odertotalsum-split1">
+                           <p class="totalcartitem1">Subtotal (4) item</p>
+                           <p>Delivery fees</p>
+                           <p>Custom fee</p>
+                           <h1 class="chekp">Total</h1>
+                       </div>
+                       <div class="odertotalsum-split">
+                           <label for="text" class="cartamount2">$0.00</label>
+                           <label for="text" class="deliveryfee1">$0.00</label>
+                           <label for="text" class="Customfee1">$0.00</label>
+                           <label for="text" class="totalfee1">$0.00</label>
+                       </div>
+                   </div>
+                   <div class="paybtn">
+                        <button class="pay">Pay now</button>
+                   </div>
+               </div>
+           </div>
+           <div class="backshopping">
                         <div class="backshopCon">
-                            <a href="../dashboard/dashboard.html">
-                                <img src="../icon/download.png" class="shopbsckImg">
+                            <a href="../index.html">
+                                <i class="fa-solid fa-chevron-down backtop"></i>
                                 <label for="text" class="backshop">Go back & Continue shopping</label>
                             </a>
                         </div>
-                    </div>
+            </div>
+           <div class="checkfooter">
+                <div class="checkfooter-con">
+                    <a href="#">Refund policy</a>
+                    <a href="#">Shopping policy</a>
+                    <a href="#">Privacy policy</a>
+                </div>
+                <div class="checkfooter-con">
+                    <a href="#">Terms of service</a>
+                    <a href="#">Contact information</a>
                 </div>
             </div>
         </div>

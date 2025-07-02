@@ -11,9 +11,8 @@ const totalcartitem = document.querySelector(".totalcartitem");
 const totalCartDashboard = document.querySelector(".signalcount");
 const addCartBTn = document.querySelector(".addBTn");
 const productCounttxt = document.querySelector(".product-counttxt");
-// const grandTotalPRice = document.getElementById("cartAmount")
  
- 
+
 // cart array
 const products = JSON.parse( localStorage.getItem("products"));
 let cart = JSON.parse(localStorage.getItem("CART"))
@@ -364,4 +363,9 @@ function changeNumberOfUnite(action, id){
             }
 
             }
+}
+function openCheckOut(){
+    if(document.getElementsByClassName('checkoutbtn1')){
+        window.location.href = "../checkout/checkout.html"
+    }
 }

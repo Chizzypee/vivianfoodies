@@ -188,12 +188,18 @@ function closeDescription(){
 
 
 function openOrderedItem(){
-    document.getElementById("orderdContent").style.display = "flex"
+    const div = document.getElementById("orderdContent")
+    if(div.style.display === "flex"){
+        div.style.display = "none";
+    }else {
+        div.style.display = "flex";
+    }
 }
-// function openCartBtn(){   
-// document.getElementById("cart").style.display = "none"
-// document.getElementById("product-count").style.display = "flex"
-// }
-// function closeCartBtn(){
-//     document.getElementById("orderdContent").style.display = "flex"
-// }
+function openOrderedItem1(){
+    const div = document.getElementById("ordered-content1")
+    if(div.style.display === "flex"){
+        div.style.display = "none";
+    }else {
+        div.style.display = "flex";
+    }
+}

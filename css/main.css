@@ -8,9 +8,9 @@
 }
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: saddlebrown;
 }
 .container{
+    background-color: saddlebrown;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -141,27 +141,6 @@ nav{
     margin-left: 20px;
     color: white;
 }
-/* .cart-warning{
-    display: flex;
-    flex-direction: column;
-    height: 20vh;
-    width: 100%;
-    border: 1px solid deeppink;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    margin-top: 20px;
-    gap: 50px;
-}
-.cart-warning1{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 20px;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-} */
 .yourOrder{
     font-weight: 500;
     font-size: 16px;
@@ -186,10 +165,6 @@ nav{
     height: 10vh;
     /* background-color: blue; */
 }
-/* .wallattopup{
-    display: flex;
-    flex-direction: column;
-} */
 .Amount{
     display: flex;
     flex-direction: column;
@@ -287,6 +262,10 @@ nav{
     font-weight: 700;
     font-size: 17px;
     color: white;
+}
+.cartamount2{
+    font-weight: 700;
+    font-size: 17px;
 }
 .cartparamount{
     font-weight: 700;
@@ -1866,11 +1845,22 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 .checkcontent{
     /* background-color: greenyellow; */
     width: 50%;
-    height: 200vh;
+    height: auto;
+}
+.odersummary1{
+    width: 100%;
+    /* background-color: rgb(222, 221, 221); */
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid rgb(184, 184, 184); */
 }
 .odersummary{
     width: 100%;
@@ -1881,7 +1871,6 @@ nav{
     justify-content: center;
     align-items: center;
     border: 1px solid rgb(184, 184, 184);
-
 }
 .check-head{
     display: flex;
@@ -1899,13 +1888,14 @@ nav{
 }
 .check-split p{
     font-weight: 600;
-    color: green;
+    color: #2a1b15;
+    font-weight: 600;
 }
 .checkheadIMg{
     width: 10%;
 }
 .checkcartImg{
-    width: 10%;
+    width: 50%;
 }
 .checkcartImg1{
     width: 5%;
@@ -1914,18 +1904,26 @@ nav{
     display: flex;
     flex-direction: row;
     width: 50%;
+    justify-content: space-between;
+}
+.ordermain1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
 }
 .ordersplit{
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
 }
 .ordersplit p{
     font-weight: 600;
     font-size: 20px;
+    color: #2a1b15;
 }
-.orderdetails{
-    background-color: rgb(222, 221, 221);
+.orderdetails1{
     display: flex;
     flex-direction: column;
     height: auto;
@@ -1933,9 +1931,23 @@ nav{
     justify-content: center;
     align-items: center;
 }
+.orderdetails{
+    background-color: rgb(222, 221, 221);
+    display: none;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #2a1b15;
+}
 .orderdetails-con{
     height: auto;
     width: 50%;
+}
+.orderdetails-con1{
+    height: auto;
+    width: 100%;
 }
 .discount{
     display: flex;
@@ -1950,16 +1962,18 @@ nav{
     height: 8vh;
     border-radius: 10px;
     border: 1px solid grey;
-    padding-right: 240px;
-    padding-left: 10px;
+    padding: 10px;
+}
+.discountinput1{
+    width: 50%;
+    height: 8vh;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid grey;
+    
 }
 .discountinput::placeholder{
     font-size: 15px;
-}
-.apply{
-    padding: 15px;
-    border-radius: 10px;
-    border: 1px solid gray;
 }
 .odertotalsum{
     display: flex;
@@ -2002,18 +2016,13 @@ nav{
     gap: 20px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .deliverysplit{
     display: flex;
     flex-direction: row;
-    gap: 20px;
-}
-.discountinput1{
     width: 100%;
-    height: 8vh;
-    border-radius: 10px;
-    border: 1px solid grey;
-    padding-left: 10px;
+    gap: 20px;
 }
 .shippingMethod{
     height: 30vh;
@@ -2125,13 +2134,13 @@ nav{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     justify-content: center;
     align-items: end;
 }
 .confirmpayment{
     width: 50%;
-    height: 8vh;
+    height: 5vh;
     color: white;
     background-color: orangered;
     border: none;
@@ -2144,6 +2153,7 @@ nav{
     flex-direction: row;
 }
 .backshopCon a{
+    gap: 10px;
     display: flex;
     align-items: center;
 }
@@ -2153,12 +2163,40 @@ nav{
     font-weight: 600;
 }
 
-.ordered-content{
+.ordered-content1{
     display: none;
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.ordered-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.orderedcon1{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.paybtn{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+.pay{
+    background-color: orangered;
+    width: 100%;
+    border: none;
+    color: white;
+    height: 5vh;
+    border-radius: 5px;
 }
 .orderedcon{
     gap: 20px;
@@ -2192,6 +2230,63 @@ nav{
 }
 .orderedText1{
     font-size: 13px;
+}
+.chekp{
+    font-size: 20px;
+}
+.totalfee{
+    font-weight: 700;
+    font-size: 18px;
+}
+.cartamountcheck1{
+    color: black;
+    font-weight: 600;
+}
+.cartamountcheck{
+    color: black;
+    font-weight: 600;
+}
+.cartamountcheck2{
+    color: blue;
+    font-weight: 600;
+}
+.checkfooter{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #2a1b15;
+}
+.checkfooter-con{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+.checkfooter-con a{
+    color: #2a1b15;
+    text-decoration:underline;
+}
+.discountsplit{
+    width: 80%;
+}
+.discountsplit1{
+     display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    width: 10%;
+}
+.apply{
+    height: 5vh;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.backshopping{
+    height: 5vh;
 }
 .title1{
     display: flex;
@@ -2249,6 +2344,105 @@ nav{
 
 /* MEDIA QUARY */
 @media screen and (max-width: 600px){
+    /* CHECKOUT */
+    .checkcontainer{
+        height: auto;
+    }
+    .odersummary1{
+        height: auto;
+    }
+    .odersummary{
+        height: 6vh;
+    }
+    .check-head{
+        height: 7vh;
+    }
+    .check-split p{
+        font-size: 20px;
+    }
+    .checkcartImg{
+        width: 100%;
+    }
+    .ordermain{
+        justify-content: space-between;
+        width: 90%;
+    }
+    .ordersplit p{
+        font-size: 15px;
+    }
+    .cartamountcheck{
+        color: black;
+    }
+    .cartamountcheck1{
+        color: grey;
+    }
+    .orderdetails-con{
+        width: 90%;
+    }
+    .orderIMG-text1{
+        width: 20%;
+    }
+    .discount{
+        gap: 10px;
+        height: 10vh;
+    }
+    .discountsplit{
+        width: 100%;
+    }
+    .discountsplit1{
+        width: 20%;
+    }
+    .chekp{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .totalfee{
+        font-size: 15px;
+        font-weight: 600;
+        color: black;
+    }
+    .totalfee1{
+        font-size: 15px;
+        font-weight: 600;
+        color: black;
+    }
+    .checkcontent{
+        width: 90%;
+    }
+    .deliverysplit{
+        flex-direction: column;
+    }
+    .discountinput1{
+        width: 100%;
+        height: auto;
+    }
+    .discountinput{
+        width: 100%;
+        height: 5vh;
+    }
+    .contact-login h2{
+        font-size: 17px;
+    }
+    .shippingcon h2{
+        font-size: 17px;
+    }
+    .paymentbtn{
+        height: 10vh;
+    }
+    .confirmpayment{
+        height: 4vh;
+    }
+    .checkfooter-con a{
+        font-size: 14px;
+    }
+    .odertotalsum{
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+
+
+
     .circle{
        display: none;
     }
@@ -2963,6 +3157,10 @@ nav{
     }
 }
 @media screen and (min-width: 1024px){
+    .apply{
+        height: 7vh;
+        width: 150%;
+    }
     .circle{
         display: flex;
     }
@@ -3314,6 +3512,123 @@ nav{
 
 
 @media screen and (min-height: 1000px){
+    .checkcontainer{
+        height: auto;
+    }
+    .odersummary1{
+        height: auto;
+    }
+    .odersummary{
+        height: 5vh;
+    }
+    .check-head{
+        height: 7vh;
+    }
+    .check-split p{
+        font-size: 20px;
+    }
+    .checkcartImg{
+        width: 100%;
+    }
+    .ordermain{
+        justify-content: space-between;
+        width: 50%;
+    }
+    .ordersplit p{
+        font-size: 15px;
+    }
+    .cartamountcheck{
+        color: black;
+    }
+    .cartamountcheck1{
+        color: grey;
+    }
+    .orderdetails-con{
+        width: 50%;
+    }
+    .orderIMG-text1{
+        width: 20%;
+    }
+    .discount{
+        gap: 10px;
+        height: 10vh;
+    }
+    .discountsplit{
+        width: 100%;
+    }
+    .discountsplit1{
+        width: 20%;
+    }
+    .chekp{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .totalfee{
+        font-size: 15px;
+        font-weight: 600;
+        color: black;
+    }
+    .totalfee1{
+        font-size: 15px;
+        font-weight: 600;
+        color: black;
+    }
+    .checkcontent{
+        width: 50%;
+    }
+    .deliverysplit{
+        flex-direction: row;
+    }
+    .discountinput1{
+        width: 100%;
+        height: auto;
+    }
+    .discountinput{
+        width: 100%;
+        height: 5vh;
+    }
+    .contact-login h2{
+        font-size: 17px;
+    }
+    .shippingcon h2{
+        font-size: 17px;
+    }
+    .paymentbtn{
+        height: 5vh;
+    }
+    .confirmpayment{
+        height: 3vh;
+    }
+    .paybtn{
+        height: 5vh;
+    }
+    .pay{
+        height: 3vh;
+    }
+    .checkfooter{
+        height: 8vh;
+    }
+    .checkfooter-con a{
+        font-size: 14px;
+    }
+    .odertotalsum{
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .shippingMethod{
+        height: 20vh;
+    }
+    .shippingWarning{
+        height: 13vh;
+    }
+    .paymenthead{
+        height: 5vh;
+    }
+
+
+
+
+
     .circle{
         display: none;
     }

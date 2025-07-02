@@ -6,47 +6,70 @@ const totalcartitem = document.querySelector(".totalcartitem");
 const totalcartitem1 = document.querySelector(".totalcartitem1");
 const totalCartDashboard = document.querySelector(".signalcount");
 const orderedITem = document.querySelector(".orderedcon");
+const orderedITem1 = document.querySelector(".orderedcon1");
 const totaldeliveryFee = document.querySelector(".deliveryfee");
 const totalCustomFee = document.querySelector(".Customfee");
 const totalfee = document.querySelector(".totalfee");
 
+const subtotal2 = document.querySelector(".cartamount2"); 
+const totaldeliveryFee1 = document.querySelector(".deliveryfee1");
+const totalCustomFee1 = document.querySelector(".Customfee1");
+const totalfee1 = document.querySelector(".totalfee1");
+
+let cart = JSON.parse(localStorage.getItem("CART"))
+if(cart && cart.length > 0){
+   renderOrderedITem()
+   renderOrderedITem1()
+    renderSubTotalChechOut()
+}
 
 
 //cart array
-let cart = JSON.parse(localStorage.getItem("CART")) || [];
-updateCart()
 
 //add to cart
 function addToCart(id) {
-    //check product already exist in cart
-    if(cart.some((item) => item.id === id)){
-        changeNumberOfUnite("plus", id)
-    }else{
-        const item = products.find((product) => product.id === id)
-        // console.log(item);
-     
-        cart.push({
-            ...item,
-            numberOfUnits: 1
-        })
-        console.log(cart);
-    }
-
-    updateCart();
+      const product = products.find((product) => product.id === id)
+        if(!product) return;
+        const {instock, ...data} = product;
+        const readCart = JSON.parse(localStorage.getItem("CART")) || [];
+        const getcart = readCart.find(product => product.id === id)
+        if(getcart){
+            if(getcart.quantity < product.instock){
+                getcart.quantity += 1
+            }
+        }else {
+            readCart.push({
+                ...data,
+                quantity: 1,
+                total: data.price*1,
+                id: id
+            })
+        }
+        localStorage.setItem("CART", JSON.stringify(readCart));
 }
-showProduct()
 
 //update cart
-function updateCart() {
-    // save cart to local storage
-    localStorage.setItem("CART", JSON.stringify(cart))
-    cart = JSON.parse(localStorage.getItem("CART")) || [];
-    renderOrderedITem();
-    renderSubTotal(); 
+function updateCart(product) {
+    let cart =  JSON.parse( localStorage.getItem("CART"));
+    if(cart === null){
+        if(product){
+            localStorage.setItem("CART", JSON.stringify([product])) 
+        }
+    } else{
+        const exist = cart.find(item => item.id === product.id);
+        if(!exist && product.hasOwnProperty("id")){
+            cart.push(product);
+            localStorage.setItem("CART", JSON.stringify(cart))
+        }
+    }
+    renderOrderedITem()
+    renderOrderedITem1()
+    renderSubTotalChechOut()
 }
 
 // calculate subtotal
-function renderSubTotal(){
+function renderSubTotalChechOut(){
+    const cart = JSON.parse(localStorage.getItem("CART"));
     let totalPrice = 0;
     let totalSub = 0;
     let totalItem = 0;
@@ -54,85 +77,71 @@ function renderSubTotal(){
     let totalCustom = 0;
     let totalAll = 0;
     
-    console.log('total cart',cart);
-    
     cart.forEach((item) => {
-        totalPrice  += item.price * item.numberOfUnits
-        totalSub += item.price * item.numberOfUnits
-        totalItem  += item.numberOfUnits;
-        totalDelivery += item.deliveryfee - item.numberOfUnits;
-        totalCustom += item.customfee - item.numberOfUnits;
+        totalPrice  += item.price * item.quantity
+        totalSub += item.price * item.quantity
+        totalItem  += item.quantity;
+        totalDelivery += item.deliveryfee - item.quantity;
+        totalCustom += item.customfee - item.quantity;
         totalAll = totalSub + totalDelivery + totalCustom;
-    });
-
-
-    console.log({
-        totalPrice:totalPrice,
-        totalSub:totalSub,
-        totalItem:totalItem,
     });
 
     totalfee.innerHTML = `$${totalAll.toFixed(2)}`
     subtotal1.innerHTML = `$${totalPrice.toFixed(2)}`
-    totalcartitem1.innerHTML = `(${totalItem})`
+    totalcartitem1.innerHTML = `Subtotal (${totalItem}) item`
     totaldeliveryFee.innerHTML =  `$${totalDelivery.toFixed(2)}`
     totalCustomFee.innerHTML =  `$${totalCustom.toFixed(2)}`
     subtotal.innerHTML = `$${totalPrice.toFixed(2)}` 
+
+    subtotal2.innerHTML = `$${totalPrice.toFixed(2)}`
+    totaldeliveryFee1.innerHTML =  `$${totalDelivery.toFixed(2)}`
+    totalcartitem1.innerHTML = `Subtotal (${totalItem}) item`
+    totalfee1.innerHTML = `$${totalAll.toFixed(2)}`
+    totalCustomFee1.innerHTML =  `$${totalCustom.toFixed(2)}`
     
 }
 
 
 // render cart item
 function renderOrderedITem(){
-orderedITem.innerHTML = "";
-cart.forEach((item) =>{
-    orderedITem.innerHTML += `
-    <div class="orderedcon">
-        <div class="orderIMG-text">
-            <img src="${item.imgSrc}" class="imgorder">
-            <div class="orderedInfo">
-                <label for="text" class="orderedText">${item.name}</label>
-                <label for="text" class="orderedText1">(${item.description})</label>
-            </div>
-            <div class="orderIMG-text1">
-                <label for="text" class="cartamount">$${item.price * item.numberOfUnits}</label>
+    const readCart = JSON.parse(localStorage.getItem("CART"))
+    orderedITem.innerHTML = "";
+    readCart.forEach((item) =>{
+        orderedITem.innerHTML += `
+        <div class="orderedcon">
+            <div class="orderIMG-text">
+                <img src="${item.imgSrc}" class="imgorder">
+                <div class="orderedInfo">
+                    <label for="text" class="orderedText">${item.name} - </label>
+                    <label for="text" class="orderedText1">(${item.description})</label>
+                </div>
+                <div class="orderIMG-text1">
+                    <label for="text" class="cartamount cartamountcheck1">$${item.price * item.quantity}</label>
+                </div>
             </div>
         </div>
-    </div>
-    
-    `
+        `
 })
    
 }
-
-
-// remov item from cart
-function removeCartItem(id){
-    cart = cart.filter((item) => item.id !== id)
-
-    updateCart()
-}
-
-
-
-// change number of unite
-function changeNumberOfUnite(action, id){
-    cart = cart.map((item) => {
-        let numberOfUnits = item.numberOfUnits
-        if(item.id === id){
-            if(action === "minus" && numberOfUnits > 1){
-                numberOfUnits-- 
-            }else if(action === "plus" && numberOfUnits < item.instock){
-                numberOfUnits++
-            }
-        }
-     
-        return{
-            ...item,
-            numberOfUnits
-        }
-    });
-    console.log(cart);
-    updateCart();
-    
+function renderOrderedITem1(){
+    const readCart = JSON.parse(localStorage.getItem("CART"))
+    orderedITem1.innerHTML = "";
+    readCart.forEach((item) =>{
+        orderedITem1.innerHTML += `
+        <div class="orderedcon">
+            <div class="orderIMG-text">
+                <img src="${item.imgSrc}" class="imgorder">
+                <div class="orderedInfo">
+                    <label for="text" class="orderedText">${item.name} - </label>
+                    <label for="text" class="orderedText1">(${item.description})</label>
+                </div>
+                <div class="orderIMG-text1">
+                    <label for="text" class="cartamount cartamountcheck1">$${item.price * item.quantity}</label>
+                </div>
+            </div>
+        </div>
+        `
+})
+   
 }
