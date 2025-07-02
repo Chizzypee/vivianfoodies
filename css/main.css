@@ -2340,11 +2340,26 @@ nav{
     display: none;
     color: orange;
 }
-
+.paritem{
+    text-align: center;
+    position: absolute;
+    margin-left: 50px;
+    margin-bottom: 35px;
+    background-color: yellow;
+    padding: 2px;
+    width: 2%;
+    border-radius: 100px;
+}
 
 /* MEDIA QUARY */
 @media screen and (max-width: 600px){
     /* CHECKOUT */
+    .paritem{
+    margin-left: 25px;
+    margin-bottom: 30px;
+    padding: 1px;
+    width: 6%;
+    }
     .checkcontainer{
         height: auto;
     }
@@ -2393,8 +2408,8 @@ nav{
         width: 20%;
     }
     .chekp{
-        font-size: 15px;
-        font-weight: 600;
+        font-size: 18px;
+        font-weight: 700;
     }
     .totalfee{
         font-size: 15px;
@@ -2402,8 +2417,8 @@ nav{
         color: black;
     }
     .totalfee1{
-        font-size: 15px;
-        font-weight: 600;
+        font-size: 18px;
+        font-weight: 700;
         color: black;
     }
     .checkcontent{
@@ -2443,13 +2458,25 @@ nav{
         margin-bottom: 20px;
     }
     .shippingMethod{
-        height: auto;
+        height: 25vh;
+    }
+    .shippingcon h2{
+        font-size: 14px;
     }
     .shippingWarning{
-        height: 15vh;
+        height: 17vh;
     }
     .paymenthead{
         height: 5vh;
+    }
+    .paymenthead p{
+        font-size: 13px;
+    }
+    .discountinput{
+        background-color: white;
+    }
+    .discountinput1{
+        background-color: white;
     }
 
 
@@ -3524,7 +3551,18 @@ nav{
 
 
 @media screen and (min-height: 1000px){
-
+    .paritem{
+    margin-left: 25px;
+    margin-bottom: 30px;
+    padding: 1px;
+    width: 3%;
+    }
+    .discountinput{
+        background-color: white;
+    }
+    .discountinput1{
+        background-color: white;
+    }
     .apply{
         height: 3vh;
         width: 100%;
@@ -3591,6 +3629,7 @@ nav{
         color: black;
     }
     .checkcontent{
+        background-color: white;
         width: 50%;
     }
     .deliivery{

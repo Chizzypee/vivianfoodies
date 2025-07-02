@@ -81,8 +81,8 @@ function renderSubTotalChechOut(){
         totalPrice  += item.price * item.quantity
         totalSub += item.price * item.quantity
         totalItem  += item.quantity;
-        totalDelivery += item.deliveryfee - item.quantity;
-        totalCustom += item.customfee - item.quantity;
+        totalDelivery = item.deliveryfee;
+        totalCustom = item.customfee ;
         totalAll = totalSub + totalDelivery + totalCustom;
     });
 
@@ -111,6 +111,7 @@ function renderOrderedITem(){
         <div class="orderedcon">
             <div class="orderIMG-text">
                 <img src="${item.imgSrc}" class="imgorder">
+                <div class="paritem">${item.quantity}</div>
                 <div class="orderedInfo">
                     <label for="text" class="orderedText">${item.name} - </label>
                     <label for="text" class="orderedText1">(${item.description})</label>
@@ -132,6 +133,7 @@ function renderOrderedITem1(){
         <div class="orderedcon">
             <div class="orderIMG-text">
                 <img src="${item.imgSrc}" class="imgorder">
+                <div class="paritem">${item.quantity}</div>
                 <div class="orderedInfo">
                     <label for="text" class="orderedText">${item.name} - </label>
                     <label for="text" class="orderedText1">(${item.description})</label>
