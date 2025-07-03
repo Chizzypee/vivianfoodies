@@ -211,8 +211,7 @@ function openPaymentOption(optiontoShow){
 
     if(optiontoShow === 'payinfo'){
         payOption.style.display = "flex";
-        paydetails.style.backgroundColor = " rgb(255, 244, 224)"
-        paydetails.style.border = "1px solid orangered"
+        paydetails.style.backgroundColor = " rgb(223, 255, 223)"
         payOption1.style.display = "none";
         paydetails1.style.backgroundColor = "white"
         paydetails1.style.border = "none"
@@ -222,7 +221,6 @@ function openPaymentOption(optiontoShow){
         paydetails.style.border = "none";
         paydetails.style.border = "none";
         payOption1.style.display = "flex";
-        paydetails1.style.backgroundColor = " rgb(255, 244, 224)";
-         paydetails1.style.border = "1px solid orangered";
+        paydetails1.style.backgroundColor = " rgb(223, 255, 223)";
     }
 }

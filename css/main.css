@@ -1864,7 +1864,7 @@ nav{
 }
 .odersummary{
     width: 100%;
-    background-color: rgb(222, 221, 221);
+    background-color: rgb(240, 239, 239);
     height: 10vh;
     display: flex;
     flex-direction: column;
@@ -1932,14 +1932,14 @@ nav{
     align-items: center;
 }
 .orderdetails{
-    background-color: rgb(222, 221, 221);
+    background-color: rgb(240, 239, 239);
     display: none;
     flex-direction: column;
     height: auto;
     width: 100%;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #2a1b15;
+    border-bottom: 1px solid #c0c0c0;
 }
 .orderdetails-con{
     height: auto;
@@ -1963,6 +1963,7 @@ nav{
     border-radius: 10px;
     border: 1px solid grey;
     padding: 10px;
+    background-color: white;
 }
 .discountinput1{
     width: 50%;
@@ -1970,6 +1971,7 @@ nav{
     border-radius: 10px;
     padding: 10px;
     border: 1px solid grey;
+    background-color: white;
     
 }
 .discountinput::placeholder{
@@ -2108,7 +2110,6 @@ nav{
 .paymentdetails{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     height: 10vh;
     width: 100%;
@@ -2119,13 +2120,12 @@ nav{
     align-items: center;
     height: 10vh;
     width: 100%;
-    background-color: rgb(255, 244, 224);
-    border: 1px solid orangered;
+    background-color: rgb(223, 255, 223);
 }
 .payinfo{
     height: 35vh;
     width: 100%;
-    background-color: #ddd;
+    background-color: #f0f0f0;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -2134,7 +2134,7 @@ nav{
 .payinfo1{
     height: 35vh;
     width: 100%;
-    background-color: #ddd;
+    background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2170,6 +2170,7 @@ nav{
     width: 100%;
     justify-content: end;
     margin-right: 10px;
+    background-color: red;
 }
 .cardImg{
     width: 10%;
@@ -2596,12 +2597,6 @@ nav{
     }
     .paymenthead p{
         font-size: 13px;
-    }
-    .discountinput{
-        background-color: white;
-    }
-    .discountinput1{
-        background-color: white;
     }
 
 
@@ -3364,6 +3359,36 @@ nav{
     }
 }
 @media screen and (min-width: 1024px){
+    .shippingWarning{
+        height: 16vh;
+    }
+     .paymentcon{
+        height: 65vh;
+    }
+    .paymentdetails{
+        height: 6vh;
+    }
+    .paymentdetails1{
+        height: 6vh;
+    }
+    .payinfo{
+        height: 35vh;
+    }
+    .payinfo1{
+        height: 35vh;
+    }
+    .shipwardDetails p{
+        width: 90%;
+    }
+    .atmcard{
+        width: 30%;
+    }
+    .checbokk p{
+        font-size: 14px;
+    }
+    .shippingMethod{
+        height: 35vh;
+    }
     .apply{
         height: 7vh;
         width: 150%;
@@ -3719,8 +3744,8 @@ nav{
 
 
 @media screen and (min-height: 1000px){
-    /* .paymentcon{
-        height: 40vh;
+    .paymentcon{
+        height: 35vh;
     }
     .paymentdetails{
         height: 3vh;
@@ -3732,7 +3757,7 @@ nav{
         height: 18vh;
     }
     .payinfo1{
-        height: 20vh;
+        height: 18vh;
     }
     .shipwardDetails p{
         width: 90%;
@@ -3742,18 +3767,12 @@ nav{
     }
     .checbokk p{
         font-size: 14px;
-    } */
+    }
     .paritem{
-    margin-left: 25px;
+    margin-left: 30px;
     margin-bottom: 30px;
-    padding: 1px;
-    width: 3%;
-    }
-    .discountinput{
-        background-color: white;
-    }
-    .discountinput1{
-        background-color: white;
+    padding: 0px;
+    width: 2%;
     }
     .apply{
         height: 3vh;
@@ -3832,7 +3851,7 @@ nav{
     }
     .discountinput1{
         width: 100%;
-        height: auto;
+        height: 3vh;
     }
     .discountinput{
         width: 100%;
@@ -3873,16 +3892,13 @@ nav{
         margin-bottom: 20px;
     }
     .shippingMethod{
-        /* height: 15vh; */
+        height: 15vh;
     }
     .shippingWarning{
         height: 10vh;
     }
     .paymenthead{
         height: 4vh;
-    }
-    .paymentdetails{
-        height: 5vh;
     }
     .radiocon{
         height: auto;
