@@ -203,3 +203,26 @@ function openOrderedItem1(){
         div.style.display = "flex";
     }
 }
+function openPaymentOption(optiontoShow){
+    const payOption = document.querySelector('.payinfo')
+    const payOption1 = document.querySelector('.payinfo1')
+    const paydetails = document.querySelector('.paymentdetails')
+    const paydetails1 = document.querySelector('.paymentdetails1')
+
+    if(optiontoShow === 'payinfo'){
+        payOption.style.display = "flex";
+        paydetails.style.backgroundColor = " rgb(255, 244, 224)"
+        paydetails.style.border = "1px solid orangered"
+        payOption1.style.display = "none";
+        paydetails1.style.backgroundColor = "white"
+        paydetails1.style.border = "none"
+    }else if(optiontoShow === 'payinfo1'){
+        payOption.style.display = "none"
+        paydetails.style.backgroundColor = "white"
+        paydetails.style.border = "none";
+        paydetails.style.border = "none";
+        payOption1.style.display = "flex";
+        paydetails1.style.backgroundColor = " rgb(255, 244, 224)";
+         paydetails1.style.border = "1px solid orangered";
+    }
+}

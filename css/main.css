@@ -2025,7 +2025,7 @@ nav{
     gap: 20px;
 }
 .shippingMethod{
-    height: 30vh;
+    height: 40vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -2070,6 +2070,10 @@ nav{
 .paymentMethod{
     display: flex;
     flex-direction: column;
+    height: auto;
+}
+.paymentcon{
+    height: 80vh;
 }
 .paymenthead{
     background-color: rgb(231, 252, 229);
@@ -2096,36 +2100,86 @@ nav{
 .paymentinfo{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     margin-top: 10px;
-    /* border: 1px solid rgb(227, 254, 206); */
-    gap: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid orange;
 }
 .paymentdetails{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
     height: 10vh;
     width: 100%;
-    border: 1px solid rgb(213, 251, 198);
-    border-left: none;
-    border-right: none;
-    border-top: none;
 }
-.radiocon{
+.paymentdetails1{
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    align-items: start;
-    height: 5vh;
-    margin-left: 5px;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(255, 244, 224);
+    border: 1px solid orangered;
+}
+.payinfo{
+    height: 35vh;
+    width: 100%;
+    background-color: #ddd;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.payinfo1{
+    height: 35vh;
+    width: 100%;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.payinfocon{
+   text-align: center;
+    width: 80%;
+}
+.payinfocon1{
+   text-align: start;
+    width: 95%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.pinfo{
+    width: 100%;
+}
+.atmcard{
+    width: 35%;
+}
+.paymentrow{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+.paymentrow1{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    justify-content: end;
+    margin-right: 10px;
+}
+.cardImg{
+    width: 10%;
 }
 .paytext{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
+    gap: 10px;
+    margin-left: 10px;
 }
 .ptext{
     font-weight: 600;
@@ -2351,9 +2405,80 @@ nav{
     border-radius: 100px;
 }
 
+/* PAYSTACK */
+.paystack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.paystackcon{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 80vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUARY */
 @media screen and (max-width: 600px){
     /* CHECKOUT */
+    .paymentcon{
+        height: 55vh;
+    }
+    .paymentdetails{
+        height: 5vh;
+    }
+    .paymentdetails1{
+        height: 5vh;
+    }
+    .payinfo{
+        height: 25vh;
+    }
+    .payinfo1{
+        height: 30vh;
+    }
+    .shipwardDetails p{
+        font-size: 13px;
+        width: 90%;
+    }
+    .paymentheading p{
+        font-size: 13px;
+    }
+    .ptext{
+        font-size: 14px;
+    }
+    .pinfo p{
+        font-size: 14px;
+    }
+    .atmcard{
+        width: 50%;
+    }
+    .payinfocon p{
+        font-size: 14px;
+    }
+    .checbokk p{
+        font-size: 14px;
+    }
     .paritem{
     margin-left: 25px;
     margin-bottom: 30px;
@@ -2855,6 +2980,49 @@ nav{
     }
 }
 @media screen and (min-width: 600px){
+    .paymentcon{
+        height: 45vh;
+    }
+    .paymentdetails{
+        height: 4vh;
+    }
+    .paymentdetails1{
+        height: 4vh;
+    }
+    .payinfo{
+        height: 21vh;
+    }
+    .payinfo1{
+        height: 20vh;
+    }
+    .shipwardDetails p{
+        font-size: 14px;
+        width: 90%;
+    }
+    .paymentheading p{
+        font-size: 15px;
+    }
+    .ptext{
+        font-size: 15px;
+    }
+    .pinfo p{
+        font-size: 15px;
+    }
+    .atmcard{
+        width: 50%;
+    }
+    .payinfocon p{
+        font-size: 14px;
+    }
+    .checbokk p{
+        font-size: 14px;
+    }
+    .shippingMethod{
+        height: 17vh;
+    }
+    .shippingWarning p{
+        font-size: 13px;
+    }
     .circle{
         display: none;
     }
@@ -3551,6 +3719,30 @@ nav{
 
 
 @media screen and (min-height: 1000px){
+    /* .paymentcon{
+        height: 40vh;
+    }
+    .paymentdetails{
+        height: 3vh;
+    }
+    .paymentdetails1{
+        height: 3vh;
+    }
+    .payinfo{
+        height: 18vh;
+    }
+    .payinfo1{
+        height: 20vh;
+    }
+    .shipwardDetails p{
+        width: 90%;
+    }
+    .atmcard{
+        width: 50%;
+    }
+    .checbokk p{
+        font-size: 14px;
+    } */
     .paritem{
     margin-left: 25px;
     margin-bottom: 30px;
@@ -3606,7 +3798,7 @@ nav{
     }
     .discount{
         gap: 10px;
-        height: 10vh;
+        height: 5vh;
     }
     .discountsplit{
         width: 100%;
@@ -3681,7 +3873,7 @@ nav{
         margin-bottom: 20px;
     }
     .shippingMethod{
-        height: 15vh;
+        /* height: 15vh; */
     }
     .shippingWarning{
         height: 10vh;
