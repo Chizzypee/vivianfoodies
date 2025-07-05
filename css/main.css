@@ -2781,8 +2781,32 @@ nav{
 .secureImg{
     width: 5%;
 }
-
-
+/* loading */
+.loader-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.loader{
+    width: 70px;
+    height: 70px;
+    border: 6px solid transparent;
+    border-top: 6px solid green;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+.loader-container p{
+    font-size: 1.1rem;
+    color: #000;
+}
 
 
 
@@ -4249,16 +4273,27 @@ nav{
 
 
 @media screen and (min-height: 1000px){
-    .sentBtn{
+    .paycontainer{
+        /* height: 40vh; */
+    }
+    .payed{
         height: 5vh;
+    }
+    .sentBtn{
+        height: 3vh;
     }
     .dotted{
         height: 2vh;
     }
+    .transwarning{
+        height: 5vh;
+    }
     .trans{
-        height: 22vh;
+        height: 15vh;
+        gap: 6px;
     }
     .transCon{
+        gap: 0px;
         width: 60%;
     }
     .cardinfo{
@@ -4277,21 +4312,21 @@ nav{
         height: 3vh;
     }
     .transfercon{
-        height: 5vh;
+        height: 3vh;
     }
     .paycontent{
-        height: 50vh;
+        height: 38vh;
         width: 30%;
     }
     .payfieldcontainer{
-        height: 50vh;
+        height: 38vh;
         width: 70%;
     }
     .payhead{
-        height: 5vh;
+        height: 3vh;
     }
     .payhead1{
-        height: 5vh;
+        height: 4vh;
     }
     .paylogo{
         height: 3vh;
@@ -4299,10 +4334,10 @@ nav{
     }
 
     .payoption{
-        height: 5vh;
+        height: 3vh;
     }
     .payoption1{
-        height: 5vh;
+        height: 3vh;
     }
     .payoption4{
         display: none;
