@@ -1930,6 +1930,7 @@ nav{
     width: 100%;
     justify-content: center;
     align-items: center;
+    
 }
 .orderdetails{
     background-color: rgb(240, 239, 239);
@@ -2738,7 +2739,7 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-   
+   width: 100%;
     gap: 10px;
    
 
@@ -4280,7 +4281,7 @@ nav{
         height: 5vh;
     }
     .sentBtn{
-        height: 3vh;
+        height: 2vh;
         font-size: 13px;
     }
     .dotted{
@@ -4293,7 +4294,7 @@ nav{
         height: 2vh;
     }
     .trans{
-        height: 10vh;
+        height: 8vh;
         gap: 6px;
     }
     .pay-logo{
@@ -4345,11 +4346,11 @@ nav{
         height: 3vh;
     }
     .paycontent{
-        height: 30vh;
+        height: 25vh;
         width: 30%;
     }
     .payfieldcontainer{
-        height: 30vh;
+        height: 25vh;
         width: 70%;
     }
     .payhead{
@@ -4365,11 +4366,11 @@ nav{
     }
 
     .payoption{
-        height: 3vh;
+        height: 2vh;
         font-size: 10px;
     }
     .payoption1{
-        height: 3vh;
+        height: 2vh;
         font-size: 10px;
     }
     .payoption4{

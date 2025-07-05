@@ -6,6 +6,8 @@
     <title>paystack</title>
     <script src="../utility/fetch.js"></script>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 <body>
     <div class="paystack">
@@ -20,20 +22,20 @@
                         <p><span>Use one of the payment method below to pay</span></p>
                        <label for="text" class="pays">$0.00 to Vivilious-Food</label>
                     </div>
-                    <div class="payoption" onclick="changeCard()">
-                        <img src="../icon/mastercard.png" class="payIMG">
+                    <div class="payoption" id="payoption" onclick="changeCard()">
+                        <i class="fa-solid fa-credit-card"></i>
                         <p>Card</p>
                     </div>
-                    <div class="payoption1" onclick="changeTransfer()">
-                        <img src="../icon/visa.png" class="payIMG">
+                    <div class="payoption1" id="payoption1" onclick="changeTransfer()">
+                       <i class="fa-solid fa-building-columns"></i>
                         <p>Transfer</p>
                     </div>
                     <div class="payoption3" id="payoption3" onclick="changeCard1()">
-                        <img src="../icon/mastercard.png" class="payIMG">
+                        <i class="fa-solid fa-credit-card"></i>
                         <p>Card</p>
                     </div>
                     <div class="payoption4" id="payoption4" onclick="changeTransfer1()">
-                        <img src="../icon/visa.png" class="payIMG">
+                        <i class="fa-solid fa-building-columns"></i>
                         <p>Transfer</p>
                     </div>
                 </div>
@@ -65,7 +67,7 @@
                                         <label for="text" class="transferinfo">98735127446</label>
                                     </div>
                                     <div class="transCon1">
-                                        <img src="../icon/profile.png"  class="transImg">
+                                        <i class="fa-regular fa-copy"></i>
                                     </div>
                                 </div>
                                 <div class="transmite">
@@ -74,7 +76,7 @@
                                         <label for="text" class="transferinfo">$0.00</label>
                                     </div>
                                     <div class="transCon1">
-                                        <img src="../icon/profile.png"  class="transImg">
+                                        <i class="fa-regular fa-copy"></i>
                                     </div>
                                 </div>
                             </div>
@@ -168,16 +170,16 @@
             <div class="secured">
                 <div class="secured-con1">
                     <div class="secured-row1" onclick="changePayment()">
-                        <img src="../icon/shopify-brands-solid.svg" class="secureImg">
+                       <i class="fa-solid fa-right-left"></i>
                         <p><span>Change Payment Method</span></p>
                     </div>
                     <div class="secured-row" id="cancelBtn" onclick="cancelpayment()">
-                        <img src="../icon/shopify-brands-solid.svg" class="secureImg">
+                        <i class="fa-solid fa-xmark"></i>
                         <p><span>Cancel Payment</span></p>
                     </div>
                 </div>
                 <div class="secured-con">
-                    <img src="../icon/shopify-brands-solid.svg" class="secureImg">
+                    <i class="fa-solid fa-lock"></i>
                     <p>Secured by <span>Paystack</span></p>
                 </div>
             </div>

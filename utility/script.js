@@ -229,11 +229,15 @@ function changeTransfer(){
     document.getElementById("card").style.display = "none";
     document.getElementById("transfer").style.display = "flex";
     document.getElementById("payhead2").style.display = "none";
+    document.getElementById("payoption1").style.color = "green";
+    document.getElementById("payoption").style.color = "black";
 }
 function changeCard(){
     document.getElementById("card").style.display = "flex";
     document.getElementById("transfer").style.display = "none";
     document.getElementById("payhead2").style.display = "none";
+    document.getElementById("payoption").style.color = "green";
+    document.getElementById("payoption1").style.color = "black";
 }
 function changeTransfer1(){
     document.getElementById("card").style.display = "none";
