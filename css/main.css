@@ -4281,63 +4281,96 @@ nav{
     }
     .sentBtn{
         height: 3vh;
+        font-size: 13px;
     }
     .dotted{
         height: 2vh;
     }
+    .dot{
+        height: 1px;
+    }
     .transwarning{
-        height: 5vh;
+        height: 2vh;
     }
     .trans{
-        height: 15vh;
+        height: 10vh;
         gap: 6px;
+    }
+    .pay-logo{
+        height: auto;
+    }
+    .pay-logo1{
+        height: auto;
+    }
+    .payamount{
+        font-size: 10px;
+    }
+    .emails{
+        font-size: 10px;
+    }
+    .ppp{
+        font-size: 10px;
+    }
+    .transferinfo{
+        font-size: 10px;
     }
     .transCon{
         gap: 0px;
         width: 60%;
     }
     .cardinfo{
-        height: 5vh;
+        height: 3vh;
     }
     .cardfield{
-        height: 5vh;
+        height: 3vh;
     }
     .cardnumber{
-        font-size: 14px;
+        font-size: 10px;
+    }
+    .field{
+        font-size: 10px;
+    }
+    .cardpay{
+        height: 3vh;
     }
     .card-pay{
-        height: 5vh;
+        height: 3vh;
+        font-size: 13px;
     }
     .secured-row{
-        height: 3vh;
+        height: 2vh;
+        font-size: 10px;
     }
     .transfercon{
         height: 3vh;
     }
     .paycontent{
-        height: 38vh;
+        height: 30vh;
         width: 30%;
     }
     .payfieldcontainer{
-        height: 38vh;
+        height: 30vh;
         width: 70%;
     }
     .payhead{
         height: 3vh;
+        font-size: 10px;
     }
     .payhead1{
-        height: 4vh;
+        height: 3vh;
     }
     .paylogo{
-        height: 3vh;
+        height: 2vh;
         width: 25%;
     }
 
     .payoption{
         height: 3vh;
+        font-size: 10px;
     }
     .payoption1{
         height: 3vh;
+        font-size: 10px;
     }
     .payoption4{
         display: none;
