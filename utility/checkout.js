@@ -147,3 +147,8 @@ function renderOrderedITem1(){
 })
    
 }
+function openPayment(){
+    if(document.getElementsByClassName('pay')){
+        window.location.href = "../checkout/pay.html"
+    }
+}

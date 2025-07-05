@@ -224,3 +224,41 @@ function openPaymentOption(optiontoShow){
         paydetails1.style.backgroundColor = " rgb(223, 255, 223)";
     }
 }
+
+function changeTransfer(){
+    document.getElementById("card").style.display = "none";
+    document.getElementById("transfer").style.display = "flex";
+    document.getElementById("payhead2").style.display = "none";
+}
+function changeCard(){
+    document.getElementById("card").style.display = "flex";
+    document.getElementById("transfer").style.display = "none";
+    document.getElementById("payhead2").style.display = "none";
+}
+function changeTransfer1(){
+    document.getElementById("card").style.display = "none";
+    document.getElementById("transfer").style.display = "flex";
+    document.getElementById("payhead2").style.display = "none";
+    document.getElementById("payoption3").style.display = "none";
+    document.getElementById("payfieldcontainer").style.display = "flex";
+}
+function changeCard1(){
+    document.getElementById("card").style.display = "flex";
+    document.getElementById("transfer").style.display = "none";
+    document.getElementById("payhead2").style.display = "none";
+    document.getElementById("payoption4").style.display = "none";
+    document.getElementById("payfieldcontainer").style.display = "flex";
+}
+function changePayment(){
+    document.getElementById("card").style.display = "none";
+    document.getElementById("transfer").style.display = "none";
+    document.getElementById("payoption3").style.display = "flex";
+    document.getElementById("payoption4").style.display = "flex";
+    document.getElementById("payfieldcontainer").style.display = "none";
+}
+function cancelpayment(){
+    const cancelPayment = document.getElementById("cancelBtn")
+    cancelPayment.addEventListener('click', ()=>{
+        window.location.href = "./checkout.html"
+    })
+}g

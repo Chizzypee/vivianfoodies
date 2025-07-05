@@ -2170,7 +2170,6 @@ nav{
     width: 100%;
     justify-content: end;
     margin-right: 10px;
-    background-color: red;
 }
 .cardImg{
     width: 10%;
@@ -2262,7 +2261,6 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: space-evenly; */
     width: 100%;
     gap: 20px;
 }
@@ -2353,11 +2351,9 @@ nav{
     align-items: center;
 }
 .title1con{
-    /* background-color: red; */
     display: flex;
     flex-direction: row;
     gap: 20px;
-    /* margin-left: 20px; */
 }
 .title1con{
     color: orange;
@@ -2416,17 +2412,375 @@ nav{
     height: 100vh;
 }
 .paystackcon{
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 80%;
+}
+.paycontainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+    box-shadow: -1px 1px 5px rgb(177, 177, 177);
+}
+.paycontent{
+    width: 40%;
+    height: 80vh;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    box-shadow: -1px 1px 2px rgb(224, 224, 224);
+}
+.payfieldcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 80vh;
+    box-shadow: -1px 1px 10px rgb(171, 171, 171);
+    border-radius: 5px;
+
+}
+.payfieldcontent{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 80vh;
+    width: 100%;
 }
+.paylogo{
+    width: 20%;
+    height: 7vh;
+}
+.payhead1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    height: 10vh;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+.payhead2{
+    display: none;
+}
+.payhead{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
 
+}
+.payhead p{
+    font-weight: 600;
+}
+.payoption{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: 9vh;
+    margin-left: 20px;
+    gap: 10px;
+    font-weight: 600;
+    border-top: 1px solid rgb(226, 225, 225);
+}
+.payoption3{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: 9vh;
+    margin-left: 20px;
+    gap: 10px;
+    font-weight: 600;
+    border-top: 1px solid rgb(197, 196, 196);
+}
+.payoption4{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: 9vh;
+    margin-left: 20px;
+    gap: 10px;
+    font-weight: 600;
+    border-top: 1px solid rgb(197, 196, 196);
+}
+.payoption1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: 9vh;
+    margin-left: 20px;
+    gap: 10px;
+    font-weight: 600;
+    border-top: 1px solid rgb(197, 196, 196);
+}
+.payIMG{
+    width: 20%;
+}
+.pay-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 10vh;
+}
+.pay-logo1{
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    
+}
+.payamount{
+    color: rgb(1, 209, 1);
+    font-weight: 700;
+}
+.payamount span{
+    color: black;
+}
+.paytransfer{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 90%;
+}
+.transfercon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+.transferinfo{
+    color: rgb(0, 0, 41);
+    font-weight: 700;
+}
+.trans{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 35vh;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+}
+.transmite{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.transCon{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+.transCon1{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;   
+    align-items: end;
+    gap: 10px;
+    width: 50%;
+}
+.transImg{
+    width: 10%;
+}
+.dotted{
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.dot{
+    height: 5px;
+    width: 1%;
+    border-radius: 50px;
+    background-color: #e7e7e7;
+}
+.transwarning{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    width: 100%;
+}
+.ppp span{
+    color: rgb(1, 182, 1);
+    font-weight: 600;
+}
+.payed{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+.sentBtn{
+    width: 100%;
+    height: 8vh;
+    font-size: 17px;
+    color: rgb(0, 0, 40);
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid rgb(204, 204, 204);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.cardfield{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 10vh;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 5px;
+    gap: 5px;
+}
+.cardfield1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 10px;
+}
+.cardinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 10vh;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 5px;
+    gap: 5px;
+}
+.field{
+    width: 90%;
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+}
+.cardnumber{
+    margin-left: 10px;
+}
+.cardpay{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    
+}
+.card-pay{
+    height: 10vh;
+    width: 90%;
+    background-color: rgba(74, 195, 74, 0.905);
+    border: none;
+    font-weight: 600;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.secured{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    margin-top: 20px;
+}
+.secured-con{
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    gap: 10px;
+}
+.secured-con1{
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+    gap: 10px;
+   
 
-
+}
+.secured-row1{
+    display: none;
+    flex-direction: row;
+     justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 8vh;
+    border-radius: 5px;
+    gap: 10px;
+    border: 1px solid rgb(194, 193, 193);
+    background-color: rgba(220, 220, 220, 0.612);
+}
+.secured-row{
+    display: flex;
+    flex-direction: row;
+     justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 7vh;
+    border-radius: 5px;
+    gap: 10px;
+    border: 1px solid rgb(194, 193, 193);
+    background-color: rgba(220, 220, 220, 0.612);
+}
+.secured-con p{
+    color: rgb(0, 0, 42);
+}
+.secured-con span{
+    color: rgb(0, 0, 42);
+    font-weight: 700;
+}
+.secured-con1 span{
+    color: rgb(0, 0, 42);
+    font-weight: 500;
+}
+.secureImg{
+    width: 5%;
+}
 
 
 
@@ -2442,6 +2796,156 @@ nav{
 
 /* MEDIA QUARY */
 @media screen and (max-width: 600px){
+    /* PAYMENT */
+    .transfercon{
+        height: 6vh;
+    }
+    .card{
+        border: none;
+        box-shadow: none;
+    }
+    .cardnumber{
+        font-size: 13px;
+    }
+    .cardfield{
+        height: 8vh;
+    }
+    .card-pay{
+        height: 7vh;
+    }
+    .cardinfo{
+        height: 8vh;
+    }
+    .secured-con1{
+        width: 40%;
+        height: 4vh;
+    }
+    .secured-row1{
+        display: flex;
+        width: 50%;
+        height: 4vh;
+    }
+    .secured-row{
+        display: flex;
+        width: 40%;
+         height: 4vh;
+    }
+    .secured-row p{
+        font-size: 13px;
+        font-weight: 700;
+    }
+    .secured-row1 p{
+        font-size: 13px;
+         font-weight: 700;
+    }
+    .secured-con1{
+        width: 100%;
+    }
+    .secured{
+        gap: 50px;
+    }
+    .secured-con{
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+    .secured-con p{
+        font-size: 13px;
+    }
+    .secureImg{
+        width: 4%;
+    }
+    .payoption{
+        display: none;
+    }
+    .payoption1{
+        display: none;
+    }
+    .pays{
+        color: rgb(0, 0, 58);
+        font-weight: 600;
+    }
+    .payoption3{
+        display: flex;
+        height: 7vh;
+    }
+    .payoption4{
+        display: flex;
+        height: 7vh;
+    }
+    .payhead2{
+        width: 90%;
+        margin-top: 10px ;
+    }
+    .payhead2 p{
+        color: rgb(2, 177, 2);
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .payhead2 span{
+        color: black;
+    }
+    .paystack{
+        justify-content: start;
+    }
+    .payhead1{
+        height: 7vh;
+        border-bottom: 1px solid rgb(243, 242, 242);
+    }
+    .paylogo{
+        height: 5vh;
+    }
+    .emails{
+        font-size: 13px;
+    }
+    .payamount{
+        font-size: 13px;
+    }
+    .transferinfo{
+        font-size: 13px;
+    }
+    .trans{
+        height: 30vh;
+    }
+    .ppp{
+        font-size: 13px;
+    }
+    .transferinfo{
+        font-size: 13px;
+    }
+    .sentBtn{
+        height: 7vh;
+    }
+    .payhead{
+        height: 5vh;
+        display: none;
+    }
+    .payIMG{
+        width: 7%;
+    }
+    .payfieldcontent{
+        box-shadow: none;
+        border: none;
+    }
+    .payfieldcontainer{
+        display: none;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
+    .paycontent{
+        width: 100%;
+        height: auto;
+    }
+    .paystackcon{
+        width: 100%;
+        height: auto;
+    }
+    .paycontainer{
+        box-shadow: none;
+        flex-direction: column;
+        border: none;
+    }
     /* CHECKOUT */
     .paymentcon{
         height: 55vh;
@@ -3745,6 +4249,64 @@ nav{
 
 
 @media screen and (min-height: 1000px){
+    .sentBtn{
+        height: 5vh;
+    }
+    .dotted{
+        height: 2vh;
+    }
+    .trans{
+        height: 22vh;
+    }
+    .transCon{
+        width: 60%;
+    }
+    .cardinfo{
+        height: 5vh;
+    }
+    .cardfield{
+        height: 5vh;
+    }
+    .cardnumber{
+        font-size: 14px;
+    }
+    .card-pay{
+        height: 5vh;
+    }
+    .secured-row{
+        height: 3vh;
+    }
+    .transfercon{
+        height: 5vh;
+    }
+    .paycontent{
+        height: 50vh;
+        width: 30%;
+    }
+    .payfieldcontainer{
+        height: 50vh;
+        width: 70%;
+    }
+    .payhead{
+        height: 5vh;
+    }
+    .payhead1{
+        height: 5vh;
+    }
+    .paylogo{
+        height: 3vh;
+        width: 25%;
+    }
+
+    .payoption{
+        height: 5vh;
+    }
+    .payoption1{
+        height: 5vh;
+    }
+    .payoption4{
+        display: none;
+    }
     .paymentcon{
         height: 30vh;
     }

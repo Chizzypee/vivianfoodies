@@ -4,13 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>paystack</title>
+    <script src="../utility/fetch.js"></script>
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <div class="paystack">
         <div class="paystackcon">
-
+            <div class="paycontainer">
+                <div class="paycontent">
+                    <div class="payhead">
+                        <p>PAY WITH</p>
+                    </div>
+                    <div class="payhead2" id="payhead2">
+                        <p>PAYSTACK CHECKOUT</p>
+                        <p><span>Use one of the payment method below to pay</span></p>
+                       <label for="text" class="pays">$0.00 to Vivilious-Food</label>
+                    </div>
+                    <div class="payoption" onclick="changeCard()">
+                        <img src="../icon/mastercard.png" class="payIMG">
+                        <p>Card</p>
+                    </div>
+                    <div class="payoption1" onclick="changeTransfer()">
+                        <img src="../icon/visa.png" class="payIMG">
+                        <p>Transfer</p>
+                    </div>
+                    <div class="payoption3" id="payoption3" onclick="changeCard1()">
+                        <img src="../icon/mastercard.png" class="payIMG">
+                        <p>Card</p>
+                    </div>
+                    <div class="payoption4" id="payoption4" onclick="changeTransfer1()">
+                        <img src="../icon/visa.png" class="payIMG">
+                        <p>Transfer</p>
+                    </div>
+                </div>
+                <div class="payfieldcontainer" id="payfieldcontainer">
+                    <div class="payfieldcontent">
+                        <div class="payhead1">
+                            <div class="pay-logo">
+                                <img src="../icon/logo.png" class="paylogo">
+                            </div>
+                            <div class="pay-logo1">
+                                <label for="text" class="emails">Chigoziealozie7@gmail.com</label>
+                                <label for="text" class="payamount"><span>Pay </span>$0.00</label>
+                            </div>
+                        </div>
+                        <div class="paytransfer" id="transfer">
+                            <div class="transfercon">
+                                <label for="text" class="transferinfo">Transfer $0.00 to paystack Chackout</label>
+                            </div>
+                            <div class="trans">
+                                <div class="transmite">
+                                    <div class="transCon">
+                                        <label for="text" class="ppp">BANK-NAME</label>
+                                        <label for="text" class="transferinfo">Paystack-Titan</label>
+                                    </div>
+                                </div>
+                                <div class="transmite">
+                                    <div class="transCon">
+                                        <label for="text" class="ppp">ACCOUNT NUMBER</label>
+                                        <label for="text" class="transferinfo">98735127446</label>
+                                    </div>
+                                    <div class="transCon1">
+                                        <img src="../icon/profile.png"  class="transImg">
+                                    </div>
+                                </div>
+                                <div class="transmite">
+                                    <div class="transCon">
+                                        <label for="text" class="ppp">AMOUNT</label>
+                                        <label for="text" class="transferinfo">$0.00</label>
+                                    </div>
+                                    <div class="transCon1">
+                                        <img src="../icon/profile.png"  class="transImg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dotted">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="transwarning">
+                                <div class="transwarning-con">
+                                    <label for="text" class="ppp">This account is for this transaction only and expires in <span>30:00</span></label>
+                                </div>
+                            </div>
+                            <div class="payed">
+                                <button class="sentBtn">i've sent the money</button>
+                            </div>
+                        </div>
+                        <div class="card" id="card">
+                            <div class="transfercon">
+                                <label for="text" class="transferinfo">Enter your card details to pay</label>
+                            </div>
+                            <div class="cardfield">
+                                <label for="text" class="cardnumber">CARD NUMBER</label>
+                                <input type="number" class="field" placeholder="0000 0000 0000 0000">
+                            </div>
+                            <div class="cardfield1">
+                                <div class="cardinfo">
+                                    <label for="text" class="cardnumber">CARD EXPIRY</label>
+                                    <input type="number" class="field" placeholder="MM / YY">
+                                </div>
+                                <div class="cardinfo">
+                                    <label for="text" class="cardnumber">CVV</label>
+                                    <input type="number" class="field" placeholder="123">
+                                </div>
+                            </div>
+                            <div class="cardpay">
+                                <button class="card-pay">Pay <span>$0.00</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="secured">
+                <div class="secured-con1">
+                    <div class="secured-row1" onclick="changePayment()">
+                        <img src="../icon/shopify-brands-solid.svg" class="secureImg">
+                        <p><span>Change Payment Method</span></p>
+                    </div>
+                    <div class="secured-row" id="cancelBtn" onclick="cancelpayment()">
+                        <img src="../icon/shopify-brands-solid.svg" class="secureImg">
+                        <p><span>Cancel Payment</span></p>
+                    </div>
+                </div>
+                <div class="secured-con">
+                    <img src="../icon/shopify-brands-solid.svg" class="secureImg">
+                    <p>Secured by <span>Paystack</span></p>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- <script src="../utility/cart.js"></script> -->
+    <script src="../utility/script.js"></script>
 </body>
 </html>
