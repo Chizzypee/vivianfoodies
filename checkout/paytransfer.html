@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <script src="../utility/fetch.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="checkcontainer">
+        <div class="check-head">
+            <div class="check-split">
+                <img src="../icon/logo.png" class="checkheadIMg">
+                <p>Vivilious-Food</p>
+            </div>
+        </div>
+        <div class="odersummary" onclick="openOrderedItem()">
+            <div class="ordermain">
+                <div class="ordersplit">
+                    <p>Order Summary</p>
+                    <i class="fa-solid fa-chevron-down backtop"></i>
+                </div>
+                <div class="ordersplit">
+                    <label for="text" class="payamountSub cartamountcheck">$0.00</label>
+                </div>
+            </div>
+        </div>
+        <div class="orderdetails" id="orderdContent">
+            <div class="orderdetails-con">
+                <div class="ordered-content">
+                    <div class="orderedcon" >
+                        <!-- <div class="orderIMG-text">
+                        </div> -->
+                    </div>
+                </div>
+                <!-- render cart item here -->
+                <div class="discount">
+                    <div class="discountsplit">
+                        <input type="text" class="discountinput" placeholder="Discount code or gift card">
+                    </div>
+                    <div class="discountsplit1">
+                        <button class="apply">Apply</button>
+                    </div>
+                </div>
+                <div class="odertotalsum">
+                    <div class="odertotalsum-split1">
+                        <p class="totalcartitem-trans">Subtotal (4) item</p>
+                        <p>Delivery fees</p>
+                        <p>Custom fee</p>
+                        <h1 class="chekp">Total</h1>
+                    </div>
+                    <div class="odertotalsum-split">
+                        <label for="text" class="cartamount-trans">$0.00</label>
+                        <label for="text" class="deliveryfee-trans">$0.00</label>
+                        <label for="text" class="Customfee-trans">$0.00</label>
+                        <label for="text" class="totalfee-trans totalfee">$0.00</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checktranfer">
+            <div class="thankyou">
+                <img src="../icon/approve.png" class="thanksImg">
+                <div class="thanks-rol">
+                    <div class="thanks-col">
+                        <label for="text" class="confirmationNumber">Confirmation</label>
+                        <label for="text" class="confirmationNumber" id="displayRandomNumber"></label>
+                    </div>
+                    <div class="thanks-col">
+                        <p>Thank you,</p>
+                        <label for="text" class="sender-name" id="senderName"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="paytrasnfer-container">
+                <div class="map">
+                     <div class="mapping">
+                         <!-- render map -->
+                          <img src="../image/baked-quails-pan-dark-surface_2829-5596.jpg" class="mapImg">
+                     </div>
+                </div>
+                <div class="order">
+                    <div class="ordered-content">
+                        <label for="text" class="orderconfirmed">Your order confirmed</label>
+                        <label for="text" class="ordertext">Use the instant Transfer option to pay the total due to:</label>
+                        <label for="text" class="ordertext">Account name CHIGOZIE PETER ALOZIE</label>
+                        <label for="text" class="ordertext">Account Number: 2119724035</label>
+                        <label for="text" class="ordertext">ZENITH BANK</label>
+                        <label for="text" class="ordertext">Use your order number as reference and email us at service@Vivilious-Food.ng with  the Transfer receipt.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="paytrasnfer-container">
+                <div class="orderhead">
+                    <label for="text" class="orderconfirmed">Order details</label>
+                </div>
+                <div class="ordered-content1">
+                    <div class="orderDetails-col">
+                        <label for="text" class="orderconfirmed">Contact information</label>
+                        <label for="text" class="firstlastName" id="displayEmail"></label>
+                        <label for="text" class="orderconfirmed">Shopping address</label>
+                        <div class="orderDetails-rol">
+                            <label for="text" class="firstlastName" id="displayFirstname"></label>
+                            <label for="text" class="firstlastName" id="displayLastname"></label>
+                        </div>
+                        <label for="text" class="firstlastName" id="displayAddress"></label>
+                        <div class="orderDetails-rol">
+                            <label for="text" class="firstlastName" id="displayPostalcode"></label>
+                            <label for="text" class="firstlastName" id="displayCity"></label>
+                            <label for="text" class="firstlastName" id="displayState"></label>
+                        </div>
+                        <label for="text" class="firstlastName" id="displayCountry"></label>
+                        <label for="text" class="firstlastName" id="displayNumber"></label>
+                        <label for="text" class="orderconfirmed">Shipping method</label>
+                        <label for="text" class="firstlastName" id="displaydeliveryLocation"></label>
+                    </div>
+                    <div class="orderDetails-col">
+                        <label for="text" class="orderconfirmed">Payment method</label>
+                        <img src="../icon/atm.jpg" class="atmImg">
+                        <label for="text" class="Billingamount">$0.00</label>
+                        <label for="text" class="orderconfirmed">Billing address</label>
+                        <div class="orderDetails-rol">
+                            <label for="text" class="firstlastName" id="displayFirstname1"></label>
+                            <label for="text" class="firstlastName" id="displayLastname1"></label>
+                        </div>
+                        <label for="text" class="firstlastName" id="displayAddress1"></label>
+                         <div class="orderDetails-rol">
+                             <label for="text" class="firstlastName" id="displayPostalcode1"></label>
+                             <label for="text" class="firstlastName" id="displayCity1"></label>
+                             <label for="text" class="firstlastName" id="displayState1"></label>
+                         </div>
+                        <label for="text" class="firstlastName" id="displayNumber1"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="needhelp">
+                <div class="needhelp-con">
+                    <div class="btnshopping">
+                        <p>Need help? <a href="#">Contact us</a></p>
+                    </div>
+                    <div class="btnshopping">
+                        <button class="Continueshopping" onclick="continueShopping()">Continue shopping</button>
+                    </div>
+                </div>
+            </div>
+           <div class="checkfooter">
+                <div class="checkfooter-con">
+                    <a href="#">Refund policy</a>
+                    <a href="#">Shopping policy</a>
+                    <a href="#">Privacy policy</a>
+                </div>
+                <div class="checkfooter-con">
+                    <a href="#">Terms of service</a>
+                    <a href="#">Contact information</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../utility/paytransfer.js"></script>
+    <script src="../utility/script.js"></script>
+    <script>
+
+        const formInfo = JSON.parse(localStorage.getItem("contactForm"))
+
+        if(formInfo){
+            document.getElementById("senderName").textContent = formInfo.firstName;
+            document.getElementById("displayEmail").textContent = formInfo.email;
+            document.getElementById("displayCountry").textContent = formInfo.country;
+            document.getElementById("displayFirstname").textContent = formInfo.firstName;
+            document.getElementById("displayLastname").textContent = formInfo.lastName;
+            document.getElementById("displayNumber").textContent = formInfo.phonenumber;
+            document.getElementById("displayAddress").textContent = formInfo.address;
+            document.getElementById("displayCity").textContent =formInfo.city;
+            document.getElementById("displayState").textContent = formInfo.state;
+            document.getElementById("displayPostalcode").textContent = formInfo.postalcode;
+
+            
+        }
+       
+    </script>
+    <script>
+         const formInfo1 = JSON.parse(localStorage.getItem("contactForm"))
+        if(formInfo1){
+            document.getElementById("displayFirstname1").textContent = formInfo1.firstName;
+            document.getElementById("displayLastname1").textContent = formInfo1.lastName;
+            document.getElementById("displayNumber1").textContent = formInfo1.phonenumber;
+            document.getElementById("displayAddress1").textContent = formInfo1.address;
+            document.getElementById("displayCity1").textContent = formInfo1.city;
+            document.getElementById("displayState1").textContent = formInfo1.state;
+            document.getElementById("displayPostalcode1").textContent = formInfo1.postalcode;
+
+        }
+    </script>
+    <script>
+        const number = localStorage.getItem("randomNumber");
+        if(number){
+            document.getElementById("displayRandomNumber").textContent = number;
+        }else {
+             document.getElementById("displayRandomNumber").textContent = "Reference No. unavailable";
+        }
+    </script>
+</body>
+</html>

@@ -1852,6 +1852,14 @@ nav{
     width: 50%;
     height: auto;
 }
+#signupForm{
+     /* width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
 .odersummary1{
     width: 100%;
     /* background-color: rgb(222, 221, 221); */
@@ -2573,6 +2581,14 @@ nav{
     color: rgb(0, 0, 41);
     font-weight: 700;
 }
+.transferinfo1{
+    color: rgb(0, 0, 41);
+    font-weight: 700;
+}
+.transferinfo2{
+    color: rgb(0, 0, 41);
+    font-weight: 700;
+}
 .trans{
     display: flex;
     flex-direction: column;
@@ -2808,6 +2824,147 @@ nav{
     font-size: 1.1rem;
     color: #000;
 }
+/* PAYTRANSFER */
+.checktranfer{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.paytrasnfer-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid rgb(194, 193, 193);
+}
+.thankyou{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 15vh;
+    align-items: center;
+}
+.thanks-rol{
+    display: flex;
+    flex-direction: column;
+}
+.thanks-col{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.thanks-col p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.sender-name{
+    font-weight: 600;
+    font-size: 20px;
+}
+.thanksImg{
+    width: 10%;
+}
+.map{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.map{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.mapImg{
+    width: 100%;
+    height: 40vh;
+}
+.ordered{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.ordered-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+}
+.ordered-content1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 50px;
+}
+.orderconfirmed{
+    font-weight: 600;
+    font-size: 18px;
+}
+.orderhead{
+    margin-left: 10px;
+    margin: 10px;
+}
+.orderDetails-col{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    gap: 10px;
+}
+.orderDetails-rol{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 4px;
+}
+.atmImg{
+    width: 10%;
+}
+.needhelp{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.needhelp-con{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.btnshopping{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center ;
+    align-items: center;
+    height: 10vh;
+    
+}
+.Continueshopping{
+    background-color: green;
+    border: none;
+    color: white;
+    width: 60%;
+    height: 10vh;
+    border-radius: 10px;
+}
+.ttt{
+    color: red;
+}
+
+
+
+
+
+
 
 
 
@@ -2821,6 +2978,69 @@ nav{
 
 /* MEDIA QUARY */
 @media screen and (max-width: 600px){
+    /* transferPayment */
+    .Billingamount{
+        font-size: 10px;
+    }
+    .ordered-content{
+        font-size: 10px;
+        gap: 5px;
+    }
+    .orderDetails-col{
+        margin: 0px;
+        width: 40%;
+        gap: 0px;
+    }
+    .orderconfirmed{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+    .ordered-content1{
+        width: 100%;
+        /* gap: 0px; */
+        justify-content: center;
+        align-items: center;
+    }
+    .checktranfer{
+        width: 90%;
+    }
+    .orderconfirmed{
+        font-size: 10px;
+    }
+    .firstlastName{
+        font-size: 10px;
+    }
+    .needhelp-con{
+        height: 5vh;
+    }
+    .btnshopping p{
+        font-size: 10px;
+    }
+    .Continueshopping{
+        height: 5vh;
+        width: 70%;
+        font-size: 10px;
+        border-radius: 5px;
+    }
+    .thankyou{
+        height: 5vh;
+        margin-top: 10px;
+    }
+    .confirmationNumber{
+        font-size: 10px;
+    }
+    .thanks-col p{
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .sender-name{
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .mapImg{
+        height: 15vh;
+    }
     /* PAYMENT */
     .transfercon{
         height: 6vh;
@@ -4274,6 +4494,50 @@ nav{
 
 
 @media screen and (min-height: 1000px){
+    .ordered-content{
+        font-size: 12px;
+    }
+    .firstlastName{
+        font-size: 12px;
+    }
+    .orderconfirmed{
+        font-size: 13px;
+    }
+    .ordered-content1{
+        gap: 0px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .orderDetails-col{
+        width: 50%;
+        gap: 5px;
+    }
+    .thankyou{
+        height: 5vh;
+    }
+    .thanks-rol{
+        font-size: 12px;
+    }
+    .thanks-col p{
+        font-size: 15px;
+    }
+    .sender-name{
+        font-size: 15px;
+    }
+    .mapImg{
+        height: 10vh;
+    }
+    .needhelp-con{
+        height: 5vh;
+    }
+    .btnshopping p{
+        font-size: 12px;
+    }
+    .Continueshopping{
+        height: 3vh;
+        font-size: 12px;
+    }
     .paycontainer{
         /* height: 40vh; */
     }

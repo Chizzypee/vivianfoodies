@@ -16,6 +16,8 @@ const totaldeliveryFee1 = document.querySelector(".deliveryfee1");
 const totalCustomFee1 = document.querySelector(".Customfee1");
 const totalfee1 = document.querySelector(".totalfee1");
 
+
+
 let cart = JSON.parse(localStorage.getItem("CART"))
 if(cart && cart.length > 0){
    renderOrderedITem()
@@ -86,6 +88,7 @@ function renderSubTotalChechOut(){
         totalAll = totalSub + totalDelivery + totalCustom;
     });
 
+
     totalfee.innerHTML = `$${totalAll.toFixed(2)}`
     subtotal1.innerHTML = `$${totalPrice.toFixed(2)}`
     totalcartitem1.innerHTML = `Subtotal (${totalItem}) item`
@@ -147,8 +150,14 @@ function renderOrderedITem1(){
 })
    
 }
-function openPayment(){
-    if(document.getElementsByClassName('pay')){
-        window.location.href = "../checkout/loading.html"
+// function openPayment(){
+//     if(document.getElementsByClassName('paymentrow')){
+//         window.location.href = "../checkout/paytransfer.html"
+//     }
+// }
+function continueShopping(){
+    if(document.getElementsByClassName('Continueshopping')){
+        window.location.href = "../index.html"
     }
 }
+

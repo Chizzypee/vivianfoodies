@@ -265,4 +265,4 @@ function cancelpayment(){
     cancelPayment.addEventListener('click', ()=>{
         window.location.href = "./checkout.html"
     })
-}g
+}

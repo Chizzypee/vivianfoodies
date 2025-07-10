@@ -13,8 +13,8 @@ const register = async (e) =>{
         alert("lastname is required");
     }else if(!email || email === ""){
         alert("email is required")
-    }else if(!password || password === "" || password.length <=4){
-        alert("password should be above 4 characters")
+    }else if(!password || password === "" || password.length <=3){
+        alert("password should be 4 characters short")
     }else if(password !== confirm){
         alert("password mismatched")
     }
@@ -34,8 +34,6 @@ const register = async (e) =>{
                 headers: {
                     "content-type": "application/json",
                 },
-                // token: res.headers.cookie.split("")[1],
-                // token: res.cookie.bflux,
                 body: JSON.stringify(info),
              });
               const result = await res.json();
