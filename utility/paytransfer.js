@@ -88,3 +88,8 @@ function renderPayTransfer(){
 })
    
 }
+function continueShopping(){
+    if(document.getElementsByClassName('Continueshopping')){
+        window.location.href = "../index.html"
+    }
+}

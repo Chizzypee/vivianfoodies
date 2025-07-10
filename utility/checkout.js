@@ -155,9 +155,5 @@ function renderOrderedITem1(){
 //         window.location.href = "../checkout/paytransfer.html"
 //     }
 // }
-function continueShopping(){
-    if(document.getElementsByClassName('Continueshopping')){
-        window.location.href = "../index.html"
-    }
-}
+
 
