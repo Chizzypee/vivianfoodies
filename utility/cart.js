@@ -47,7 +47,7 @@ soupItem.slice(0, 8).forEach((product) => {
             </div>
             <div class="price-btn">
                 <div class="prices">
-                    <label for="text" class="price">RON${product.price}</label>
+                    <label for="text" class="price">RON ${product.price}</label>
                     <label for="text" class="price1" id="stock-${product.id}">In stock: ${product.instock}</label>
                 </div>
                 <div class="btn" id="btnContainer-${product.id}">
@@ -81,7 +81,7 @@ wineItem.slice(0, 8).forEach((product) => {
             </div>
             <div class="price-btn">
                 <div class="prices">
-                    <label for="text" class="price">RON${product.price}</label>
+                    <label for="text" class="price">RON ${product.price}</label>
                     <label for="text" class="price1">instock ${product.instock}</label>
                 </div>
                 <div class="btn"  id="btnContainer-${product.id}">
@@ -93,7 +93,6 @@ wineItem.slice(0, 8).forEach((product) => {
     `;
     alcoholContainer.appendChild(productDiv)
 })
-
 const fruitItem = products.filter(item => item.category === "fruit");
 fruitItem.slice(0, 8).forEach((product) => {
     let productDiv = document.createElement("div")
@@ -114,7 +113,7 @@ fruitItem.slice(0, 8).forEach((product) => {
             </div>
             <div class="price-btn">
                 <div class="prices">
-                    <label for="text" class="price">RON${product.price}</label>
+                    <label for="text" class="price">RON ${product.price}</label>
                     <label for="text" class="price1">instock ${product.instock}</label>
                 </div>
                 <div class="btn"  id="btnContainer-${product.id}">
@@ -146,7 +145,7 @@ snacksItem.slice(0, 8).forEach((product) => {
             </div>
             <div class="price-btn">
                 <div class="prices">
-                    <label for="text" class="price">RON${product.price}</label>
+                    <label for="text" class="price">RON ${product.price}</label>
                     <label for="text" class="price1">instock ${product.instock}</label>
                 </div>
                 <div class="btn"  id="btnContainer-${product.id}">
@@ -267,7 +266,7 @@ function renderCartItem(){
                     <div class="Amount">
                         <a href="../dashboard/item.html?id=${item.id}">
                             <label for="text" class="cart-item-title">${item.name}</label>
-                            <label for="text" class="cart-price">$${item.price}</label>
+                            <label for="text" class="cart-price">RON ${item.price}</label>
                         </a>
                     </div>
                     <div class="pro-count">

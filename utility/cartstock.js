@@ -20,7 +20,7 @@ function renderCartStock(){
                             <label for="text" class="cart-item-title">${item.name}</label>
                         </a>
                         <a href="../dashboard/item.html?id=${item.id}">
-                            <label for="text" class="cart-price">$${item.price}</label>
+                            <label for="text" class="cart-price">RON ${item.price}</label>
                         </a>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ function renderCartStock(){
                             <i class="fa-regular fa-trash-can remove" style="color: #ff9500;" onclick="removeCartFromStock(${item.id})"></i>
                         </div>
                     </div>
-                <label for="text" class="cart-priceee" id="totalsub">$${item.price * item.quantity}</label>
+                <label for="text" class="cart-priceee" id="totalsub">RON ${item.price * item.quantity}</label>
                 </div>
             </div>
             `;
@@ -68,7 +68,7 @@ const cart = JSON.parse(localStorage.getItem("CART"));
     cart.forEach((item) => {
         grandTotal += item.price * item.quantity
     });
-    document.querySelector(".cartAmount").innerHTML = `RON${grandTotal.toFixed(2)}`
+    document.querySelector(".cartAmount").innerHTML = `RON ${grandTotal.toFixed(2)}`
 }
 
 function removeCartFromStock(id){

@@ -51,18 +51,14 @@ function renderSubTransferPayment(){
         totalAll = totalSub + totalDelivery + totalCustom;
     });
 
-    Billingamount.innerHTML = `Bank Deposit - RON${totalAll.toFixed(2)} `
-    payamount.innerHTML = `RON${totalPrice.toFixed(2)} `
+    Billingamount.innerHTML = `Bank Deposit - RON ${totalAll.toFixed(2)} `
+    payamount.innerHTML = `RON ${totalPrice.toFixed(2)} `
 
-    totalfee.innerHTML = `RON${totalAll.toFixed(2)}`
-    subtotal.innerHTML = `RON${totalPrice.toFixed(2)}`
+    totalfee.innerHTML = `RON ${totalAll.toFixed(2)}`
+    subtotal.innerHTML = `RON ${totalPrice.toFixed(2)}`
     totalcartitem.innerHTML = `Subtotal (${totalItem}) item`
-    totaldeliveryFee.innerHTML =  `RON${totalDelivery.toFixed(2)}`
-    totalCustomFee.innerHTML =  `RON${totalCustom.toFixed(2)}`
-
-
-   
-    
+    totaldeliveryFee.innerHTML =  `RON ${totalDelivery.toFixed(2)}`
+    totalCustomFee.innerHTML =  `RON ${totalCustom.toFixed(2)}`
 }
 
 // render cart item
@@ -80,7 +76,7 @@ function renderPayTransfer(){
                     <label for="text" class="orderedText1">(${item.description})</label>
                 </div>
                 <div class="orderIMG-text1">
-                    <label for="text" class="cartamount cartamountcheck1">$${item.price * item.quantity}</label>
+                    <label for="text" class="cartamount cartamountcheck1">RON ${item.price * item.quantity}</label>
                 </div>
             </div>
         </div>
@@ -93,3 +89,41 @@ function continueShopping(){
         window.location.href = "../index.html"
     }
 }
+try {
+     const formInfo = JSON.parse(localStorage.getItem("signupForm"))
+        if(formInfo){
+            document.getElementById("senderName").textContent = formInfo.firstName;
+            document.getElementById("displayEmail").textContent = formInfo.email;
+            document.getElementById("displayCountry").textContent = formInfo.country;
+            document.getElementById("displayFirstname").textContent = formInfo.firstName;
+            document.getElementById("displayLastname").textContent = formInfo.lastName;
+            document.getElementById("displayNumber").textContent = formInfo.phonenumber;
+            document.getElementById("displayAddress").textContent = formInfo.address;
+            document.getElementById("displayCity").textContent =formInfo.city;
+            document.getElementById("displayState").textContent = formInfo.state;
+            document.getElementById("displayPostalcode").textContent = formInfo.postalcode;
+
+            
+        }
+         const formInfo1 = JSON.parse(localStorage.getItem("signupForm"))
+        if(formInfo1){
+            document.getElementById("displayFirstname1").textContent = formInfo1.firstName;
+            document.getElementById("displayLastname1").textContent = formInfo1.lastName;
+            document.getElementById("displayNumber1").textContent = formInfo1.phonenumber;
+            document.getElementById("displayAddress1").textContent = formInfo1.address;
+            document.getElementById("displayCity1").textContent = formInfo1.city;
+            document.getElementById("displayState1").textContent = formInfo1.state;
+            document.getElementById("displayPostalcode1").textContent = formInfo1.postalcode;
+
+        }
+
+        const number = JSON.parse(localStorage.getItem("signupForm"));
+        if(number && number.reference){
+            document.getElementById("displayRandomNumber").textContent = number.reference;
+        }else {
+             document.getElementById("displayRandomNumber").textContent = "Reference No. unavailable";
+        }
+} catch (error) {
+    console.log(error);
+}
+       

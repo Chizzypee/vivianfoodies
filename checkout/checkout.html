@@ -150,8 +150,8 @@
                             <div class="paymentdetails" onclick="openPaymentOption('payinfo')">
                                 <div class="paymentrow">
                                     <div class="paytext">
-                                        <input type="radio" class="radio">
-                                        <p class="ptext">Paystack</p>
+                                        <input type="radio" id="paystackRadio" name="paymentMethod" value="paystack" class="radio" required>
+                                        <label for="paystackRadio" class="ptext">Paystack</label>
                                     </div>
                                 </div>
                                 <div class="paymentrow1">
@@ -168,8 +168,8 @@
                             <div class="paymentdetails1" onclick="openPaymentOption('payinfo1')">
                                 <div class="paymentrow">
                                     <div class="paytext">
-                                        <input type="radio" class="radio">
-                                        <p class="ptext">Bank Transfer</p>
+                                        <input type="radio" id="bankRadio" name="paymentMethod" value="bank" class="radio" required>
+                                        <label for="bankRadio" class="ptext">Bank Transfer</label>
                                     </div>
                                 </div>
                             </div>
@@ -234,7 +234,7 @@
                             </div>
                         </div>
                         <div class="paybtn">
-                                <button type="submit" class="pay" onclick="generateRandomNumber()">Pay now</button>
+                                <button type="submit" class="pay">Pay now</button>
                         </div>
                     </div>
                 </div>
@@ -264,30 +264,5 @@
     </div>
     <script src="../utility/checkout.js"></script>
     <script src="../utility/script.js"></script>
-
-    <script>
-    const form = document.getElementById("signupForm");
-form.addEventListener('submit', function (e) {
-    e.preventDefault()
-
-    const form = {
-    email: document.getElementById("email").value,
-    country: document.getElementById("country").value,
-    firstName: document.getElementById("firstName").value,
-    lastName: document.getElementById("lastName").value,
-    phonenumber: document.getElementById("phonenumber").value,
-    address: document.getElementById("address").value,
-    city: document.getElementById("city").value,
-    state: document.getElementById("state").value,
-    postalcode: document.getElementById("postalcode").value,
-    };
-        localStorage.setItem("contactForm", JSON.stringify(form))
-        window.location.href = "../checkout/loading.html"
-});
-    function generateRandomNumber(){
-        const random = Math.floor(Math.random() * 1000) + 1
-    }
-    localStorage.setItem("randomNumber", random)
-    </script>
 </body>
 </html>

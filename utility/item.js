@@ -22,7 +22,7 @@ function showDetailsProduct(){
                     <div class="d1">
                         <label for="text" class="section">Dashboard / item</label>
                         <label for="text" class="cart-price cart-price1">${findProduct.name}</label>
-                        <label for="text" class="cart-price cart-price1">$${findProduct.price}</label>
+                        <label for="text" class="cart-price cart-price1">RON ${findProduct.price}</label>
                         <label for="text" class="itemtextdesc itemtextdesc1">${findProduct.description}</label>
                     </div>
                     <div class="d2">

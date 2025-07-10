@@ -89,18 +89,18 @@ function renderSubTotalChechOut(){
     });
 
 
-    totalfee.innerHTML = `RON${totalAll.toFixed(2)}`
-    subtotal1.innerHTML = `RON${totalPrice.toFixed(2)}`
+    totalfee.innerHTML = `RON ${totalAll.toFixed(2)}`
+    subtotal1.innerHTML = `RON ${totalPrice.toFixed(2)}`
     totalcartitem1.innerHTML = `Subtotal (${totalItem}) item`
-    totaldeliveryFee.innerHTML =  `RON${totalDelivery.toFixed(2)}`
-    totalCustomFee.innerHTML =  `RON${totalCustom.toFixed(2)}`
-    subtotal.innerHTML = `RON${totalPrice.toFixed(2)}` 
+    totaldeliveryFee.innerHTML =  `RON ${totalDelivery.toFixed(2)}`
+    totalCustomFee.innerHTML =  `RON ${totalCustom.toFixed(2)}`
+    subtotal.innerHTML = `RON ${totalPrice.toFixed(2)}` 
 
-    subtotal2.innerHTML = `RON${totalPrice.toFixed(2)}`
-    totaldeliveryFee1.innerHTML =  `RON${totalDelivery.toFixed(2)}`
+    subtotal2.innerHTML = `RON ${totalPrice.toFixed(2)}`
+    totaldeliveryFee1.innerHTML =  `RON ${totalDelivery.toFixed(2)}`
     totalcartitem1.innerHTML = `Subtotal (${totalItem}) item`
-    totalfee1.innerHTML = `RON${totalAll.toFixed(2)}`
-    totalCustomFee1.innerHTML =  `RON${totalCustom.toFixed(2)}`
+    totalfee1.innerHTML = `RON ${totalAll.toFixed(2)}`
+    totalCustomFee1.innerHTML =  `RON ${totalCustom.toFixed(2)}`
     
 }
 
@@ -120,7 +120,7 @@ function renderOrderedITem(){
                     <label for="text" class="orderedText1">(${item.description})</label>
                 </div>
                 <div class="orderIMG-text1">
-                    <label for="text" class="cartamount cartamountcheck1">$${item.price * item.quantity}</label>
+                    <label for="text" class="cartamount cartamountcheck1">RON ${item.price * item.quantity}</label>
                 </div>
             </div>
         </div>
@@ -142,7 +142,7 @@ function renderOrderedITem1(){
                     <label for="text" class="orderedText1">(${item.description})</label>
                 </div>
                 <div class="orderIMG-text1">
-                    <label for="text" class="cartamount cartamountcheck1">$${item.price * item.quantity}</label>
+                    <label for="text" class="cartamount cartamountcheck1">RON ${item.price * item.quantity}</label>
                 </div>
             </div>
         </div>
@@ -150,10 +150,50 @@ function renderOrderedITem1(){
 })
    
 }
-// function openPayment(){
-//     if(document.getElementsByClassName('paymentrow')){
-//         window.location.href = "../checkout/paytransfer.html"
-//     }
-// }
 
+document.getElementById("signupForm").addEventListener('submit', function (e) {
+    e.preventDefault()
+
+    const email = document.getElementById("email").value;
+    const country = document.getElementById("country").value;
+    const firstName = document.getElementById("firstName").value;
+    const lastName = document.getElementById("lastName").value;
+    const phonenumber = document.getElementById("phonenumber").value;
+    const address = document.getElementById("address").value;
+    const city = document.getElementById("city").value;
+    const state = document.getElementById("state").value;
+    const postalcode = document.getElementById("postalcode").value;
+    const paymentMethod = document.querySelector('input[name="paymentMethod"]:checked').value;
+    const randomRef = Math.floor(1000000000 + Math.random() * 900000000000);
+
+    const formData = {
+        email,
+        country,
+        firstName,
+        lastName,
+        phonenumber,
+        address,
+        city,
+        state,
+        postalcode,
+        paymentMethod,
+        reference: randomRef
+    };
+    console.log(formData);
+        localStorage.setItem("signupForm", JSON.stringify(formData))
+
+        // Redirect base on payment selected
+        if(paymentMethod === "paystack"){
+            window.location.href = "../checkout/loadingpaystack.html"
+        }else if(paymentMethod === "bank"){
+            window.location.href = "../checkout/loadingtransfer.html"
+        }
+});
+
+
+
+    // function generateRandomNumber(){
+    //     const random = Math.floor(Math.random() * 1000) + 1
+    // }
+    // localStorage.setItem("randomNumber", random)
 

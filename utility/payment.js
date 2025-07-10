@@ -35,8 +35,30 @@ function renderSubTotalPayment(){
         totalPrice  += item.price * item.quantity
     });
 
-    cardBtnSubtotal.innerHTML = `Pay RON${totalPrice.toFixed(2)} `
-    paySubTotal.innerHTML = `Pay RON${totalPrice.toFixed(2)} `
-    transferSubtotal.innerHTML = `RON${totalPrice.toFixed(2)} `
-    transferSubtotal1.innerHTML = `Transfer RON${totalPrice.toFixed(2)} to paystack Chackout `
+    cardBtnSubtotal.innerHTML = `Pay RON ${totalPrice.toFixed(2)} `
+    paySubTotal.innerHTML = `Pay RON ${totalPrice.toFixed(2)} `
+    transferSubtotal.innerHTML = `RON ${totalPrice.toFixed(2)} `
+    transferSubtotal1.innerHTML = `Transfer RON ${totalPrice.toFixed(2)} to paystack Chackout `
 }
+
+function startCountdown(durationInSeconds, displayElementId){
+    let timeleft = durationInSeconds;
+    const display = document.getElementById(displayElementId)
+    const timer = setInterval(function() {
+        const minutes = Math.floor(timeleft / 60);
+        const seconds = timeleft % 60;
+
+        display.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`
+        if(--timeleft < 0){
+            clearInterval(timer);
+            display.textContent = `Time's up`
+            window.location.href = "../checkout/checkout.html"
+        }
+    }, 1000)
+}
+startCountdown(300, "countdown")
+
+ const number = JSON.parse(localStorage.getItem("signupForm"));
+    if(number && number.reference){
+        document.getElementById("displayRandomNumber1").textContent = number.reference;
+    }

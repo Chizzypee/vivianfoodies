@@ -161,46 +161,6 @@
     </div>
     <script src="../utility/paytransfer.js"></script>
     <script src="../utility/script.js"></script>
-    <script>
-
-        const formInfo = JSON.parse(localStorage.getItem("contactForm"))
-
-        if(formInfo){
-            document.getElementById("senderName").textContent = formInfo.firstName;
-            document.getElementById("displayEmail").textContent = formInfo.email;
-            document.getElementById("displayCountry").textContent = formInfo.country;
-            document.getElementById("displayFirstname").textContent = formInfo.firstName;
-            document.getElementById("displayLastname").textContent = formInfo.lastName;
-            document.getElementById("displayNumber").textContent = formInfo.phonenumber;
-            document.getElementById("displayAddress").textContent = formInfo.address;
-            document.getElementById("displayCity").textContent =formInfo.city;
-            document.getElementById("displayState").textContent = formInfo.state;
-            document.getElementById("displayPostalcode").textContent = formInfo.postalcode;
-
-            
-        }
-       
-    </script>
-    <script>
-         const formInfo1 = JSON.parse(localStorage.getItem("contactForm"))
-        if(formInfo1){
-            document.getElementById("displayFirstname1").textContent = formInfo1.firstName;
-            document.getElementById("displayLastname1").textContent = formInfo1.lastName;
-            document.getElementById("displayNumber1").textContent = formInfo1.phonenumber;
-            document.getElementById("displayAddress1").textContent = formInfo1.address;
-            document.getElementById("displayCity1").textContent = formInfo1.city;
-            document.getElementById("displayState1").textContent = formInfo1.state;
-            document.getElementById("displayPostalcode1").textContent = formInfo1.postalcode;
-
-        }
-    </script>
-    <script>
-        const number = localStorage.getItem("randomNumber");
-        if(number){
-            document.getElementById("displayRandomNumber").textContent = number;
-        }else {
-             document.getElementById("displayRandomNumber").textContent = "Reference No. unavailable";
-        }
-    </script>
+   
 </body>
 </html>

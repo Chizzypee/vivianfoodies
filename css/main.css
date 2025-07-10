@@ -163,6 +163,7 @@ nav{
 .topupImg{
     width: 100%;
     height: 10vh;
+    border-radius: 10px;
     /* background-color: blue; */
 }
 .Amount{
