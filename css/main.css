@@ -1986,6 +1986,12 @@ nav{
 .discountinput::placeholder{
     font-size: 15px;
 }
+.discountinput:hover{
+    border: 1px solid orangered;
+}
+.discountinput1:hover{
+    border: 1px solid orangered;
+}
 .odertotalsum{
     display: flex;
     flex-direction: row;
@@ -2985,11 +2991,13 @@ nav{
     .ordered-content{
         font-size: 10px;
         gap: 5px;
+        width: 90%;
     }
     .orderDetails-col{
         margin: 0px;
         width: 40%;
         gap: 0px;
+        gap: 5px;
     }
     .orderconfirmed{
         margin-top: 5px;
@@ -3018,7 +3026,7 @@ nav{
         font-size: 10px;
     }
     .Continueshopping{
-        height: 5vh;
+        height: 4vh;
         width: 70%;
         font-size: 10px;
         border-radius: 5px;
@@ -4496,12 +4504,15 @@ nav{
 @media screen and (min-height: 1000px){
     .ordered-content{
         font-size: 12px;
+        width: 90%;
     }
     .firstlastName{
         font-size: 12px;
     }
     .orderconfirmed{
         font-size: 13px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     .ordered-content1{
         gap: 0px;
@@ -4511,7 +4522,7 @@ nav{
     }
     .orderDetails-col{
         width: 50%;
-        gap: 5px;
+        gap: 6px;
     }
     .thankyou{
         height: 5vh;
@@ -4535,7 +4546,7 @@ nav{
         font-size: 12px;
     }
     .Continueshopping{
-        height: 3vh;
+        height: 2vh;
         font-size: 12px;
     }
     .paycontainer{

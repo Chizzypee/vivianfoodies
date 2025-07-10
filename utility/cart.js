@@ -47,7 +47,7 @@ soupItem.slice(0, 8).forEach((product) => {
             </div>
             <div class="price-btn">
                 <div class="prices">
-                    <label for="text" class="price">$${product.price}</label>
+                    <label for="text" class="price">RON${product.price}</label>
                     <label for="text" class="price1" id="stock-${product.id}">In stock: ${product.instock}</label>
                 </div>
                 <div class="btn" id="btnContainer-${product.id}">
@@ -81,7 +81,7 @@ wineItem.slice(0, 8).forEach((product) => {
             </div>
             <div class="price-btn">
                 <div class="prices">
-                    <label for="text" class="price">$${product.price}</label>
+                    <label for="text" class="price">RON${product.price}</label>
                     <label for="text" class="price1">instock ${product.instock}</label>
                 </div>
                 <div class="btn"  id="btnContainer-${product.id}">
@@ -114,7 +114,7 @@ fruitItem.slice(0, 8).forEach((product) => {
             </div>
             <div class="price-btn">
                 <div class="prices">
-                    <label for="text" class="price">$${product.price}</label>
+                    <label for="text" class="price">RON${product.price}</label>
                     <label for="text" class="price1">instock ${product.instock}</label>
                 </div>
                 <div class="btn"  id="btnContainer-${product.id}">
@@ -146,7 +146,7 @@ snacksItem.slice(0, 8).forEach((product) => {
             </div>
             <div class="price-btn">
                 <div class="prices">
-                    <label for="text" class="price">$${product.price}</label>
+                    <label for="text" class="price">RON${product.price}</label>
                     <label for="text" class="price1">instock ${product.instock}</label>
                 </div>
                 <div class="btn"  id="btnContainer-${product.id}">
@@ -276,7 +276,7 @@ function renderCartItem(){
                         <button class="pro-cartcount" onclick="changeNumberOfUnite('plus',${item.id})">+</button>
                     </div>
                     <div class="pro-counting">
-                        <i class="fa-solid fa-trash-can remove" onclick="removeCartItem(${item.id})"></i>
+                        <i class="fa-regular fa-trash-can" style="color: #ff9500;" onclick="removeCartItem(${item.id})"></i>
                     </div>
                 </div>
             </div>

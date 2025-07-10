@@ -32,7 +32,7 @@ function renderCartStock(){
                             <button class="pro-cartcount" onclick="changeNumberOfUnite('plus',${item.id})">+</button>
                         </div>
                         <div class="cartremove">
-                            <i class="fa-solid fa-trash-can remove" onclick="removeCartFromStock(${item.id})"></i>
+                            <i class="fa-regular fa-trash-can remove" style="color: #ff9500;" onclick="removeCartFromStock(${item.id})"></i>
                         </div>
                     </div>
                 <label for="text" class="cart-priceee" id="totalsub">$${item.price * item.quantity}</label>
