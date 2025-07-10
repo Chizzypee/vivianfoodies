@@ -89,18 +89,18 @@ function renderSubTotalChechOut(){
     });
 
 
-    totalfee.innerHTML = `$${totalAll.toFixed(2)}`
-    subtotal1.innerHTML = `$${totalPrice.toFixed(2)}`
+    totalfee.innerHTML = `RON${totalAll.toFixed(2)}`
+    subtotal1.innerHTML = `RON${totalPrice.toFixed(2)}`
     totalcartitem1.innerHTML = `Subtotal (${totalItem}) item`
-    totaldeliveryFee.innerHTML =  `$${totalDelivery.toFixed(2)}`
-    totalCustomFee.innerHTML =  `$${totalCustom.toFixed(2)}`
-    subtotal.innerHTML = `$${totalPrice.toFixed(2)}` 
+    totaldeliveryFee.innerHTML =  `RON${totalDelivery.toFixed(2)}`
+    totalCustomFee.innerHTML =  `RON${totalCustom.toFixed(2)}`
+    subtotal.innerHTML = `RON${totalPrice.toFixed(2)}` 
 
-    subtotal2.innerHTML = `$${totalPrice.toFixed(2)}`
-    totaldeliveryFee1.innerHTML =  `$${totalDelivery.toFixed(2)}`
+    subtotal2.innerHTML = `RON${totalPrice.toFixed(2)}`
+    totaldeliveryFee1.innerHTML =  `RON${totalDelivery.toFixed(2)}`
     totalcartitem1.innerHTML = `Subtotal (${totalItem}) item`
-    totalfee1.innerHTML = `$${totalAll.toFixed(2)}`
-    totalCustomFee1.innerHTML =  `$${totalCustom.toFixed(2)}`
+    totalfee1.innerHTML = `RON${totalAll.toFixed(2)}`
+    totalCustomFee1.innerHTML =  `RON${totalCustom.toFixed(2)}`
     
 }
 

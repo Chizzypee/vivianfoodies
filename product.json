@@ -2,7 +2,7 @@
         {
             "id": 0,
             "name": "Waterleaf",
-            "price": 5.99,
+            "price": 599,
             "instock": 20,
             "customfee": 3,
             "deliveryfee": 2,
@@ -14,7 +14,7 @@
         {
             "id": 1,
             "name": "Banga",
-            "price": 15.99,
+            "price": 1599,
             "instock": 32,
             "customfee": 3,
             "deliveryfee": 2,
@@ -26,7 +26,7 @@
         {
             "id": 2,
             "name": "Bitterleaf",
-            "price": 23.99,
+            "price": 2399,
             "instock": 44,
             "customfee": 3,
             "deliveryfee": 2,
@@ -38,7 +38,7 @@
         {
             "id": 3,
             "name": "Edilkaikong",
-            "price": 13.99,
+            "price": 1399,
             "instock": 24,
             "customfee": 3,
             "deliveryfee": 2,
@@ -50,7 +50,7 @@
         {
             "id": 4,
             "name": "Egusi",
-            "price": 11.99,
+            "price": 1199,
             "instock": 16,
             "customfee": 2,
             "deliveryfee": 3,
@@ -62,7 +62,7 @@
         {
             "id": 5,
             "name": "Oha",
-            "price": 22.99,
+            "price": 2299,
             "instock": 5,
             "customfee": 3,
             "deliveryfee": 2,
@@ -74,7 +74,7 @@
         {
             "id": 6,
             "name": "Okro",
-            "price": 12.99,
+            "price": 1299,
             "instock": 11,
             "customfee": 2,
             "deliveryfee": 3,
@@ -86,7 +86,7 @@
         {
             "id": 7,
             "name": "Vegitable",
-            "price": 9.99,
+            "price": 999,
             "instock": 7,
             "customfee": 3,
             "deliveryfee": 2,
@@ -98,7 +98,7 @@
         {
             "id": 8,
             "name": "Native",
-            "price": 8.99,
+            "price": 899,
             "instock": 5,
             "customfee": 3,
             "deliveryfee": 2,
@@ -110,7 +110,7 @@
         {
             "id": 9,
             "name": "heaven",
-            "price": 4.99,
+            "price": 499,
             "instock": 43,
             "customfee": 3,
             "deliveryfee": 2,
@@ -122,7 +122,7 @@
         {
             "id": 10,
             "name": "champaign",
-            "price": 7.99,
+            "price": 730,
             "instock": 100,
             "customfee": 3,
             "deliveryfee": 2,
@@ -134,7 +134,7 @@
         {
             "id": 11,
             "name": "Sweet wine",
-            "price": 5.99,
+            "price": 509,
             "instock": 7,
             "customfee": 3,
             "deliveryfee": 2,
@@ -146,7 +146,7 @@
         {
             "id": 12,
             "name": "Vodka",
-            "price": 8.99,
+            "price": 309,
             "instock": 23,
             "customfee": 3,
             "deliveryfee": 2,
@@ -158,7 +158,7 @@
         {
             "id": 13,
             "name": "Tequila",
-            "price": 11.99,
+            "price": 119,
             "instock": 78,
             "customfee": 3,
             "deliveryfee": 2,
@@ -170,7 +170,7 @@
         {
             "id": 14,
             "name": "Hennessy",
-            "price": 15.99,
+            "price": 169,
             "instock": 6,
             "customfee": 3,
             "deliveryfee": 2,
@@ -182,7 +182,7 @@
         {
             "id": 15,
             "name": "Heineken",
-            "price": 10.99,
+            "price": 409,
             "instock": 5,
             "customfee": 3,
             "deliveryfee": 2,
@@ -194,7 +194,7 @@
         {
             "id": 16,
             "name": "Cono Sur",
-            "price": 9.99,
+            "price": 899,
             "instock": 10,
             "customfee": 3,
             "deliveryfee": 2,
@@ -206,7 +206,7 @@
         {
             "id": 17,
             "name": "Apple",
-            "price": 4.99,
+            "price": 199,
             "instock": 43,
             "customfee": 3,
             "deliveryfee": 2,
@@ -218,7 +218,7 @@
         {
             "id": 18,
             "name": "Banane",
-            "price": 7.99,
+            "price": 799,
             "instock": 10,
             "customfee": 3,
             "deliveryfee": 2,
@@ -230,7 +230,7 @@
         {
             "id": 19,
             "name": "Orange",
-            "price": 5.99,
+            "price": 599,
             "instock": 7,
             "customfee": 3,
             "deliveryfee": 2,
@@ -242,7 +242,7 @@
         {
             "id": 20,
             "name": "Pear",
-            "price": 8.99,
+            "price": 99,
             "instock": 23,
             "customfee": 3,
             "deliveryfee": 2,
@@ -254,7 +254,7 @@
         {
             "id": 21,
             "name": "Pineapple",
-            "price": 11.99,
+            "price": 1799,
             "instock": 78,
             "customfee": 3,
             "deliveryfee": 2,
@@ -266,7 +266,7 @@
         {
             "id": 22,
             "name": "Strawbarry",
-            "price": 15.99,
+            "price": 309,
             "instock": 6,
             "customfee": 3,
             "deliveryfee": 2,
@@ -278,7 +278,7 @@
         {
             "id": 23,
             "name": "Tangerine",
-            "price": 10.99,
+            "price": 129,
             "instock": 5,
             "customfee": 3,
             "deliveryfee": 2,
@@ -290,7 +290,7 @@
         {
             "id": 24,
             "name": "Watermelon",
-            "price": 9.99,
+            "price": 999,
             "instock": 10,
             "customfee": 3,
             "deliveryfee": 2,
@@ -302,7 +302,7 @@
         {
             "id": 25,
             "name": "Cheesy Goldfish",
-            "price": 4.99,
+            "price": 399,
             "instock": 43,
             "customfee": 3,
             "deliveryfee": 2,
@@ -314,7 +314,7 @@
         {
             "id": 26,
             "name": "Corn snacks",
-            "price": 7.99,
+            "price": 499,
             "instock": 10,
             "customfee": 3,
             "deliveryfee": 2,
@@ -326,7 +326,7 @@
         {
             "id": 27,
             "name": "Cosori Fryers",
-            "price": 5.99,
+            "price": 59,
             "instock": 7,
             "customfee": 3,
             "deliveryfee": 2,
@@ -338,7 +338,7 @@
         {
             "id": 28,
             "name": "Low Gi",
-            "price": 8.99,
+            "price": 89,
             "instock": 23,
             "customfee": 3,
             "deliveryfee": 2,
@@ -350,7 +350,7 @@
         {
             "id": 29,
             "name": "Potato Chips",
-            "price": 11.99,
+            "price": 199,
             "instock": 78,
             "customfee": 3,
             "deliveryfee": 2,
@@ -362,7 +362,7 @@
         {
             "id": 30,
             "name": "Soya Chakli",
-            "price": 15.99,
+            "price": 1899,
             "instock": 6,
             "customfee": 3,
             "deliveryfee": 2,
@@ -374,7 +374,7 @@
         {
             "id": 31,
             "name": "Sun Chips",
-            "price": 10.99,
+            "price": 1099,
             "instock": 5,
             "customfee": 3,
             "deliveryfee": 2,
@@ -386,7 +386,7 @@
         {
             "id": 32,
             "name": "Tortilla Chips",
-            "price": 9.99,
+            "price": 99,
             "instock": 10,
             "customfee": 3,
             "deliveryfee": 2,

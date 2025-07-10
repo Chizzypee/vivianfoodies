@@ -51,14 +51,14 @@ function renderSubTransferPayment(){
         totalAll = totalSub + totalDelivery + totalCustom;
     });
 
-    Billingamount.innerHTML = `Bank Deposit - RON ${totalAll.toFixed(2)} `
-    payamount.innerHTML = `RON ${totalPrice.toFixed(2)} `
+    Billingamount.innerHTML = `Bank Deposit - RON${totalAll.toFixed(2)} `
+    payamount.innerHTML = `RON${totalPrice.toFixed(2)} `
 
-    totalfee.innerHTML = `$${totalAll.toFixed(2)}`
-    subtotal.innerHTML = `$${totalPrice.toFixed(2)}`
+    totalfee.innerHTML = `RON${totalAll.toFixed(2)}`
+    subtotal.innerHTML = `RON${totalPrice.toFixed(2)}`
     totalcartitem.innerHTML = `Subtotal (${totalItem}) item`
-    totaldeliveryFee.innerHTML =  `$${totalDelivery.toFixed(2)}`
-    totalCustomFee.innerHTML =  `$${totalCustom.toFixed(2)}`
+    totaldeliveryFee.innerHTML =  `RON${totalDelivery.toFixed(2)}`
+    totalCustomFee.innerHTML =  `RON${totalCustom.toFixed(2)}`
 
 
    

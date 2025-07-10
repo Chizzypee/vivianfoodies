@@ -35,8 +35,8 @@ function renderSubTotalPayment(){
         totalPrice  += item.price * item.quantity
     });
 
-    cardBtnSubtotal.innerHTML = `Pay RON ${totalPrice.toFixed(2)} `
-    paySubTotal.innerHTML = `Pay RON ${totalPrice.toFixed(2)} `
-    transferSubtotal.innerHTML = `RON ${totalPrice.toFixed(2)} `
-    transferSubtotal1.innerHTML = `Transfer RON ${totalPrice.toFixed(2)} to paystack Chackout `
+    cardBtnSubtotal.innerHTML = `Pay RON${totalPrice.toFixed(2)} `
+    paySubTotal.innerHTML = `Pay RON${totalPrice.toFixed(2)} `
+    transferSubtotal.innerHTML = `RON${totalPrice.toFixed(2)} `
+    transferSubtotal1.innerHTML = `Transfer RON${totalPrice.toFixed(2)} to paystack Chackout `
 }

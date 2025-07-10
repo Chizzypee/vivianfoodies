@@ -244,7 +244,7 @@ const cart = JSON.parse(localStorage.getItem("CART"));
         totalItem  += item.quantity;
     });
     
-    subtotal.innerHTML = `$${totalPrice.toFixed(2)} `
+    subtotal.innerHTML = `RON ${totalPrice.toFixed(2)} `
     totalcartitem.innerHTML =  `(${totalItem} item)`
     totalCartDashboard.innerHTML =  `${totalItem}`
 }

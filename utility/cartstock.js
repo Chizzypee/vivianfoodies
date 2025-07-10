@@ -68,7 +68,7 @@ const cart = JSON.parse(localStorage.getItem("CART"));
     cart.forEach((item) => {
         grandTotal += item.price * item.quantity
     });
-    document.querySelector(".cartAmount").innerHTML = `$${grandTotal.toFixed(2)}`
+    document.querySelector(".cartAmount").innerHTML = `RON${grandTotal.toFixed(2)}`
 }
 
 function removeCartFromStock(id){
