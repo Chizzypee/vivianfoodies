@@ -120,7 +120,7 @@ function renderOrderedITem(){
                     <label for="text" class="orderedText1">(${item.description})</label>
                 </div>
                 <div class="orderIMG-text1">
-                    <label for="text" class="cartamount cartamountcheck1">RON ${item.price * item.quantity}</label>
+                    <label for="text" class=" cartamountcheck1 cartamount">RON ${item.price * item.quantity}</label>
                 </div>
             </div>
         </div>
