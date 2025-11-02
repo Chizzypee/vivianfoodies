@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:1234/api/v1";
+const baseUrl = 'http://localhost:5555/api/v1';
 // const baseUrl = "https://beautyflux-5x4v.onrender.com/api/v1";
 
 // const header = {

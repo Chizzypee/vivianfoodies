@@ -266,3 +266,11 @@ function cancelpayment(){
         window.location.href = "./checkout.html"
     })
 }
+function openAccount(){
+    const div = document.getElementById("Account")
+    if(div.style.display === "flex"){
+        div.style.display = "none";
+    }else {
+        div.style.display = "flex";
+    }
+}
