@@ -14,6 +14,10 @@ function showDetailsProduct(){
          let details = document.querySelector(".details-con")
          details.innerHTML = `
          <div class="details-con" id="detailsCon">
+             <div class="carthead-con">
+                    <p>Shopping cart</p>
+                    <a href="../index.html">Contiune shopping</a>
+                </div>
             <div class="details-sep">
                 <div class="details-right">
                     <img src="${findProduct.imgSrc}" class="itemImgbig1">
