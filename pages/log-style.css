@@ -25,6 +25,19 @@ body{
     height: 100vh;
     width: 100%;
 }
+.logNav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.backshop{
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
 .rapperImg{
     width: 100%;
     height: 100vh;
@@ -237,6 +250,9 @@ body{
     width: 5%;
 }
 
+
+
+
 @media screen and (max-height: 1000px){
     .container{
         height: 100vh;
@@ -262,6 +278,9 @@ body{
         align-items: center;
         width: 100%;
     }
+    .field{
+        padding: 10px;
+    }
     .discount{
         height: 25vh;
         margin-bottom: 20px;
@@ -285,16 +304,75 @@ body{
     }
 
 }
+@media (min-width: 481px) and (max-width: 968px){
+    .rapper{
+        display: flex;
+        width: 65%;
+    }
+    .login-container{
+        width: 45%;
+    }
+    .log-content{
+        gap: 10px;
+    }
+    .log-content p{
+        font-size: 12px;
+    }
+    .log-info{
+        font-size: 10px;
+    }
+    .item{
+        gap: 5px;
+    }
+    .field{
+        padding: 0px;
+    }
+    .fieldd{
+        padding: 0px;
+    }
+    .socialimg{
+        width: 5%;
+    }
+    .fforget-password a{
+        font-size: 10px;
+    }
+    .discount{
+        height: 25vh;
+        margin: 10px;
+    }
+    .discount-con{
+        gap: 5px;
+    }
+    .dis-item p{
+        font-size: 12px;
+    }
+    .dis-item .p{
+        font-size: 10px;
+        text-align: center;
+    }
+    .subcription{
+        font-size: 10px;
+    }
+    .sitenamfooter h1{
+        font-size: 10px;
+    }
+    .siteimg{
+        width: 7%;
+    }
+}
 @media screen and (min-height: 1000px){
     .content{
-        height: 60vh;
+        /* height: 60vh; */
         border-bottom: 1px solid black;
     }
     .rapper{
-        height: 50vh;
+        justify-content: start;
     }
     .rapperImg{
         height: 40vh;
+    }
+    .login-container{
+        justify-content: start;
     }
     .btn-forget{
         height: 3vh;
@@ -311,7 +389,7 @@ body{
         height: 1vh;
     }
     .discount{
-        height: 15vh;
+        height: 13vh;
     }
     .discount-con{
         width: 90%;
@@ -338,14 +416,20 @@ body{
 @media screen and (min-width: 1000px){
     .rapper{
         display: flex;
-        width: 50%;
+        width: 60%;
     }
     .login-container{
-        width: 50%;
+        width: 40%;
+    }
+    .log-content{
+        gap: 20px;
     }
     .fieldd{
         align-items: center;
         width: 100%;
+    }
+    .fforget-password a{
+        font-size: 15px;
     }
     .discount-con{
         width: 90%;
@@ -358,6 +442,9 @@ body{
         margin: 0px;
         margin-bottom: 10px;
     }
+    .dis-item .p{
+        text-align: center;
+    }
     .siteimg{
         width: 7%;
     }
@@ -366,3 +453,5 @@ body{
     }
 
 }
+
+
