@@ -32,17 +32,18 @@ soupItem.slice(0, 8).forEach((product) => {
     let productDiv = document.createElement("div")
     productDiv.classList.add("product")
     productLink = `<a href="./dashboard/item.html?id=${product.id}" class="product-link">`;
+    productLinkdash = `<a href="./item.html?id=${product.id}" class="product-link">`;
     productDiv.innerHTML = `
     <div class="food-item" id="footslide">
         <div class="itemborder">
             <div class="item-imgBig">
                 <div class="item-img">
-                    ${productLink}<img src="${product.imgSrc}" class="itemImgbig"></a>
+                    ${productLink}${productLinkdash}<img src="${product.imgSrc}" class="itemImgbig"></a>
                 </div>
                 <div class="itemrapper">
                     <img src="../icon/heart.png" class="itemImg">
-                    ${productLink}<label for="text" class="itemtext">${product.name}</label></a>
-                    ${productLink}<label for="text" class="itemtextdesc">${product.description}</label></a>
+                    ${productLink}${productLinkdash}<label for="text" class="itemtext">${product.name}</label></a>
+                    ${productLink}${productLinkdash}<label for="text" class="itemtextdesc">${product.description}</label></a>
                 </div>
             </div>
             <div class="price-btn">
@@ -66,17 +67,18 @@ wineItem.slice(0, 8).forEach((product) => {
     let productDiv = document.createElement("div")
     productDiv.classList.add("product")
     productLink = `<a href="../dashboard/item.html?id=${product.id}" class="product-link">`;
+    productLinkdash = `<a href="./item.html?id=${product.id}" class="product-link">`;
     productDiv.innerHTML = `
     <div class="food-item" id="footslide">
         <div class="itemborder">
             <div class="item-imgBig">
                 <div class="item-img">
-                    ${productLink}<img src="${product.imgSrc}" class="itemImgbig" ></a>
+                    ${productLink}${productLinkdash}<img src="${product.imgSrc}" class="itemImgbig" ></a>
                 </div>
                 <div class="itemrapper">
                     <img src="../icon/heart.png" class="itemImg">
-                    ${productLink}<label for="text" class="itemtext">${product.name}</label></a>
-                    ${productLink}<label for="text" class="itemtextdesc">${product.description}</label></a>
+                    ${productLink}${productLinkdash}<label for="text" class="itemtext">${product.name}</label></a>
+                    ${productLink}${productLinkdash}<label for="text" class="itemtextdesc">${product.description}</label></a>
                 </div>
             </div>
             <div class="price-btn">
@@ -98,17 +100,18 @@ fruitItem.slice(0, 8).forEach((product) => {
     let productDiv = document.createElement("div")
     productDiv.classList.add("product")
     productLink = `<a href="../dashboard/item.html?id=${product.id}" class="product-link">`;
+    productLinkdash = `<a href="./item.html?id=${product.id}" class="product-link">`;
     productDiv.innerHTML = `
     <div class="food-item" id="footslide">
         <div class="itemborder">
             <div class="item-imgBig">
                 <div class="item-img">
-                    ${productLink}<img src="${product.imgSrc}" class="itemImgbig" ></a>
+                    ${productLink}${productLinkdash}<img src="${product.imgSrc}" class="itemImgbig" ></a>
                 </div>
                 <div class="itemrapper">
                     <img src="../icon/heart.png" class="itemImg">
-                    ${productLink}<label for="text" class="itemtext">${product.name}</label></a>
-                    ${productLink}<label for="text" class="itemtextdesc">${product.description}</label></a>
+                    ${productLink}${productLinkdash}<label for="text" class="itemtext">${product.name}</label></a>
+                    ${productLink}${productLinkdash}<label for="text" class="itemtextdesc">${product.description}</label></a>
                 </div>
             </div>
             <div class="price-btn">
@@ -130,17 +133,18 @@ snacksItem.slice(0, 8).forEach((product) => {
     let productDiv = document.createElement("div")
     productDiv.classList.add("product")
     productLink = `<a href="../dashboard/item.html?id=${product.id}" class="product-link">`;
+    productLinkdash = `<a href="./item.html?id=${product.id}" class="product-link">`;
     productDiv.innerHTML = `
     <div class="food-item" id="footslide">
         <div class="itemborder">
             <div class="item-imgBig">
                 <div class="item-img">
-                    ${productLink}<img src="${product.imgSrc}" class="itemImgbig" ></a>
+                    ${productLink}${productLinkdash}<img src="${product.imgSrc}" class="itemImgbig" ></a>
                 </div>
                 <div class="itemrapper">
                     <img src="../icon/heart.png" class="itemImg">
-                    ${productLink}<label for="text" class="itemtext">${product.name}</label></a>
-                    ${productLink}<label for="text" class="itemtextdesc">${product.description}</label></a>
+                    ${productLink}${productLinkdash}<label for="text" class="itemtext">${product.name}</label></a>
+                    ${productLink}${productLinkdash}<label for="text" class="itemtextdesc">${product.description}</label></a>
                 </div>
             </div>
             <div class="price-btn">

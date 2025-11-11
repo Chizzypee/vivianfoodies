@@ -37,7 +37,7 @@ const register = async (e) =>{
         if(!res.ok){
             throw new Error(result.error)
         }
-             window.location.href = ("./login.html");
+             window.location.href = ("./loarder.html");
     } catch (error) {
        alert(error)
        console.log(error); 

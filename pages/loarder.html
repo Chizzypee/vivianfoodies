@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer</title>
+    <link rel="stylesheet" href="./log-style.css">
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+        <div class="loader1"></div>
+        <p>initializing account... please wait</p>
+        <label for="text" class="congratulation" id="success">Account created Successfully..</label>
+    </div>
+    <script>
+        setTimeout(()=> {
+            document.getElementById("success").style.display = "block"
+        }, 3000)
+        setTimeout(()=> {
+            window.location.href = "./login.html"
+        }, 5000)
+    </script>
+</body>
+</html> 

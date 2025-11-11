@@ -101,6 +101,9 @@ body{
     height: 5vh;
     padding: 20px;
     width: 100%;
+    color: white;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 .field{
     border: 1px solid white;
@@ -108,6 +111,8 @@ body{
     height: 5vh;
     padding: 20px;
     width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 .retn{
     text-decoration: underline;
@@ -249,7 +254,46 @@ body{
 .siteimg{
     width: 5%;
 }
-
+/* loading */
+.loader-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: saddlebrown;
+}
+.loader{
+    width: 70px;
+    height: 70px;
+    border: 6px solid transparent;
+    border-top: 6px solid rgb(2, 242, 2);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+.loader-container p{
+    font-size: 1.1rem;
+    color: white;
+}
+.congratulation{
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: greenyellow;
+}
+#success{
+    display: none;
+    opacity: 0.5;
+    transition: opacity 5s ease-in-out;
+}
+#success.show{
+    opacity: 1;
+}
 
 
 
@@ -386,7 +430,7 @@ body{
     .fieldd{
         align-items: center;
         width: 100%;
-        height: 1vh;
+        height: 2vh;
     }
     .discount{
         height: 13vh;
