@@ -14,7 +14,7 @@ body{
     /* background-color: black; */
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
     width: 100%;
 }
 .content{
@@ -22,7 +22,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
     width: 100%;
 }
 .logNav{
@@ -40,7 +40,7 @@ body{
 }
 .rapperImg{
     width: 100%;
-    height: 100vh;
+    height: 38pc;
 }
 .rapper{
     display: flex;
@@ -48,7 +48,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 60%;
-    height: 100vh;
+    height: 38pc;
 }
 .login-container{
     display: flex;
@@ -56,7 +56,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 40%;
-    height: 100vh;
+    height: 38pc;
 }
 .log-content{
     display: flex;
@@ -64,20 +64,17 @@ body{
     justify-content: center;
     align-items: center;
     width: 80%;
-    /* height: 100vh; */
     gap: 10px;
 }
 .log-content p{
     font-weight: 600;
     font-size: 25px;
-    /* padding-bottom: 20px; */
     color: white;
 }
 .item{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* height: auto; */
 }
 .logrol{
     display: flex;
@@ -98,28 +95,22 @@ body{
 .fieldd{
     border: 1px solid white;
     background-color: transparent;
-    /* height: 5vh; */
     padding: 0px 10px;
     line-height: 30px;
     width: 100%;
     color: white;
     box-sizing: border-box;
     font-size: 16px;
-    max-width: 30rem;
-    min-width: 7rem;
     outline: none;
 }
 .field{
     border: 1px solid white;
     background-color: transparent;
-    /* height: 5vh; */
     padding: 0px 10px;
     width: 100%;
     box-sizing: border-box;
     font-size: 16px;
     color: white;
-    max-width: 30rem;
-    min-width: 12rem;
     line-height: 20px;
     outline: none;
 }
@@ -134,7 +125,7 @@ body{
     color: white;
     font-weight: 600;
     width: 20%;
-    height: 5vh;
+    height: 25px;
     border-radius: 5px;
 }
 .discount{
@@ -142,7 +133,7 @@ body{
     flex-direction: column;
     background-color: #ddd;
     width: 90%;
-    height: 30vh;
+    height: 11pc;
     /* margin-bottom: 30px; */
     justify-content: center;
     align-items: center;
@@ -151,6 +142,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 80%;
 }
 .dis-item{
     display: flex;
@@ -159,11 +151,12 @@ body{
 }
 .dis-item p{
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
 }
 .dis-item .p{
     font-weight: 400;
     font-size: 15px;
+    text-align: center;
 }
 .sub{
     display: flex;
@@ -171,19 +164,18 @@ body{
     width: 100%;
     justify-content: center;
     align-items: center;
+    height: 2pc;
 }
 .email-sub{
     width: 100%;
-    height: 6vh;
+    height: 2pc;
     border: 1px solid green;
     padding-left: 10px;
-    max-width: 30rem;
-    min-width: 10rem;
     outline: none;
 }
 .subcription{
     width: 30%;
-    height: 6vh;
+    height: 2pc;
     background-color: rgb(1, 110, 1);
     border: none;
     color: white;
@@ -208,7 +200,7 @@ body{
 }
 .btn-forget{
     width: 100%;
-    height: 6vh;
+    height: 30px;
     border: none;
     background-color: green;
     color: white;
@@ -256,7 +248,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 5vh;
+    height: 50px;
     align-items: center;
     justify-content: center;
 }
@@ -309,21 +301,20 @@ body{
 
 
 
+
 @media screen and (max-height: 1000px){
-    .container{
-        height: 100vh;
-    }
     .login-container{
+        height: 42pc;
         width: 100%;
     }
     .rapper{
         display: none;
     }
     .socialimg{
-        width: 10%;
+        width: 8%;
     }
     .btn-forget{
-        height: 5vh;
+        height: 30px;
         
     }
     .fforget-password a{
@@ -337,10 +328,7 @@ body{
     .field{
         padding: 10px;
     }
-    .discount{
-        height: 25vh;
-        margin-bottom: 20px;
-    }
+
     .discount-con{
         width: 90%;
     
@@ -349,23 +337,35 @@ body{
         font-size: 20px;
     }
     .email-sub{
-        height: 5vh;
+        height: 2pc;
     }
     .subcription{
-        height: 5vh;
+        height: 2pc;
         width: 50%;
     }
     .siteimg{
         width: 10%;
     }
+    .sitenamfooter{
+        height: 5pc;
+    }
 
 }
 @media (min-width: 481px) and (max-width: 968px){
+    .content{
+        height: auto;
+        align-items: start;
+    }
     .rapper{
         display: flex;
         width: 65%;
+        height: 375px;
+    }
+    .rapperImg{
+        height: 375px;
     }
     .login-container{
+        height: 375px;
         width: 45%;
     }
     .log-content{
@@ -382,18 +382,23 @@ body{
     }
     .field{
         padding: 0px;
+        height: 25px;
     }
     .fieldd{
         padding: 0px;
+        height: 25px;
     }
     .socialimg{
         width: 5%;
+    }
+    .btn-forget{
+        height: 20px;
     }
     .fforget-password a{
         font-size: 10px;
     }
     .discount{
-        height: 25vh;
+        height: 140px;
         margin: 10px;
     }
     .discount-con{
@@ -408,6 +413,13 @@ body{
     }
     .subcription{
         font-size: 10px;
+        height: 25px;
+    }
+    .email-sub{
+        height: 25px;
+    }
+    .sitenamfooter{
+        height: auto
     }
     .sitenamfooter h1{
         font-size: 10px;
@@ -418,23 +430,29 @@ body{
 }
 @media screen and (min-height: 1000px){
     .content{
-        /* height: 60vh; */
-        border-bottom: 1px solid black;
+        height: auto;
+        align-items: start;
     }
     .rapper{
-        justify-content: start;
+        height: 550px;
     }
     .rapperImg{
-        height: 40vh;
+        height: 550px;
     }
     .login-container{
-        justify-content: start;
+        height: 550px;
+    }
+    .log-content p{
+        font-size: 15px;
+    }
+    .logtext{
+        font-size: 15px;
     }
     .btn-forget{
-        height: 3vh;
+        height: 25px;
     }
     .field{
-        height: 2vh;
+        height: 20px;
     }
     .fforget-password a{
         font-size: 12px;
@@ -442,10 +460,9 @@ body{
     .fieldd{
         align-items: center;
         width: 100%;
-        /* height: 2vh; */
     }
     .discount{
-        height: 13vh;
+        height: 130px;
     }
     .discount-con{
         width: 90%;
@@ -455,10 +472,10 @@ body{
         font-size: 15px;
     }
     .email-sub{
-        height: 3vh;
+        height: 25px;
     }
     .subcription{
-        height: 3vh;
+        height: 25px;
         width: 50%;
     }
     .socialimg{
@@ -470,44 +487,80 @@ body{
 
 }
 @media screen and (min-width: 1000px){
+    .content{
+        height: auto;
+        align-items: start;
+    }
     .rapper{
         display: flex;
-        width: 60%;
+        width: 65%;
+        height: 650px;
+    }
+    .rapperImg{
+        height: 648px;
     }
     .login-container{
-        width: 40%;
+        height: 650px;
+        width: 45%;
     }
     .log-content{
         gap: 20px;
     }
+    .log-content p{
+        font-size: 15px;
+    }
+    .log-info{
+        font-size: 15px;
+    }
+    .item{
+        gap: 5px;
+    }
+    .field{
+        padding: 0px;
+        height: 30px;
+    }
     .fieldd{
-        align-items: center;
-        width: 100%;
+        padding: 0px;
+        height: 40px;
+    }
+    .socialimg{
+        width: 5%;
+    }
+    .btn-forget{
+        height: 40px;
     }
     .fforget-password a{
         font-size: 15px;
     }
+    .discount{
+        height: 170px;
+        margin: 10px;
+    }
     .discount-con{
-        width: 90%;
+        gap: 10px;
     }
     .dis-item p{
-        font-size: 23px;
-    }
-    .discount{
-        height: 30vh;
-        margin: 0px;
-        margin-bottom: 10px;
+        font-size: 20px;
     }
     .dis-item .p{
+        font-size: 15px;
         text-align: center;
+    }
+    .subcription{
+        font-size: 15px;
+        height: 30px;
+    }
+    .email-sub{
+        height: 30px;
+    }
+    .sitenamfooter{
+        height: auto
+    }
+    .sitenamfooter h1{
+        font-size: 15px;
     }
     .siteimg{
         width: 7%;
     }
-    .socialimg{
-        width: 6%;
-    }
 
 }
-
-
