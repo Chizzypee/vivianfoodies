@@ -262,7 +262,7 @@ nav{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 5vh;
+    height: 20px;
     justify-content: space-between;
     align-items: center;
 }
@@ -461,7 +461,7 @@ nav{
 .pro-wallatimg{
     display: flex;
     flex-direction: column;
-    height: 20vh;
+    height: 80px;
     width: 30%; 
     /* background-color: red; */
     align-items: center;
@@ -1585,7 +1585,7 @@ nav{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 70vh;
+    height: 200px;
     /* background-color: rgb(51, 255, 0); */
 }
 .details-sep{
@@ -1611,7 +1611,7 @@ nav{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 6vh;
+    height: 30px;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid black;
@@ -2018,7 +2018,7 @@ nav{
     height: auto;
 }
 .paymentcon{
-    height: 80vh;
+    height: 200px;
 }
 .paymenthead{
     background-color: rgb(231, 252, 229);
@@ -2027,7 +2027,7 @@ nav{
     justify-content: space-between;
     margin-top: 10px;
     border: 1px solid rgb(122, 253, 122);
-    height: 10vh;
+    height: 40px;
     font-weight: 600;
     border-radius: 10px;
 }
@@ -2054,7 +2054,7 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 10vh;
+    height: 40px;
     width: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -2063,14 +2063,14 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 10vh;
+    height: 40px;
     width: 100%;
     background-color: rgb(223, 255, 223);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 .payinfo{
-    height: 35vh;
+    height: 80px;
     width: 100%;
     background-color: #f3f1f1;
     display: none;
@@ -2079,7 +2079,7 @@ nav{
     align-items: center;
 }
 .payinfo1{
-    height: 35vh;
+    height: 80px;
     width: 100%;
     background-color: #f4f4f4;
     display: flex;
@@ -2693,7 +2693,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 150px;
     width: 100%;
     margin-top: 20px;
 }
@@ -3077,19 +3077,19 @@ nav{
         font-size: 10px;
     }
     .needhelp-con{
-        height: 5vh;
+        height: 50px;
     }
     .btnshopping p{
         font-size: 10px;
     }
     .Continueshopping{
-        height: 4vh;
+        height: 25px;
         width: 70%;
         font-size: 10px;
         border-radius: 5px;
     }
     .thankyou{
-        height: 5vh;
+        height: 30px;
         margin-top: 10px;
     }
     .confirmationNumber{
@@ -3104,7 +3104,7 @@ nav{
         font-weight: 600;
     }
     .mapImg{
-        height: 30vh;
+        height: 200px;
     }
     .ordered-content{
         width: 90%;
@@ -3112,7 +3112,7 @@ nav{
     }
     /* PAYMENT */
     .transfercon{
-        height: 6vh;
+        height: 50px;
     }
     .card{
         border: none;
@@ -3120,29 +3120,33 @@ nav{
     }
     .cardnumber{
         font-size: 13px;
+        font-weight: 700;
     }
     .cardfield{
-        height: 8vh;
+        height: 50px;
+    }
+    .cardpay{
+        height: 40px;
     }
     .card-pay{
-        height: 7vh;
+        height: 40px;
     }
     .cardinfo{
-        height: 8vh;
+        height: 50px;
     }
     .secured-con1{
-        width: 40%;
-        height: 4vh;
+        width: 100%;
+        height: 40px;
     }
     .secured-row1{
         display: flex;
         width: 50%;
-        height: 4vh;
+        height: 30px;
     }
     .secured-row{
         display: flex;
         width: 40%;
-         height: 4vh;
+         height: 30px;
     }
     .secured-row p{
         font-size: 13px;
@@ -3152,16 +3156,13 @@ nav{
         font-size: 13px;
          font-weight: 700;
     }
-    .secured-con1{
-        width: 100%;
-    }
     .secured{
         gap: 50px;
     }
     .secured-con{
         display: flex;
         width: 100%;
-        height: auto;
+        height: 30px;
     }
     .secured-con p{
         font-size: 13px;
@@ -3181,11 +3182,13 @@ nav{
     }
     .payoption3{
         display: flex;
-        height: 7vh;
+        height: 45px;
+        font-size: 20px;
     }
     .payoption4{
         display: flex;
-        height: 7vh;
+        height: 45px;
+        font-size: 20px;
     }
     .payhead2{
         width: 90%;
@@ -3203,11 +3206,11 @@ nav{
         justify-content: start;
     }
     .payhead1{
-        height: 7vh;
+        height: 50px;
         border-bottom: 1px solid rgb(243, 242, 242);
     }
     .paylogo{
-        height: 5vh;
+        height: 30px;
     }
     .emails{
         font-size: 13px;
@@ -3216,15 +3219,12 @@ nav{
         font-size: 13px;
     }
     .transferinfo{
-        font-size: 13px;
+        font-size: 15px;
     }
     .trans{
         height: 30vh;
     }
     .ppp{
-        font-size: 13px;
-    }
-    .transferinfo{
         font-size: 13px;
     }
     .sentBtn{
@@ -3309,13 +3309,13 @@ nav{
         height: auto;
     }
     .odersummary1{
-        height: auto;
+        height: 50px;
     }
     .odersummary{
-        height: 6vh;
+        height: 50px;
     }
     .check-head{
-        height: 7vh;
+        height: 50px;
     }
     .check-split p{
         font-size: 20px;
@@ -3352,7 +3352,8 @@ nav{
     }
     .discount{
         gap: 10px;
-        height: 10vh;
+        height: 50px;
+        margin-bottom: 10px;
     }
     .discountsplit{
         width: 100%;
@@ -3382,14 +3383,20 @@ nav{
     }
     .discountinput1{
         width: 100%;
-        height: 6vh;
+        height: 50px;
     }
     .discountinput{
         width: 100%;
-        height: 6vh;
+        height: 50px;
+    }
+    .apply{
+        height: 40px;
     }
     .deliivery{
         margin-bottom: 30px;
+    }
+    .contact-login{
+        height: 50px;
     }
     .contact-login h2{
         font-size: 17px;
@@ -3407,25 +3414,62 @@ nav{
         font-size: 14px;
     }
     .odertotalsum{
-        height: auto;
+        height: 150px;
         margin-bottom: 20px;
     }
+    .odertotalsum-split1{
+        height: 80px;
+    }
     .shippingMethod{
-        height: 25vh;
+        height: 180px;
     }
     .shippingcon h2{
         font-size: 14px;
     }
     .shippingWarning{
-        height: 15vh;
+        height: 100px;
     }
     .paymenthead{
-        height: 5vh;
+        height: 35px;
     }
     .paymenthead p{
         font-size: 13px;
     }
-
+    .paymentMethod{
+        height: 350px;
+    }
+    .paymentinfo{
+        height: 250px;
+    }
+    .paymentdetails{
+        height: 40px;
+    }
+    .paymentdetails1{
+        height: 40px;
+    }
+    .payinfo{
+        height: 180px;
+    }
+    .payinfo1{
+        height: 180px;
+    }
+    .payinfocon{
+        height: 150px;
+    }
+    .payinfocon1{
+        height: 150px;
+        gap: 10px;
+    }
+    .pay{
+        height: 40px;
+    }
+    .backshopping{
+        height: 30px;
+        margin-top: 10px;
+    }
+    .checkfooter{
+        height: 80px;
+    }
 
 
 
@@ -3442,8 +3486,12 @@ nav{
     .side-con{
         width: 100%;
     }
+    .cart-back{
+        height: 50px;
+    }
     .product-con{
         margin: 0px;
+        height: 400px;
     }
     .pro-wallattopup{
         margin-left: 5px;
@@ -3453,6 +3501,8 @@ nav{
     }
     .cart-main-con{
         width: 90%;
+        gap: 10px;
+        height: 300px;
     }
     .side-nav{
         width: 100%;
@@ -3656,18 +3706,16 @@ nav{
         align-items: center;
     }
     .details-right{
-        height: 25vh;
+        height: 200px;
     }
     .details-left{
         flex-direction: column;
-        /* justify-content: center; */
-        /* align-items: center; */
         width: 90%;
         margin-bottom: 10px;
     }
     .itemImgbig1{
-        height: 20vh;
-        width: 50%;
+        height: 170px;
+        width: 70%;
     }
     .Amount{
         margin: 0px;
@@ -3719,14 +3767,13 @@ nav{
     .cartorder-con{
         flex-direction: column;
         width: 100%;
-        height: auto;
+        height: 100px;
     }
+    /* .cartorder{
+       height: 400px;
+    } */
     .cartorder1{
         width: 100%;
-    }
-    .topupImg1{
-        width: 100%;
-        height: 9vh;
     }
     .insdeorder1{
         margin: 0px;
@@ -3786,20 +3833,42 @@ nav{
     }
     .cartdetails{
         flex-direction: column;
-        height: 50vh;
+        height: 350px;
         margin-bottom: 20px;
     }
     .cartsubtotal{
-        height: 20vh;
+        height: 400px;
+    }
+    .cartsubtotalcon{
+        height: 150px;
     }
     .cartnote1con{
         gap: 10px;
     }
     .cartnote1{
-       height: 20vh;
+       height: 200px;
+       margin: 0px; 
+       gap: 5px;
     }
-    .pro-cartcount{
-        height: 4vh;
+    .checkout-btn{
+        height: 100px;
+    }
+    .cartnote{
+        height: 150px;
+    }
+    .pro-head{
+        height: 50px;
+    }
+    .checkoutbtn1{
+        height: 50px;
+        justify-content: baseline;
+        align-items: baseline;
+    }
+    .ordersum{
+        display: none;
+    }
+    .order-view{
+        height: 50px;
     }
     .cartnote1 .p{
         font-weight: 700;
@@ -3807,7 +3876,35 @@ nav{
     }
     .cart-note1{
         width: 100%;
-        height: 8vh;
+        height: 100px;
+        padding: 10px;
+    }
+    .pro-wallatimg{
+        height: 100px;
+    }
+    .pro-wallatimg a{
+        height: 100px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+    .pro-topup{
+        height: auto;
+    }
+    .wallat-con{
+        height: 80px;
+    }
+    .pro-btn-show{
+        height: 80px;
+    }
+    .topupImg1{
+        width: 100%;
+        height: 50px;
+    }
+    .topupImg{
+        height: 70px;
     }
     .cartamount{
         font-size: 15px;
@@ -3819,14 +3916,16 @@ nav{
         width: 100%;
     }
     .checkoutbtn{
-        height: 4vh;
+        height: 30px;
         font-size: 16px;
     }
     .pro-cartcount{
         font-size: 20px;
+        height: 30px;
     }
     .pro-counttxt{
         font-size: 15px;
+        height: 20px;
     }
 }
 @media screen and (min-width: 500px){
@@ -3883,23 +3982,6 @@ nav{
     .checktranfer{
         width: 50%;
     }
-    .paymenthead{
-        height: 10vh;
-    }
-    .payinfocon1{
-        gap: 5px;
-    }
-    .pinfo p{
-        font-size: 1px;
-    }
-    .paymentinfo{
-        height: 50vh;
-    }
-    .paymentMethod{
-        height: 70vh;
-        margin-top: 80px;
-        margin-bottom: 50px;
-    }
     .shipwardDetails{
         gap: 3px;
     }
@@ -3907,14 +3989,14 @@ nav{
         font-size: 1px;
     }
     .shippingWarning{
-        height: 30vh;
+        height: 150px;
         padding-bottom: 10px;
     }
     .discountinput{
-        border-radius: 5px;
+        border-radius: 10px;
     }
     .discountinput1{
-        border-radius: 5px;
+        border-radius: 10px;
     }
     .discountinput::placeholder{
         font-size: 12px;
@@ -3966,24 +4048,37 @@ nav{
         height: 15vh;
         gap: 15px;
     }
+    .paymenthead{
+        height: 40px;
+    }
+    .payinfocon1{
+        gap: 5px;
+    }
+    .pinfo p{
+        font-size: 1px;
+    }
+    .paymentinfo{
+        height: 250px;
+    }
+    .paymentMethod{
+        height: 350px;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
     .paymentcon{
-        height: 45vh;
+        height: 400px;
     }
     .paymentdetails{
-        height: 5vh;
+        height: 40px;
     }
     .paymentdetails1{
-        height: 5vh;
+        height: 40px;
     }
     .payinfo{
-        height: 37vh;
+        height: 200px;
     }
     .payinfo1{
-        height: 37vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        height: 200px;
 
     }
     .shipwardDetails p{
@@ -3992,15 +4087,6 @@ nav{
     }
     .paymentheading p{
         font-size: 15px;
-    }
-    .ptext{
-        font-size: 15px;
-    }
-    .paymentdetails1{
-        height: 8vh;
-    }
-    .paymentdetails{
-        height: 8vh;
     }
     .ptext{
         font-size: 12px;
@@ -4019,17 +4105,15 @@ nav{
         font-size: 14px;
     }
     .shippingMethod{
-        height: 17vh;
+        height: 100px;
     }
     .shippingWarning p{
         font-size: 13px;
     }
-    .circle{
-        display: none;
-    }
-    .staticNav{
-        /* gap: 10px; */
-    }
+
+
+
+
     .side-cart{
         width: 40%;
     }
@@ -4038,7 +4122,7 @@ nav{
         gap: 20px;
     }
     .cart-back{
-        height: 6vh;
+        height: 30px;
         font-size: 10px;
     }
     .product-con{
@@ -4464,7 +4548,7 @@ nav{
     }
     .checkoutbtn1{
         width: 100%;
-        height: 6vh;
+        height: 30px;
         font-size: 12px;
         border: none;
         color: white;
@@ -4541,10 +4625,10 @@ nav{
         font-size: 1px;
     }
     .paymentinfo{
-        height: 50vh;
+        height: 150px;
     }
     .paymentMethod{
-        height: 70vh;
+        height: 170px;
         margin-top: 80px;
         margin-bottom: 50px;
     }
@@ -4555,7 +4639,7 @@ nav{
         font-size: 1px;
     }
     .shippingWarning{
-        height: 30vh;
+        height: 250px;
         padding-bottom: 10px;
     }
     .discountinput{
@@ -5128,13 +5212,6 @@ nav{
     .sentBtn{
         font-size: 10px;
     }
-    .paymentMethod{
-        height: 30vh;
-        margin: 0px;
-    }
-    .paymentinfo{
-        height: 20vh
-    }
     .details-container{
         margin-top: 0px;
     }
@@ -5254,10 +5331,10 @@ nav{
         font-size: 10px;
     }
     .cardpay{
-        height: 3vh;
+        height: 30px;
     }
     .card-pay{
-        height: 3vh;
+        height: 30px;
         font-size: 13px;
     }
     .secured-row{
@@ -5268,31 +5345,31 @@ nav{
         height: 3vh;
     }
     .paycontent{
-        height: 25vh;
+        height: 310px;
         width: 30%;
     }
     .payfieldcontainer{
-        height: 25vh;
+        height: 310px;
         width: 70%;
     }
     .payhead{
-        height: 3vh;
+        height: 40px;
         font-size: 10px;
     }
     .payhead1{
-        height: 3vh;
+        height: 30px;
     }
     .paylogo{
-        height: 2vh;
+        height: 30px;
         width: 25%;
     }
 
     .payoption{
-        height: 2vh;
+        height: 30px;
         font-size: 10px;
     }
     .payoption1{
-        height: 2vh;
+        height: 30px;
         font-size: 10px;
     }
     .payoption4{
@@ -5423,12 +5500,12 @@ nav{
     }
     .discountinput1{
         width: 100%;
-        height: 2vh;
+        height: 40px;
         border-radius: 5px;
     }
     .discountinput{
         width: 100%;
-        height: 2vh;
+        height: 40px;
         border-radius: 5px;
     }
     .discountinput::placeholder{
@@ -5438,7 +5515,7 @@ nav{
         font-size: 10px;
     }
     .contact-login{
-        height: 4vh;
+        height: 40px;
     }
     .contact-login h2{
         font-size: 17px;
@@ -5453,16 +5530,16 @@ nav{
         height: 2vh;
     }
     .paybtn{
-        height: 4vh;
+        height: 20px;
     }
     .pay{
-        height: 2vh;
+        height: 20px;
     }
     .checkfooter{
-        height: 5vh;
+        height: 50px;
     }
     .backshopping{
-        height: 3vh;
+        height: 30px;
     }
     .checkfooter-con a{
         font-size: 14px;
@@ -5472,16 +5549,35 @@ nav{
         margin-bottom: 20px;
     }
     .shippingMethod{
-        height: 15vh;
+        height: 120px;
     }
     .shippingWarning{
-        height: 10vh;
+        height: 100px;
     }
     .paymenthead{
-        height: 4vh;
+        height: 40px;
     }
     .radiocon{
         height: auto;
+    }
+    .paymentMethod{
+        height: 350px;
+    }
+    .paymentinfo{
+        height: 250px;
+    }
+    .paybtn{
+        height: 50px;
+    }
+    .pay{
+        height: 40px;
+    }
+    .apply{
+        height: 40px;
+    }
+    .backshopping{
+        height: 50px;
+        margin-top: 20px;
     }
 
 
@@ -5519,7 +5615,7 @@ nav{
 
     }
     .pro-head{
-        height: 5vh;
+        height: 20px;
     }
     .pro-cartcount{
         height: 2vh;
@@ -5757,7 +5853,7 @@ nav{
         width: 90%;
     }
     .itemImgbig1{
-        height: 17vh;
+        height: 200px;
         width: 80%;
     }
     .pro-wallattopup{
@@ -5825,9 +5921,11 @@ nav{
     .description-con{
         font-size: 20px;
         margin: 0px;
+        height: 40px;
     }
     .description-img{
-        width: 5%;
+        width: 6%;
+        margin-right: 10px;
     }
     .desc-box{
         border: none;
@@ -6296,6 +6394,7 @@ nav{
         align-items: center;
         width: 98%;
         gap: 10px;
+        
     }
     .details-sep{
         display: flex;
@@ -6491,7 +6590,7 @@ nav{
         margin: 0px;
     }
     .paymentinfo{
-        height: 20vh
+        height: 40px;
     }
     .details-container{
         margin-top: 0px;
@@ -7305,4 +7404,3 @@ nav{
         color: white;
     }
 }
-
