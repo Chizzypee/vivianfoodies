@@ -5395,10 +5395,10 @@ nav{
         font-size: 14px;
     }
     .payinfo{
-        height: 15vh;
+        height: 190px;
     }
     .payinfo1{
-        height: 15vh;
+        height: 190px;
     }
     .shipwardDetails p{
         width: 90%;
@@ -5466,7 +5466,7 @@ nav{
     }
     .discount{
         gap: 10px;
-        height: 5vh;
+        height: 80px;
     }
     .discountsplit{
         width: 100%;
@@ -6046,6 +6046,9 @@ nav{
     }
 }
 @media screen and (min-width: 1000px){
+    .paritem{
+        width: 2%;
+    }
     .paytransfer{
         gap: 15px;
     }
