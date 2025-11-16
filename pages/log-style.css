@@ -254,6 +254,7 @@ body{
 }
 .sitenamfooter h1{
     font-size: 15px;
+    color: white;
 }
 .siteimg{
     width: 5%;
@@ -393,6 +394,7 @@ body{
     }
     .btn-forget{
         height: 20px;
+        font-size: 10px;
     }
     .fforget-password a{
         font-size: 10px;
