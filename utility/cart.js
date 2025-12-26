@@ -38,12 +38,12 @@ soupItem.slice(0, 8).forEach((product) => {
         <div class="itemborder">
             <div class="item-imgBig">
                 <div class="item-img">
-                    ${productLink}${productLinkdash}<img src="${product.imgSrc}" class="itemImgbig"></a>
+                    ${productLink || productLinkdash}<img src="${product.imgSrc}" class="itemImgbig"></a>
                 </div>
                 <div class="itemrapper">
                     <img src="../icon/heart.png" class="itemImg">
-                    ${productLink}${productLinkdash}<label for="text" class="itemtext">${product.name}</label></a>
-                    ${productLink}${productLinkdash}<label for="text" class="itemtextdesc">${product.description}</label></a>
+                    ${productLink || productLinkdash}<label for="text" class="itemtext">${product.name}</label></a>
+                    ${productLink || productLinkdash}<label for="text" class="itemtextdesc">${product.description}</label></a>
                 </div>
             </div>
             <div class="price-btn">
@@ -73,12 +73,12 @@ wineItem.slice(0, 8).forEach((product) => {
         <div class="itemborder">
             <div class="item-imgBig">
                 <div class="item-img">
-                    ${productLink}${productLinkdash}<img src="${product.imgSrc}" class="itemImgbig" ></a>
+                    ${productLink || productLinkdash}<img src="${product.imgSrc}" class="itemImgbig" ></a>
                 </div>
                 <div class="itemrapper">
                     <img src="../icon/heart.png" class="itemImg">
-                    ${productLink}${productLinkdash}<label for="text" class="itemtext">${product.name}</label></a>
-                    ${productLink}${productLinkdash}<label for="text" class="itemtextdesc">${product.description}</label></a>
+                    ${productLink || productLinkdash}<label for="text" class="itemtext">${product.name}</label></a>
+                    ${productLink ||productLinkdash}<label for="text" class="itemtextdesc">${product.description}</label></a>
                 </div>
             </div>
             <div class="price-btn">
@@ -106,12 +106,12 @@ fruitItem.slice(0, 8).forEach((product) => {
         <div class="itemborder">
             <div class="item-imgBig">
                 <div class="item-img">
-                    ${productLink}${productLinkdash}<img src="${product.imgSrc}" class="itemImgbig" ></a>
+                    ${productLink || productLinkdash}<img src="${product.imgSrc}" class="itemImgbig" ></a>
                 </div>
                 <div class="itemrapper">
                     <img src="../icon/heart.png" class="itemImg">
-                    ${productLink}${productLinkdash}<label for="text" class="itemtext">${product.name}</label></a>
-                    ${productLink}${productLinkdash}<label for="text" class="itemtextdesc">${product.description}</label></a>
+                    ${productLink || productLinkdash}<label for="text" class="itemtext">${product.name}</label></a>
+                    ${productLink || productLinkdash}<label for="text" class="itemtextdesc">${product.description}</label></a>
                 </div>
             </div>
             <div class="price-btn">
@@ -139,12 +139,12 @@ snacksItem.slice(0, 8).forEach((product) => {
         <div class="itemborder">
             <div class="item-imgBig">
                 <div class="item-img">
-                    ${productLink}${productLinkdash}<img src="${product.imgSrc}" class="itemImgbig" ></a>
+                    ${productLink || productLinkdash}<img src="${product.imgSrc}" class="itemImgbig" ></a>
                 </div>
                 <div class="itemrapper">
                     <img src="../icon/heart.png" class="itemImg">
-                    ${productLink}${productLinkdash}<label for="text" class="itemtext">${product.name}</label></a>
-                    ${productLink}${productLinkdash}<label for="text" class="itemtextdesc">${product.description}</label></a>
+                    ${productLink || productLinkdash}<label for="text" class="itemtext">${product.name}</label></a>
+                    ${productLink || productLinkdash}<label for="text" class="itemtextdesc">${product.description}</label></a>
                 </div>
             </div>
             <div class="price-btn">
@@ -163,15 +163,11 @@ snacksItem.slice(0, 8).forEach((product) => {
 })
 }
 
-
-
 //add to cart
 function addToCart(id) {
     //check product already exist in cart
       const product = products.find((product) => product.id === id)
         if(!product) return;
-        // console.log(product);
-      
         const {instock, ...data} = product;
         
         //get cart from storage
@@ -370,6 +366,17 @@ function changeNumberOfUnite(action, id){
             }
 }
 function openCheckOut(){
+     const userId = JSON.parse(localStorage.getItem("userId"));
+    
+    if(!userId){
+        alert("please login first")
+        return;
+    }
+    const cart = JSON.parse(localStorage.getItem("CART"));
+    if(!cart || !cart.length){
+        alert("cart is empty")
+        return;
+    }
     if(document.getElementsByClassName('checkoutbtn1')){
         window.location.href = "../checkout/checkout.html"
     }

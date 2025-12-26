@@ -82,48 +82,62 @@ function renderPayTransfer(){
         </div>
         `
 })
-   
 }
 function continueShopping(){
     if(document.getElementsByClassName('Continueshopping')){
-        window.location.href = "../index.html"
+        window.location.href = "../dashboard/dashboard.html"
     }
+    localStorage.removeItem("CART")
 }
-try {
-     const formInfo = JSON.parse(localStorage.getItem("signupForm"))
-        if(formInfo){
-            document.getElementById("senderName").textContent = formInfo.firstName;
-            document.getElementById("displayEmail").textContent = formInfo.email;
-            document.getElementById("displayCountry").textContent = formInfo.country;
-            document.getElementById("displayFirstname").textContent = formInfo.firstName;
-            document.getElementById("displayLastname").textContent = formInfo.lastName;
-            document.getElementById("displayNumber").textContent = formInfo.phonenumber;
-            document.getElementById("displayAddress").textContent = formInfo.address;
-            document.getElementById("displayCity").textContent =formInfo.city;
-            document.getElementById("displayState").textContent = formInfo.state;
-            document.getElementById("displayPostalcode").textContent = formInfo.postalcode;
 
-            
-        }
-         const formInfo1 = JSON.parse(localStorage.getItem("signupForm"))
-        if(formInfo1){
-            document.getElementById("displayFirstname1").textContent = formInfo1.firstName;
-            document.getElementById("displayLastname1").textContent = formInfo1.lastName;
-            document.getElementById("displayNumber1").textContent = formInfo1.phonenumber;
-            document.getElementById("displayAddress1").textContent = formInfo1.address;
-            document.getElementById("displayCity1").textContent = formInfo1.city;
-            document.getElementById("displayState1").textContent = formInfo1.state;
-            document.getElementById("displayPostalcode1").textContent = formInfo1.postalcode;
 
-        }
+async function getOrder(returnOnlyData = false) {
+    const userId = JSON.parse(localStorage.getItem("userId"));
+    const url = `${baseUrl}${routes.getOrder}/${userId}`;
+    const res = await fetch(url);
+    const result = await res.json();
+    console.log(result, "order infomation here");
+    if (!res.ok) throw new Error(result.error);
+    if (returnOnlyData) return result.data;  // <-- THIS FIXES YOUR ISSUE
+    if(!result.data || result.data.length === 0) return;
+    const order = result.data[0];
+    // const delivery = order.delivery;
+    // const reference = order.reference;  
 
-        const number = JSON.parse(localStorage.getItem("signupForm"));
-        if(number && number.reference){
-            document.getElementById("displayRandomNumber").textContent = number.reference;
-        }else {
-             document.getElementById("displayRandomNumber").textContent = "Reference No. unavailable";
-        }
-} catch (error) {
-    console.log(error);
+    const firstDelivery = Array.isArray(order.delivery)? order.delivery : Object.values(order.delivery || {}) ;
+    const deliverArray = firstDelivery[0]
+    // Otherwise update the UI normally
+    document.getElementById("senderName").innerText = deliverArray?.firstName;
+    document.getElementById("displayEmail").innerText = deliverArray.email;
+    document.getElementById("displayCountry").innerText = deliverArray.country;
+    document.getElementById("displayFirstname").innerText = deliverArray.firstName;
+    document.getElementById("displayLastname").innerText = deliverArray.lastName;
+    document.getElementById("displayNumber").innerText = deliverArray.phonenumber;
+    document.getElementById("displayAddress").innerText = deliverArray.address;
+    document.getElementById("displayCity").innerText = deliverArray.city;
+    document.getElementById("displayState").innerText = deliverArray.state;
+    document.getElementById("displayPostalcode").innerText = deliverArray.postalcode;
+
+    document.getElementById("displayFirstname1").innerText = deliverArray.firstName;
+    document.getElementById("displayLastname1").innerText = deliverArray.lastName;
+    document.getElementById("displayNumber1").innerText = deliverArray.phonenumber;
+    document.getElementById("displayAddress1").innerText = deliverArray.address;
+    document.getElementById("displayCity1").innerText = deliverArray.city;
+    document.getElementById("displayState1").innerText = deliverArray.state;
+    
+    document.getElementById("displayPostalcode1").innerText = deliverArray.postalcode;
+    document.getElementById("Billingamount").innerText = `Bank Deposit - RON ${order.totalAmount}`;
+    document.getElementById("displayRandomNumber").innerText = reference ? reference: "reference data";
+
 }
-       
+
+
+window.addEventListener("load", async() => {
+    const userId = JSON.parse(localStorage.getItem("userId"))
+    if(!userId){
+        console.log("No userId in localstorage")
+        return;
+    }
+    console.log("user ID found on paybank:", userId); 
+    getOrder()
+})

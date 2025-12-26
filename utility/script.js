@@ -18,56 +18,7 @@ dropExitElm.forEach((dropExitElm) => {
         document.querySelector('.drop-Down')?.classList.remove('drop-Down')
         navlinkElm.classList.add('drop-Down')
     })
-})
-    
-function dropOpen2(){
-    document.getElementById("dropDown2").style.display = "flex";
-}      
-function dropExit2(){
-    document.getElementById("dropDown2").style.display = "none";
-}    
-function dropOpen3(){
-    document.getElementById("dropDown3").style.display = "flex";
-}      
-function dropExit3(){
-    document.getElementById("dropDown3").style.display = "none";
-}    
-function dropOpen4(){
-    document.getElementById("dropDown4").style.display = "flex";
-}      
-function dropExit4(){
-    document.getElementById("dropDown4").style.display = "none";
-}    
-function dropOpen5(){
-    document.getElementById("dropDown5").style.display = "flex";
-}      
-function dropExit5(){
-    document.getElementById("dropDown5").style.display = "none";
-}    
-function dropOpen6(){
-    document.getElementById("dropDown6").style.display = "flex";
-}      
-function dropExit6(){
-    document.getElementById("dropDown6").style.display = "none";
-}    
-function dropOpen7(){
-    document.getElementById("dropDown7").style.display = "flex";
-}      
-function dropExit7(){
-    document.getElementById("dropDown7").style.display = "none";
-}    
-function dropOpen8(){
-    document.getElementById("dropDown8").style.display = "flex";
-}      
-function dropExit8(){
-    document.getElementById("dropDown8").style.display = "none";
-}    
-function dropOpen9(){
-    document.getElementById("dropDown9").style.display = "flex";
-}      
-function dropExit9(){
-    document.getElementById("dropDown9").style.display = "none";
-}    
+})   
 
 // nav1
 
@@ -92,25 +43,11 @@ function menuBack2(){
     document.getElementById("sideLink2").style.display = "none";
 }
 
-function navOpen3(){
-    document.getElementById("sideLink3").style.display = "flex";
-} 
-function menuBack3(){
-    document.getElementById("sideLink3").style.display = "none";
-}
-
 function navOpen4(){
-    document.getElementById("sideLink1").style.display = "flex";
+    document.getElementById("sideLink4").style.display = "flex";
 } 
 function menuBack4(){
     document.getElementById("sideLink4").style.display = "none";
-}
-
-function navOpen5(){
-    document.getElementById("sideLink5").style.display = "flex";
-} 
-function menuBack5(){
-    document.getElementById("sideLink5").style.display = "none";
 }
 
 function navOpen6(){
@@ -127,33 +64,6 @@ function menuBack7(){
     document.getElementById("sideLink7").style.display = "none";
 }
 
-function navOpen8(){
-    document.getElementById("sideLink8").style.display = "flex";
-} 
-function menuBack8(){
-    document.getElementById("sideLink8").style.display = "none";
-}
-
-function navOpen9(){
-    document.getElementById("sideLink9").style.display = "flex";
-} 
-function menuBack9(){
-    document.getElementById("sideLink9").style.display = "none";
-}
-
-function navOpen10(){
-    document.getElementById("sideLink10").style.display = "flex";
-} 
-function menuBack10(){
-    document.getElementById("sideLink10").style.display = "none";
-}
-
-function navOpen11(){
-    document.getElementById("sideLink11").style.display = "flex";
-} 
-function menuBack11(){
-    document.getElementById("sideLink11").style.display = "none";
-}
 
 // Cart
 
@@ -162,28 +72,6 @@ function openCart(){
 }
 function backCart(){
     document.getElementById("sideCart").style.display = "none";
-}
-
-// ADDRESS
-function openNewAddress(){
-    document.getElementById("newAddress").style.display = "flex";
-}
-function openEditAddress(){
-    document.getElementById("editAddress").style.display = "flex";
-}
-function closeEditAddress(){
-    document.getElementById("editAddress").style.display = "none";
-}
-function cartOpen(){
-    document.getElementById("counting").style.display = "flex";
-    document.getElementById("cart").style.display = "none";
-}
-
-function openDescription(){
-    document.getElementById("descBox").style.display = "flex";
-}
-function closeDescription(){
-    document.getElementById("descBox").style.display = "none";
 }
 
 
@@ -273,4 +161,336 @@ function openAccount(){
     }else {
         div.style.display = "flex";
     }
+}
+function changeAccountMenu(){
+    document.querySelector(".accountdetails-con").style.display = "flex";
+    document.querySelector(".myAccount").style.backgroundColor = "rgb(251, 181, 130)";
+    document.querySelector(".orderdetailss-con").style.display = "none";
+    document.querySelector(".myOrder").style.backgroundColor = "";
+    document.querySelector(".inboxdetails").style.display = "none";
+    document.querySelector(".myInbox").style.backgroundColor = "";
+    document.querySelector(".seedetails").style.display = "none";
+    document.querySelector(".seehistory").style.display = "none";
+    document.querySelector(".inboxdetails").style.display = "none";
+    document.querySelector(".managementdetails").style.display = "none";
+    document.querySelector(".myAccountManagement").style.backgroundColor = "";
+    document.querySelector(".paymentsetting").style.display = "none";
+    document.querySelector(".myPayment").style.backgroundColor = "";
+    document.querySelector(".passwordEdit").style.display = "none";
+    document.querySelector(".pinEdit").style.display = "none";
+    document.querySelector(".securitydetails").style.display = "none";
+    document.querySelector(".myAddress").style.backgroundColor = "";
+    document.querySelector(".profileEdit").style.display = "none";
+    document.querySelector(".securitydetails").style.display = "none";
+    document.querySelector(".addresseEdit").style.display = "none";
+    document.querySelector(".addressdetails").style.display = "none";
+}
+function changeOrderMenu(){
+    document.querySelector(".accountdetails-con").style.display = "none";
+    document.querySelector(".myAccount").style.backgroundColor = "";
+    document.querySelector(".orderdetailss-con").style.display = "flex";
+    document.querySelector(".myOrder").style.backgroundColor = "rgb(251, 181, 130)";
+    document.querySelector(".myAddress").style.backgroundColor = "";
+    document.querySelector(".inboxdetails").style.display = "none";
+    document.querySelector(".myInbox").style.backgroundColor = "";
+    document.querySelector(".seedetails").style.display = "none";
+    document.querySelector(".seehistory").style.display = "none";
+    document.querySelector(".managementdetails").style.display = "none";
+    document.querySelector(".myAccountManagement").style.backgroundColor = "";
+    document.querySelector(".paymentsetting").style.display = "none";
+    document.querySelector(".myPayment").style.backgroundColor = "";
+    document.querySelector(".passwordEdit").style.display = "none";
+    document.querySelector(".pinEdit").style.display = "none";
+    document.querySelector(".securitydetails").style.display = "none";
+    document.querySelector(".profileEdit").style.display = "none";
+    document.querySelector(".securitydetails").style.display = "none";
+    document.querySelector(".addresseEdit").style.display = "none";
+    document.querySelector(".addressdetails").style.display = "none";
+}
+function openInboxMenu(){
+    document.querySelector(".accountdetails-con").style.display = "none";
+    document.querySelector(".myAccount").style.backgroundColor = "";
+    document.querySelector(".orderdetailss-con").style.display = "none";
+    document.querySelector(".myOrder").style.backgroundColor = "";
+    document.querySelector(".inboxdetails").style.display = "flex";
+    document.querySelector(".myInbox").style.backgroundColor = "rgb(251, 181, 130)";
+    document.querySelector(".myAddress").style.backgroundColor = "";
+    document.querySelector(".seedetails").style.display = "none";
+    document.querySelector(".seehistory").style.display = "none";
+    document.querySelector(".managementdetails").style.display = "none";
+    document.querySelector(".myAccountManagement").style.backgroundColor = "";
+    document.querySelector(".paymentsetting").style.display = "none";
+    document.querySelector(".myPayment").style.backgroundColor = "";
+    document.querySelector(".passwordEdit").style.display = "none";
+    document.querySelector(".pinEdit").style.display = "none";
+    document.querySelector(".securitydetails").style.display = "none";
+    document.querySelector(".profileEdit").style.display = "none";
+    document.querySelector(".securitydetails").style.display = "none";
+    document.querySelector(".addresseEdit").style.display = "none";
+    document.querySelector(".addressdetails").style.display = "none";
+}
+function openAccountManagemntMenu(){
+    document.querySelector(".accountdetails-con").style.display = "none";
+    document.querySelector(".myAccount").style.backgroundColor = "";
+    document.querySelector(".orderdetailss-con").style.display = "none";
+    document.querySelector(".myOrder").style.backgroundColor = "";
+    document.querySelector(".inboxdetails").style.display = "none";
+    document.querySelector(".myInbox").style.backgroundColor = "";
+    document.querySelector(".seedetails").style.display = "none";
+    document.querySelector(".seehistory").style.display = "none";
+    document.querySelector(".managementdetails").style.display = "flex";
+    document.querySelector(".myAccountManagement").style.backgroundColor = "rgb(251, 181, 130)";
+    document.querySelector(".accountmenu1").style.display = "flex";
+    document.querySelector(".accountmenu").style.display = "none";
+    document.querySelector(".myAddress").style.backgroundColor = "";
+    document.querySelector(".myProfile").style.backgroundColor = "rgb(251, 181, 130)";
+    document.querySelector(".mySecurity").style.backgroundColor = "";
+    document.querySelector(".paymentsetting").style.display = "none";
+    document.querySelector(".myPayment").style.backgroundColor = "";
+    document.querySelector(".passwordEdit").style.display = "none";
+    document.querySelector(".pinEdit").style.display = "none";
+    document.querySelector(".addresseEdit").style.display = "none";
+    document.querySelector(".addressdetails").style.display = "none";
+}
+function openPaymentMenu(){
+    document.querySelector(".accountdetails-con").style.display = "none";
+    document.querySelector(".myAccount").style.backgroundColor = "";
+    document.querySelector(".orderdetailss-con").style.display = "none";
+    document.querySelector(".myOrder").style.backgroundColor = "";
+    document.querySelector(".inboxdetails").style.display = "none";
+    document.querySelector(".myInbox").style.backgroundColor = "";
+    document.querySelector(".seedetails").style.display = "none";
+    document.querySelector(".seehistory").style.display = "none";
+    document.querySelector(".managementdetails").style.display = "none";
+    document.querySelector(".myAccountManagement").style.backgroundColor = "";
+    document.querySelector(".myAddress").style.backgroundColor = "";
+    document.querySelector(".myPayment").style.backgroundColor = "rgb(251, 181, 130)";
+    document.querySelector(".paymentsetting").style.display = "flex";
+    document.querySelector(".addressdetails").style.display = "none";
+    document.querySelector(".profileEdit").style.display = "none";
+    document.querySelector(".passwordEdit").style.display = "none";
+    document.querySelector(".securitydetails").style.display = "none";
+    document.querySelector(".addresseEdit").style.display = "none";
+    document.querySelector(".addressdetails").style.display = "none";
+}
+function openAddressMenu(){
+    document.querySelector(".accountdetails-con").style.display = "none";
+    document.querySelector(".myAccount").style.backgroundColor = "";
+    document.querySelector(".orderdetailss  -con").style.display = "none";
+    document.querySelector(".myOrder").style.backgroundColor = "";
+    document.querySelector(".inboxdetails").style.display = "none";
+    document.querySelector(".myInbox").style.backgroundColor = "";
+    document.querySelector(".seedetails").style.display = "none";
+    document.querySelector(".seehistory").style.display = "none";
+    document.querySelector(".managementdetails").style.display = "none";
+    document.querySelector(".myAccountManagement").style.backgroundColor = "";
+    document.querySelector(".myPayment").style.backgroundColor = "";
+    document.querySelector(".paymentsetting").style.display = "none";
+    document.querySelector(".myAddress").style.backgroundColor = "rgb(251, 181, 130)";
+    document.querySelector(".addressdetails").style.display = "flex";
+    document.querySelector(".addresseEdit").style.display = "none";
+    document.querySelector(".profileEdit").style.display = "none";
+    document.querySelector(".securitydetails").style.display = "none";
+    document.querySelector(".passwordEdit").style.display = "none";
+}
+function ongoing(){
+    document.querySelector(".ongoing-info").style.display = "flex";
+    document.querySelector(".canceled-info").style.display = "none";
+    document.querySelector(".ongoing").style.color = "rgb(251, 181, 130)";
+    document.querySelector(".ongoing").style.borderBottom = "1px solid rgba(247, 120, 30, 1)";
+    document.querySelector(".ongoing").style.fontWeight = "700"
+    document.querySelector(".canceled").style.borderBottom = "none";
+    document.querySelector(".canceled").style.color = "black";
+    document.querySelector(".canceled").style.fontWeight = "400"
+}
+function canceled(){
+    document.querySelector(".canceled-info").style.display = "flex";
+    document.querySelector(".ongoing-info").style.display = "none";
+    document.querySelector(".canceled").style.color = "rgb(251, 181, 130)";
+    document.querySelector(".canceled").style.fontWeight = "700"
+    document.querySelector(".canceled").style.borderBottom = "1px solid rgba(247, 120, 30, 1)";
+    document.querySelector(".ongoing").style.fontWeight = "400"
+    document.querySelector(".ongoing").style.color = "black";
+    document.querySelector(".ongoing").style.borderBottom = "none";
+}
+function seedetails(){
+    document.querySelector(".orderdetailss-con").style.display = "none";
+    document.querySelector(".seedetails").style.display = "flex";
+    document.querySelector(".inboxdetails").style.display = "none";
+    
+}
+function seeHistory(){
+    document.querySelector(".seehistory").style.display = "flex";
+    document.querySelector(".seedetails").style.display = "none";
+    document.querySelector(".inboxdetails").style.display = "none";
+    
+}
+function backseestatus(){
+    document.querySelector(".seedetails").style.display = "flex";
+    document.querySelector(".seehistory").style.display = "none";
+    
+}
+function backMenu(){
+    document.querySelector(".accountmenu").style.display = "flex";
+    document.querySelector(".accountmenu1").style.display = "none";
+    document.querySelector(".accountdetails-con").style.display = "flex";
+    document.querySelector(".managementdetails").style.display = "none";
+    document.querySelector(".profileEdit").style.display = "none";
+    document.querySelector(".securitydetails").style.display = "none";
+    document.querySelector(".passwordEdit").style.display = "none";
+    document.querySelector(".pinEdit").style.display = "none";
+    document.querySelector(".myAccountManagement").style.backgroundColor = "";
+    document.querySelector(".myAccount").style.backgroundColor = "rgb(251, 181, 130)";
+    
+}
+function backInbox(){
+    document.querySelector(".inboxdetails").style.display = "none";
+    document.querySelector(".accountdetails-con").style.display = "flex";
+    document.querySelector(".myAccount").style.backgroundColor = "rgb(251, 181, 130)";
+    document.querySelector(".myInbox").style.backgroundColor = "";
+    
+}
+
+function editProfile(){
+    document.querySelector(".managementdetails").style.display = "none";
+    document.querySelector(".profileEdit").style.display = "flex";
+    document.querySelector(".accountdetails-con").style.display = "none";
+    
+}
+function openSecurity(){
+    document.querySelector(".securitydetails").style.display = "flex";
+    document.querySelector(".mySecurity").style.backgroundColor = "rgb(251, 181, 130)";
+    document.querySelector(".myProfile").style.backgroundColor = "";
+    document.querySelector(".managementdetails").style.display = "none";
+    document.querySelector(".profileEdit").style.display = "none";
+    document.querySelector(".accountdetails-con").style.display = "none";
+    document.querySelector(".passwordEdit").style.display = "none";
+    document.querySelector(".pinEdit").style.display = "none";
+    
+}
+function openProfile(){
+    document.querySelector(".securitydetails").style.display = "none";
+    document.querySelector(".mySecurity").style.backgroundColor = "";
+    document.querySelector(".myProfile").style.backgroundColor = "rgb(251, 181, 130)";
+    document.querySelector(".managementdetails").style.display = "flex";
+    document.querySelector(".accountdetails-con").style.display = "none";
+    document.querySelector(".passwordEdit").style.display = "none";
+    document.querySelector(".pinEdit").style.display = "none";
+    
+}
+function editPassword(){
+    document.querySelector(".securitydetails").style.display = "none";
+    document.querySelector(".mySecurity").style.backgroundColor = "rgb(251, 181, 130)";
+    document.querySelector(".myProfile").style.backgroundColor = "";
+    document.querySelector(".managementdetails").style.display = "none";
+    document.querySelector(".accountdetails-con").style.display = "none";
+    document.querySelector(".passwordEdit").style.display = "flex";
+    document.querySelector(".pinEdit").style.display = "none";
+}
+function editPin(){
+    document.querySelector(".securitydetails").style.display = "none";
+    document.querySelector(".mySecurity").style.backgroundColor = "rgb(251, 181, 130)";
+    document.querySelector(".myProfile").style.backgroundColor = "";
+    document.querySelector(".managementdetails").style.display = "none";
+    document.querySelector(".accountdetails-con").style.display = "none";
+    document.querySelector(".passwordEdit").style.display = "none";
+    document.querySelector(".pinEdit").style.display = "flex";
+}
+function editAddress(){
+    document.querySelector(".securitydetails").style.display = "none";
+    document.querySelector(".mySecurity").style.backgroundColor = "rgb(251, 181, 130)";
+    document.querySelector(".myProfile").style.backgroundColor = "";
+    document.querySelector(".managementdetails").style.display = "none";
+    document.querySelector(".accountdetails-con").style.display = "none";
+    document.querySelector(".passwordEdit").style.display = "none";
+    document.querySelector(".pinEdit").style.display = "none";
+    document.querySelector(".addresseEdit").style.display = "flex";
+    document.querySelector(".addressdetails").style.display = "none";
+}
+function backpass(){
+    document.querySelector(".securitydetails").style.display = "flex";
+    document.querySelector(".passwordEdit").style.display = "none";
+    document.querySelector(".pinEdit").style.display = "none";
+}
+function backprofile(){
+    document.querySelector(".managementdetails").style.display = "flex";
+    document.querySelector(".profileEdit").style.display = "none";
+    
+}
+function backorder1(){
+    document.querySelector(".orderdetailss-con").style.display = "flex";
+    document.querySelector(".seedetails").style.display = "none";
+    
+}
+function backaddress(){
+    document.querySelector(".addressdetails").style.display = "flex";
+    document.querySelector(".addresseEdit").style.display = "none";
+}
+function deleteWarning(){
+    document.querySelector(".managementdetails-con1").style.display = "flex";
+}
+function no(){
+    document.querySelector(".managementdetails-con1").style.display = "none";
+}
+
+// PROFILE
+function showOrderMenu(){
+    document.querySelector(".accountmenuSize").style.display = "none";
+    document.querySelector(".orderdetailss-con").style.display = "flex";
+    document.querySelector(".accountdetails").style.display = "flex";
+}
+function showInboxMenu(){
+    document.querySelector(".accountmenuSize").style.display = "none";
+    document.querySelector(".inboxdetails").style.display = "flex";
+    document.querySelector(".accountdetails").style.display = "flex";
+}
+function showAddressMenu(){
+    document.querySelector(".accountmenuSize").style.display = "none";
+    document.querySelector(".addressdetails").style.display = "flex";
+    document.querySelector(".accountdetails").style.display = "flex";
+}
+function showAccountManagemntMenu(){
+    document.querySelector(".accountmenuSize").style.display = "none";
+    document.querySelector(".managementdetails").style.display = "flex";
+    document.querySelector(".accountdetails").style.display = "flex";
+}
+function showSecurityMenu(){
+    document.querySelector(".accountmenuSize").style.display = "none";
+    document.querySelector(".securitydetails").style.display = "flex";
+    document.querySelector(".accountdetails").style.display = "flex";
+}
+function showPaymentMenu(){
+    document.querySelector(".accountmenuSize").style.display = "none";
+    document.querySelector(".paymentsetting").style.display = "flex";
+    document.querySelector(".accountdetails").style.display = "flex";
+}
+function backorder(){
+    document.querySelector(".accountmenuSize").style.display = "flex";
+    document.querySelector(".orderdetailss-con").style.display = "none";
+    document.querySelector(".accountdetails").style.display = "none";
+}
+function backInbox1(){
+    document.querySelector(".accountmenuSize").style.display = "flex";
+    document.querySelector(".inboxdetails").style.display = "none";
+    document.querySelector(".accountdetails").style.display = "none";
+}
+function backaddress1(){
+    document.querySelector(".accountmenuSize").style.display = "flex";
+    document.querySelector(".addressdetails").style.display = "none";
+    document.querySelector(".accountdetails").style.display = "none";
+}
+function backprofile1(){
+    document.querySelector(".accountmenuSize").style.display = "flex";
+    document.querySelector(".managementdetails").style.display = "none";
+    document.querySelector(".accountdetails").style.display = "none";
+}
+function backSecurity(){
+    document.querySelector(".accountmenuSize").style.display = "flex";
+    document.querySelector(".securitydetails").style.display = "none";
+    document.querySelector(".accountdetails").style.display = "none";
+}
+function backPay(){
+    document.querySelector(".accountmenuSize").style.display = "flex";
+    document.querySelector(".paymentsetting").style.display = "none";
+    document.querySelector(".accountdetails").style.display = "none";
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>checkout</title>
+    <title>Bank transfer</title>
     <script src="../utility/fetch.js"></script>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -67,7 +67,7 @@
                 <div class="thanks-rol">
                     <div class="thanks-col">
                         <label for="text" class="confirmationNumber">Confirmation</label>
-                        <label for="text" class="confirmationNumber" id="displayRandomNumber"></label>
+                        <label for="text" class="displayRandomNumber" id="displayRandomNumber"></label>
                     </div>
                     <div class="thanks-col">
                         <p>Thank you,</p>
@@ -120,7 +120,7 @@
                     <div class="orderDetails-col">
                         <label for="text" class="orderconfirmed">Payment method</label>
                         <img src="../icon/atm.jpg" class="atmImg">
-                        <label for="text" class="Billingamount">$0.00</label>
+                        <label for="text" class="Billingamount" id="Billingamount">Bank Deposit - RON</label>
                         <label for="text" class="orderconfirmed">Billing address</label>
                         <div class="orderDetails-rol">
                             <label for="text" class="firstlastName" id="displayFirstname1"></label>
@@ -159,6 +159,9 @@
             </div>
         </div>
     </div>
+    <script src="../pages/function/utils.js"></script>
+    <script src="../pages/function/routes.js"></script>
+    <script src="../pages/function/vfood.js"></script>
     <script src="../utility/paytransfer.js"></script>
     <script src="../utility/script.js"></script>
    

@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <nav class="staticNav">
+                <div class="staticNavrol">
+                    <div class="nav-menu">
+                        <div class="menuLine" id="menuLine" onclick="openMenu()">
+                            <div class="menu-line"></div>
+                            <div class="menu-line"></div>
+                            <div class="menu-line"></div>
+                        </div>
+                        <div class="side-nav" id="mySidenav">
+                            <ul>
+                                <div class="menu-con" id="menuContainer">
+                                <div class="menu">
+                                    <h1>Menu</h1>
+                                    <a href="javascript:void(o)" class="closeBtn" onclick="closeMenu()">&times;</a>
+                                </div>
+                                <div class="menu-nav"  id="menuNav" onclick="changeOrderMenu()">
+                                    <div class="menurol">
+                                        <i class="fa-regular fa-folder-open acctlogo"></i>
+                                        <li>Order</li>
+                                    </div>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </div>
+                                    
+                                <div class="menu-nav" id="menuNav" onclick="openInboxMenu()">
+                                    <div class="menurol">
+                                        <i class="fa-regular fa-envelope acctlogo"></i>
+                                        <li>Inbox</li>
+                                    </div>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </div>
+                                    
+                                <div class="menu-nav" id="menuNav" onclick="openAddressMenu()">
+                                    <div class="menurol">
+                                        <i class="fa-solid fa-location-dot acctlogo"></i>
+                                        <li>Address Book</li>
+                                    </div>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </div>
+                                    
+                                <div class="menu-nav" id="menuNav" onclick="openAccountManagemntMenu()">
+                                    <li>Account Management</li>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </div>
+                                <div class="menu-nav" id="menuNav" onclick="openSecurityMenu()">
+                                    <li>Security Settings</li>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </div>
+                                    
+                                <div class="menu-nav" id="menuNav" onclick="openPaymentMenu()">
+                                    <li>Payment System</li>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </div>
+                                    
+                                <div class="menu-nav">
+                                    <li>Contact us</a></li>
+                                </div>
+                                <div class="menu-nav">
+                                    <li><a href=""></a></li>
+                                </div>
+                            </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sitename">
+                        <img src="../icon/logo.png" class="siteimg">
+                        <h1>Vivilious-Foodies</h1>
+                    </div>
+                    <div class="nav-search" id="searchbar">
+                        <div class="navSearch">
+                            <input type="text" class="search" placeholder="Search over 10,000 product">
+                            <div class="s-img">
+                                <img src="../icon/search.png" class="searchimg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-call">
+                        <div class="navCall">
+                            <!-- <i class="fa-solid fa-magnifying-glass-plus"></i> -->
+                             <a href="../pages/login.html" class="acct">
+                                <i class="fa-solid fa-user"></i>
+                             </a>
+                             <div class="accounting1" onclick="openAccount()">
+                                 <i class="fa-solid fa-user"></i>
+                                 <p>Account</p>
+                                 <i class="fa-solid fa-chevron-down backtop"></i>
+                                 <div class="account" id="Account"> 
+                                     <a href="../pages/login.html">Login</a>
+                                     <a href="../pages/register.html">Register</a>
+                                 </div>
+                            </div>
+                             <div class="accounting">
+                                 <i class="fa-solid fa-cart-plus profile" onclick="openCart()"></i>
+                                 <label for="text" class="signalcount" id="singalcount" onclick="openCart()">0</label>
+                             </div>
+                        </div>
+                        <div class="side-cart" id="sideCart">
+                            <div class="side-con">
+                                <div class="cart-back" onclick="backCart()">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                    <p>Continue shopping</p>
+                                </div>
+                                <div class="cart-main">
+                                    <div class="cart-main-con">
+                                        <div class="order-view">
+                                            <label for="text" class="yourOrder">Your Order</label>
+                                            <a href="../dashboard/cart.html">view cart</a>
+                                        </div>
+                                        <div class="order-view">
+                                            <label for="text" class="subtotal">Subtotal:</label>
+                                            <label for="text" class="cartamount">$0.0</label>
+                                        </div>
+                                        
+                                        <div class="cartnote">
+                                            <p>Add a note to your order</p>
+                                            <textarea class="cart-note1"></textarea>
+                                        </div>
+                                        <div class="checkout-btn">
+                                            <button class="checkoutbtn1" onclick="openCheckOut()">Checkout</button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-product">
+                                        <div class="product-con">
+                                            <div class="pro-head" id="prohead">
+                                                <div class="showtotalitem">
+                                                    <p class="p">Product</p>
+                                                    <p class="totalcartitem">(0 item)</p>
+                                                </div>
+                                            </div>
+                                            <div class="pro-topup">
+                                                <div class="pro-wallattopup">
+                                                    <!-- cart selected -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav class="nav1">
+                <div class="nav-row">
+                    <div class="navinfo">
+                        <div class="n-info">
+                            <img src="../icon/shopify-brands-solid.svg" class="navinfoimg">
+                            <h2>Wide Assortment </h2>
+                        </div>
+                        <p>Over 10,000 items</p>
+                    </div>
+                    <div class="navinfo">
+                        <div class="n-info">
+                            <img src="../icon/plane-departure-solid.svg" class="navinfoimg">
+                            <h2>Save Time & Money</h2>
+                        </div>
+                        <p>Order Online Today</p>
+                    </div>
+                    <div class="navinfo">
+                        <div class="n-info">
+                            <img src="../icon/truck-fast-solid.svg" class="navinfoimg">
+                            <h2>Delivery Across Romania</h2>
+                        </div>
+                        <p>Home and Office Delivery</p>
+                    </div>
+                </div>
+            </nav>
+            <div class="account-container">
+                <div class="account-content">
+                    <div class="accountmenu">
+                        <div class="accountmenu-info2 myAccount" onclick="changeAccountMenu()">
+                            <div class="accountside">
+                                <div class="accountside-con">
+                                    <i class="fa-regular fa-user acctlogo"></i>
+                                    <label for="text" class="accttext">My Vivilious Account</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accountmenu-info myOrder" onclick="changeOrderMenu()">
+                            <div class="accountside">
+                                <div class="accountside-con">
+                                    <i class="fa-regular fa-folder-open acctlogo"></i>
+                                    <label for="text" class="accttext">Order</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accountmenu-info myInbox" onclick="openInboxMenu()">
+                            <div class="accountside">
+                                <div class="accountside-con">
+                                    <i class="fa-regular fa-envelope acctlogo"></i>
+                                    <label for="text" class="accttext">Inbox</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accountmenu-info myAddress" onclick="openAddressMenu()" >
+                            <div class="accountside">
+                                <div class="accountside-con">
+                                    <i class="fa-solid fa-location-dot acctlogo"></i>
+                                    <label for="text" class="accttext">Address Book</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accountmenu-info1 myAccountManagement" onclick="openAccountManagemntMenu()">
+                            <div class="accountside">
+                                <div class="accountside-con">
+                                    <label for="text" class="accttext">Account Management</label>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="accountmenu-info myPayment" onclick="openPaymentMenu()">
+                            <div class="accountside">
+                                <div class="accountside-con">
+                                    <label for="text" class="accttext">Payment System</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accountmenu-info">
+                            <div class="accountside" id="closeAccount">
+                                <div class="accountside-con">
+                                    <label for="text" class="accttext">Close Account</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accountmenu-info3">
+                            <div class="accountlog" id="logout">
+                                <button class="logout">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accountmenu1">
+                        <div class="accountmenu-head">
+                            <div class="backmenu" onclick="backMenu()">
+                                <i class="fa-solid fa-arrow-left-long backtomenuIMG"></i>
+                                <p>Back</p>
+                            </div>
+                            <div class="managementdetails-head">
+                                <img src="../icon/logo.png" class="managelogo">
+                                <div class="managehead-rol">
+                                    <label for="text" class="firstname">Chigozie</label>
+                                    <label for="text" class="surename">Alozie</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accountmenu-info2 myProfile" onclick="openProfile()">
+                            <div class="accountside">
+                                <div class="accountside-con">
+                                    <i class="fa-solid fa-user-gear manageprofileIMG"></i>
+                                    <label for="text" class="managetext">Profile Details</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accountmenu-info mySecurity" onclick="openSecurity()">
+                            <div class="accountside">
+                                <div class="accountside-con">
+                                    <i class="fa-solid fa-user-lock manageprofileIMG"></i>
+                                    <label for="text" class="managetext">Security Settings</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accountmenuSize">
+                        <div class="smallaccountmenu">
+                            <div class="accountside accountsidehead">
+                                <div class="accountside-con2">
+                                    <label for="text" class="smallaccttext">Welcome,</label>
+                                    <label for="text" class="smallaccttext" id="displayHeadName"></label>
+                                </div>
+                                <div class="accountside-con">
+                                    <label for="text" class="smallaccttext" id="displayHeadEmail"></label>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="smallaccountmenu1">
+                            <div class="accountside">
+                                <div class="accountside-con">
+                                    <div class="namerol">
+                                        <i class="fa-solid fa-wallet creditimg" style="color: #005eff;"></i>
+                                        <label for="text" class="accountstoretext">Vivilious store cradit balance: RON</label>
+                                        <label for="text" class="accountstorebalance">0</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accctsection">
+                            <label for="text" class="sectiontext">My VivianFoodies Account</label>
+                        </div>
+                        <div class="smallaccountmenu1 myOrder" onclick="showOrderMenu()">
+                            <div class="smallaccountside">
+                                <div class="accountside-con">
+                                    <i class="fa-regular fa-folder-open acctlogo"></i>
+                                    <label for="text" class="smallaccttext">Order</label>
+                                </div>
+                                <div class="accountside-con1">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallaccountmenu1 myInbox" onclick="showInboxMenu()">
+                            <div class="accountside">
+                                <div class="accountside-con">
+                                    <i class="fa-regular fa-envelope acctlogo"></i>
+                                    <label for="text" class="smallaccttext">Inbox</label>
+                                </div>
+                                <div class="accountside-con1">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallaccountmenu1 myAddress" onclick="showAddressMenu()" >
+                            <div class="accountside">
+                                <div class="accountside-con">
+                                    <i class="fa-solid fa-location-dot acctlogo"></i>
+                                    <label for="text" class="smallaccttext">Address Book</label>
+                                </div>
+                                <div class="accountside-con1">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accctsection">
+                            <label for="text" class="sectiontext">Account Settings</label>
+                        </div>
+                        <div class="smallaccountmenu1 myAccountManagement" onclick="showAccountManagemntMenu()">
+                            <div class="accountside">
+                                <div class="accountside-con">
+                                    <label for="text" class="smallaccttext">Account Management</label>
+                                </div>
+                                <div class="accountside-con1">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="smallaccountmenu1 myPayment" onclick="showSecurityMenu()">
+                            <div class="accountside">
+                                <div class="accountside-con">
+                                    <label for="text" class="smallaccttext">Security Details</label>
+                                </div>
+                                <div class="accountside-con1">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallaccountmenu1 myPayment" onclick="showPaymentMenu()">
+                            <div class="accountside">
+                                <div class="accountside-con">
+                                    <label for="text" class="smallaccttext">Payment System</label>
+                                </div>
+                                <div class="accountside-con1">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallaccountmenu1">
+                            <div class="accountside" id="closeAccount">
+                                <div class="accountside-con">
+                                    <label for="text" class="smallaccttext">Close Account</label>
+                                </div>
+                                <div class="accountside-con1">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="smallaccountmenu2">
+                            <div class="accountlog" id="logout">
+                                <button class="smalllogout">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accountdetails">
+                        <div class="accountdetails-info">
+                            <div class="accountdetails-con">
+                                <div class="accountdetailshead">
+                                    <p>Account Overview</p>
+                                </div>
+                                <div class="accountdetailsinfo">
+                                    <div class="accountdetailsinfo-rol">
+                                        <div class="accountinfo">
+                                            <div class="accountinfohead">
+                                                <p>ACCOUNT DETAILS</p>
+                                            </div>
+                                            <div class="accountitem">
+                                                <div class="namerol">
+                                                    <label for="text" class="accountname" id="displayAccount-firstname"></label>
+                                                    <label for="text" class="accountname" id="displayAccount-surename"></label>
+                                                </div>
+                                                <div class="namecol">
+                                                    <label for="text" class="accountemail" id="displayAccount-email"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accountinfo">
+                                            <div class="accountinfohead">
+                                                <p>ADDRESS BOOK</p>
+                                                <i class="fa-solid fa-pen edit" style="color: #ff7300;" onclick="openAddressMenu()"></i>
+                                            </div>
+                                            <div class="accountitem">
+                                                <div class="namecol">
+                                                    <label for="text" class="accountshippingtxt">Your default shipping address</label>
+                                                </div>
+                                                <div class="namerol">
+                                                    <label for="text" class="accountfirstname" id="displayAdd-firstname"></label>
+                                                    <label for="text" class="accountsurename" id="displayAdd-lastname"></label>
+                                                </div>
+                                                <div class="namecol">
+                                                    <label for="text" class="accountaddress" id="displayAdd-address"></label>
+                                                </div>
+                                                <div class="namecol">
+                                                    <label for="text" class="accountstate" id="displayAdd-address1"></label>
+                                                </div>
+                                                <div class="namerol">
+                                                    <label for="text" class="accountnumbe1" id="displayAdd-phone"></label> /
+                                                    <label for="text" class="accountnumber2" id="displayAdd-phone1"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accountdetailsinfo-rol">
+                                        <div class="accountinfo">
+                                        <div class="accountinfohead">
+                                            <p>VIVILIOUS STORE CREDIT</p>
+                                        </div>
+                                        <div class="accountitem">
+                                            <div class="namerol">
+                                                <i class="fa-solid fa-wallet creditimg" style="color: #005eff;"></i>
+                                                <label for="text" class="accountstoretext">Vivilious store cradit balance:</label>
+                                                <label for="text" class="accountstoresign">N</label>
+                                                <label for="text" class="accountstorebalance">0</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="accountinfo">
+                                            <div class="accountinfohead">
+                                                <p>ACCOUNT MANAGEMENT</p>
+                                                <i class="fa-solid fa-pen edit" style="color: #ff7300;" onclick="openAccountManagemntMenu()"></i>
+                                            </div>
+                                            <div class="accountitem">
+                                                <div class="namecol">
+                                                    <label for="text" class="accountshippingtxt">Security Details</label>
+                                                </div>
+                                                <div class="namerol">
+                                                    <label for="text" class="accountfirstname">Password</label>
+                                                    <label for="text" class="accountsurename">*****</label>
+                                                </div>
+                                                <div class="namerol">
+                                                     <label for="text" class="accountfirstname">Pin</label>
+                                                    <label for="text" class="accountsurename">*****</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="orderdetailss-con">
+                                <div class="orderdetailshead" onclick="backorder()">
+                                    <i class="fa-solid fa-angle-left backorderIMG" style="color: #ffffff;"></i>
+                                    <p>Order</p>
+                                </div>
+                                <div class="orderdetailshead1">
+                                    <i class="fa-solid fa-angle-left backorderIMG"></i>
+                                    <p>Order</p>
+                                </div>
+                                <div class="orderdetailss-info">
+                                    <div class="ongoingcanceled">
+                                        <div class="ongoing" onclick="ongoing()">
+                                            <label for="text" class="ongoingtext">ONGOING/DELIVERED</label>
+                                            <label for="text" class="ongoingnumber">(1)</label>
+                                        </div>
+                                        <div class="canceled" onclick="canceled()">
+                                            <label for="text" class="ongoingtext">CANCELED/RETURNED</label>
+                                            <label for="text" class="ongoingnumber">(1)</label>
+                                        </div>
+                                    </div>
+                                    <div class="ongoing-info" id="orderContainer" >
+                                        <!-- <div class="ongoingdetails" id="orderContainer">
+                                            <img src="../image/vitamin-salad-fresh-tomatoes-arugula-feta-cheese-peppers-dietary-menu-proper-nutrition-top-view-flat-lay_2829-20066.jpg"  class="ongoingorderIMG">
+                                            <div class="goingcol">
+                                                <div class="ongoingrol">
+                                                    <div class="goingrol-seedetails">
+                                                        <label for="text" class="goingname" id="order-name"></label>
+                                                        <label for="text" class="goingdesc" id="order-description"></label>
+                                                    </div>
+                                                        <label for="text" class="seemorebtn" onclick="seedetails()">See details</label>
+                                                </div>
+                                                <div class="ordernumber">
+                                                    <label for="text" class="order-numb" id="confirmation-number">Order 982242934923</label>
+                                                </div>
+                                                <div class="ordernumber">
+                                                    <label for="text" class="delieveredbtn">DELIVERED</label>
+                                                </div>
+                                                <div class="goingdate">
+                                                    <label for="date" class="going-date" id="order-date">On 19-11</label>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="canceled-info">
+                                        <div class="ongoingdetails">
+                                            <img src="../image/vitamin-salad-fresh-tomatoes-arugula-feta-cheese-peppers-dietary-menu-proper-nutrition-top-view-flat-lay_2829-20066.jpg" class="ongoingorderIMG">
+                                            <div class="goingcol">
+                                                <div class="ongoingrol">
+                                                    <div class="goingrol-seedetails">
+                                                        <label for="text" class="goingname">Banga soup</label>
+                                                        <label for="text" class="seemorebtn1">See details</label>
+                                                    </div>
+                                                </div>
+                                                <div class="ordernumber">
+                                                    <label for="text" class="goingdesc">delicous nigerian made soup</label>
+                                                </div>
+                                                <div class="ordernumber">
+                                                    <label for="text" class="order-numb">Order 982242934923</label>
+                                                </div>
+                                                <div class="ordernumber">
+                                                    <label for="text" class="canceledbtn">CANCELED</label>
+                                                </div>
+                                                <div class="goingdate">
+                                                    <label for="date" class="going-date">On 19-11</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seedetails" id="seeDetailscon">
+                                <!--  -->
+                            </div>
+                            <div class="seehistory">
+                                <div class="seeorderdetailshead3" onclick="backseestatus()">
+                                    <i class="fa-solid fa-angle-left backorderIMG"></i>
+                                    <p>Package History</p>
+                                </div>
+                                <div class="seehistory-info">
+                                    <div class="seehistory-con">
+                                        
+                                        <div class="historyrol">
+                                            <div class="historyround">
+                                                <div class="seeround">
+                                                    <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+                                                </div>
+                                                <div class="seeline"></div>
+                                            </div>
+                                            <div class="seehistorydetails">
+                                                <label for="for" class="orderplaced">ORDER PLACED</label>
+                                                <label for="for" class="historydate">18-08</label>
+                                            </div>
+                                        </div>
+                                        <div class="historyrol">
+                                            <div class="historyround">
+                                                <div class="seeround">
+                                                    <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+                                                </div>
+                                                <div class="seeline"></div>
+                                            </div>
+                                            <div class="seehistorydetails">
+                                                <label for="for" class="historytxt">PENDING CONFIRMATION</label>
+                                                <label for="for" class="historydate">18-08</label>
+                                            </div>
+                                        </div>
+                                        <div class="historyrol">
+                                            <div class="historyround">
+                                                <div class="seeround">
+                                                    <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+                                                </div>
+                                                <div class="seeline"></div>
+                                            </div>
+                                            <div class="seehistorydetails">
+                                                <label for="for" class="historytxt">WAITING TO BE SHIPPED</label>
+                                                <label for="for" class="historydate">18-08</label>
+                                            </div>
+                                        </div>
+                                        <div class="historyrol">
+                                            <div class="historyround">
+                                                <div class="seeround">
+                                                    <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+                                                </div>
+                                                <div class="seeline"></div>
+                                            </div>
+                                            <div class="seehistorydetails">
+                                                <label for="for" class="shipped">SHIPPED</label>
+                                                <label for="for" class="historydate">18-08</label>
+                                            </div>
+                                        </div>
+                                        <div class="historyrol">
+                                            <div class="historyround">
+                                                <div class="seeround">
+                                                    <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+                                                </div>
+                                                <div class="seeline"></div>
+                                            </div>
+                                            <div class="seehistorydetails">
+                                                <label for="for" class="availableforpickup">AVAILABLE FOR PICKUP</label>
+                                                <label for="for" class="historydate">18-08</label>
+                                            </div>
+                                        </div>
+                                        <div class="historyrol">
+                                            <div class="historyround">
+                                                <div class="seerounddelivered">
+                                                    <i class="fa-solid fa-check" style="color: #ffffff;"></i>
+                                                </div>
+                                            </div>
+                                            <div class="seehistorydetails">
+                                                <label for="for" class="greenhistorytxt">DELIVERED</label>
+                                                <label for="for" class="historydate">18-08</label>
+                                                <P>Your item/order has been delivered</P>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inboxdetails">
+                                <div class="seeorderdetailshead" onclick="backInbox()">
+                                    <i class="fa-solid fa-angle-left backorderIMG"></i>
+                                    <p>Inbox Massage</p>
+                                </div>
+                                <div class="seeorderdetailshead1" onclick="backInbox1()">
+                                    <i class="fa-solid fa-angle-left backorderIMG" style="color: #ffffff;"></i>
+                                    <p>Inbox Massage</p>
+                                </div>
+                                <div class="inboxdetails-con">
+                                    <div class="inbox-box">
+                                        <div class="inboxinfo">
+                                            <div class="inboxdate">
+                                                <label for="text" class="inbox-date">26 November</label>
+                                                <label for="text" class="iboxhistory" onclick="seedetails()">See details</label>
+                                            </div>
+                                            <p>Package delivered!</p>
+                                            <label for="text" class="msg">package 942687682730930103092 is delivered. you can rate the product to let other people know about it. Not happy? you can reach out through our support email! Thank you for shopping on vivilious food!</label>
+                                            <div class="inbox-insidebox">
+                                                <div class="insideboximg">
+                                                    <img src="../image/top-view-table-full-delicious-food-composition_23-2149141352.jpg" class="inboxImg">
+                                                </div>
+                                                <div class="insideboxcol">
+                                                    <label for="text" class="goingname">Banga soup</label>
+                                                    <label for="text" class="goingdesc">delicous nigerian made soup</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="managementdetails">
+                                <div class="managementdetails-con">
+                                    <div class="managementhead">
+                                        <label for="text" class="managetext">Profile details</label>
+                                        <label for="text" class="editprofiletext" onclick="editProfile()">Edit Profile</label>
+                                    </div>
+                                    <div class="managementhead1">
+                                        <label for="text" class="managetext" onclick="backprofile1()">Back</label>
+                                        <label for="text" class="managetext">Profile details</label>
+                                        <label for="text" class="editprofiletext" onclick="editProfile()">Edit Profile</label>
+                                    </div>
+                                    <div class="managementdetails-info">
+                                        <label for="text" class="nametxt">firstname</label>
+                                        <label for="text"  class="firstname" id="displayPro-firstname"></label>
+                                    </div>
+                                    <div class="managementdetails-info">
+                                        <label for="text" class="nametxt">Middlename</label>
+                                        <label for="text" class="firstname" id="displayPro-middlename"></label>
+                                    </div>
+                                    <div class="managementdetails-info">
+                                        <label for="text" class="nametxt">Surename</label>
+                                        <label for="text" class="firstname" id="displayPro-surename"></label>
+                                    </div>
+                                    <div class="managementdetails-info">
+                                        <label for="text" class="nametxt">Email</label>
+                                        <label for="text" class="firstname" id="displayPro-email"></label>
+                                    </div>
+                                    <div class="managementdetails-info">
+                                        <label for="text" class="nametxt">Gender</label>
+                                        <label for="text" class="firstname" id="displayPro-gender"></label>
+                                    </div>
+                                    <div class="managementdetails-info">
+                                        <label for="text" class="nametxt">Birthdate</label>
+                                        <label for="text" class="firstname" id="displayPro-birthdate"></label>
+                                    </div>
+                                    <div class="managementdetails-info">
+                                        <label for="text" class="nametxt">Phone Number</label>
+                                        <label for="text" class="firstname" id="displayPro-phone"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profileEdit">
+                                <div class="profiledetails-con">
+                                    <form id="profileEdit-form">
+                                        <div class="managementhead4">
+                                            <label for="text" class="managetext" onclick="backprofile()">Back</label>
+                                            <label for="text" class="managetext">Profile details</label>
+                                        </div>
+                                        <div class="smallmanagementhead">
+                                            <label for="text" class="smallmanagetext" onclick="backprofile1()">Back</label>
+                                            <label for="text" class="managetext">Profile details</label>
+                                        </div>
+                                        <div class="profiledetails-info">
+                                            <label for="text" class="nametxt">Firstname</label>
+                                            <input type="text" class="managefield" id="pro-firstname">
+                                        </div>
+                                        <div class="profiledetails-info">
+                                            <label for="text" class="nametxt">Middlename</label>
+                                            <input type="text" class="managefield" id="pro-middlename">
+                                        </div>
+                                        <div class="profiledetails-info">
+                                            <label for="text" class="nametxt">Surename</label>
+                                            <input type="text" class="managefield" id="pro-surename">
+                                        </div>
+                                        <div class="profiledetails-info">
+                                            <label for="text" class="nametxt">Email</label>
+                                            <input type="email" class="managefield" id="pro-email">
+                                        </div>
+                                        <div class="profiledetails-info">
+                                             <div class="profiledetails-info">
+                                                <label for="text" class="nametxt">Gender</label>
+                                                <select name="Gender" class="address-option" id="pro-gender">
+                                                    <option value="male" id="add-male">Male</option>
+                                                    <option value="female" id="add-female">Female</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="profiledetails-info">
+                                            <label for="text" class="nametxt">Birthdate</label>
+                                            <input type="date" class="managefield" id="pro-birthdate">
+                                        </div>
+                                        <div class="profiledetails-info">
+                                            <label for="text" class="nametxt">Phone Number</label>
+                                            <input type="number" class="managefield" id="pro-phone">
+                                        </div>
+                                        <div class="profilesave">
+                                            <button for="sumbit" class="savebtn">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="securitydetails">
+                                <div class="securitydetails-con">
+                                    <div class="managementdetails-con">
+                                        <div class="managementhead3">
+                                            <label for="text" class="managetext" onclick="backSecurity()">Back</label>
+                                        </div>
+                                        <div class="managementdetails-con">
+                                            <div class="managementhead4">
+                                                <label for="text" class="managetext">Password details</label>
+                                                <label for="text" class="editprofiletext" onclick="editPassword()">Edit Password</label>
+                                            </div>
+                                            <div class="managementdetails-info">
+                                                <label for="text" class="nametxt">Password</label>
+                                                <label for="text" class="firstname">*****</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="managementdetails-con">
+                                        <div class="managementhead4">
+                                            <label for="text" class="managetext">Pin details</label>
+                                            <label for="text" class="editprofiletext" onclick="editPin()">Edit Pin</label>
+                                        </div>
+                                        <div class="managementdetails-info">
+                                            <label for="text" class="nametxt">Pin</label>
+                                            <label for="text" class="firstname">*****</label>
+                                        </div>
+                                    </div>
+                                    <div class="managementdetails-con">
+                                        <label for="text" class="managetext1" onclick="deleteWarning()">Delete account</label>
+                                    </div>
+                                    <div class="managementdetails-con1">
+                                        <p class="warningsign">Are You sure</p>
+                                        <div class="choose">
+                                            <button class="yes">YES</button>
+                                            <button class="no" onclick="no()">NO</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="passwordEdit">
+                                <div class="securitydetails-con">
+                                    <div class="managementhead4">
+                                        <label for="text" class="managetext" onclick="backpass()">Back</label>
+                                        <label for="text" class="managetext">Password Edit</label>
+                                    </div>
+                                    <div class="profiledetails-info">
+                                        <label for="text" class="nametxt">Previous Password</label>
+                                        <input type="password" class="managefield">
+                                    </div>
+                                    <div class="profiledetails-info">
+                                        <label for="text" class="nametxt">New password</label>
+                                        <input type="password" class="managefield">
+                                    </div>
+                                    <div class="profiledetails-info">
+                                        <label for="text" class="nametxt">Confirm Password</label>
+                                        <input type="password" class="managefield">
+                                    </div>
+                                    <div class="profilesave">
+                                        <label for="text" class="savebtn">Save</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pinEdit">
+                                <div class="securitydetails-con">
+                                    <div class="managementhead4">
+                                        <label for="text" class="managetext" onclick="backpass()">Back</label>
+                                        <label for="text" class="managetext">Pin Edit</label>
+                                    </div>
+                                    <div class="profiledetails-info">
+                                        <label for="text" class="nametxt">Previous Pin</label>
+                                        <input type="password" class="managefield">
+                                    </div>
+                                    <div class="profiledetails-info">
+                                        <label for="text" class="nametxt">New password</label>
+                                        <input type="password" class="managefield">
+                                    </div>
+                                    <div class="profilesave">
+                                        <label for="text" class="savebtn">Save</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="paymentsetting">
+                                <div class="paymentsetting-con">
+                                    <div class="paymentsetting-head">
+                                        <label for="text" class="payback" onclick="backPay()">Back</label>
+                                        <p>Payment Settings</p>
+                                    </div>
+                                    <div class="paymentsetting-info">
+                                        <p>PREVIOUSLY USED CARD METHOD</p>
+                                        <div class="paymentcards">
+                                            <img src="../icon/mastercard.png" class="masterlogo">
+                                            <div class="paycard-col">
+                                                <div class="paycard-rol">
+                                                    <label for="text" class="cardtext">Mastercard XXX-3445</label>
+                                                    <label for="text" class="cardtext">Exp: 02/25</label>
+                                                </div>
+                                                <div class="paycard-rol">
+                                                    <label for="text" class="carddelete">Delete</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="paymentcards">
+                                            <img src="../icon/mastercard.png" class="masterlogo">
+                                            <div class="paycard-col">
+                                                <div class="paycard-rol">
+                                                    <label for="text" class="cardtext">Mastercard XXX-648</label>
+                                                    <label for="text" class="cardtext">Exp: 11/26</label>
+                                                </div>
+                                                <div class="paycard-rol">
+                                                    <label for="text" class="carddelete">Delete</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>You cannot add a payment method here. You can add it during a purchase</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="addressdetails">
+                                <div class="addressdetails-con">
+                                    <div class="adressdetailshead">
+                                        <label for="text" class="managetext">Address Book</label>
+                                        <label for="text" class="editaddressbtn" onclick="editAddress()">Add new address</label>
+                                    </div>
+                                    <div class="adressdetailshead1" onclick="backaddress1()">
+                                        <i class="fa-solid fa-angle-left backorderIMG" style="color: #ffffff;"></i>
+                                        <label for="text" class="managetext">Address Book</label>
+                                    </div>
+                                    <div class="adressdetails-info">
+                                        <div class="addressbox-item">
+                                            <div class="addressbox">
+                                                <div class="address-rol">
+                                                    <label for="text" class="adressfirstname" id="displayAddress-firstname"></label>
+                                                    <label for="text" class="addresssurname" id="displayAddress-lastname"></label>
+                                                </div>
+                                                <div class="address-rol">
+                                                    <label for="text" class="addresshome" id="displayAddress-address"></label>
+                                                </div>
+                                                <div class="address-rol">
+                                                    <label for="text" class="adresstate" id="displayAddress-address1"></label>
+                                                </div>
+                                                <div class="address-rol">
+                                                    <label for="text" class="addressmainnumb" id="displayAddress-phone"></label>/
+                                                    <label for="text" class="addressnumb" id="displayAddress-phone1"></label>
+                                                </div>
+                                                <div class="address-rol">
+                                                    <label for="text" class="default">Default address</label>
+                                                </div>
+                                            </div>
+                                            <div class="addressbox2">
+                                                <label for="text" class="setdefault">Set default</label>
+                                                <i class="fa-solid fa-pen edit editaddressIMG" style="color: #ff7300;" onclick="editAddress()"></i>
+                                            </div>
+                                        </div>
+                                        <label for="text" class="editaddressbtn1" onclick="editAddress()">Add new address</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="addresseEdit">
+                                <div class="addresseEdit-con">
+                                    <div class="managementhead4">
+                                        <label for="text" class="managetext" onclick="backaddress()">Back</label>
+                                        <label for="text" class="managetext">Profile details</label>
+                                    </div>
+                                    <form id="addressForm">
+                                        <div class="adderess-rol">
+                                            <div class="profiledetails-info">
+                                                <label for="text" class="nametxt">First Name</label>
+                                                <input type="text" class="managefield" id="add-firstname"  placeholder="Enter your First Name">
+                                            </div>
+                                            <div class="profiledetails-info">
+                                                <label for="text" class="nametxt">Last Name</label>
+                                                <input type="text" class="managefield" id="add-lastname"  placeholder="Enter your Last Name">
+                                            </div>
+                                        </div>
+                                        <div class="adderess-rol">
+                                            <div class="profiledetails-info">
+                                                <label for="text" class="nametxt">Phone Number</label>
+                                                <input type="number" class="managefield" id="add-phone"  placeholder="Enter your Phone Number">
+                                            </div>
+                                            <div class="profiledetails-info">
+                                                <label for="text" class="nametxt">Additional Phone Number</label>
+                                                <input type="number" class="managefield" id="add-phone1"  placeholder="Enter your Addtional phone Number">
+                                            </div>
+                                        </div>
+                                        <div class="profiledetails-info">
+                                            <label for="text" class="nametxt">Delviery address</label>
+                                            <input type="text" class="managefield" id="add-address"  placeholder="Enter your Address">
+                                        </div>
+                                        <div class="profiledetails-info">
+                                            <label for="text" class="nametxt">Addtional information</label>
+                                            <input type="text" class="managefield" id="add-address1" placeholder="Enter addtional information">
+                                        </div>
+                                        <div class="adderess-rol">
+                                            <div class="profiledetails-info">
+                                                <label for="text" class="nametxt">Country</label>
+                                                <select name="country" class="address-option" id="country">
+                                                    <option value="">select country</option>
+                                                    <option value="Romania">Romania</option>
+                                                    <option value="others">Others</option>
+                                                </select>
+                                            </div>
+                                            <div class="profiledetails-info">
+                                                <label for="text" class="nametxt">City</label>
+                                                <select name="religion" class="address-option" id="city">
+                                                    <option value="">select city</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="profilesave">
+                                            <button type="submit" class="savebtn">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-head">
+                        <a href="#">
+                            <p>Back to the top</p>
+                            <img src="../icon/download.png" class="backtop">
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <img src="../icon/download.png" class="f-img">
+                        <img src="../icon/download.png" class="f-img">
+                        <img src="../icon/download.png" class="f-img">
+                    </div>
+                    <div class="footer-link">
+                        <div class="title">
+                            <img src="../icon/download.png" class="f-img1">
+                            <h1>Vivilious-Food</h1>
+                        </div>
+                        <ul>
+                            <li><a href="../dashboard/dashboard.html">Home</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">eWallet</a></li>
+                            <li><a href="#">Job</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Cookie</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Corporate Order</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>Copyright &copy; 2024 Vivilious-Food. All right reserve</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../utility/cart.js" async></script>
+    <script src="../utility/cartstock.js" async></script>
+    <script src="../utility/script.js"></script>
+    <!-- <script src="../utility/userAccount.js"></script> -->
+    <script src="../pages/function/routes.js"></script>
+    <script src="../pages/function/utils.js"></script>
+    <script src="../pages/function/vfood.js"></script>
+</body>
+</html>

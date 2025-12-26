@@ -5,7 +5,7 @@ function showDetailsProduct(){
     let  params = new URLSearchParams(window.location.search).get("id")
     const products = JSON.parse(localStorage.getItem("products")) || [];
     const findProduct = products.filter((value) => value.id.toString() == Number(params))[0]
-    // console.log("am here", findProduct);
+    // console.log("am here", findProduct);     
 
     if(!findProduct){
          window.location.href = "../index.html";

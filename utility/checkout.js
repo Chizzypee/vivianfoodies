@@ -49,7 +49,6 @@ function addToCart(id) {
         }
         localStorage.setItem("CART", JSON.stringify(readCart));
 }
-
 //update cart
 function updateCart(product) {
     let cart =  JSON.parse( localStorage.getItem("CART"));
@@ -68,7 +67,6 @@ function updateCart(product) {
     renderOrderedITem1()
     renderSubTotalChechOut()
 }
-
 // calculate subtotal
 function renderSubTotalChechOut(){
     const cart = JSON.parse(localStorage.getItem("CART"));
@@ -103,8 +101,6 @@ function renderSubTotalChechOut(){
     totalCustomFee1.innerHTML =  `RON ${totalCustom.toFixed(2)}`
     
 }
-
-
 // render cart item
 function renderOrderedITem(){
     const readCart = JSON.parse(localStorage.getItem("CART"))
@@ -151,8 +147,16 @@ function renderOrderedITem1(){
    
 }
 
-document.getElementById("signupForm").addEventListener('submit', function (e) {
+const checkOutForm = document.getElementById("signupForm")
+checkOutForm.addEventListener('submit', async (e) => {
     e.preventDefault()
+    const userId = JSON.parse(localStorage.getItem("userId"));
+    const cart = JSON.parse(localStorage.getItem("CART"));
+
+    if(!userId || !cart || cart.length === 0){
+        alert("cart is empty")
+        return;
+    }
 
     const email = document.getElementById("email").value;
     const country = document.getElementById("country").value;
@@ -164,36 +168,62 @@ document.getElementById("signupForm").addEventListener('submit', function (e) {
     const state = document.getElementById("state").value;
     const postalcode = document.getElementById("postalcode").value;
     const paymentMethod = document.querySelector('input[name="paymentMethod"]:checked').value;
-    const randomRef = Math.floor(1000000000 + Math.random() * 900000000000);
+    const reference = document.getElementById("displayRandomNumber")
 
-    const formData = {
-        email,
-        country,
-        firstName,
-        lastName,
-        phonenumber,
-        address,
-        city,
-        state,
-        postalcode,
-        paymentMethod,
-        reference: randomRef
-    };
-    console.log(formData);
-        localStorage.setItem("signupForm", JSON.stringify(formData))
-
+    const totalAmount = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+     const res = await fetch(`${baseUrl}${routes.createOrder}`,{
+        method: "POST",
+        headers: {
+            "content-type": "application/json",
+        },
+        body: JSON.stringify({
+            userId,
+            items: cart,
+            totalAmount,
+            delivery: { 
+                email,
+                country,
+                firstName,
+                lastName,
+                phonenumber,
+                address,
+                city,
+                state,
+                postalcode,
+            },
+            paymentMethod: "bank",
+            reference,
+        }),
+    });
+    const result = await res.json();
+    if(!res.ok){
+        alert(result.msg);
+        return
+    }
+    console.log(result);
+    localStorage.setItem("order", JSON.stringify(result.data))
+    // localStorage.removeItem("CART")
+        // alert("order saved successfully")
+        // console.log(result.data, " here result");
         // Redirect base on payment selected
-        if(paymentMethod === "paystack"){
-            window.location.href = "../checkout/loadingpaystack.html"
-        }else if(paymentMethod === "bank"){
-            window.location.href = "../checkout/loadingtransfer.html"
-        }
+        // if(paymentMethod === "paystack"){
+        //     window.location.href = "../checkout/loadingpaystack.html"
+        // }else if(paymentMethod === "bank"){
+            // window.location.href = "../checkout/loadingtransfer.html"
+            window.location.href = "../checkout/paytransfer.html"
+        // }
+        // getOrder()
+        
 });
 
 
 
-    // function generateRandomNumber(){
-    //     const random = Math.floor(Math.random() * 1000) + 1
-    // }
-    // localStorage.setItem("randomNumber", random)
-
+window.addEventListener("load", async() => {
+    const userId = JSON.parse(localStorage.getItem("userId"))
+    if(!userId){
+        console.log("No userId in localstorage")
+        return;
+    }
+    console.log("user ID found on load:", userId); 
+    // getOrder()   
+})
