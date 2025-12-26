@@ -4783,6 +4783,9 @@ nav{
     .accounting1{
         display: none;
     }
+    .accounting2 p{
+        font-weight: 600;
+    }
     .menuLine{
         display: flex;
     }
