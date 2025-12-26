@@ -365,13 +365,24 @@ function changeNumberOfUnite(action, id){
 
             }
 }
-function openCheckOut(){
+
+function CheckOut(){
      const userId = JSON.parse(localStorage.getItem("userId"));
     
     if(!userId){
         alert("please login first")
         return;
     }
+    const cart = JSON.parse(localStorage.getItem("CART"));
+    if(!cart || !cart.length){
+        alert("cart is empty")
+        return;
+    }
+    if(document.getElementsByClassName('checkoutbtn1')){
+        window.location.href = "../checkout/checkout.html"
+    }
+}
+function openCheckOut(){
     const cart = JSON.parse(localStorage.getItem("CART"));
     if(!cart || !cart.length){
         alert("cart is empty")
