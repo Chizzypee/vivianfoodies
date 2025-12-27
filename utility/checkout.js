@@ -150,7 +150,7 @@ function renderOrderedITem1(){
 const checkOutForm = document.getElementById("signupForm")
 checkOutForm.addEventListener('submit', async (e) => {
     e.preventDefault()
-    const userId = JSON.parse(localStorage.getItem("userId"));
+    const userId = localStorage.getItem("userId");
     const cart = JSON.parse(localStorage.getItem("CART"));
 
     if(!userId || !cart || cart.length === 0){
@@ -201,16 +201,14 @@ checkOutForm.addEventListener('submit', async (e) => {
         return
     }
     console.log(result);
-    localStorage.setItem("order", JSON.stringify(result.data))
-    // localStorage.removeItem("CART")
+    localStorage.setItem("order",JSON.stringify(result.data));
         // alert("order saved successfully")
-        // console.log(result.data, " here result");
         // Redirect base on payment selected
         // if(paymentMethod === "paystack"){
         //     window.location.href = "../checkout/loadingpaystack.html"
         // }else if(paymentMethod === "bank"){
-            // window.location.href = "../checkout/loadingtransfer.html"
-            window.location.href = "../checkout/paytransfer.html"
+            window.location.href = "../checkout/loadingtransfer.html"
+            // window.location.href = "../checkout/paytransfer.html"
         // }
         // getOrder()
         
@@ -219,7 +217,7 @@ checkOutForm.addEventListener('submit', async (e) => {
 
 
 window.addEventListener("load", async() => {
-    const userId = JSON.parse(localStorage.getItem("userId"))
+    const userId = localStorage.getItem("userId");
     if(!userId){
         console.log("No userId in localstorage")
         return;

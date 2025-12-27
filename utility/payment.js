@@ -57,8 +57,3 @@ function startCountdown(durationInSeconds, displayElementId){
     }, 1000)
 }
 startCountdown(300, "countdown")
-
- const number = JSON.parse(localStorage.getItem("signupForm"));
-    if(number && number.reference){
-        document.getElementById("displayRandomNumber1").textContent = number.reference;
-    }

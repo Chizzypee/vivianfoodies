@@ -77,9 +77,15 @@ const login = async (e) =>{
             if(!res.ok){
                 throw new Error(result.error);  
             }
-            localStorage.setItem("userId", JSON.stringify(result.user.userId))
-            console.log("saved userId", result.userId);
-            console.log("success", true);
+            if(result.user)
+                localStorage.setItem("userId", result.user.userId || "")
+                localStorage.setItem("username", result.user.username || "")
+                localStorage.setItem("email", result.user.email || "")
+            if(result.accessTokeen)
+                localStorage.setItem("accessToken", result.accessTokeen)
+            if(result.refreshToken)
+                localStorage.setItem("refreshToken", result.refreshToken)
+            console.log("Login successful", result);
                 window.location.href = "../dashboard/dashboard.html"
     } catch (error) {
         alert(error);
@@ -94,7 +100,7 @@ const adressForm = document.getElementById("addressForm")
 profileForm.addEventListener('submit', async (e) => {
         try {
     e.preventDefault()
-    const userId = JSON.parse(localStorage.getItem("userId"))
+    const userId = localStorage.getItem("userId")
      if(!userId) throw new Error("No userId found in localstorage")
 
          // Get existing profile first
@@ -150,7 +156,7 @@ profileForm.addEventListener('submit', async (e) => {
 adressForm.addEventListener('submit', async (e) => {
         try {
     e.preventDefault()
-    const userId = JSON.parse(localStorage.getItem("userId"))
+    const userId = localStorage.getItem("userId")
      if(!userId) throw new Error("No userId found in localstorage")
 
          // Get existing profile first
@@ -194,7 +200,7 @@ adressForm.addEventListener('submit', async (e) => {
         if(!res.ok){
             throw new Error(result.msg || "update failed")
         }
-        localStorage.setItem("Address", JSON.stringify(result.data))
+        localStorage.setItem("Address", JSON.stringify(result.data));
         alert("Address saved successfully")
         getAddress()
     } catch (error) {
@@ -203,7 +209,7 @@ adressForm.addEventListener('submit', async (e) => {
 });
 
 window.addEventListener("load", async() => {
-    const userId = JSON.parse(localStorage.getItem("userId"))
+    const userId = localStorage.getItem("userId")
     if(!userId){
         console.log("No userId in localstorage")
         return;
@@ -216,7 +222,7 @@ window.addEventListener("load", async() => {
 })
 
 async function getProfile(returnOnlyData = false) {
-    const userId = JSON.parse(localStorage.getItem("userId"));
+    const userId = localStorage.getItem("userId");
     const url = `${baseUrl}${routes.getProfile}/${userId}`;
     const res = await fetch(url);
     const result = await res.json();
@@ -237,7 +243,7 @@ async function getProfile(returnOnlyData = false) {
     document.getElementById("displayHeadEmail").innerText = result.data.email
 }
 async function getAddress(returnOnlyData = false) {
-    const userId = JSON.parse(localStorage.getItem("userId"));
+    const userId = localStorage.getItem("userId");
     const url = `${baseUrl}${routes.getAddress}/${userId}`;
     const res = await fetch(url);
     const result = await res.json();
@@ -260,7 +266,7 @@ async function getAddress(returnOnlyData = false) {
 
 
 async function getOrder() {
-    const userId = JSON.parse(localStorage.getItem("userId"));
+    const userId = localStorage.getItem("userId");
     const url = `${baseUrl}${routes.getOrder}/${userId}`;
     const res = await fetch(url);
     const result = await res.json();
@@ -271,8 +277,6 @@ async function getOrder() {
     container.innerHTML = "";
     window.orders.forEach((order, orderIndex) =>{
         const itemsArray = Array.isArray(order.items)? order.items : Object.values(order.items || {}) ;
-            // const itemsHTml = itemsArray.map(item => 
-                // const firstItem = itemsArray[0]
                 itemsArray.forEach((item, itemIndex) => {
                     container.innerHTML += `
                 <div class="ongoingdetails" id="orderContainer">
@@ -318,7 +322,11 @@ function getOrderDetails(orderIndex, itemIndex){
     if(!item) return;
     containerSeemore.innerHTML =
     `
-    <div class="seeorderdetailshead" onclick="backorder1()">
+            <div class="seeorderdetailshead" onclick="backorder1()">
+                <i class="fa-solid fa-angle-left backorderIMG"></i>
+                <p>Order details</p>
+            </div>
+            <div class="seeorderdetailshead1" onclick="backorder1()">
                 <i class="fa-solid fa-angle-left backorderIMG" style="color: #ffffff;"></i>
                 <p>Order details</p>
             </div>

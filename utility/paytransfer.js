@@ -92,7 +92,7 @@ function continueShopping(){
 
 
 async function getOrder(returnOnlyData = false) {
-    const userId = JSON.parse(localStorage.getItem("userId"));
+    const userId = localStorage.getItem("userId");
     const url = `${baseUrl}${routes.getOrder}/${userId}`;
     const res = await fetch(url);
     const result = await res.json();
@@ -100,9 +100,7 @@ async function getOrder(returnOnlyData = false) {
     if (!res.ok) throw new Error(result.error);
     if (returnOnlyData) return result.data;  // <-- THIS FIXES YOUR ISSUE
     if(!result.data || result.data.length === 0) return;
-    const order = result.data[0];
-    // const delivery = order.delivery;
-    // const reference = order.reference;  
+    const order = result.data[0];  
 
     const firstDelivery = Array.isArray(order.delivery)? order.delivery : Object.values(order.delivery || {}) ;
     const deliverArray = firstDelivery[0]
@@ -127,13 +125,13 @@ async function getOrder(returnOnlyData = false) {
     
     document.getElementById("displayPostalcode1").innerText = deliverArray.postalcode;
     document.getElementById("Billingamount").innerText = `Bank Deposit - RON ${order.totalAmount}`;
-    document.getElementById("displayRandomNumber").innerText = reference ? reference: "reference data";
+    document.getElementById("displayRandomNumber").innerText = order.reference;
 
 }
 
 
 window.addEventListener("load", async() => {
-    const userId = JSON.parse(localStorage.getItem("userId"))
+    const userId = localStorage.getItem("userId");
     if(!userId){
         console.log("No userId in localstorage")
         return;

@@ -4453,6 +4453,7 @@ nav{
 }
 .displayRandomNumber{
         color: red;
+        font-weight: 500;
 }
 .menurol{
     display: flex;
@@ -4507,6 +4508,9 @@ nav{
 
 
 @media screen and (max-height: 1000px){
+    .displayRandomNumber{
+        font-size: 12px;
+    }
     .accountside-con1{
         margin-right: 10px;
     }

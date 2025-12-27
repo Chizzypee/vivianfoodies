@@ -367,7 +367,7 @@ function changeNumberOfUnite(action, id){
 }
 
 function CheckOut(){
-     const userId = JSON.parse(localStorage.getItem("userId"));
+     const userId = ocalStorage.getItem("userId");
     
     if(!userId){
         alert("please login first")
