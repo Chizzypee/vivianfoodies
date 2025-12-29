@@ -31,7 +31,7 @@ const soupItem = products.filter(item => item.category === "soup");
 soupItem.slice(0, 8).forEach((product) => {
     let productDiv = document.createElement("div")
     productDiv.classList.add("product")
-    productLink = `<a href="./dashboard/item.html?slug=${product.slug}" class="product-link">`;
+    productLink = `<a href="../dashboard/item.html?slug=${product.slug}" class="product-link">`;
     productLinkdash = `<a href="./item.html?slug=${product.slug}" class="product-link">`;
     productDiv.innerHTML = `
     <div class="food-item" id="footslide">
