@@ -13,13 +13,13 @@ function renderCartStock(){
             <div class="cartorder-con">
                 <div class="cartorder1">
                     <div class="insdeorder">
-                        <a href="../dashboard/item.html?id=${item.id}">
+                        <a href="../dashboard/item.html?slug=${item.slug}">
                             <img src="${item.imgSrc}" class="topupImg1">
                         </a>
-                        <a href="../dashboard/item.html?id=${item.id}">
+                        <a href="../dashboard/item.html?slug=${item.slug}">
                             <label for="text" class="cart-item-title">${item.name}</label>
                         </a>
-                        <a href="../dashboard/item.html?id=${item.id}">
+                        <a href="../dashboard/item.html?slug=${item.slug}"> 
                             <label for="text" class="cart-price">RON ${item.price}</label>
                         </a>
                     </div>

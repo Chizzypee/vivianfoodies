@@ -299,6 +299,29 @@ body{
 #success.show{
     opacity: 1;
 }
+.error-msg{
+    color: #d8000c;
+    font-weight: 700;
+    background-color: #ffbaba;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: none;
+}
+.success-msg{
+    color: #4f8a10;
+    font-weight: 700;
+    background-color: #dff2bf;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+
+
+
+
 
 
 

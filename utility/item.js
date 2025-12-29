@@ -2,13 +2,17 @@
 
 function showDetailsProduct(){
     //get product id from url
-    let  params = new URLSearchParams(window.location.search).get("id")
+    // let  params = new URLSearchParams(window.location.search).get("id")
+    let  slug = new URLSearchParams(window.location.search).get("slug")
+    // const slug = params.get("slug");
     const products = JSON.parse(localStorage.getItem("products")) || [];
-    const findProduct = products.filter((value) => value.id.toString() == Number(params))[0]
+    // const findProduct = products.filter((value) => value.id.toString() == Number(params))[0]
+    const findProduct = products.find(value => value.slug === slug)
     // console.log("am here", findProduct);     
 
     if(!findProduct){
-         window.location.href = "../index.html";
+        //  window.location.href = "../index.html";
+        console.log("product not found");
     }
     products.forEach(()=>{
          let details = document.querySelector(".details-con")
@@ -56,3 +60,7 @@ function showDetailsProduct(){
     
     }
     showDetailsProduct()
+
+    window.addEventListener("load", () => {
+    updateCartBtn();
+})

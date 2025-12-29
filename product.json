@@ -2,6 +2,7 @@
         {
             "id": 0,
             "name": "Waterleaf",
+            "slug": "Waterleaf",
             "price": 599,
             "instock": 20,
             "customfee": 3,
@@ -14,6 +15,7 @@
         {
             "id": 1,
             "name": "Banga",
+            "slug": "Banga",
             "price": 1599,
             "instock": 32,
             "customfee": 3,
@@ -26,6 +28,7 @@
         {
             "id": 2,
             "name": "Bitterleaf",
+            "slug": "Bitterleaf",
             "price": 2399,
             "instock": 44,
             "customfee": 3,
@@ -38,6 +41,7 @@
         {
             "id": 3,
             "name": "Edilkaikong",
+            "slug": "Edilkaikong",
             "price": 1399,
             "instock": 24,
             "customfee": 3,
@@ -50,6 +54,7 @@
         {
             "id": 4,
             "name": "Egusi",
+            "slug": "Egusi",
             "price": 1199,
             "instock": 16,
             "customfee": 2,
@@ -62,6 +67,7 @@
         {
             "id": 5,
             "name": "Oha",
+            "slug": "Oha",
             "price": 2299,
             "instock": 5,
             "customfee": 3,
@@ -74,6 +80,7 @@
         {
             "id": 6,
             "name": "Okro",
+            "slug": "Okro",
             "price": 1299,
             "instock": 11,
             "customfee": 2,
@@ -86,6 +93,7 @@
         {
             "id": 7,
             "name": "Vegitable",
+            "slug": "Vegitable",
             "price": 999,
             "instock": 7,
             "customfee": 3,
@@ -98,6 +106,7 @@
         {
             "id": 8,
             "name": "Native",
+            "slug": "Native",
             "price": 899,
             "instock": 5,
             "customfee": 3,
@@ -109,7 +118,8 @@
         },
         {
             "id": 9,
-            "name": "heaven",
+            "name": "Heaven",
+            "slug": "Heaven",
             "price": 499,
             "instock": 43,
             "customfee": 3,
@@ -122,6 +132,7 @@
         {
             "id": 10,
             "name": "champaign",
+            "slug": "Champaign",
             "price": 730,
             "instock": 100,
             "customfee": 3,
@@ -134,6 +145,7 @@
         {
             "id": 11,
             "name": "Sweet wine",
+            "slug": "Sweet Wine",
             "price": 509,
             "instock": 7,
             "customfee": 3,
@@ -146,6 +158,7 @@
         {
             "id": 12,
             "name": "Vodka",
+            "slug": "Vodka",
             "price": 309,
             "instock": 23,
             "customfee": 3,
@@ -158,6 +171,7 @@
         {
             "id": 13,
             "name": "Tequila",
+            "slug": "Tequila",
             "price": 119,
             "instock": 78,
             "customfee": 3,
@@ -170,6 +184,7 @@
         {
             "id": 14,
             "name": "Hennessy",
+            "slug": "Hennessy",
             "price": 169,
             "instock": 6,
             "customfee": 3,
@@ -182,6 +197,7 @@
         {
             "id": 15,
             "name": "Heineken",
+            "slug": "Heineken",
             "price": 409,
             "instock": 5,
             "customfee": 3,
@@ -194,6 +210,7 @@
         {
             "id": 16,
             "name": "Cono Sur",
+            "slug": "Cono Sur",
             "price": 899,
             "instock": 10,
             "customfee": 3,
@@ -206,6 +223,7 @@
         {
             "id": 17,
             "name": "Apple",
+            "slug": "Apple",
             "price": 199,
             "instock": 43,
             "customfee": 3,
@@ -218,6 +236,7 @@
         {
             "id": 18,
             "name": "Banane",
+            "slug": "Banane",
             "price": 799,
             "instock": 10,
             "customfee": 3,
@@ -230,6 +249,7 @@
         {
             "id": 19,
             "name": "Orange",
+            "slug": "Orange",
             "price": 599,
             "instock": 7,
             "customfee": 3,
@@ -242,6 +262,7 @@
         {
             "id": 20,
             "name": "Pear",
+            "slug": "Pear",
             "price": 99,
             "instock": 23,
             "customfee": 3,
@@ -254,6 +275,7 @@
         {
             "id": 21,
             "name": "Pineapple",
+            "slug": "Pineapple",
             "price": 1799,
             "instock": 78,
             "customfee": 3,
@@ -266,6 +288,7 @@
         {
             "id": 22,
             "name": "Strawbarry",
+            "slug": "Strawbarry",
             "price": 309,
             "instock": 6,
             "customfee": 3,
@@ -278,6 +301,7 @@
         {
             "id": 23,
             "name": "Tangerine",
+            "slug": "Tangerine",
             "price": 129,
             "instock": 5,
             "customfee": 3,
@@ -290,6 +314,7 @@
         {
             "id": 24,
             "name": "Watermelon",
+            "slug": "Watermelon",
             "price": 999,
             "instock": 10,
             "customfee": 3,
@@ -302,6 +327,7 @@
         {
             "id": 25,
             "name": "Cheesy Goldfish",
+            "slug": "Cheesy Goldfish",
             "price": 399,
             "instock": 43,
             "customfee": 3,
@@ -314,6 +340,7 @@
         {
             "id": 26,
             "name": "Corn snacks",
+            "slug": "Corn snacks",
             "price": 499,
             "instock": 10,
             "customfee": 3,
@@ -326,6 +353,7 @@
         {
             "id": 27,
             "name": "Cosori Fryers",
+            "slug": "Cosori Fryers",
             "price": 59,
             "instock": 7,
             "customfee": 3,
@@ -338,6 +366,7 @@
         {
             "id": 28,
             "name": "Low Gi",
+            "slug": "Low Gi",
             "price": 89,
             "instock": 23,
             "customfee": 3,
@@ -350,6 +379,7 @@
         {
             "id": 29,
             "name": "Potato Chips",
+            "slug": "Potato Chips",
             "price": 199,
             "instock": 78,
             "customfee": 3,
@@ -362,6 +392,7 @@
         {
             "id": 30,
             "name": "Soya Chakli",
+            "slug": "Soya Chakli",
             "price": 1899,
             "instock": 6,
             "customfee": 3,
@@ -374,6 +405,7 @@
         {
             "id": 31,
             "name": "Sun Chips",
+            "slug": "Sun Chips",
             "price": 1099,
             "instock": 5,
             "customfee": 3,
@@ -386,6 +418,7 @@
         {
             "id": 32,
             "name": "Tortilla Chips",
+            "slug": "Tortilla Chips",
             "price": 99,
             "instock": 10,
             "customfee": 3,

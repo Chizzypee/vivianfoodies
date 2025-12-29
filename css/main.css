@@ -3087,7 +3087,7 @@ nav{
     justify-content: center;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    background-color: orangered;
+    background-color: saddlebrown;
     
 }
 .smallaccountmenu1{
@@ -3182,6 +3182,10 @@ nav{
     color: black;
     font-size: 14px;
     width: 100%;
+}
+.smallaccttext1{
+    font-weight: 600;
+    color: rgb(255, 166, 0);
 }
 .smallaccttext{
     font-weight: 600;
@@ -4460,6 +4464,24 @@ nav{
     flex-direction: row;
     width: 50%;
     gap: 10px;
+}
+.error-msg{
+    color: #d8000c;
+    font-weight: 700;
+    background-color: #ffbaba;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: none;
+}
+.success-msg{
+    color: #4f8a10;
+    font-weight: 700;
+    background-color: #dff2bf;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: none;
 }
 
 

@@ -1,6 +1,10 @@
+const errorMassage = document.getElementById("errorMassage")
+const errorMassage1 = document.getElementById("errorMassage1")
+
 const register = async (e) =>{
     try {
         // e.preventDefault();
+    errorMassage.style.display = " none";
     let username = document.getElementById("username").value;
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
@@ -11,9 +15,9 @@ const register = async (e) =>{
     }else if(!email || email === ""){
         throw new Error("Enter email")
     }else if(!password || password === "" || password.length <=3){
-        throw new Error("password should be 4 characters short")
+        throw new Error("Password require 4+ characters")
     }else if(password !== confirm){
-        throw new Error("password mismatched")
+        throw new Error("Password mismatched")
     }
         const info = {
             username,
@@ -32,19 +36,31 @@ const register = async (e) =>{
             },
             body: JSON.stringify(info),
         });
-        console.log('here',res);
+        // console.log('here',res);
         const result = await res.json();
         if(!res.ok){
-            throw new Error(result.error)
+            // throw new Error(result.error)
+            errorMassage.innerText = result.error || "Failed to Register";
+            errorMassage.style.display = "block"
+            return;
         }
-             window.location.href = ("./loarder.html");
+        // SUCCESS MSG
+        errorMassage.innerText = result.msg || "Login successfully";
+        errorMassage.classList.remove("error-msg")
+        errorMassage.classList.add("success-msg");
+        errorMassage.style.display = "block";
+
+        window.location.href = ("./loarder.html");
     } catch (error) { 
-       alert(error)
-       console.log(error); 
+        errorMassage.innerText = error.message;
+        errorMassage.classList.remove("success-msg");
+        errorMassage.classList.add("error-msg");
+        errorMassage.style.display = "block"
     }
 }
 const login = async (e) =>{
     try {
+        errorMassage.style.display = " none";
         let email = document.getElementById("email").value;
         let password = document.getElementById("password").value;
 
@@ -75,8 +91,18 @@ const login = async (e) =>{
             });
             const result = await res.json(); 
             if(!res.ok){
-                throw new Error(result.error);  
+             errorMassage.innerText = result.error || "Failed to Login";
+            errorMassage.style.display = "block"
+            return;
+                // throw new Error(result.error);  
             }
+
+             // SUCCESS MSG
+        errorMassage.innerText = result.msg || "Login Successfully";
+        errorMassage.classList.remove("error-msg")
+        errorMassage.classList.add("success-msg");
+        errorMassage.style.display = "block";
+
             if(result.user)
                 localStorage.setItem("userId", result.user.userId || "")
                 localStorage.setItem("username", result.user.username || "")
@@ -88,8 +114,10 @@ const login = async (e) =>{
             console.log("Login successful", result);
                 window.location.href = "../dashboard/dashboard.html"
     } catch (error) {
-        alert(error);
-        console.log(error);
+        errorMassage.innerText = error.message;
+        errorMassage.classList.remove("success-msg");
+        errorMassage.classList.add("error-msg");
+        errorMassage.style.display = "block"
     }
 }
 
@@ -100,6 +128,7 @@ const adressForm = document.getElementById("addressForm")
 profileForm.addEventListener('submit', async (e) => {
         try {
     e.preventDefault()
+    errorMassage.style.display = " none";
     const userId = localStorage.getItem("userId")
      if(!userId) throw new Error("No userId found in localstorage")
 
@@ -142,20 +171,31 @@ profileForm.addEventListener('submit', async (e) => {
         });
         const result = await res.json();
         if(!res.ok){
-            throw new Error(result.msg || "update failed")
+            errorMassage.innerText = result.error || "Failed to update profile";
+            errorMassage.style.display = "block"
+            return;
         }
+        // SUCCESS MSG
+        errorMassage.innerText = result.msg || "Profile upated successfully";
+        errorMassage.classList.remove("error-msg")
+        errorMassage.classList.add("success-msg");
+        errorMassage.style.display = "block";
+
         localStorage.setItem("profile", JSON.stringify(result.data))
-        alert("profile saved successfully")
         getProfile()
        
     } catch (error) {
-        alert(error)
+        errorMassage.innerText = error.message;
+        errorMassage.classList.remove("success-msg");
+        errorMassage.classList.add("error-msg");
+        errorMassage.style.display = "block"
     }
 });
 
 adressForm.addEventListener('submit', async (e) => {
         try {
     e.preventDefault()
+    errorMassage1.style.display = " none";
     const userId = localStorage.getItem("userId")
      if(!userId) throw new Error("No userId found in localstorage")
 
@@ -198,13 +238,25 @@ adressForm.addEventListener('submit', async (e) => {
         });
         const result = await res.json();
         if(!res.ok){
-            throw new Error(result.msg || "update failed")
+            // throw new Error(result.msg || "update failed")
+            errorMassage1.innerText = result.error || "Failed to update Address";
+            errorMassage1.style.display = "block"
+            return;
         }
+         // SUCCESS MSG
+        errorMassage1.innerText = result.msg || "Address upated successfully";
+        errorMassage1.classList.remove("error-msg")
+        errorMassage1.classList.add("success-msg");
+        errorMassage1.style.display = "block";
+
         localStorage.setItem("Address", JSON.stringify(result.data));
-        alert("Address saved successfully")
+        // alert("Address saved successfully")
         getAddress()
     } catch (error) {
-        alert(error)
+         errorMassage1.innerText = error.message;
+        errorMassage1.classList.remove("success-msg");
+        errorMassage1.classList.add("error-msg");
+        errorMassage1.style.display = "block"
     }
 });
 

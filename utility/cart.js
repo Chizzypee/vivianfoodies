@@ -31,8 +31,8 @@ const soupItem = products.filter(item => item.category === "soup");
 soupItem.slice(0, 8).forEach((product) => {
     let productDiv = document.createElement("div")
     productDiv.classList.add("product")
-    productLink = `<a href="./dashboard/item.html?id=${product.id}" class="product-link">`;
-    productLinkdash = `<a href="./item.html?id=${product.id}" class="product-link">`;
+    productLink = `<a href="./dashboard/item.html?slug=${product.slug}" class="product-link">`;
+    productLinkdash = `<a href="./item.html?slug=${product.slug}" class="product-link">`;
     productDiv.innerHTML = `
     <div class="food-item" id="footslide">
         <div class="itemborder">
@@ -59,15 +59,13 @@ soupItem.slice(0, 8).forEach((product) => {
     </div>
     `;
     productContainer.appendChild(productDiv)
-
-   
 })
  const wineItem = products.filter(item => item.category === "wine");
 wineItem.slice(0, 8).forEach((product) => {
     let productDiv = document.createElement("div")
     productDiv.classList.add("product")
-    productLink = `<a href="../dashboard/item.html?id=${product.id}" class="product-link">`;
-    productLinkdash = `<a href="./item.html?id=${product.id}" class="product-link">`;
+    productLink = `<a href="../dashboard/item.html?slug=${product.slug}" class="product-link">`;
+    productLinkdash = `<a href="./item.html?slug=${product.slug}" class="product-link">`;
     productDiv.innerHTML = `
     <div class="food-item" id="footslide">
         <div class="itemborder">
@@ -99,8 +97,8 @@ const fruitItem = products.filter(item => item.category === "fruit");
 fruitItem.slice(0, 8).forEach((product) => {
     let productDiv = document.createElement("div")
     productDiv.classList.add("product")
-    productLink = `<a href="../dashboard/item.html?id=${product.id}" class="product-link">`;
-    productLinkdash = `<a href="./item.html?id=${product.id}" class="product-link">`;
+    productLink = `<a href="../dashboard/item.html?slug=${product.slug}" class="product-link">`;
+    productLinkdash = `<a href="./item.html?slug=${product.slug}" class="product-link">`;
     productDiv.innerHTML = `
     <div class="food-item" id="footslide">
         <div class="itemborder">
@@ -132,8 +130,8 @@ const snacksItem = products.filter(item => item.category === "snacks");
 snacksItem.slice(0, 8).forEach((product) => {
     let productDiv = document.createElement("div")
     productDiv.classList.add("product")
-    productLink = `<a href="../dashboard/item.html?id=${product.id}" class="product-link">`;
-    productLinkdash = `<a href="./item.html?id=${product.id}" class="product-link">`;
+    productLink = `<a href="../dashboard/item.html?slug=${product.slug}" class="product-link">`;
+    productLinkdash = `<a href="./item.html?slug=${product.slug}" class="product-link">`;
     productDiv.innerHTML = `
     <div class="food-item" id="footslide">
         <div class="itemborder">
@@ -169,19 +167,14 @@ function addToCart(id) {
       const product = products.find((product) => product.id === id)
         if(!product) return;
         const {instock, ...data} = product;
-        
-        //get cart from storage
         const readCart = JSON.parse(localStorage.getItem("CART")) || [];
         //check product already in cart
         const getcart = readCart.find(product => product.id === id)
         if(getcart){
-            //if already in cart, increse, if not decrease
             if(getcart.quantity < product.instock){
                 getcart.quantity += 1
             }
-            
         }else {
-            //add new item to cart 
             readCart.push({
                 ...data,
                 quantity: 1,
@@ -189,26 +182,43 @@ function addToCart(id) {
                 id: id
             })
         }
-        // updateCart(readCart)
         localStorage.setItem("CART", JSON.stringify(readCart));
+        // const btnContainer = document.getElementById(`btnContainer-${product.id}`)
+        // const currentITem = readCart.find(item => item.id === id)
+        // console.log(currentITem);
+        // if(btnContainer && currentITem){
+        //         btnContainer.innerHTML = `
+        //         <div class="product-count" id="product-count">
+        //             <button class="product-cartcount" onclick="changeNumberOfUnite('minus',${id})">-</button>
+        //             <label for="text" class="product-counttxt">${currentITem.quantity}</label>
+        //             <button class="product-cartcount" onclick="changeNumberOfUnite('plus',${id})">+</button>
+        //         </div>
+        //         `; 
+        //     }
+        //     changeNumberOfUnite()
+        updateCartBtn()
+    }
+    showProduct()
 
-            //replace Add to cart button to qauntity button
-        const btnContainer = document.getElementById(`btnContainer-${product.id}`)
-        const currentITem = readCart.find(item => item.id === id)
-        console.log(currentITem);
-        if(btnContainer && currentITem){
-                btnContainer.innerHTML = `
+function updateCartBtn(){
+    const cart = JSON.parse(localStorage.getItem("CART")) || [];
+    cart.forEach(item => {
+        const btnContainer = document.getElementById(`btnContainer-${item.id}`)
+        if(btnContainer){
+            btnContainer.innerHTML = `
                 <div class="product-count" id="product-count">
-                    <button class="product-cartcount" onclick="changeNumberOfUnite('minus',${id})">-</button>
-                    <label for="text" class="product-counttxt">${currentITem.quantity}</label>
-                    <button class="product-cartcount" onclick="changeNumberOfUnite('plus',${id})">+</button>
+                    <button class="product-cartcount" onclick="changeNumberOfUnite('minus',${item.id})">-</button>
+                    <label for="text" class="product-counttxt">${item.quantity}</label>
+                    <button class="product-cartcount" onclick="changeNumberOfUnite('plus',${item.id})">+</button>
                 </div>
                 `; 
-            
             }
-            changeNumberOfUnite()
+        })
+        changeNumberOfUnite()
 }
-showProduct()
+window.addEventListener("load", () => {
+    updateCartBtn();
+})
 
 //update cart
 function updateCart(product) {
@@ -259,12 +269,12 @@ function renderCartItem(){
             <div class="wallat-con">
                 <div class="pro-btn-show">
                     <div class="pro-wallatimg">
-                        <a href="../dashboard/item.html?id=${item.id}">
+                        <a href="../dashboard/item.html?slug=${item.slug}">
                             <img src="${item.imgSrc}" class="topupImg">
                         </a>
                     </div>
                     <div class="Amount">
-                        <a href="../dashboard/item.html?id=${item.id}">
+                        <a href="../dashboard/item.html?slug=${item.slug}">
                             <label for="text" class="cart-item-title">${item.name}</label>
                             <label for="text" class="cart-price">RON ${item.price}</label>
                         </a>
@@ -391,4 +401,12 @@ function openCheckOut(){
     if(document.getElementsByClassName('checkoutbtn1')){
         window.location.href = "../checkout/checkout.html"
     }
+}
+
+function slugify(text){
+    return text
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9-]/g, "")
 }
