@@ -276,7 +276,7 @@ function openPaymentMenu(){
 function openAddressMenu(){
     document.querySelector(".accountdetails-con").style.display = "none";
     document.querySelector(".myAccount").style.backgroundColor = "";
-    document.querySelector(".orderdetailss  -con").style.display = "none";
+    document.querySelector(".orderdetailss-con").style.display = "none";
     document.querySelector(".myOrder").style.backgroundColor = "";
     document.querySelector(".inboxdetails").style.display = "none";
     document.querySelector(".myInbox").style.backgroundColor = "";

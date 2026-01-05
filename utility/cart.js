@@ -183,22 +183,9 @@ function addToCart(id) {
             })
         }
         localStorage.setItem("CART", JSON.stringify(readCart));
-        // const btnContainer = document.getElementById(`btnContainer-${product.id}`)
-        // const currentITem = readCart.find(item => item.id === id)
-        // console.log(currentITem);
-        // if(btnContainer && currentITem){
-        //         btnContainer.innerHTML = `
-        //         <div class="product-count" id="product-count">
-        //             <button class="product-cartcount" onclick="changeNumberOfUnite('minus',${id})">-</button>
-        //             <label for="text" class="product-counttxt">${currentITem.quantity}</label>
-        //             <button class="product-cartcount" onclick="changeNumberOfUnite('plus',${id})">+</button>
-        //         </div>
-        //         `; 
-        //     }
-        //     changeNumberOfUnite()
         updateCartBtn()
-    }
-    showProduct()
+}
+showProduct()
 
 function updateCartBtn(){
     const cart = JSON.parse(localStorage.getItem("CART")) || [];
@@ -372,8 +359,7 @@ function changeNumberOfUnite(action, id){
                     <button class="cart" id="cart" onclick="addToCart(${id})">Add to cart</button>
                 `
             }
-
-            }
+    }
 }
 
 function CheckOut(){
