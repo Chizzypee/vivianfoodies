@@ -50,6 +50,7 @@ nav{
     width: 100%;
     z-index: 2;
     background-color: wheat;
+    justify-content: center;
 }
 .side-nav::-webkit-scrollbar{
     width: 5%;
@@ -524,7 +525,7 @@ nav{
 .product-cartcount{
     background-color: orange;
     width: 30%;
-    height: 8vh;
+    height: 50px;
     border: none;
     color: #2a1b15;
     font-weight: 600;
@@ -534,13 +535,13 @@ nav{
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 .pro-cartcount{
     border: 1px solid green;
     background-color: orange;
     width: 25%;
-    height: 5vh;
+    height: 50px;
     border: none;
     color: #2a1b15;
     font-weight: 600;
@@ -560,7 +561,7 @@ nav{
     font-weight: 600;
     font-size: 17px;
     cursor: pointer;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 .pro-counttxt{
     display: flex;
@@ -688,7 +689,7 @@ nav{
 .accounting1{
      display: flex;
     flex-direction: row;
-    gap: 9px;
+    /* gap: 1px; */
     align-items: center;
     cursor: pointer;
 }
@@ -705,6 +706,12 @@ nav{
     gap: 9px;
     align-items: center;
     cursor: pointer;
+}
+.hi{ 
+    font-weight: 700;
+}
+.username{ 
+    font-weight: 700;
 }
 .nav2{
     display: flex;
@@ -1015,28 +1022,28 @@ nav{
 }
 .hero-img1{
     width: 100%;
-    background-image: url(../image/baked-quails-pan-dark-surface_2829-5596.jpg);
+    background-image: url(https://res.cloudinary.com/dkdrebsks/image/upload/v1767714388/Vivianfoodies/baked-quails-pan-dark-surface_2829-5596_ab72jt.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .hero-img2{
     width: 100%;
-    background-image: url(../image/top-view-table-full-delicious-food-composition_23-2149141352.jpg);
+    background-image: url(https://res.cloudinary.com/dkdrebsks/image/upload/v1767714475/Vivianfoodies/top-view-table-full-delicious-food-composition_23-2149141352_x1dbgz.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .hero-img3{
     width: 100%;
-    background-image: url(../image/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19744.jpg);
+    background-image: url(https://res.cloudinary.com/dkdrebsks/image/upload/v1767714472/Vivianfoodies/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19744_seyi7w.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .hero-img4{
     width: 100%;
-    background-image: url(../image/vitamin-salad-fresh-tomatoes-arugula-feta-cheese-peppers-dietary-menu-proper-nutrition-top-view-flat-lay_2829-20066.jpg);
+    background-image: url(https://res.cloudinary.com/dkdrebsks/image/upload/v1767714473/Vivianfoodies/vitamin-salad-fresh-tomatoes-arugula-feta-cheese-peppers-dietary-menu-proper-nutrition-top-view-flat-lay_2829-20066_ldrbvy.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1058,19 +1065,26 @@ nav{
 .item{
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: auto;
+    /* height: 500px; */
     width: 100%;
 }
 .fff{
+    display: flex;
+    flex-direction: column;
     background-color: saddlebrown;
     border-radius: 10px;
-    height: 450px;
+    /* height: 450px; */
+    /* height: 450px; */
+     align-items: center;
+    justify-content: center;
 }
 .foodie{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 500px;
+    /* height: 500px; */
+    /* height: 500px; */
     /* background-color: darkgreen; */
     align-items: center;
     justify-content: center;
@@ -1087,13 +1101,15 @@ nav{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 500px;
+    /* height: 550px; */
+    /* height: 550px; */
     overflow-x: auto;
 }
 .foodItem::-webkit-scrollbar{
     width: 0%;
 }
 .food-item{
+    height: auto;
     background-color: #2a1b15;
     border-radius: 20px;
     border: 2px solid sandybrown;
@@ -1103,7 +1119,8 @@ nav{
     display: flex;
     flex-direction: row;
     width: 200%;
-    height: 400px;
+    height: auto;
+    /* height: 400px; */
 
 }
 .food-slid1{
@@ -1111,35 +1128,39 @@ nav{
     display: flex;
     flex-direction: row;
     width: 200%;
-    height: 400px;
+    height: auto;
+    /* height: 400px; */
 }
 .food-slid2{
     gap: 20px;
     display: flex;
     flex-direction: row;
     width: 200%;
-    height: 400px;
+    height: auto;
+    /* height: 400px; */
 }
 .food-slid3{
     gap: 20px;
     display: flex;
     flex-direction: row;
     width: 200%;
-    height: 400px;
+    height: auto;
+    /* height: 400px; */
 }
 .food-slid4{
     gap: 20px;
     display: flex;
     flex-direction: row;
     width: 200%;
-    height: 400px;
+    height: auto;
+    /* height: 400px; */
 }
 .foodie-head{
     display: flex;  
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     height: 50px;
     background-color: #000;
 }
@@ -1152,7 +1173,8 @@ nav{
 }
 .product{
     width: 20%;
-    height: 500px;
+    /* height: 500px; */
+    height: auto;
 }
 .viewMore{
     color: white;
@@ -1166,7 +1188,8 @@ nav{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 700px;
+    height: auto;
+    /* height: 700px; */
 }
 .itemImg{
     width: 10%;
@@ -1178,7 +1201,8 @@ nav{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 48vh;
+    /* height: 48vh; */
+    height: auto;
     padding: 10px;
 }
 .itemImgbig{
@@ -1246,7 +1270,7 @@ nav{
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    margin-top: 10px;
+    margin-bottom: 15px;
     gap: 20px;
     width: 100%;
 }
@@ -1408,14 +1432,15 @@ nav{
     width: 100%;
     height: auto;
     align-items: center;
+    margin-bottom: 20px;
 }
 .infomate{
     display: flex;
     flex-direction: column;
+    height: auto;
     margin-left: 20px;
     gap: 20px;
     width: 90%;
-    height: auto;
 }
 .infomate p{
     text-align: center;
@@ -1423,6 +1448,32 @@ nav{
 }
 .infomate span{
     font-weight: 500;
+}
+.viewmore-text{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+.infomate-seemore{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.seemoretext{
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    color: #1c0e00;
+    font-weight: 700;
+    background-color: orange;
 }
 .infor-head{
     display: flex;
@@ -1679,12 +1730,18 @@ nav{
     color: orange;
     margin-top: 5px;
     border-bottom: 1px solid rgb(77, 50, 1);
+    border-top: none;
+    border-left: none;
+    border-right: none;
     width: 100%;
 }
 .d4 h3{
     color: orange;
     margin-top: 5px;
     border-bottom: 1px solid rgb(77, 50, 1);
+     border-top: none;
+    border-left: none;
+    border-right: none;
 }
 .itemtextdescbtn{
     background-color: rgb(49, 42, 98);
@@ -1716,6 +1773,9 @@ nav{
     font-weight: 600;
     color: orange;
     border-bottom: 1px solid rgb(77, 50, 1);
+     border-top: none;
+    border-left: none;
+    border-right: none;
 }
 .d4{
     display: flex;
@@ -1830,20 +1890,22 @@ nav{
 .footer-content{
     display: flex;
     flex-direction: column;
-    height: 340px;
+    height: auto;
     width: inherit;
+    gap: 10px;
 }
 .footer-head{
-    margin-top: 15px;
-}
-.footer-head a{
+    height: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 15px;
-    color: wheat;
+}
+.footer-head a{
+    display: flex;
+    flex-direction: row;
     font-weight: 600;
+    color: wheat;
     gap: 10px;
 }
 .backtop{
@@ -1864,17 +1926,21 @@ nav{
 .footer-link{
     display: flex;
     flex-direction: row;
-    padding: 20px;
-    margin-top: 50px;
+     align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* padding: 20px; */
+    /* margin-top: 50px; */
 }
 .title{
     display: flex;
     flex-direction: row;
     font-size: 12px;
-    width: 25%;
+    width: 90%;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
+
 .title h1{
     color: orange;
 }
@@ -1892,7 +1958,10 @@ nav{
 .footer-copyright{
     display: flex;
     flex-direction: column;
-    margin-left: 60px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
 }
 .footer-copyright p{
     font-weight: 600;
@@ -2442,7 +2511,7 @@ nav{
 .title1{
     display: flex;
     flex-direction: column;
-    height: 10vh;
+    height: auto;
     gap: 20px;
     width: 100%;
     justify-content: center;
@@ -2451,6 +2520,7 @@ nav{
 .title1con{
     display: flex;
     flex-direction: row;
+    height: auto;
     gap: 20px;
 }
 .title1con{
@@ -2458,10 +2528,9 @@ nav{
 }
 .title1Coon{
     width: 90%;
-    gap: 20px;
+    gap: 10px;
     display: flex;
     flex-direction: column;
-    
 }
 .t-img{
     width: 3%;
@@ -2470,7 +2539,6 @@ nav{
 .line{
     width: 100%;
     border-bottom: 1px solid gray;
-
 }
 .copyrightMKT-link{
     display: flex;
@@ -5488,21 +5556,21 @@ nav{
     .fff{
         justify-content: center;
         align-items: center;
-        height: 400px;
+        /* height: 400px; */
     }
     .foodie{
-        height: 500px;
+        /* height: 500px; */
     }
     .item{
-        height: 450px;
+        /* height: 450px; */
     }
     .food-item{
-        height: 370px;
+        /* height: 370px; */
     }
     .foodie-head{
         justify-content: space-between;
         width: 100%;
-        height: 50px
+        height: 50px;
         /* padding: 5px; */
     }
     .foodie-head h2{
@@ -5521,7 +5589,7 @@ nav{
         width: 530%;
     }
     .item-imgBig{
-        height: 250px;
+        /* height: 250px; */
         justify-content: space-between;
     }
     .itemImgbig{
@@ -5550,14 +5618,14 @@ nav{
         height: 30px;
     }
     .product-cartcount{
-        height: 5vh;
+        height: 30px;
     }
     .product-counttxt{
-        height: 5vh;
+        height: 30px;
     }
     .infomate{
         margin: 0px;
-        height: 140pc;
+        /* height: 140pc; */
     }
     .infor-head {
        margin-top: 30px;
@@ -5567,8 +5635,8 @@ nav{
         align-items: center;
     }
     .footer-content{
-        gap: 20px;
-        height: 29pc;
+        /* gap: 10px; */
+        /* height: 29pc; */
     }
     .footer-link{
         flex-direction: column;
@@ -5579,11 +5647,7 @@ nav{
         grid-template-columns:2fr 2fr 2fr;
         gap: 5px;
     }
-    .footer-link ul li{
-        margin-left: 5px;
-    }
     .title{
-        width: 100%;
         justify-content: start;
         flex-direction: row;
     }
@@ -5603,9 +5667,9 @@ nav{
     }
     .footer-copyright{
        display: flex;
-       margin: 0px;
+       /* margin: 0px;
        margin-bottom: 10px;
-       margin-left: 20px;
+       margin-left: 20px; */
     }
     .footer-copyright p{
         font-size: 12px;
@@ -6132,7 +6196,7 @@ nav{
     }
     .nav1{
         display: flex;
-        height: 40px;
+        height: 50px;
         margin: 0px;
         margin-top: 28px;
     }
@@ -6159,6 +6223,15 @@ nav{
     .staticNavcol{
         display: none;
     }
+    .staticNav{
+        height: 35px;
+    }
+    .username{
+        font-size: 13px;
+    }
+    .hi{
+        font-size: 13px;
+    }
     .nav-search{
         display: flex;
     }
@@ -6180,16 +6253,16 @@ nav{
         height: 200px;
     }
     .fff{
-        height: 350px;
+        /* height: 350px; */
     }
     .foodie{
-        height: 500px;
+        /* height: 500px; */
     }
     .item{
-        height: 400px;
+        /* height: 400px; */
     }
     .food-item{
-        height: 310px;
+        /* height: 310px; */
     }
     .foodie-head{
         justify-content: space-between;
@@ -6212,7 +6285,7 @@ nav{
         width: 290%;
     }
     .item-imgBig{
-        height: 200px;
+        /* height: 200px; */
         justify-content: space-between;
     }
     .itemImgbig{
@@ -6242,15 +6315,15 @@ nav{
         border-radius: 9px;
     }
     .product-cartcount{
-        height: 7vh;
+        height: 50px;
     }
     .product-counttxt{
-        height: 7vh;
+        height: 50px;
     }
     .infomate{
         margin: 0px;
         padding-bottom: 30px;
-        height: 45pc;
+        /* height: 45pc; */
     }
     .infor-head p{
         font-size: 15px;
@@ -6265,7 +6338,7 @@ nav{
     }
     .footer-content{
         gap: 5px;
-        height: 15pc;
+        /* height: 15pc; */
     }
     .footer-head p{
         font-size: 10px;
@@ -6281,7 +6354,6 @@ nav{
         width: 6%;
     }
     .title{
-        width: 100%;
         justify-content: start;
         flex-direction: row;
     }
@@ -6317,6 +6389,9 @@ nav{
     .carthead a{
         font-size: 20px;
     }
+    .details-container{
+        margin-top: 10px;
+    }
     .details-con{
         flex-direction: column;
         justify-content: center;
@@ -6327,16 +6402,20 @@ nav{
     .details-sep{
         display: flex;
         flex-direction: row;
+        background-color: #2a1b15;
     }
     .details-right{
-        height: 50vh;
+        height: 200px;
+        width: 40%;
     }
     .details-left{
-        margin-bottom: 20px;
-        width: 90%;
+        /* margin-bottom: 20px; */
+        gap: 5px;
+        width: 60%;
+        background-color: #2a1b15;
     }
     .itemImgbig1{
-        height: 30vh;
+        height: 150px;
     }
     .pro-wallattopup{
         width: 99%;
@@ -6356,13 +6435,19 @@ nav{
         margin: 0px;
     }
     .cart-price{
-        font-size: 12px;
+        font-size: 15px;
     }
     .itemtextdesc{
         font-size: 15px;
     }
+    .itemtextdesc2{
+        font-size: 10px;
+    }
+    .itemtextdesc3{
+        font-size: 10px;
+    }
     .d2{
-        flex-direction: row;
+        flex-direction: column;
     }
     .d1 p{
         font-size: 22px;
@@ -6822,19 +6907,19 @@ nav{
         margin: 0px;
     }
     .hero-content{
-        height: 220px;
+        height: 330px;
     }
     .fff{
-        height: 350px;
+        /* height: 350px; */
     }
     .foodie{
-        height: 500px;
+        /* height: 500px; */
     }
     .item{
-        height: 400px;
+        /* height: 400px; */
     }
     .food-item{
-        height: 310px;
+        /* height: 310px; */
     }
     .foodie-head{
         justify-content: space-between;
@@ -6857,7 +6942,7 @@ nav{
         width: 250%;
     }
     .item-imgBig{
-        height: 200px;
+        /* height: 200px; */
         justify-content: space-between;
     }
     .itemImgbig{
@@ -6886,18 +6971,18 @@ nav{
     }
     .cart{
         font-size: 13px;
-        height: 6vh;
+        height: 50px;
     }
     .product-cartcount{
-        height: 7vh;
+        height: 50px;
     }
     .product-counttxt{
-        height: 7vh;
+        height: 50px;
     }
     .infomate{
         margin: 0px;
         padding-bottom: 30px;
-        height: 38pc;
+        /* height: 38pc; */
     }
     .infor-head p{
         font-size: 15px;
@@ -6912,7 +6997,7 @@ nav{
     }
     .footer-content{
         gap: 5px;
-        height: 13pc;
+        /* height: 13pc; */
     }
     .footer-head p{
         font-size: 10px;
@@ -6928,7 +7013,6 @@ nav{
         width: 6%;
     }
     .title{
-        width: 100%;
         justify-content: start;
         flex-direction: row;
     }
@@ -7261,6 +7345,7 @@ nav{
     }
     .details-container{
         margin-top: 20px;
+        margin-bottom: 20px;
     }
     .ordered-content{
         font-size: 12px;
@@ -7635,7 +7720,7 @@ nav{
     }
     .staticNav{
         /* gap: 10px; */
-        /* height: 5vh; */
+        height: 50px;
     }
     .cart-back{
         height: 4vh;
@@ -7720,7 +7805,7 @@ nav{
     }
     .nav1{
         display: flex;
-        height: 50px;
+        height: 55px;
         margin-top: 45px;
     }
     .nav-row{
@@ -7739,20 +7824,20 @@ nav{
         height: 300px;
     }
     .hero-content{
-        height: 350px;
+        /* height: 350px; */
     }
     .fff{
-        height: 430px;
+        /* height: 430px; */
     }
     .foodie{
-        height: 500px;
+        /* height: 500px; */
     }
     .item{
-        height: 500px;
+        /* height: 500px; */
     }
     .food-item{
        gap: 10px;
-        height: 380px;
+        /* height: 380px; */
     }
     .foodie-head{
         justify-content: space-between;
@@ -7775,7 +7860,7 @@ nav{
         width: 250%;
     }
     .item-imgBig{
-        height: 240px;
+        /* height: 240px; */
         justify-content: space-between;
     }
     .itemImgbig{
@@ -7805,15 +7890,15 @@ nav{
         border-radius: 10px;
     }
     .product-cartcount{
-        height: 3vh;
+        height: 40px;
     }
     .product-counttxt{
-        height: 3vh;
+        height: 40px;
     }
     .infomate{
         margin: 0px;
         /* padding-bottom: 30px; */
-        height: 95pc;
+        /* height: 95pc; */
     }
     .infor-head {
        margin-top: 30px;
@@ -7831,7 +7916,7 @@ nav{
     }
     .footer-content{
         gap: 20px;
-        height: 35pc;
+        /* height: 35pc; */
     }
     .footer-link{
         flex-direction: column;
@@ -7848,7 +7933,6 @@ nav{
         margin-left: 20px;
     }
     .title{
-        width: 100%;
         justify-content: start;
         flex-direction: row;
     }
@@ -8094,6 +8178,9 @@ nav{
     }
 }
 @media screen and (min-width: 1000px){ 
+    .details-right .d1{
+        display: flex;
+    }
     .choose{
         margin-bottom: 10px;
     }
@@ -8341,6 +8428,7 @@ nav{
         display: none;
     }
     .staticNav{
+        height: 60px;
         /* gap: 10px; */
     }
     .side-cart{
@@ -8395,6 +8483,9 @@ nav{
     .accounting1{
         display: flex;
     }
+    .accounting2{
+        display: none;
+    }
     .navCall{
         gap: 15px;
     }
@@ -8403,8 +8494,8 @@ nav{
     }
     .nav1{
         display: flex;
-        height: 50px;
-        margin-top: 50px;
+        height: 60px;
+        margin-top: 60px;
     }
     .nav-row{
         height: 50px;
@@ -8449,16 +8540,16 @@ nav{
         margin: 0;
     }
     .fff{
-        height: 500px;
+        /* height: 500px; */
     }
     .foodie{
-        height: 500px;
+        /* height: 500px; */
     }
     .item{
-        height: 600px;
+        /* height: 600px; */
     }
     .food-item{
-        height: 450px;
+        /* height: 450px; */
     }
     .foodie-head{
         justify-content: space-between;
@@ -8481,7 +8572,7 @@ nav{
         width: 220%;
     }
     .item-imgBig{
-        height: 300px;
+        /* height: 300px; */
         justify-content: space-between;
     }
     .itemImgbig{
@@ -8501,18 +8592,18 @@ nav{
     }
     .cart{
         font-size: 15px;
-        height: 6vh;
+        height: 50px;
     }
     .product-cartcount{
-        height: 7vh;
+        height: 50px;
     }
     .product-counttxt{
-        height: 7vh;
+        height: 50px;
     }
     .infomate{
         margin: 0px;
         padding-bottom: 30px;
-        height: 50pc;
+        /* height: 50pc; */
     }
     .infor-head p{
         font-size: 23px;
@@ -8527,26 +8618,36 @@ nav{
     }
     .footer-content{
         gap: 20px;
-        height: 23pc;
+        /* height: 23pc; */
+    }
+    .footer-head a p{
+        font-size: 14px;
     }
     .footer-link{
         flex-direction: column;
-        margin: 0px;
         
     }
     .footer-link ul{
-        display: none;
+        display: flex;
     }
     .title{
-        width: 100%;
         justify-content: start;
         flex-direction: row;
+    }
+    .title ul{
+        gap: 10px;
+    }
+    .title ul li a{
+        font-size: 18px;
+    }
+    .title h1{
+        font-size: 18px;
     }
     .title1con p{
         font-size: 18px;
     }
     .t-img{
-        width: 6%;
+        width: 3%;
         border-radius: 50px;
     }
     .footer-social{
@@ -8596,6 +8697,7 @@ nav{
     .details-left{
         flex-direction: column;
         width: 90%;
+        background-color: #2a1b15;
     }
     .itemImgbig1{
         height: 50vh;
@@ -9142,7 +9244,7 @@ nav{
     }
     .staticNav{
         /* gap: 10px; */
-        /* height: 5vh; */
+        /* height: 60px; */
     }
     .cart-back{
         height: 4vh;
@@ -9246,20 +9348,20 @@ nav{
         height: 320px;
     }
     .hero-content{
-        height: 370px;
+        /* height: 370px; */
     }
     .fff{
-        height: 530px;
+        /* height: 530px; */
     }
     .foodie{
-        height: 540px;
+        /* height: 540px; */
     }
     .item{
-        height: 600px;
+        /* height: 600px; */
     }
     .food-item{
        gap: 10px;
-        height: 470px;
+        /* height: 470px; */
     }
     .foodie-head{
         justify-content: space-between;
@@ -9282,7 +9384,7 @@ nav{
         width: 250%;
     }
     .item-imgBig{
-        height: 320px;
+        /* height: 320px; */
         justify-content: space-between;
     }
     .itemImgbig{
@@ -9320,7 +9422,7 @@ nav{
     .infomate{
         margin: 0px;
         /* padding-bottom: 30px; */
-        height: 80pc;
+        /* height: 80pc; */
     }
     .infor-head {
        margin-top: 30px;
@@ -9338,7 +9440,7 @@ nav{
     }
     .footer-content{
         gap: 20px;
-        height: 33pc;
+        /* height: 33pc; */
     }
     .footer-link{
         flex-direction: column;
@@ -9355,7 +9457,6 @@ nav{
         margin-left: 20px;
     }
     .title{
-        width: 100%;
         justify-content: start;
         flex-direction: row;
     }

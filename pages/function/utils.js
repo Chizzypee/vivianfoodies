@@ -112,7 +112,7 @@ const login = async (e) =>{
             if(result.refreshToken)
                 localStorage.setItem("refreshToken", result.refreshToken)
             console.log("Login successful", result);
-                window.location.href = "../dashboard/dashboard.html"
+            window.location.href = "../dashboard/dashboard.html"
     } catch (error) {
         errorMassage.innerText = error.message;
         errorMassage.classList.remove("success-msg");
@@ -266,6 +266,17 @@ window.addEventListener("load", async() => {
         console.log("No userId in localstorage")
         return;
     }
+    const username = localStorage.getItem("username")
+    if(!username){
+        console.log("No username in localstorage")
+        return;
+    }
+    
+    const usernameUU = document.getElementById("userName1")
+    if(usernameUU){
+        usernameUU.innerText =  `Hi ${username}`;
+    }
+
     console.log("user ID found on load:", userId);
     getAddress()
     getProfile() 
@@ -293,6 +304,8 @@ async function getProfile(returnOnlyData = false) {
     document.getElementById("displayAccount-surename").innerText = result.data.surename
     document.getElementById("displayAccount-email").innerText = result.data.email
     document.getElementById("displayHeadEmail").innerText = result.data.email
+    document.getElementById("userName").innerText =  `Hi ${result.data.firstname}`;
+
 }
 async function getAddress(returnOnlyData = false) {
     const userId = localStorage.getItem("userId");

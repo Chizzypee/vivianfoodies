@@ -494,3 +494,11 @@ function backPay(){
     document.querySelector(".paymentsetting").style.display = "none";
     document.querySelector(".accountdetails").style.display = "none";
 }
+function viewmoreTextbtn(){
+     const openClose = document.querySelector(".viewmore-text");
+    if(openClose.style.display === "flex"){
+        openClose.style.display = "none";
+    }else {
+        openClose.style.display = "flex";
+    }
+}
