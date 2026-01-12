@@ -8,6 +8,7 @@ const routes = {
     getAddress: "/user/getAddress",
     createOrder: "/order/createOrder",
     getOrder: "/order/getOrder",
+    refreshToken: "/user/refreshToken",
     
 }
 

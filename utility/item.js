@@ -2,25 +2,17 @@
 
 function showDetailsProduct(){
     //get product id from url
-    // let  params = new URLSearchParams(window.location.search).get("id")
     let  slug = new URLSearchParams(window.location.search).get("slug")
-    // const slug = params.get("slug");
     const products = JSON.parse(localStorage.getItem("products")) || [];
-    // const findProduct = products.filter((value) => value.id.toString() == Number(params))[0]
     const findProduct = products.find(value => value.slug === slug)
-    // console.log("am here", findProduct);     
 
-    if(!findProduct){
-        //  window.location.href = "../index.html";
-        console.log("product not found");
-    }
+    // if(!findProduct){
+    //     console.log("product not found");
+    // }
     products.forEach(()=>{
          let details = document.querySelector(".details-con")
          details.innerHTML = `
          <div class="details-con" id="detailsCon">
-             <div class="carthead-con">
-                <label for="text" class="section"><a href="./dashboard.html">Home / Dashboard / Item</a></label>
-            </div>
             <div class="details-sep">
                 <div class="details-right">
                     <img src="${findProduct.imgSrc}" class="itemImgbig1">
@@ -146,8 +138,8 @@ function showSimilarItem(currentProduct, limit = 2){
                         ${productLink}<img src="${item.imgSrc}" class="simiIMg">
                     </div>
                     <div class="imgdiv">
-                        ${productLink}<label for="text" class="simitext">${item.name}</label>
-                        ${productLink}<label for="text" class="simitext1">${item.description}</label>
+                    ${productLink}<label for="text" class="simitext1">${item.description}</label>
+                    ${productLink}<label for="text" class="simitext">${item.price}</label>
                     </div>
                 </div>
                 </div>
@@ -158,7 +150,6 @@ function showSimilarItem(currentProduct, limit = 2){
 function showSimilarItem1(currentProduct, limit = 2){
     const container = document.querySelector(".similier-pro1")
     if(!container) return;
-    // container.innerHTML = `<h3>You may also like</h3>`;
     const filtered = products.filter(product => product.id !== currentProduct);
     const randomItem = shuffleArray(filtered).slice(0, limit)
     randomItem.forEach(item => {
@@ -170,8 +161,8 @@ function showSimilarItem1(currentProduct, limit = 2){
                         ${productLink}<img src="${item.imgSrc}" class="simiIMg">
                     </div>
                     <div class="imgdiv">
-                        ${productLink}<label for="text" class="simitext">${item.name}</label>
-                        ${productLink}<label for="text" class="simitext1">${item.description}</label>
+                    ${productLink}<label for="text" class="simitext1">${item.description}</label>
+                    ${productLink}<label for="text" class="simitext">${item.price}</label>
                     </div>
                 </div>
             </div>

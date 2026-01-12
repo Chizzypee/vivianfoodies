@@ -245,14 +245,20 @@
                     </div>
                     <div class="nav-call">
                         <div class="navCall">
-                             <div class="accounting2">
+                             <!-- <div class="accounting2">
                                  <a href="./pages/login.html" class="acct">
                                     <i class="fa-solid fa-user"></i>
                                     <p>Account</p>
                                     <i class="fa-solid fa-chevron-down backtop"></i>
                                  </a>
+                             </div> -->
+                             <div class="accounting1">
+                                 <a href="./pages/login.html" class="acct">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>Account</p>
+                                 </a>
                              </div>
-                             <div class="accounting1" onclick="openAccount()">
+                             <!-- <div class="accounting1" onclick="openAccount()">
                                  <i class="fa-solid fa-user"></i>
                                  <p>Account</p>
                                  <i class="fa-solid fa-chevron-down backtop"></i>
@@ -260,7 +266,7 @@
                                      <a href="./pages/login.html">Login</a>
                                      <a href="./pages/register.html">Register</a>
                                  </div>
-                            </div>
+                            </div> -->
                              <div class="accounting">
                                  <i class="fa-solid fa-cart-plus profile" onclick="openCart()"></i>
                                  <label for="text" class="signalcount" id="singalcount" onclick="openCart()">0</label>
@@ -285,7 +291,7 @@
                                         
                                         <div class="cartnote">
                                             <p>Add a note to your order</p>
-                                            <textarea class="cart-note1"></textarea>
+                                            <textarea class="cart-note2"></textarea>
                                         </div>
                                         <div class="checkout-btn">
                                             <button class="checkoutbtn1" onclick="CheckOut()">Checkout</button>
@@ -351,6 +357,11 @@
                 </div>
             </nav>          
             <div class="hero-section">
+                <div class="callnumber">
+                    <div class="call-con">
+                        <label for="text" class="callorder">CALL TO ORDER: +40 734 846 640</label>
+                    </div>
+                </div>
                 <div class="hero-content">
                     <div class="heronav">
                         <div class="heronav-con">
@@ -399,10 +410,25 @@
                         </div>
                     </div>
                 </div>
+                <div class="soupveriety">
+                    <div class="veriety">
+                        <div class="verietycon">
+                            <div class="verietybox">
+                                <img src="../image/Screenshot_20260110-161020.jpg" class="verietyImg">
+                                <img src="../image/Screenshot_20260110-161031.jpg" class="verietyImg">
+                                <img src="../image/Screenshot_20260110-161042.jpg" class="verietyImg">
+                                <img src="../image/Screenshot_20260110-161051.jpg" class="verietyImg">
+                                <img src="../image/Screenshot_20260110-161102.jpg" class="verietyImg">
+                                <img src="../image/Screenshot_20260110-161031.jpg" class="verietyImg">
+                                <img src="../image/Screenshot_20260110-161042.jpg" class="verietyImg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="item">
                     <div class="foodie-head">
                         <h2>Nigerian soup</h2>
-                        <a href="#">
+                        <a href="dashboard/stock.html?category=soup" class="view-all">
                             <button class="viewMore">View all</button>
                         </a>
                     </div>
@@ -422,7 +448,7 @@
                 <div class="item">
                     <div class="foodie-head">
                         <h2>Alcoholic Drinks</h2>
-                        <a href="#">
+                        <a href="dashboard/stock.html?category=wine" class="view-all">
                             <button class="viewMore">View all</button>
                         </a>
                     </div>
@@ -443,7 +469,7 @@
                 <div class="item">
                     <div class="foodie-head">
                         <h2>Fruits</h2>
-                        <a href="#">
+                        <a href="dashboard/stock.html?category=fruit" class="view-all">
                             <button class="viewMore">View all</button>
                         </a>
                     </div>
@@ -461,10 +487,30 @@
                     </div>
                     </div>
                 </div>
+                <div class="faq">
+                    <div class="faqcon">
+                        <div class="faqhead">
+                            <h2>Customer's asked Questions</h2>
+                        </div>
+                        <div class="faq-content">
+                            <div class="faqrol">
+                                <div class="faqbox">
+                                    <img src="../image/Screenshot_20260110-161137.jpg" class="faqImg">
+                                    <img src="../image/Screenshot_20260110-161153.jpg" class="faqImg">
+                                    <img src="../image/Screenshot_20260110-161204.jpg" class="faqImg">
+                                    <img src="../image/Screenshot_20260110-161215.jpg" class="faqImg">
+                                </div>
+                                <div class="faqbox">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="item">
                     <div class="foodie-head">
                         <h2>Snacks & Chips</h2>
-                        <a href="#">
+                        <a href="dashboard/stock.html?category=snacks" class="view-all">
                             <button class="viewMore">View all</button>
                         </a>
                     </div>
@@ -587,7 +633,7 @@
                             <li><a href="#">Privacy</a></li>
                             <li><a href="#">Cookie</a></li>
                             <li><a href="#">Terms</a></li>
-                            <li><a href="#">Corporate Order</a></li>
+                            <li><a href="#">Order</a></li>
                         </ul>
                     </div>
                 </div>
@@ -610,6 +656,7 @@
             </div>
         </div>
     </footer>
+    <!-- <script src="./utility/store.js"></script> -->
     <script src="../pages/function/utils.js"></script>
     <script async src="./utility/cart.js"></script>
     <script src="./utility/item copy.js"></script>

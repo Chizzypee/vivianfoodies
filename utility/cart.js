@@ -35,7 +35,7 @@ soupItem.slice(0, 8).forEach((product) => {
     productLinkdash = `<a href="./item.html?slug=${product.slug}" class="product-link">`;
     productDiv.innerHTML = `
     <div class="food-item" id="footslide">
-        <div class="itemborder">
+        <div class="itemborder">    
             <div class="item-imgBig">
                 <div class="item-img">
                     ${productLink || productLinkdash}<img src="${product.imgSrc}" class="itemImgbig"></a>
@@ -205,6 +205,7 @@ function updateCartBtn(){
 }
 window.addEventListener("load", () => {
     updateCartBtn();
+    // showFirstnameOnDashboard()
 })
 
 //update cart
@@ -363,7 +364,7 @@ function changeNumberOfUnite(action, id){
 }
 
 function CheckOut(){
-     const userId = ocalStorage.getItem("userId");
+     const userId = localStorage.getItem("userId");
     
     if(!userId){
         alert("please login first")
@@ -396,3 +397,4 @@ function slugify(text){
     .replace(/\s+/g, "-")
     .replace(/[^a-z0-9-]/g, "")
 }
+

@@ -249,15 +249,15 @@
                         <div class="navCall">
                             <!-- <i class="fa-solid fa-magnifying-glass-plus"></i> -->
                              <div class="accounting2">
-                                 <a href="./profile.html" class="acct">
+                                 <!-- <a href="./profile.html" class="acct"> -->
                                     <i class="fa-solid fa-user"></i>
-                                 </a>
+                                 <!-- </a> -->
                              </div>
                              <div class="accounting1">
-                                <a href="./profile.html">
+                                <!-- <a href="./profile.html"> -->
                                     <i class="fa-solid fa-user"></i>
                                     <p>Account</p>
-                                </a>
+                                <!-- </a> -->
                             </div>
                              <div class="accounting">
                                  <i class="fa-solid fa-cart-plus profile" onclick="openCart()"></i>
@@ -349,27 +349,28 @@
             </nav>
             <div class="cartContainer">
                 <div class="cartContent">
-                    <div class="carthead-con">
+                    <!-- <div class="carthead-con">
                         <p>Shopping cart</p>
                         <a href="../index.html">Contiune shopping</a>
+                    </div> -->
+                    <div class="cartlisthead">
+                        <p>Your Cart</p>
+                    </div>
+                    <div class="cartlist">
+                        <div class="cartlist1">
+                            <label for="text" class="midnavy">Descritption</label>
+                            <label for="text" class="midnavy">Price</label>
+                        </div>
+                        <div class="cartlist2">
+                            <label for="text" class="midnavy1">Quality</label>
+                            <label for="text" class="midnavy1">Total</label>
+                        </div>
                     </div>
                     <div class="cartitem">
-                        <div class="cartlisthead">
-                            <p>Your Cart</p>
-                        </div>
-                        <div class="cartlist">
-                            <div class="cartlist1">
-                                <label for="text" class="midnavy">Descritption</label>
-                                <label for="text" class="midnavy">Price</label>
-                            </div>
-                            <div class="cartlist2">
-                                <label for="text" class="midnavy1">Quality</label>
-                                <label for="text" class="midnavy1">Total</label>
-                            </div>
-                        </div>
-                        
                         <div class="cartorder">
-                            <!-- stock -->
+                            <!-- <div class="cartorder-con"> -->
+                                <!-- stock -->
+                            <!-- </div>   -->
                         </div>  
                         <div class="cartdetails">
                             <div class="ordersum">
@@ -381,8 +382,8 @@
                                     <textarea class="cart-note1"></textarea>
                                 </div>
                             </div>
-                            <div class="cartsubtotal">
-                                <div class="cartsubtotalcon">
+                            <div class="cartnote1">
+                                <div class="cartnote1con">
                                     <div class="subtotal1">
                                         <label for="text" class="subtotal">Subtotal:</label>
                                         <label for="text" class="cartamount cartAmount" id="cartAmount">$0</label>
@@ -392,7 +393,7 @@
                                         <p>I agree to the <a href="#">terms and refund policy</a></p>
                                     </div>
                                     <div class="subtotal-checkout">
-                                        <button class="checkoutbtn" onclick="openCheckOut()">Checkout</button>
+                                        <button class="checkoutbtn" onclick="CheckOut()">Checkout</button>
                                     </div>
                                 </div>
                             </div>

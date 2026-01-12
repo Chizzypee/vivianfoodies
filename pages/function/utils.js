@@ -120,7 +120,25 @@ const login = async (e) =>{
         errorMassage.style.display = "block"
     }
 }
+async function  refreshAccessToken() {
+    const refreshToken = localStorage.getItem("refreshToken");
+    const url = `${baseUrl}${routes.refreshToken}`
+    const res = await fetch(url,{
+        method: "POST",
+        headers:{
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({refreshToken})
+    });
 
+    const data = await res.json();
+    if(data.accessTokeen){
+        localStorage.setItem("accessToken", data.accessTokeen);
+        return data.accessTokeen;
+    }
+    localStorage.clear()
+    window.location.href = "./login.html"
+}
 
 const profileForm = document.getElementById("profileEdit-form")
 const adressForm = document.getElementById("addressForm")
@@ -266,22 +284,11 @@ window.addEventListener("load", async() => {
         console.log("No userId in localstorage")
         return;
     }
-    const username = localStorage.getItem("username")
-    if(!username){
-        console.log("No username in localstorage")
-        return;
-    }
-    
-    const usernameUU = document.getElementById("userName1")
-    if(usernameUU){
-        usernameUU.innerText =  `Hi ${username}`;
-    }
-
     console.log("user ID found on load:", userId);
     getAddress()
     getProfile() 
     getOrder()
-
+    showFirstnameOnDashboard()
 })
 
 async function getProfile(returnOnlyData = false) {
@@ -291,6 +298,7 @@ async function getProfile(returnOnlyData = false) {
     const result = await res.json();
     if (!res.ok) throw new Error(result.error);
     if (returnOnlyData) return result.data;  // <-- THIS FIXES YOUR ISSUE
+    localStorage.setItem("firstname", result.data.firstname)
     // Otherwise update the UI normally
     document.getElementById("displayPro-firstname").innerText = result.data.firstname;
     document.getElementById("displayAccount-firstname").innerText = result.data.firstname;
@@ -525,4 +533,17 @@ function getOrderDetails(orderIndex, itemIndex){
             </div>
  
     `
+}
+
+async function showFirstnameOnDashboard(returnOnlyData){
+    const userId = localStorage.getItem("userId")
+    if(!userId) return;
+
+    const url = `${baseUrl}${routes.getProfile}/${userId}`;
+    const res = await fetch(url);
+    const result = await res.json();
+    if (!res.ok) throw new Error(result.error);
+    if (returnOnlyData) return result.data;
+
+    document.getElementById("userName1").innerText = `Hi, ${result.data.firstname}`;
 }

@@ -11,31 +11,36 @@ function renderCartStock(){
         readCart.forEach((item) => {
             cartOrder.innerHTML += `
             <div class="cartorder-con">
-                <div class="cartorder1">
-                    <div class="insdeorder">
-                        <a href="../dashboard/item.html?slug=${item.slug}">
-                            <img src="${item.imgSrc}" class="topupImg1">
-                        </a>
-                        <a href="../dashboard/item.html?slug=${item.slug}">
-                            <label for="text" class="cart-item-title">${item.name}</label>
-                        </a>
-                        <a href="../dashboard/item.html?slug=${item.slug}"> 
-                            <label for="text" class="cart-price">RON ${item.price}</label>
-                        </a>
-                    </div>
-                </div>
-                <div class="cartorder2">
-                    <div class="cart-count">
-                        <div class="cartbtn">
-                            <button class="pro-cartcount" onclick="changeNumberOfUnite('minus',${item.id})">-</button>
-                            <label for="text" class="pro-counttxt">${item.quantity}</label>
-                            <button class="pro-cartcount" onclick="changeNumberOfUnite('plus',${item.id})">+</button>
-                        </div>
-                        <div class="cartremove">
+                <div class="cartorder-content">
+                    <div class="carttt">
+                        <div class="carttt-com">
                             <i class="fa-regular fa-trash-can remove" style="color: #ff9500;" onclick="removeCartFromStock(${item.id})"></i>
+                            </div>
+                            <a href="../dashboard/item.html?slug=${item.slug}">
+                                <img src="${item.imgSrc}" class="topupImg1">
+                            </a>
                         </div>
                     </div>
-                <label for="text" class="cart-priceee" id="totalsub">RON ${item.price * item.quantity}</label>
+                    <div class="cartorder1">
+                        <div class="insdeorder">
+                            <a href="../dashboard/item.html?slug=${item.slug}">
+                                <label for="text" class="cart-item-title">${item.name}</label>
+                            </a>
+                            <a href="../dashboard/item.html?slug=${item.slug}"> 
+                                <label for="text" class="cart-price">RON ${item.price}</label>
+                            </a>
+                        </div>
+                        <div class="cart-count">
+                            <div class="cartbtn">
+                                <button class="pro-cartcount" onclick="changeNumberOfUnite('minus',${item.id})">-</button>
+                                <label for="text" class="pro-counttxt">${item.quantity}</label>
+                                <button class="pro-cartcount" onclick="changeNumberOfUnite('plus',${item.id})">+</button>
+                            </div>
+                            <div class="cartbtn">
+                                <label for="text" class="cart-priceee" id="totalsub">RON ${item.price * item.quantity}</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             `;
