@@ -25,6 +25,16 @@ if(cart && cart.length > 0){
     
 }
 
+{/* <div class="price-btn">
+                <div class="prices">
+                    <label for="text" class="price">RON ${product.price}</label>
+                    <label for="text" class="price1">instock ${product.instock}</label>
+                </div>
+                <div class="btn"  id="btnContainer-${product.id}">
+                    <button class="cart" id="cart" onclick="addToCart(${product.id})">Add to cart</button>
+                </div>
+            </div> */}
+
 // find the product
 function showProduct(){
 const soupItem = products.filter(item => item.category === "soup");
@@ -42,18 +52,14 @@ soupItem.slice(0, 8).forEach((product) => {
                 </div>
                 <div class="itemrapper">
                     <img src="../icon/heart.png" class="itemImg">
-                    ${productLink || productLinkdash}<label for="text" class="itemtext">${product.name}</label></a>
                     ${productLink || productLinkdash}<label for="text" class="itemtextdesc">${product.description}</label></a>
                 </div>
             </div>
             <div class="price-btn">
                 <div class="prices">
                     <label for="text" class="price">RON ${product.price}</label>
-                    <label for="text" class="price1" id="stock-${product.id}">In stock: ${product.instock}</label>
                 </div>
-                <div class="btn" id="btnContainer-${product.id}">
-                    <button class="cart" id="cart-${product.id}" onclick="addToCart(${product.id})">Add to cart</button>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -75,17 +81,12 @@ wineItem.slice(0, 8).forEach((product) => {
                 </div>
                 <div class="itemrapper">
                     <img src="../icon/heart.png" class="itemImg">
-                    ${productLink || productLinkdash}<label for="text" class="itemtext">${product.name}</label></a>
                     ${productLink ||productLinkdash}<label for="text" class="itemtextdesc">${product.description}</label></a>
                 </div>
             </div>
             <div class="price-btn">
                 <div class="prices">
                     <label for="text" class="price">RON ${product.price}</label>
-                    <label for="text" class="price1">instock ${product.instock}</label>
-                </div>
-                <div class="btn"  id="btnContainer-${product.id}">
-                    <button class="cart" id="cart" onclick="addToCart(${product.id})">Add to cart</button>
                 </div>
             </div>
         </div>
@@ -108,17 +109,12 @@ fruitItem.slice(0, 8).forEach((product) => {
                 </div>
                 <div class="itemrapper">
                     <img src="../icon/heart.png" class="itemImg">
-                    ${productLink || productLinkdash}<label for="text" class="itemtext">${product.name}</label></a>
                     ${productLink || productLinkdash}<label for="text" class="itemtextdesc">${product.description}</label></a>
                 </div>
             </div>
             <div class="price-btn">
                 <div class="prices">
                     <label for="text" class="price">RON ${product.price}</label>
-                    <label for="text" class="price1">instock ${product.instock}</label>
-                </div>
-                <div class="btn"  id="btnContainer-${product.id}">
-                    <button class="cart" id="cart" onclick="addToCart(${product.id})">Add to cart</button>
                 </div>
             </div>
         </div>
@@ -141,17 +137,12 @@ snacksItem.slice(0, 8).forEach((product) => {
                 </div>
                 <div class="itemrapper">
                     <img src="../icon/heart.png" class="itemImg">
-                    ${productLink || productLinkdash}<label for="text" class="itemtext">${product.name}</label></a>
                     ${productLink || productLinkdash}<label for="text" class="itemtextdesc">${product.description}</label></a>
                 </div>
             </div>
             <div class="price-btn">
                 <div class="prices">
                     <label for="text" class="price">RON ${product.price}</label>
-                    <label for="text" class="price1">instock ${product.instock}</label>
-                </div>
-                <div class="btn"  id="btnContainer-${product.id}">
-                    <button class="cart" id="cart" onclick="addToCart(${product.id})">Add to cart</button>
                 </div>
             </div>
         </div>

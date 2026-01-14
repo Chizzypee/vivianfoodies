@@ -21,45 +21,21 @@ dropExitElm.forEach((dropExitElm) => {
 })   
 
 // nav1
-
-function navOpen(){
-    document.getElementById("sideLink").style.display = "flex";
-} 
 function menuBack(){
     document.getElementById("sideLink").style.display = "none";
 }
-
-function navOpen1(){
-    document.getElementById("sideLink1").style.display = "flex";
-} 
 function menuBack1(){
     document.getElementById("sideLink1").style.display = "none";
 }
-
-function navOpen2(){
-    document.getElementById("sideLink2").style.display = "flex";
-} 
 function menuBack2(){
     document.getElementById("sideLink2").style.display = "none";
 }
-
-function navOpen4(){
-    document.getElementById("sideLink4").style.display = "flex";
-} 
 function menuBack4(){
     document.getElementById("sideLink4").style.display = "none";
 }
-
-function navOpen6(){
-    document.getElementById("sideLink6").style.display = "flex";
-} 
 function menuBack6(){
     document.getElementById("sideLink6").style.display = "none";
 }
-
-function navOpen7(){
-    document.getElementById("sideLink7").style.display = "flex";
-} 
 function menuBack7(){
     document.getElementById("sideLink7").style.display = "none";
 }
@@ -495,10 +471,13 @@ function backPay(){
     document.querySelector(".accountdetails").style.display = "none";
 }
 function viewmoreTextbtn(){
-     const openClose = document.querySelector(".viewmore-text");
-    if(openClose.style.display === "flex"){
-        openClose.style.display = "none";
-    }else {
-        openClose.style.display = "flex";
-    }
+     document.querySelector(".viewmore-text").style.display = "flex";
+     document.querySelector(".seemoretext").style.display = "none";
+     document.querySelector(".seemoretext1").style.display = "flex";
+   
+}
+function lessTextbtn(){
+     document.querySelector(".viewmore-text").style.display = "none";
+     document.querySelector(".seemoretext").style.display = "flex";
+     document.querySelector(".seemoretext1").style.display = "none";
 }

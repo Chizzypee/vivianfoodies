@@ -178,7 +178,7 @@ nav{
 .topupImg{
     width: 100%;
     height: 80px;
-    border-radius: 10px;
+    border-radius: 5px;
     /* background-color: blue; */
 }
 .Amount{
@@ -1051,26 +1051,33 @@ nav{
 }
 .hero-img1{
     width: 100%;
-    background-image: url(https://res.cloudinary.com/dkdrebsks/image/upload/v1767714388/Vivianfoodies/baked-quails-pan-dark-surface_2829-5596_ab72jt.jpg);
+    background-image: url(../image/v1\ \(2\).jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .hero-img2{
     width: 100%;
-    background-image: url(https://res.cloudinary.com/dkdrebsks/image/upload/v1767714475/Vivianfoodies/top-view-table-full-delicious-food-composition_23-2149141352_x1dbgz.jpg);
+    background-image: url(https://res.cloudinary.com/dkdrebsks/image/upload/v1767714388/Vivianfoodies/baked-quails-pan-dark-surface_2829-5596_ab72jt.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .hero-img3{
     width: 100%;
-    background-image: url(https://res.cloudinary.com/dkdrebsks/image/upload/v1767714472/Vivianfoodies/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19744_seyi7w.jpg);
+    background-image: url(https://res.cloudinary.com/dkdrebsks/image/upload/v1767714475/Vivianfoodies/top-view-table-full-delicious-food-composition_23-2149141352_x1dbgz.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .hero-img4{
+    width: 100%;
+    background-image: url(https://res.cloudinary.com/dkdrebsks/image/upload/v1767714472/Vivianfoodies/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19744_seyi7w.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-img5{
     width: 100%;
     background-image: url(https://res.cloudinary.com/dkdrebsks/image/upload/v1767714473/Vivianfoodies/vitamin-salad-fresh-tomatoes-arugula-feta-cheese-peppers-dietary-menu-proper-nutrition-top-view-flat-lay_2829-20066_ldrbvy.jpg);
     background-position: center;
@@ -1101,8 +1108,8 @@ nav{
 .fff{
     display: flex;
     flex-direction: column;
-    background-color: saddlebrown;
-    border-radius: 10px;
+    /* background-color: saddlebrown; */
+    border-radius: 5px;
     /* height: 450px; */
     /* height: 450px; */
      align-items: center;
@@ -1117,7 +1124,7 @@ nav{
     /* background-color: darkgreen; */
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .move{
     width: 4%;
@@ -1129,7 +1136,7 @@ nav{
 .foodItem{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 98%;
     /* height: 550px; */
     /* height: 550px; */
     overflow-x: auto;
@@ -1138,13 +1145,26 @@ nav{
     width: 0%;
 }
 .food-item{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: auto;
     background-color: #2a1b15;
-    border-radius: 20px;
-    border: 2px solid sandybrown;
+    border-radius: 5px;
+    /* border: 2px solid sandybrown; */
+}
+.itemborder{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    gap: 10px;
 }
 .food-slid{
-    gap: 20px;
+    gap: 5px;
     display: flex;
     flex-direction: row;
     width: 200%;
@@ -1153,7 +1173,7 @@ nav{
 
 }
 .food-slid1{
-    gap: 20px;
+    gap: 5px;
     display: flex;
     flex-direction: row;
     width: 200%;
@@ -1161,7 +1181,7 @@ nav{
     /* height: 400px; */
 }
 .food-slid2{
-    gap: 20px;
+    gap: 5px;
     display: flex;
     flex-direction: row;
     width: 200%;
@@ -1169,7 +1189,7 @@ nav{
     /* height: 400px; */
 }
 .food-slid3{
-    gap: 20px;
+    gap: 5px;
     display: flex;
     flex-direction: row;
     width: 200%;
@@ -1177,7 +1197,7 @@ nav{
     /* height: 400px; */
 }
 .food-slid4{
-    gap: 20px;
+    gap: 5px;
     display: flex;
     flex-direction: row;
     width: 200%;
@@ -1232,29 +1252,33 @@ nav{
     width: 100%;
     /* height: 48vh; */
     height: auto;
-    padding: 10px;
+    /* padding: 10px; */
+    gap: 10px;
 }
 .itemImgbig{
     width: 100%;
-    height: 180px;
+    height: 250px;
     display: flex;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 .itemImgbig1{
     width: 90%;
     height: 60vh;
     display: flex;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 .itemrapper{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     gap: 10px;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start; 
+    overflow-x: hidden;
+     white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .itemtext{
     text-align: start;
@@ -1266,11 +1290,14 @@ nav{
 .itemtextdesc{
     display: flex;
     flex-direction: row;
-    /* width: 100%; */
-    text-align: center;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    /* text-align: start; */
     color: orange;
-    font-weight: 700;
-    /* margin-left: 10px; */
+    /* margin-left: 55px; */
+   
+
 }
 .itemtextdesc1{
     display: flex;
@@ -1300,8 +1327,8 @@ nav{
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    align-items: center;
-    margin-bottom: 15px;
+    align-items: start;
+    /* margin-bottom: 15px; */
     gap: 20px;
     width: 100%;
 }
@@ -1315,7 +1342,7 @@ nav{
 }
 .prices{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
     /* margin-left: 10px; */
@@ -1464,6 +1491,7 @@ nav{
     height: auto;
     align-items: center;
     margin-bottom: 20px;
+    background-color: #2a1b15;
 }
 .infomate{
     display: flex;
@@ -1498,6 +1526,23 @@ nav{
     height: 50px;
 }
 .seemoretext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    color: #1c0e00;
+    font-weight: 700;
+    background-color: orange;
+}
+.seemoretext1{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 35px;
     border: none;
@@ -1687,7 +1732,7 @@ nav{
 .topupImg1{
     width: 70%;
     height: 85px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .cart-count{
     display: flex;
@@ -4772,7 +4817,7 @@ nav{
 .veriety{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 95%;
     height: auto;
     justify-content: center;
     align-items: center;
@@ -4780,6 +4825,17 @@ nav{
 }
 .verietycon::-webkit-scrollbar{
     width: 0%;
+}
+.verietycon{
+    display: flex;
+    flex-direction: row;
+    width:  100%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    /* gap: 10px; */
+
 }
 .verietycon{
     display: flex;
@@ -4805,7 +4861,7 @@ nav{
     border-radius: 5px;
     width: 100%;
     height: 200px;
-    border: 2px solid sandybrown;
+    /* border: 2px solid sandybrown; */
 }
 /* FAQ */
 .faq{
@@ -4829,7 +4885,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 95%;
     height: auto;
 }
 .faqhead{
@@ -4860,12 +4916,12 @@ nav{
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    height: 650px;
+    height: 550px;
     gap: 10px;
 }
 .faqImg{
     width: 50%;
-    height: 600px;
+    height: 500px;
     border-radius: 5px;
 
 }
@@ -4883,31 +4939,74 @@ nav{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /* display: flex;
     flex-direction: row; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    width: 90%;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
     height: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    gap: 20px;
+    gap: 10px;
 }
 .stockcon-item{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border: 2px solid sandybrown;
+    border-radius: 10px;
+    background-color: #2a1b15;
+}
+.stockbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+.stock-imgBig{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
     gap: 10px;
 }
-.stockbox{
-    height: auto;
+.stockrapper{
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    background-color: #2a1b15;
-    border-radius: 15px;
-    border: 2px solid sandybrown;
+    height: 80px;
+    gap: 10px;
+    justify-content: start;
+    align-items: start; 
 }
-
+.stock-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stockbtn{
+    width: 100%;
+}
+.stockcart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    width: 100%;
+    height: 30px;
+    border: none;
+    color: #2a1b15;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 5px;
+}
 
 
 
@@ -5776,10 +5875,11 @@ nav{
         font-size: 15px;
     }
     .verietycon{
-        height: 150px;
+        height: 200px;
     }
     .verietyImg{
-        height: 100px;
+        height: 170px;
+        width: 100%;
     }
     .faqImg{
         width: 80%;
@@ -5787,7 +5887,10 @@ nav{
     .stockcon{
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-        width: 95%;
+        /* width: 95%; */
+    }
+    .stockbox{
+        /* width: 50%; */
     }
     .hero-content{
         height: 300px;
@@ -5817,23 +5920,23 @@ nav{
         font-size: 20px;
     }
     .food-slid{
-        width: 530%;
+        width: 200%;
     }
     .food-slid1{
-        width: 530%;
+        width: 200%;
     }
     .food-slid2{
-        width: 530%;
+        width: 200%;
     }
     .food-slid3{
-        width: 530%;
+        width: 200%;
     }
     .item-imgBig{
         /* height: 250px; */
         justify-content: space-between;
     }
     .itemImgbig{
-        height: 150px;
+        height: 170px;
     }
     .itemrapper{
         gap: 0px;
@@ -5856,12 +5959,17 @@ nav{
     .cart{
         font-size: 18px;
         height: 30px;
+        width: 100%;
     }
     .product-cartcount{
         height: 30px;
+        border-radius: 5px;
     }
     .product-counttxt{
         height: 30px;
+    }
+    .product-count{
+        width: 100%;
     }
     .infomate{
         margin: 0px;
@@ -6500,7 +6608,10 @@ nav{
     .stockcon{
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
-        width: 95%;
+        /* width: 95%; */
+    }
+    .stockbox{
+        /* width: 100%; */
     }
     .hero-content{
         height: 200px;
@@ -6526,23 +6637,23 @@ nav{
         font-size: 13px;
     }
     .food-slid{
-        width: 290%;
+        width: 150%;
     }
     .food-slid1{
-        width: 290%;
+        width: 150%;
     }
     .food-slid2{
-        width: 290%;
+        width: 150%;
     }
     .food-slid3{
-        width: 290%;
+        width: 150%;
     }
     .item-imgBig{
         /* height: 200px; */
         justify-content: space-between;
     }
     .itemImgbig{
-        height: 130px;
+        height: 200px;
     }
     .information{
         height: auto;
@@ -6565,7 +6676,7 @@ nav{
     .cart{
         font-size: 13px;
         height: 25px;
-        border-radius: 9px;
+        border-radius: 5px;
     }
     .product-cartcount{
         height: 25px;
@@ -7227,6 +7338,7 @@ nav{
     .cart{
         font-size: 13px;
         height: 50px;
+        width: 100%;
     }
     .product-cartcount{
         height: 50px;
@@ -8097,10 +8209,10 @@ nav{
         width: 70%;
     }
     .verietycon{
-        height: 200px;
+        height: 300px;
     }
     .verietyImg{
-        height: 100px;
+        height: 250px;
     }
     .hero-content{
         /* height: 350px; */
@@ -8127,23 +8239,23 @@ nav{
         font-size: 20px;
     }
     .food-slid{
-        width: 250%;
+        width: 150%;
     }
     .food-slid1{
-        width: 250%;
+        width: 150%;
     }
     .food-slid2{
-        width: 250%;
+        width: 150%;
     }
     .food-slid3{
-        width: 250%;
+        width: 150%;
     }
     .item-imgBig{
         /* height: 240px; */
         justify-content: space-between;
     }
     .itemImgbig{
-        height: 150px;
+        height: 250px;
     }
     .itemrapper{
         gap: 0px;
@@ -8155,7 +8267,7 @@ nav{
         font-size: 20px;
     }
     .prices{
-        height: 50px;
+        /* height: 50px; */
     }
     .price{
         font-size: 18px;
@@ -8166,10 +8278,19 @@ nav{
     .cart{
         font-size: 17px;
         height: 40px;
-        border-radius: 10px;
+        border-radius: 5px;
+        width: 100%;
+    }
+    .stockcart{
+        height: 40px
+    }
+    .product-count{
+        width: 100%;
+        border-radius: 5px;
     }
     .product-cartcount{
         height: 40px;
+        border-radius: 5px;
     }
     .product-counttxt{
         height: 40px;
@@ -8851,15 +8972,15 @@ nav{
         margin: 0px;
     }
     .verietycon{
-        height: 300px;
+        height: 400px;
     }
     .verietyImg{
-        height: 200px;
+        height: 300px;
     }
     .stockcon{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 10px;
-        width: 95%;
+        /* width: 95%; */
     }
     .hero-content{
         height: 350px;
@@ -8886,23 +9007,23 @@ nav{
         font-size: 20px;
     }
     .food-slid{
-        width: 220%;
+        width: 150%;
     }
     .food-slid1{
-        width: 220%;
+        width: 150%;
     }
     .food-slid2{
-        width: 220%;
+        width: 150%;
     }
     .food-slid3{
-        width: 220%;
+        width: 150%;
     }
     .item-imgBig{
         /* height: 300px; */
         justify-content: space-between;
     }
     .itemImgbig{
-        height: 200px;
+        height: 280px;
     }
     .information{
         height: auto;
@@ -8918,6 +9039,9 @@ nav{
     }
     .cart{
         font-size: 15px;
+        height: 50px;
+    }
+    .stockcart{
         height: 50px;
     }
     .product-cartcount{
